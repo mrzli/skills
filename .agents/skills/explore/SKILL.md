@@ -7,4 +7,4 @@ Ask one useful question at a time. Explain unfamiliar concepts with small exampl
 
 Distinguish what is understood from assumptions and open questions. Revisit earlier answers as understanding develops.
 
-Periodically summarize what has been learned and suggest a small next step. A clearer question or useful experiment is enough; do not force a complete plan.
+Periodically summarize what has been learned and suggest a small next step. A clearer question or useful experiment is enough. Do not force a complete plan.
