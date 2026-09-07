@@ -1,4 +1,4 @@
-Some skills based on: https://github.com/mattpocock/skills
+Some skills are based on [Matt Pocock's skills](https://github.com/mattpocock/skills).
 
 ```txt
 MIT License

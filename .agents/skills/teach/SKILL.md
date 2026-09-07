@@ -6,26 +6,24 @@ argument-hint: What would you like to learn?
 
 ## Name
 
-Create a short name about the topic, can be a single word or few words, but keep it very short, few words at most. You will need to derive a kebab-cased name as well.
+Create a topic name of one or a few words and derive its kebab-cased form.
 
 Example:
 
 - Topic name: `German grammar`
-- Kebab cased topic name: `german-grammar`
+- Kebab-cased topic name: `german-grammar`
 
 ## Persistence
 
-You need to store documents related to this learning topic. Put it inside `./.scratch/learn/<kabab-cased-topic-name>` directory.
+Store learning documents in `./.scratch/learn/<kebab-cased-topic-name>/`.
 
-All document paths from now on will be relative to the above directory.
+All document paths below are relative to this directory.
 
 ## Documents
 
 ### Notes
 
-Generic document that contains information that does not fit anywhere else.
-
-You can use it for your internal notes and user preferences, and anything else that seems appropriate.
+Use this document for working notes, user preferences, and information that does not fit elsewhere.
 
 Location: `notes.md`.
 
@@ -34,12 +32,12 @@ Location: `notes.md`.
 ```md
 Notes: <topic-name>
 
-Here goes the content. It can have abritrary form, can include paragraphs and sections.
+Add content in any suitable form, including paragraphs and sections.
 ```
 
 ### Mission
 
-Document that stores fundamental information about why this topic should be learned and constraints.
+Record the reason for learning this topic and the constraints.
 
 Location: `mission.md`.
 
@@ -50,28 +48,28 @@ Location: `mission.md`.
 
 ## Why
 
-1-3 sentences. The concrete real-world goal the user is laerning this for. What benefit do they gain by learning this topic? Avoid abstract framings like "to understand X", ask for underlying outcome.
+In 1–3 sentences, state the concrete outcome the user wants and how learning this topic will help. Ask for the outcome behind abstract goals such as "to understand X".
 
 ## Success conditions
 
-List of specific, observable things user is able to do after learning. One thing per list item.
+List specific, observable things the user should be able to do after learning. Use one item per outcome.
 
 ## Constraints
 
-Learning preferences, and anything that bounds the approach.
+Record learning preferences and limits on the approach.
 
 ## Out of scope
 
-List of topics to be excluded from this learning scope.
+List topics excluded from this learning scope.
 ```
 
 #### Rules
 
 - **One mission.** If the user wants to learn about something else, use another learning workspace.
-- **Explicit purpose.** Interview the user until he can clearly say why he wants to learn this topic.
-- **Concrete goals.** "Be able to list capitals of all countries" instead of "learn more geography". 
-- **Mutable.** User's goals, scope, and learning path are allowed to change. When it changes, update the document.
-- **Concise.** Keep the mission statement and goals brief and to the point. Avoid unnecessary details.
+- **Explicit purpose.** Interview the user until they can clearly state why they want to learn this topic.
+- **Concrete goals.** Use observable outcomes, such as "Be able to list the capitals of all countries."
+- **Mutable.** Update the document when the user's goals, scope, or learning path changes.
+- **Concise.** Keep the mission statement and goals brief.
 
 ## Process
 

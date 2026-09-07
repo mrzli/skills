@@ -16,12 +16,13 @@ Source: [teach](https://github.com/mattpocock/skills/blob/main/skills/productivi
 2. Revisit earlier learning through recall and application.
 3. Define what progress records contain and how to use them when resuming: understanding, difficulties, and next steps.
 4. Ground lessons in reliable sources and provide references for further learning.
-5. Consider dedicated mission, resource, lesson, and reference documents if useful. Matt uses these, including HTML lessons. No document formats have been agreed.
+5. Consider dedicated resource, lesson, and reference documents if useful. Matt uses these, including HTML lessons. Formats for these documents remain undecided.
 
 ## Independent suggestions
 
 1. Show a brief topic map before teaching details, then locate each lesson within it. This follows the user's interest in understanding the overall collection of software skills.
 2. Answer direct questions directly and avoid turning every response into a quiz.
+3. Consider a learning map and progress record as the next persistent documents. The map would outline concepts, prerequisites, and lesson outcomes. The progress record would distinguish material introduced from understanding demonstrated, retain open questions, and identify where to resume. These are proposals, not agreed formats.
 
 ## Decisions and open questions
 
