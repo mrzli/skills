@@ -3,8 +3,8 @@ name: writing-skills
 description: Use when writing agent skills.
 ---
 
-Keep target document simple, without unnecessary prose. Reduce the text to the minimum without affecting precision and functionality.
+Read and apply [writing-text](../writing-text/SKILL.md) to the target document.
 
-At the end have the CLI output to the console exactly:
+Write to the terminal exactly:
 
 I am using the writing-skills agent skill.
