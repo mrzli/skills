@@ -1,21 +1,21 @@
 ---
 name: tidy-docs
-description: Review and tidy existing documentation, including skills, AGENTS.md files, and all documentation, across a repository or selected scope.
-argument-hint: Scope of the files to be included into the tidying process.
+description: Review and tidy documentation, including skills and AGENTS.md files, across a repository or selected scope.
+argument-hint: "Scope to tidy. Defaults to the entire repo."
 ---
 
 ## Scope
 
-Use argument to determine scope. If no argument if provided, scope is entire repo.
+Use the supplied scope. If none is provided, include the entire repo.
 
-Scope should be the only filter. Do not exclude hidden files, unless otherwise excluded by the scope.
+Scope limits which documentation files may be modified. Include hidden directories unless excluded by the scope. Skip generated files, dependencies, and version-control internals.
 
-Skip generated files, dependencies, and version-control internals.
+Read outside the scope as needed to understand the current state of the repo.
 
 ## Process
 
-Resolve any inconsistencies, out of date links etc.
+Apply the relevant skills to each document as if creating or modifying it.
 
-For documents that are meant to be temporary and fluid, like spec, task or improvement documents, update their content based on the current state of the repo. When constructing the referent state, do not limit yourself on scope. Scope only limits the files to be modified.
+Resolve inconsistencies and outdated links. Preserve behavior, requirements, and invocation settings.
 
-To each document apply skills as if you are asked to create or modify them.
+Update evolving documents, such as specs, tasks, and improvement notes, based on the current state of the repo. Distinguish intended behavior from implemented behavior. Preserve unresolved requirements and decisions.
