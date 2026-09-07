@@ -10,3 +10,5 @@ Prefer familiar words and concrete statements. Remove filler introductions, infl
 Prefer periods and commas over em dashes and semicolons when they express the meaning clearly. Preserve punctuation in code, exact quotations, and required syntax.
 
 Use headings, lists, and tables only when they make the content easier to follow. Preserve meaningful qualifiers such as must, only, and unless.
+
+Detect any typos and grammar errors and fix them.
