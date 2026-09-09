@@ -59,29 +59,29 @@ List topics excluded from this learning scope.
 
 ### Lessons
 
-Lesson is a main unit of instruction within the learning process.
+A lesson is the main unit of instruction in the learning process.
 
-Should be openable by running a CLI command.
+Make each lesson openable with a CLI command.
 
 Location: `lessons/####-<kebab-cased-lesson-name>.html`
 
 #### Format
 
 - One HTML file per lesson.
-- Have links to other lessons and reference materials.
-- Recommend a single, highest-quality primary resource to read or watch if available.
-- Have reminder to ask followup questions to the agent. Agent is the teacher that can resolve anything the user finds unclear.
+- Link to other lessons and reference materials.
+- Recommend the highest-quality primary resource available to read or watch, if any.
+- Remind the user to ask the teaching agent follow-up questions about anything unclear.
 
 #### Rules
 
-- **Single concept.** One lesson should cover one tightly-scoped knowledge fragment and not depend on other lessons.
-- **Beautiful and readable.** Should have beautiful, clean and readable styling and layout.
-- **Short.** Completable very quickly. Considerate of learners small working memory.
-- **Small goal.** Should give a user a single tangible win he can build on.
+- **Single concept.** Cover one focused concept without depending on other lessons.
+- **Attractive and readable.** Use attractive, clean, readable styling and layout.
+- **Short.** Keep lessons quick to complete and within the learner's working-memory limits.
+- **Small goal.** Give the user one tangible outcome they can build on.
 
 ### Reference Materials
 
-Raw units of learning, compressed essence of a lesson.
+Summarize the essential information from lessons for quick lookup.
 
 Examples:
 
@@ -98,7 +98,7 @@ Location: `reference/*.html`.
 
 #### Rules
 
-**Beautiful, readable and pritable.** Easy to use as quick reference.
+**Attractive, readable, and printable.** Make materials easy to use for quick reference.
 
 ### Assets
 
@@ -110,11 +110,11 @@ Location: `assets/*`.
 
 ### Learning Records
 
-Persistent information about what user has learned. Important for driving learning process.
+Keep a long-term record of what the user has learned to guide future teaching.
 
-Each can capture some of:
+Each record can capture:
 
-- Non-obvious lesson.
+- Non-obvious lessons.
 - Key insights.
 - Stated prior knowledge.
 
@@ -132,11 +132,11 @@ status: active (default) | superseded by ####
 
 ## Summary
 
-- 1-3 sentences. What was learned, or what prior knowledge what established. Why it matters for future lessons.
+- In 1–3 sentences, describe what was learned or what prior knowledge was established, and why it matters for future lessons.
 
 ## Evidence (optional)
 
-- How the user demonstrated understanding. A question answered, exercize completed, a statement by the user.
+- Describe how understanding was demonstrated or prior knowledge was reported, such as an answer, completed exercise, or user statement.
 ```
 
 ### Resources
