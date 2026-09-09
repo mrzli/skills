@@ -57,6 +57,57 @@ List topics excluded from this learning scope.
 - **Mutable.** Update the document when the user's goals, scope, or learning path changes.
 - **Concise.** Keep the mission statement and goals brief.
 
+### Learning Map
+
+Outline what to learn and in what order, guided by the mission and the user's starting knowledge.
+
+Location: `learning-map.md`.
+
+#### Format
+
+```md
+# Learning map: <topic-name>
+
+## Topics
+
+List the main topics, intended outcomes, and any prerequisite knowledge in a suggested learning order. Link to lessons as they become available.
+```
+
+#### Rules
+
+- **Provisional, mutable.** Start with a brief outline. Update it as understanding, goals, or priorities change.
+- **Focused.** Include topics that support the mission. Keep current lesson status in `progress.md`.
+
+### Progress
+
+Keep the current learning position and enough context to resume in another session. Use learning records for lasting insights and evidence of understanding.
+
+Location: `progress.md`.
+
+#### Format
+
+```md
+# Progress: <topic-name>
+
+## Current activity
+
+Identify the lesson, practice, or review and its intended outcome. Link to relevant files.
+
+## Where we stopped
+
+Briefly describe what was covered or attempted, unfinished work, and unresolved questions. Link to relevant learning records without repeating them.
+
+## Next step
+
+Suggest the next activity and explain why it fits.
+```
+
+#### Rules
+
+- **Current state.** Update after meaningful learning steps and before pausing when possible. Replace stale status instead of accumulating a session log.
+- **Accurate.** Distinguish material presented from understanding demonstrated. Do not infer mastery from exposure.
+- **Resume.** Read this file with the mission, learning map, and relevant learning records before continuing an existing workspace.
+
 ### Lessons
 
 A lesson is the main unit of instruction in the learning process.
