@@ -5,7 +5,7 @@ Remaining proposals from our discussion. Remove items once implemented in `teach
 ## Unfinished sections
 
 1. **Process:** Define lesson outcomes, progression, review, progress recording, resumption, and completion checks. The remaining flow is outlined below.
-2. **Documents:** Define the additional learning documents, their formats, and when to create, read, and update them. Candidates are listed below.
+2. **Documents:** Fill the Lessons, Learning Records, and Reference Materials placeholders with their purposes, formats, and rules for creating, reading, and updating them. Decide whether to add a learning map or separate progress document.
 3. **Source use:** Explicitly use reliable resources to prepare lessons.
 4. **Interaction:** Answer direct questions directly. Let the teacher suggest lessons, practice, or review while the user can redirect or skip activities. Avoid making every response a quiz.
 
@@ -29,16 +29,15 @@ Names and formats below are candidates, not final decisions.
 
 1. **Learning map (`learning-map.md`):** Topics, prerequisites, lesson outcomes, and suggested order. Revise as understanding and priorities change.
 2. **Progress or resume record (`progress.md`):** Current lesson and outcome, material introduced, demonstrated understanding, unresolved questions, and next activity. Save enough to resume without the previous conversation.
-3. **Learning records (`learning-records/*.md`):** An alternative or complement to the progress record. Capture demonstrated understanding, disclosed prior knowledge, corrected misconceptions, and mission changes that affect future teaching. Decide whether separate records are useful before adding both mechanisms.
+3. **Learning records (`learning-records/*.md`):** Capture demonstrated understanding, disclosed prior knowledge, corrected misconceptions, and mission changes that affect future teaching. They could also replace a separate progress record if they retain unresolved difficulties, unfinished work, and a next step. They may link to supporting artifacts when useful as evidence.
 4. **Lessons (`lessons/*`):** Focused explanations, examples, and exercises worth retaining. Decide whether lessons require files and whether to use HTML.
 5. **References (`reference/*`):** Created summaries, cheat sheets, and glossaries for lookup across lessons. Distinct from the external sources in `resources.md`.
-6. **Assets (`assets/*`):** Shared images, styles, and interactive components if HTML lessons need them. This is an optional supporting directory.
 
 ## Open decisions
 
 1. Recommended smallest next addition: a concrete outcome for each lesson. No new files are needed.
 2. Agree on a learning map before lessons, or let a small initial map develop during learning?
-3. Use one progress file, separate learning records, or both with distinct roles?
+3. Start with learning records that include resume information, use one progress file, or keep both with distinct roles? No choice has been finalized.
 4. Save progress automatically after meaningful steps, on request, or at session end? Saving during learning would support interrupted sessions.
 5. Use conversational lessons, saved HTML lessons, or choose per lesson? If HTML is used, decide how browser exercise results reach the progress record.
 

@@ -71,11 +71,9 @@ TODO
 
 ### Assets
 
-Reusable components shared across lessons and reference materials.
+Share reusable images, stylesheets, widgets, simulators, and diagrams across lessons and reference materials.
 
-Images, stylesheets, widgets, simulators, diagrams etc.
-
-There should be one main stylesheet used by each lesson, to ensure consistent styling. Same for reference materials. Use a single one for both if appropriate.
+Use one main stylesheet for all lessons and one for all reference materials to keep styling consistent. Use the same stylesheet for both when appropriate.
 
 Location: `assets/*`.
 
