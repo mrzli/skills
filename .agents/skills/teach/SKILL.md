@@ -85,7 +85,24 @@ TODO
 
 ### Reference Materials
 
-TODO
+Raw units of learning, compressed essence of a lesson.
+
+Examples:
+
+- Cheat sheets.
+- Syntax, code snippets, reference algorithms.
+- Exercises and routines for fitness.
+- Glossaries.
+
+Location: `reference/*.html`.
+
+#### Format
+
+- HTML document.
+
+#### Rules
+
+**Beautiful, readable and pritable.** Easy to use as quick reference.
 
 ### Assets
 
@@ -142,6 +159,12 @@ Teach one small concept at a time with a concrete example. Invite the user to ex
 Connect each lesson to the user's purpose. Periodically recap what they have learned and suggest what to learn next.
 
 ## [TODO Process, MODELS DO NOT EDIT]
+
+### Reference documents
+
+While creating lessons, you should also create reference documents. Lessons can reference these documents - they are useful for tracking raw units of knowledge useful across lessons.
+
+Glossaries, in particular, are an essential reference. Once one is created, it should be adhered to in every lesson.
 
 ### Assets
 
