@@ -1,33 +1,49 @@
 # Improving teach
 
-Unimplemented ideas from our discussion. Update as decisions develop and remove ideas once the skill covers them.
+Remaining proposals from our discussion. Remove items once implemented in `teach`. Keep the skill simple and refine it through use. These notes do not authorize implementing every proposal.
 
-## Context
+## Unfinished sections
 
-1. Improve the existing `teach` skill through exploration, using Matt Pocock's skills and independent ideas as references.
-2. Keep the skill simple and refine it through use.
-3. The immediate learning interest is how a collection of skills supports software development, starting with the overall process.
+1. **Process:** Define lesson outcomes, progression, review, progress recording, resumption, and completion checks. The remaining flow is outlined below.
+2. **Documents:** Define the additional learning documents, their formats, and when to create, read, and update them. Candidates are listed below.
+3. **Source use:** Explicitly use reliable resources to prepare lessons.
+4. **Interaction:** Answer direct questions directly. Let the teacher suggest lessons, practice, or review while the user can redirect or skip activities. Avoid making every response a quiz.
 
-## Ideas from Matt Pocock
+## Learning flow to add
 
-Source: [teach](https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/SKILL.md).
+The existing workspace setup and basic teaching loop need these additions:
 
-1. Give each lesson a practical outcome: something the user can explain or do afterward.
-2. Revisit earlier learning through recall and application.
-3. Define what progress records contain and how to use them when resuming: understanding, difficulties, and next steps.
-4. Explicitly use reliable sources to prepare lessons, beyond curating resources for the user.
-5. Consider dedicated lesson and reference documents if useful. Matt uses HTML for both. Formats for these documents remain undecided.
+1. Build a provisional learning map from the mission and the user's starting knowledge. Show topics, prerequisites, and a suggested order.
+2. Choose one concrete outcome for the next lesson: something the user should be able to explain or do afterward.
+3. Use the outcome to guide examples and practice. Decide whether to clarify, practice more, or move on based on the user's response.
+4. Save meaningful progress, distinguishing material introduced from understanding demonstrated. Record gaps and the next activity.
+5. Revisit relevant earlier material when resuming, when a lesson depends on it, or when a misunderstanding appears. Adjust the map as needed.
+6. In a new session, locate the workspace, read its mission, map, and progress, and suggest where to continue. Ask which workspace only when the match is unclear.
+7. Periodically assess the mission's success conditions. Suggest completion when the user demonstrates the intended outcomes, or revise the direction with them.
 
-## Independent suggestions
+Proposed relationship: one workspace supports multiple lessons. A lesson may include practice and review, span sessions, or share a session with other lessons. Define these terms in the skill if useful.
 
-1. Show a brief topic map before teaching details, then locate each lesson within it. This follows the user's interest in understanding the overall collection of software skills.
-2. Answer direct questions directly and avoid turning every response into a quiz.
-3. Consider a learning map and progress record as the next persistent documents. The map would outline concepts, prerequisites, and lesson outcomes. The progress record would distinguish material introduced from understanding demonstrated, retain open questions, and identify where to resume. These are proposals, not agreed formats.
+## Missing document descriptions
 
-## Decisions and open questions
+Names and formats below are candidates, not final decisions.
 
-1. Agreed: record this discussion here and update the document as it continues.
-2. Recommended next addition: choose one concrete outcome for each lesson. This needs no new files and has not been implemented or approved yet.
-3. Proposed additions to the learning flow: build a provisional map, choose a lesson outcome, record evidence and gaps after practice, revisit relevant material when resuming, and assess the mission's success conditions before suggesting completion.
-4. Proposed progress format: outcome, material introduced, understanding demonstrated, open questions, and next step. File format and update frequency remain undecided.
-5. Pending: whether to establish the map together before lessons or let a small initial map develop during learning.
+1. **Learning map (`learning-map.md`):** Topics, prerequisites, lesson outcomes, and suggested order. Revise as understanding and priorities change.
+2. **Progress or resume record (`progress.md`):** Current lesson and outcome, material introduced, demonstrated understanding, unresolved questions, and next activity. Save enough to resume without the previous conversation.
+3. **Learning records (`learning-records/*.md`):** An alternative or complement to the progress record. Capture demonstrated understanding, disclosed prior knowledge, corrected misconceptions, and mission changes that affect future teaching. Decide whether separate records are useful before adding both mechanisms.
+4. **Lessons (`lessons/*`):** Focused explanations, examples, and exercises worth retaining. Decide whether lessons require files and whether to use HTML.
+5. **References (`reference/*`):** Created summaries, cheat sheets, and glossaries for lookup across lessons. Distinct from the external sources in `resources.md`.
+6. **Assets (`assets/*`):** Shared images, styles, and interactive components if HTML lessons need them. This is an optional supporting directory.
+
+## Open decisions
+
+1. Recommended smallest next addition: a concrete outcome for each lesson. No new files are needed.
+2. Agree on a learning map before lessons, or let a small initial map develop during learning?
+3. Use one progress file, separate learning records, or both with distinct roles?
+4. Save progress automatically after meaningful steps, on request, or at session end? Saving during learning would support interrupted sessions.
+5. Use conversational lessons, saved HTML lessons, or choose per lesson? If HTML is used, decide how browser exercise results reach the progress record.
+
+## Sources of ideas
+
+Matt Pocock's [teach skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/SKILL.md) informed lesson outcomes, recall, reliable sources, learning records, HTML lessons, references, and shared assets. His [learning-record format](https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/LEARNING-RECORD-FORMAT.md) distinguishes demonstrated learning from exposure and routine activity logs.
+
+The explicit learning map, resume checkpoint, and flexible artifact creation were our proposed adaptations. The immediate use case is learning how skills support software development, beginning with the overall process.
