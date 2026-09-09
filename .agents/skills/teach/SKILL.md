@@ -23,7 +23,7 @@ All document paths below are relative to this directory.
 
 ### Notes
 
-Use this document for working notes, user preferences, and information that does not fit elsewhere.
+Use this document for working notes, preferences on how the user wants to be taught, and information that does not fit elsewhere.
 
 Location: `notes.md`.
 
@@ -70,6 +70,30 @@ List topics excluded from this learning scope.
 - **Concrete goals.** Use observable outcomes, such as "Be able to list the capitals of all countries."
 - **Mutable.** Update the document when the user's goals, scope, or learning path changes.
 - **Concise.** Keep the mission statement and goals brief.
+
+### Resources
+
+List of resources for user to explore for further learning.
+
+Location: `resources.md`.
+
+#### Format
+
+```md
+# Resources: <topic-name>
+
+## Recommended
+
+List of resource items.
+```
+
+#### Rules
+
+- **Reliable sources.** Prefer primary sources, recognized experts, peer-reviewed work, and communities with strong moderation. Avoid marketing.
+- **Describe entries.** Each entry needs to have a link, short one-sentence description, and a 'Use for: <purpose>.' sentence.
+- **Gaps.** If there is no good resource for an area, note it in a separate `## Gaps` section.
+- **Prune.** Aggressively remove incorrect, outdated, low-quality or broken resources.
+- **Exclusions.** Record resources the user decided to exclude in a separate `## Exclusions` section.
 
 ## Process
 
