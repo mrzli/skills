@@ -23,7 +23,7 @@ All document paths below are relative to this directory.
 
 ### Notes
 
-Use this document for working notes, preferences on how the user wants to be taught, and information that does not fit elsewhere.
+Use this document for working notes, teaching preferences, and information that does not fit elsewhere.
 
 Location: `notes.md`.
 
@@ -73,7 +73,7 @@ List topics excluded from this learning scope.
 
 ### Resources
 
-List of resources for user to explore for further learning.
+List resources the user can explore for further learning.
 
 Location: `resources.md`.
 
@@ -84,16 +84,16 @@ Location: `resources.md`.
 
 ## Recommended
 
-List of resource items.
+List recommended resources.
 ```
 
 #### Rules
 
 - **Reliable sources.** Prefer primary sources, recognized experts, peer-reviewed work, and communities with strong moderation. Avoid marketing.
-- **Describe entries.** Each entry needs to have a link, short one-sentence description, and a 'Use for: <purpose>.' sentence.
-- **Gaps.** If there is no good resource for an area, note it in a separate `## Gaps` section.
-- **Prune.** Aggressively remove incorrect, outdated, low-quality or broken resources.
-- **Exclusions.** Record resources the user decided to exclude in a separate `## Exclusions` section.
+- **Describe entries.** Include a link, a short description of one sentence, and a `Use for: <purpose>.` sentence for each entry.
+- **Gaps.** Record areas without good resources in a separate `## Gaps` section.
+- **Prune.** Aggressively remove incorrect, outdated, low-quality, or broken resources.
+- **Exclusions.** Record resources the user has excluded in a separate `## Exclusions` section.
 
 ## Process
 

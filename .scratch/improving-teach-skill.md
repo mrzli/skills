@@ -15,8 +15,8 @@ Source: [teach](https://github.com/mattpocock/skills/blob/main/skills/productivi
 1. Give each lesson a practical outcome: something the user can explain or do afterward.
 2. Revisit earlier learning through recall and application.
 3. Define what progress records contain and how to use them when resuming: understanding, difficulties, and next steps.
-4. Ground lessons in reliable sources and provide references for further learning.
-5. Consider dedicated resource, lesson, and reference documents if useful. Matt uses these, including HTML lessons. Formats for these documents remain undecided.
+4. Explicitly use reliable sources to prepare lessons, beyond curating resources for the user.
+5. Consider dedicated lesson and reference documents if useful. Matt uses HTML for both. Formats for these documents remain undecided.
 
 ## Independent suggestions
 
