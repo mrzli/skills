@@ -57,6 +57,28 @@ List topics excluded from this learning scope.
 - **Mutable.** Update the document when the user's goals, scope, or learning path changes.
 - **Concise.** Keep the mission statement and goals brief.
 
+### Lessons
+
+TODO
+
+### Learning Records
+
+TODO
+
+### Reference Materials
+
+TODO
+
+### Assets
+
+Reusable components shared across lessons and reference materials.
+
+Images, stylesheets, widgets, simulators, diagrams etc.
+
+There should be one main stylesheet used by each lesson, to ensure consistent styling. Same for reference materials. Use a single one for both if appropriate.
+
+Location: `assets/*`.
+
 ### Resources
 
 List resources the user can explore for further learning.
@@ -102,3 +124,9 @@ Start from what the user wants to learn and already understands. Use conversatio
 Teach one small concept at a time with a concrete example. Invite the user to explain it back or try a small exercise, then give feedback and adapt to their understanding.
 
 Connect each lesson to the user's purpose. Periodically recap what they have learned and suggest what to learn next.
+
+## [TODO Process, MODELS DO NOT EDIT]
+
+### Assets
+
+Reuse is the default, not the exception. Before authoring a lesson, read ./assets/ and build from the components already there. When a lesson needs something new and reusable, write it as a component in ./assets/ and link to it; never inline code a future lesson would duplicate.
