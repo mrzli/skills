@@ -21,20 +21,6 @@ All document paths below are relative to this directory.
 
 ## Documents
 
-### Notes
-
-Use this document for working notes, teaching preferences, and information that does not fit elsewhere.
-
-Location: `notes.md`.
-
-#### Format
-
-```md
-Notes: <topic-name>
-
-Add content in any suitable form, including paragraphs and sections.
-```
-
 ### Mission
 
 Record the reason for learning this topic and the constraints.
@@ -94,6 +80,20 @@ List recommended resources.
 - **Gaps.** Record areas without good resources in a separate `## Gaps` section.
 - **Prune.** Aggressively remove incorrect, outdated, low-quality, or broken resources.
 - **Exclusions.** Record resources the user has excluded in a separate `## Exclusions` section.
+
+### Notes
+
+Use this document for working notes, teaching preferences, and information that does not fit elsewhere.
+
+Location: `notes.md`.
+
+#### Format
+
+```md
+Notes: <topic-name>
+
+Add content in any suitable form, including paragraphs and sections.
+```
 
 ## Process
 
