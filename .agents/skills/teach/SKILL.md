@@ -79,10 +79,6 @@ Location: `lessons/####-<kebab-cased-lesson-name>.html`
 - **Short.** Completable very quickly. Considerate of learners small working memory.
 - **Small goal.** Should give a user a single tangible win he can build on.
 
-### Learning Records
-
-TODO
-
 ### Reference Materials
 
 Raw units of learning, compressed essence of a lesson.
@@ -111,6 +107,37 @@ Share reusable images, stylesheets, widgets, simulators, and diagrams across les
 Use one main stylesheet for all lessons and one for all reference materials to keep styling consistent. Use the same stylesheet for both when appropriate.
 
 Location: `assets/*`.
+
+### Learning Records
+
+Persistent information about what user has learned. Important for driving learning process.
+
+Each can capture some of:
+
+- Non-obvious lesson.
+- Key insights.
+- Stated prior knowledge.
+
+Location: `learning-records/####-<kebab-cased-record-name>.md`
+
+#### Format
+
+```md
+(optional frontmatter, use when necessary)
+---
+status: active (default) | superseded by ####
+---
+
+# Learning record: <short-title-on-what-was-learned>
+
+## Summary
+
+- 1-3 sentences. What was learned, or what prior knowledge what established. Why it matters for future lessons.
+
+## Evidence (optional)
+
+- How the user demonstrated understanding. A question answered, exercize completed, a statement by the user.
+```
 
 ### Resources
 
@@ -169,3 +196,26 @@ Glossaries, in particular, are an essential reference. Once one is created, it s
 ### Assets
 
 Reuse is the default, not the exception. Before authoring a lesson, read ./assets/ and build from the components already there. When a lesson needs something new and reusable, write it as a component in ./assets/ and link to it; never inline code a future lesson would duplicate.
+
+### Learning records
+
+These should be used to calculate the zone of proximal development.
+
+#### When to write a learning record
+
+Write one when any of these is true:
+
+1. **The user demonstrated genuine understanding of something non-trivial**: not just exposure, but evidence they can use the concept correctly. This sets a new floor for what to teach next.
+2. **The user disclosed prior knowledge**: "I already know X." Record it so future sessions don't re-teach it. Also record the _depth_ claimed.
+3. **A misconception was corrected**: the user previously believed something wrong and now sees why. These are high-value: they predict future stumbling blocks for related topics.
+4. **The mission shifted in response to learning**: the user discovered they cared about something different than they thought. Cross-link to [[MISSION.md]] and update it.
+
+##### What does _not_ qualify
+
+- Material that was merely covered. Coverage is not learning. Wait for evidence.
+- Anything already captured tersely in [[GLOSSARY.md]] as a term definition. Don't duplicate.
+- Session-by-session activity logs. Learning records are not a journal: they are decision-grade insights.
+
+#### Supersession
+
+When a later record contradicts an earlier one (the user's understanding deepened or corrected), mark the old record `Status: superseded by LR-NNNN` rather than deleting it. The history of how understanding evolved is itself useful signal.
