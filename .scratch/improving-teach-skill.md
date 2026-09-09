@@ -27,4 +27,7 @@ Source: [teach](https://github.com/mattpocock/skills/blob/main/skills/productivi
 ## Decisions and open questions
 
 1. Agreed: record this discussion here and update the document as it continues.
-2. Pending: which remaining improvement should come first?
+2. Recommended next addition: choose one concrete outcome for each lesson. This needs no new files and has not been implemented or approved yet.
+3. Proposed additions to the learning flow: build a provisional map, choose a lesson outcome, record evidence and gaps after practice, revisit relevant material when resuming, and assess the mission's success conditions before suggesting completion.
+4. Proposed progress format: outcome, material introduced, understanding demonstrated, open questions, and next step. File format and update frequency remain undecided.
+5. Pending: whether to establish the map together before lessons or let a small initial map develop during learning.
