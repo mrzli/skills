@@ -59,7 +59,25 @@ List topics excluded from this learning scope.
 
 ### Lessons
 
-TODO
+Lesson is a main unit of instruction within the learning process.
+
+Should be openable by running a CLI command.
+
+Location: `lessons/####-<kebab-cased-lesson-name>.html`
+
+#### Format
+
+- One HTML file per lesson.
+- Have links to other lessons and reference materials.
+- Recommend a single, highest-quality primary resource to read or watch if available.
+- Have reminder to ask followup questions to the agent. Agent is the teacher that can resolve anything the user finds unclear.
+
+#### Rules
+
+- **Single concept.** One lesson should cover one tightly-scoped knowledge fragment and not depend on other lessons.
+- **Beautiful and readable.** Should have beautiful, clean and readable styling and layout.
+- **Short.** Completable very quickly. Considerate of learners small working memory.
+- **Small goal.** Should give a user a single tangible win he can build on.
 
 ### Learning Records
 
