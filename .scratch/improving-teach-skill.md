@@ -4,15 +4,15 @@ Remaining proposals from our discussion. Remove items once implemented in `teach
 
 ## Current direction
 
-The active `.agents/skills/teach/SKILL.md` now uses a short teaching process and one `learning.md` per topic. It saves goals, knowledge, progress, unresolved work, and a next step, and reads that context when resuming.
+The active [teach skill](../.agents/skills/teach/SKILL.md) creates or resumes a learning workspace in `.scratch/learn/<lesson-slug>`. It uses `MISSION.md`, `RESOURCES.md`, learning records, HTML lessons and references, shared assets, a glossary, and notes. It no longer uses one `learning.md` per topic.
 
-The earlier detailed design is in `experimental/skills/teach/SKILL.md`. The remaining notes below concern that experimental design and possible future work, not requirements for the simple skill. Try the simple skill on a learning task before adding structure.
+The [experimental design](../experimental/skills/teach/SKILL.md) adds a learning map, a progress checkpoint, and an explicit activity flow. That flow is incomplete. The remaining notes below concern this design and possible future work, not additional requirements for the active skill. Try the active skill on a learning task before adding structure.
 
 ## Experimental design: remaining work
 
 1. **Process:** Fill the Choose next activity, Check completion, and Learning loop TODOs. The remaining flow is outlined below.
 2. **Documents:** Specify how numbered lesson and record filenames are assigned.
-4. **Interaction:** The model manages teaching and document updates. The user provides goals, attempts learning activities, and controls direction. Answer direct questions directly, ask one question at a time when needed, and avoid making every response a quiz. Clarify these roles when completing the loops.
+3. **Interaction:** The model manages teaching and document updates. The user provides goals, attempts learning activities, and controls direction. Answer direct questions directly, ask one question at a time when needed, and avoid making every response a quiz. Clarify these roles when completing the loops.
 
 ## Learning flow to add
 
