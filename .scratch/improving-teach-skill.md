@@ -4,9 +4,12 @@ Remaining proposals from our discussion. Remove items once implemented in `teach
 
 ## Unfinished sections
 
+Current direction: the user wants a simpler initial skill with reliable persistence. Reconsider the detailed flow below as optional future ideas, not a checklist to finish before use. No simplification has been implemented yet.
+
+Proposal under discussion: keep a brief teaching process and enough saved context to resume. Clarify whether to simplify only the process or also reduce the required document set.
+
 1. **Process:** Fill the Choose next activity, Check completion, and Learning loop TODOs. The remaining flow is outlined below.
 2. **Documents:** Specify how numbered lesson and record filenames are assigned.
-3. **Source use:** Explicitly use reliable resources to prepare lessons.
 4. **Interaction:** The model manages teaching and document updates. The user provides goals, attempts learning activities, and controls direction. Answer direct questions directly, ask one question at a time when needed, and avoid making every response a quiz. Clarify these roles when completing the loops.
 
 ## Learning flow to add
