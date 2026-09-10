@@ -12,3 +12,5 @@ Prefer periods and commas over em dashes and semicolons when they express the me
 Use headings, lists, and tables only when they make the content easier to follow. Preserve meaningful qualifiers such as must, only, and unless.
 
 Fix typos and grammar errors.
+
+Improve and simplify larger sections of the text if necessary. In praticular resolve inconstencies and contradictions. When necessary, ask user for clarification.
