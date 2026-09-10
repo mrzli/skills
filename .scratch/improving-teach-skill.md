@@ -4,7 +4,7 @@ Remaining proposals from our discussion. Remove items once implemented in `teach
 
 ## Current direction
 
-The active [teach skill](../.agents/skills/teach/SKILL.md) creates or resumes a learning workspace in `.scratch/learn/<lesson-slug>`. It uses `MISSION.md`, `RESOURCES.md`, learning records, HTML lessons and references, shared assets, a glossary, and notes. It no longer uses one `learning.md` per topic.
+The active [teach skill](../.agents/skills/teach/SKILL.md) creates or resumes a learning workspace in `.scratch/learn/<lesson-slug>`. It uses `MISSION.md`, `RESOURCES.md`, learning records, HTML lessons and references, shared assets, a glossary, and notes.
 
 The [experimental design](../experimental/skills/teach/SKILL.md) adds a learning map, a progress checkpoint, and an explicit activity flow. That flow is incomplete. The remaining notes below concern this design and possible future work, not additional requirements for the active skill. Try the active skill on a learning task before adding structure.
 

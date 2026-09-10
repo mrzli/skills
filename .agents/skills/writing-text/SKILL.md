@@ -13,4 +13,4 @@ Use headings, lists, and tables only when they make the content easier to follow
 
 Fix typos and grammar errors.
 
-Improve and simplify larger sections of the text if necessary. In praticular resolve inconstencies and contradictions. When necessary, ask user for clarification.
+Simplify larger sections where needed, resolving inconsistencies and contradictions. Ask the user for clarification when necessary.
