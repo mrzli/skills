@@ -232,29 +232,29 @@ Add content in any suitable form, including paragraphs and sections.
 
 ### Entry
 
-Topic should be defined in the argument. If no argument was provided, ask user to specify topic.
+Use the argument to identify the topic. If none is provided, ask the user to specify it.
 
 Create a new learning workspace or resume an existing one.
 
 To choose:
 
 - Follow any explicit user instructions.
-- Decide based on existing topic workspaces.
-- In case of ambiguity of lack of clarity, ask user util clarified.
+- Check existing topic workspaces to decide whether to create or resume one.
+- Ask the user to clarify any ambiguity.
 
 #### New
 
 Create a workspace directory.
 
-Create the mission file and learning map file. To populate them ask the user questions until you have enough information.
+Create the mission and learning map files. Ask the user questions until you have enough information to populate them.
 
 #### Resume
 
-Read the mission, learning map, progress, learning records. Decide on the next step from there.
+Read the mission, learning map, progress, and learning records to decide the next step.
 
 ### Orient
 
-Orient the user. Briefly explain where he is, what he learned previously, and how the next activity supports the mission.
+Briefly explain where the user is in the learning process, what they learned previously, and how the next activity supports the mission.
 
 ### Activity loop
 
@@ -264,11 +264,11 @@ Follow the activity loop defined below.
 
 ### Update direction
 
-Check whether mission, learning map and other general documents need to be updated based the evolution of the learning workspace.
+Check whether the mission, learning map, and other general documents need updating as learning develops.
 
-You are not expected to make changes every iteration, only when sufficient changes accumulate.
+Update them when sufficient changes accumulate, not necessarily every iteration.
 
-When you don't have enough information to do the update by yourself, prompt the user for clarification.
+Ask the user for clarification when you lack the information needed to update them.
 
 ### Choose next activity
 
@@ -288,7 +288,7 @@ TODO
 
 ## Rules
 
-- When necessary, lazily create any directories or files you are missing.
+- Create missing directories and files when needed.
 
 ## [TODO Process, MODELS DO NOT EDIT]
 

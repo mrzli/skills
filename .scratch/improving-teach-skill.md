@@ -4,19 +4,18 @@ Remaining proposals from our discussion. Remove items once implemented in `teach
 
 ## Unfinished sections
 
-1. **Process:** Define progression, review, workspace selection on resumption, and completion checks. The remaining flow is outlined below.
+1. **Process:** Fill the Choose next activity, Check completion, and Learning loop TODOs. The remaining flow is outlined below.
 2. **Documents:** Specify how numbered lesson and record filenames are assigned.
 3. **Source use:** Explicitly use reliable resources to prepare lessons.
-4. **Interaction:** Answer direct questions directly. Let the teacher suggest lessons, practice, or review while the user can redirect or skip activities. Avoid making every response a quiz.
+4. **Interaction:** The model manages teaching and document updates. The user provides goals, attempts learning activities, and controls direction. Answer direct questions directly, ask one question at a time when needed, and avoid making every response a quiz. Clarify these roles when completing the loops.
 
 ## Learning flow to add
 
-The existing workspace setup and basic teaching loop need these additions:
+The entry, orientation, and direction-update steps need these remaining activity and learning-loop details:
 
-1. Use the lesson outcome to guide examples and practice. Decide whether to clarify, practice more, or move on based on the user's response.
+1. Choose new learning, practice, or review from the mission, learning map, demonstrated understanding, and unresolved gaps. Use one concrete outcome to guide explanation, examples, practice, and feedback. Decide whether to clarify, practice more, or move on based on the user's response.
 2. Revisit relevant earlier material when resuming, when a lesson depends on it, or when a misunderstanding appears.
-3. Locate the matching workspace in a new session. Ask which workspace only when the match is unclear.
-4. Periodically assess the mission's success conditions. Suggest completion when the user demonstrates the intended outcomes, or revise the direction with them.
+3. Periodically assess the mission's success conditions. Suggest completion when the user demonstrates the intended outcomes, or revise the direction with them.
 
 Proposed relationship: one workspace supports multiple lessons. A lesson may include practice and review, span sessions, or share a session with other lessons. Define these terms in the skill if useful.
 
