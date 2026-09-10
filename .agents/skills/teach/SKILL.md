@@ -254,13 +254,25 @@ Read the mission, learning map, progress, and learning records to decide the nex
 
 ### Orient
 
+Executed after entry.
+
 Briefly explain where the user is in the learning process, what they learned previously, and how the next activity supports the mission.
 
-### Activity loop
+### Choose activity
 
-Follow the activity loop defined below.
+Executed after orientation, or when the previous activity is finished.
 
-## Activity loop
+Recommend the next activity for the user. Recommend a new lesson, practice, or review based on prerequisites, demonstrated understanding, and unresolved gaps.
+
+Leave the ultimate choice to the user.
+
+Activity flow is described below.
+
+## Activity flow
+
+Describe the desired outcome for the activity.
+
+Prepare relevant material using reliable sources and existing references.
 
 ### Update direction
 
