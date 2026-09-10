@@ -2,11 +2,13 @@
 
 Remaining proposals from our discussion. Remove items once implemented in `teach`. Keep the skill simple and refine it through use. These notes do not authorize implementing every proposal.
 
-## Unfinished sections
+## Current direction
 
-Current direction: the user wants a simpler initial skill with reliable persistence. Reconsider the detailed flow below as optional future ideas, not a checklist to finish before use. No simplification has been implemented yet.
+The active `.agents/skills/teach/SKILL.md` now uses a short teaching process and one `learning.md` per topic. It saves goals, knowledge, progress, unresolved work, and a next step, and reads that context when resuming.
 
-Proposal under discussion: keep a brief teaching process and enough saved context to resume. Clarify whether to simplify only the process or also reduce the required document set.
+The earlier detailed design is in `experimental/skills/teach/SKILL.md`. The remaining notes below concern that experimental design and possible future work, not requirements for the simple skill. Try the simple skill on a learning task before adding structure.
+
+## Experimental design: remaining work
 
 1. **Process:** Fill the Choose next activity, Check completion, and Learning loop TODOs. The remaining flow is outlined below.
 2. **Documents:** Specify how numbered lesson and record filenames are assigned.
