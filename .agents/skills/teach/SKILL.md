@@ -230,13 +230,73 @@ Add content in any suitable form, including paragraphs and sections.
 
 ## Process
 
-Start from what the user wants to learn and already understands. Use conversation context. Ask one question at a time when needed.
+### Entry
 
-Teach one small concept at a time with a concrete example. Invite the user to explain it back or try a small exercise, then give feedback and adapt to their understanding.
+Topic should be defined in the argument. If no argument was provided, ask user to specify topic.
 
-Connect each lesson to the user's purpose. Periodically recap what they have learned and suggest what to learn next.
+Create a new learning workspace or resume an existing one.
+
+To choose:
+
+- Follow any explicit user instructions.
+- Decide based on existing topic workspaces.
+- In case of ambiguity of lack of clarity, ask user util clarified.
+
+#### New
+
+Create a workspace directory.
+
+Create the mission file and learning map file. To populate them ask the user questions until you have enough information.
+
+#### Resume
+
+Read the mission, learning map, progress, learning records. Decide on the next step from there.
+
+### Orient
+
+Orient the user. Briefly explain where he is, what he learned previously, and how the next activity supports the mission.
+
+### Activity loop
+
+Follow the activity loop defined below.
+
+## Activity loop
+
+### Update direction
+
+Check whether mission, learning map and other general documents need to be updated based the evolution of the learning workspace.
+
+You are not expected to make changes every iteration, only when sufficient changes accumulate.
+
+When you don't have enough information to do the update by yourself, prompt the user for clarification.
+
+### Choose next activity
+
+TODO
+
+### Learning loop
+
+Follow the learning loop defined below.
+
+### Check completion
+
+TODO
+
+## Learning loop
+
+TODO
+
+## Rules
+
+- When necessary, lazily create any directories or files you are missing.
 
 ## [TODO Process, MODELS DO NOT EDIT]
+
+### Mission
+
+Failing to understand the mission will mean knowledge acquisition is not grounded in real-world goals. Lessons will feel too abstract. You will have no way of judging what the user should do next.
+
+Missions may change as the user develops more skills and knowledge. This is normal - make sure to update the MISSION.md and add a learning record to capture the change. Confirm with the user before changing the mission.
 
 ### Reference documents
 
@@ -247,6 +307,14 @@ Glossaries, in particular, are an essential reference. Once one is created, it s
 ### Assets
 
 Reuse is the default, not the exception. Before authoring a lesson, read ./assets/ and build from the components already there. When a lesson needs something new and reusable, write it as a component in ./assets/ and link to it; never inline code a future lesson would duplicate.
+
+### Choose activity
+
+Start from what the user wants to learn and already understands. Use conversation context. Ask one question at a time when needed.
+
+Teach one small concept at a time with a concrete example. Invite the user to explain it back or try a small exercise, then give feedback and adapt to their understanding.
+
+Connect each lesson to the user's purpose. Periodically recap what they have learned and suggest what to learn next.
 
 ### Learning records
 
