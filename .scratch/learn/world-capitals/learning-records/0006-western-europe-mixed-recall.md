@@ -1,0 +1,3 @@
+# Western Europe recalled with two spontaneous corrections
+
+After reporting lesson 0004 completion, the user answered a mixed eight-country check with Amsterdam, Vienna, Brussels, Tallinn, Berlin, Luxembourg, France, and Slovakia. Before receiving teacher feedback, they described being on “auto mode” and corrected the final two answers to Paris and Bratislava. Record six correct on the first response and all eight correct after spontaneous correction, including all five new capitals. Vienna’s spelling was independently recalled correctly. Next test the five new pairs in reverse; delayed retention remains untested.

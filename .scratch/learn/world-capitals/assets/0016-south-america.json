@@ -1,0 +1,65 @@
+{
+  "number": "0016",
+  "items": [
+    {
+      "country": "Argentina",
+      "capital": "Buenos Aires",
+      "source": "https://data.un.org/en/iso/ar.html"
+    },
+    {
+      "country": "Bolivia",
+      "capital": "Sucre",
+      "source": "https://data.un.org/en/iso/bo.html"
+    },
+    {
+      "country": "Brazil",
+      "capital": "Bras\u00edlia",
+      "source": "https://data.un.org/en/iso/br.html"
+    },
+    {
+      "country": "Chile",
+      "capital": "Santiago",
+      "source": "https://data.un.org/en/iso/cl.html"
+    },
+    {
+      "country": "Colombia",
+      "capital": "Bogot\u00e1",
+      "source": "https://data.un.org/en/iso/co.html"
+    },
+    {
+      "country": "Ecuador",
+      "capital": "Quito",
+      "source": "https://data.un.org/en/iso/ec.html"
+    },
+    {
+      "country": "Guyana",
+      "capital": "Georgetown",
+      "source": "https://data.un.org/en/iso/gy.html"
+    },
+    {
+      "country": "Paraguay",
+      "capital": "Asunci\u00f3n",
+      "source": "https://data.un.org/en/iso/py.html"
+    },
+    {
+      "country": "Peru",
+      "capital": "Lima",
+      "source": "https://data.un.org/en/iso/pe.html"
+    },
+    {
+      "country": "Suriname",
+      "capital": "Paramaribo",
+      "source": "https://data.un.org/en/iso/sr.html"
+    },
+    {
+      "country": "Uruguay",
+      "capital": "Montevideo",
+      "source": "https://data.un.org/en/iso/uy.html"
+    },
+    {
+      "country": "Venezuela",
+      "capital": "Caracas",
+      "source": "https://data.un.org/en/iso/ve.html"
+    }
+  ]
+}

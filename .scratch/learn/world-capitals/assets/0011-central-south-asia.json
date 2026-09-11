@@ -1,0 +1,55 @@
+{
+  "number": "0011",
+  "items": [
+    {
+      "country": "Turkmenistan",
+      "capital": "Ashgabat",
+      "source": "https://data.un.org/en/iso/tm.html"
+    },
+    {
+      "country": "Uzbekistan",
+      "capital": "Tashkent",
+      "source": "https://data.un.org/en/iso/uz.html"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "capital": "Bishkek",
+      "source": "https://data.un.org/en/iso/kg.html"
+    },
+    {
+      "country": "Tajikistan",
+      "capital": "Dushanbe",
+      "source": "https://data.un.org/en/iso/tj.html"
+    },
+    {
+      "country": "Afghanistan",
+      "capital": "Kabul",
+      "source": "https://data.un.org/en/iso/af.html"
+    },
+    {
+      "country": "Pakistan",
+      "capital": "Islamabad",
+      "source": "https://data.un.org/en/iso/pk.html"
+    },
+    {
+      "country": "India",
+      "capital": "New Delhi",
+      "source": "https://data.un.org/en/iso/in.html"
+    },
+    {
+      "country": "Nepal",
+      "capital": "Kathmandu",
+      "source": "https://data.un.org/en/iso/np.html"
+    },
+    {
+      "country": "Bhutan",
+      "capital": "Thimphu",
+      "source": "https://data.un.org/en/iso/bt.html"
+    },
+    {
+      "country": "Bangladesh",
+      "capital": "Dhaka",
+      "source": "https://data.un.org/en/iso/bd.html"
+    }
+  ]
+}

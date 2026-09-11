@@ -1,0 +1,3 @@
+# Twelve Caribbean capitals recalled correctly
+
+The user correctly answered Dominica, Jamaica, Barbados, Haiti, Saint Kitts and Nevis, Cuba, Saint Lucia, Antigua and Barbuda, Dominican Republic, Grenada, Bahamas, and Saint Vincent and the Grenadines with Roseau, Kingston, Bridgetown, Port-au-Prince, Basseterre, Havana, Castries, Saint John's, Santo Domingo, Saint George's, Nassau, and Kingstown. This establishes 12/12 immediate country-to-capital recall, including both potentially confusing pairs. Total: 111 capitals identified; reverse recall established for the preceding 99 pairs. Next test these twelve in reverse. Laos-to-Vientiane still needs a later recheck; delayed retention remains untested.

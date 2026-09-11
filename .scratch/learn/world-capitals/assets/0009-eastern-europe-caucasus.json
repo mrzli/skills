@@ -1,0 +1,55 @@
+{
+  "number": "0009",
+  "items": [
+    {
+      "country": "Belarus",
+      "capital": "Minsk",
+      "source": "https://data.un.org/en/iso/by.html"
+    },
+    {
+      "country": "Ukraine",
+      "capital": "Kyiv",
+      "source": "https://data.un.org/en/iso/ua.html"
+    },
+    {
+      "country": "Moldova",
+      "capital": "Chișinău",
+      "source": "https://data.un.org/en/iso/md.html"
+    },
+    {
+      "country": "Russia",
+      "capital": "Moscow",
+      "source": "https://data.un.org/en/iso/ru.html"
+    },
+    {
+      "country": "Türkiye",
+      "capital": "Ankara",
+      "source": "https://data.un.org/en/iso/tr.html"
+    },
+    {
+      "country": "Cyprus",
+      "capital": "Nicosia",
+      "source": "https://data.un.org/en/iso/cy.html"
+    },
+    {
+      "country": "Georgia",
+      "capital": "Tbilisi",
+      "source": "https://data.un.org/en/iso/ge.html"
+    },
+    {
+      "country": "Armenia",
+      "capital": "Yerevan",
+      "source": "https://data.un.org/en/iso/am.html"
+    },
+    {
+      "country": "Azerbaijan",
+      "capital": "Baku",
+      "source": "https://data.un.org/en/iso/az.html"
+    },
+    {
+      "country": "Kazakhstan",
+      "capital": "Astana",
+      "source": "https://data.un.org/en/iso/kz.html"
+    }
+  ]
+}

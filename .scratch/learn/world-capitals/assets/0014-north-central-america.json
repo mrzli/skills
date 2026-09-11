@@ -1,0 +1,61 @@
+{
+  "number": "0014",
+  "items": [
+    {
+      "country": "Canada",
+      "capital": "Ottawa",
+      "source": "https://data.un.org/en/iso/ca.html"
+    },
+    {
+      "country": "United States",
+      "capital": "Washington, D.C.",
+      "source": "https://data.un.org/en/iso/us.html",
+      "aliases": [
+        "Washington DC",
+        "Washington D.C.",
+        "Washington, DC",
+        "Washington"
+      ]
+    },
+    {
+      "country": "Mexico",
+      "capital": "Mexico City",
+      "source": "https://data.un.org/en/iso/mx.html"
+    },
+    {
+      "country": "Guatemala",
+      "capital": "Guatemala City",
+      "source": "https://data.un.org/en/iso/gt.html"
+    },
+    {
+      "country": "Belize",
+      "capital": "Belmopan",
+      "source": "https://data.un.org/en/iso/bz.html"
+    },
+    {
+      "country": "Honduras",
+      "capital": "Tegucigalpa",
+      "source": "https://data.un.org/en/iso/hn.html"
+    },
+    {
+      "country": "El Salvador",
+      "capital": "San Salvador",
+      "source": "https://data.un.org/en/iso/sv.html"
+    },
+    {
+      "country": "Nicaragua",
+      "capital": "Managua",
+      "source": "https://data.un.org/en/iso/ni.html"
+    },
+    {
+      "country": "Costa Rica",
+      "capital": "San Jos\u00e9",
+      "source": "https://data.un.org/en/iso/cr.html"
+    },
+    {
+      "country": "Panama",
+      "capital": "Panama City",
+      "source": "https://data.un.org/en/iso/pa.html"
+    }
+  ]
+}

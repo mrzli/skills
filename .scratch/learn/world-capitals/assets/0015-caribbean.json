@@ -1,0 +1,89 @@
+{
+  "number": "0015",
+  "items": [
+    {
+      "country": "Cuba",
+      "capital": "Havana",
+      "source": "https://data.un.org/en/iso/cu.html"
+    },
+    {
+      "country": "Haiti",
+      "capital": "Port-au-Prince",
+      "source": "https://data.un.org/en/iso/ht.html",
+      "aliases": [
+        "Port au Prince"
+      ]
+    },
+    {
+      "country": "Dominican Republic",
+      "capital": "Santo Domingo",
+      "source": "https://data.un.org/en/iso/do.html"
+    },
+    {
+      "country": "Jamaica",
+      "capital": "Kingston",
+      "source": "https://data.un.org/en/iso/jm.html"
+    },
+    {
+      "country": "Bahamas",
+      "capital": "Nassau",
+      "source": "https://data.un.org/en/iso/bs.html"
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "capital": "Saint John's",
+      "source": "https://data.un.org/en/iso/ag.html",
+      "aliases": [
+        "St. John's",
+        "St John's",
+        "Saint Johns",
+        "St Johns",
+        "Saint John\u2019s",
+        "St. John\u2019s"
+      ]
+    },
+    {
+      "country": "Dominica",
+      "capital": "Roseau",
+      "source": "https://data.un.org/en/iso/dm.html"
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "capital": "Basseterre",
+      "source": "https://data.un.org/en/iso/kn.html"
+    },
+    {
+      "country": "Saint Lucia",
+      "capital": "Castries",
+      "source": "https://data.un.org/en/iso/lc.html"
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "capital": "Kingstown",
+      "source": "https://data.un.org/en/iso/vc.html"
+    },
+    {
+      "country": "Barbados",
+      "capital": "Bridgetown",
+      "source": "https://data.un.org/en/iso/bb.html"
+    },
+    {
+      "country": "Grenada",
+      "capital": "Saint George's",
+      "source": "https://data.un.org/en/iso/gd.html",
+      "aliases": [
+        "St. George's",
+        "St George's",
+        "Saint Georges",
+        "St Georges",
+        "Saint George\u2019s",
+        "St. George\u2019s"
+      ]
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "capital": "Port of Spain",
+      "source": "https://data.un.org/en/iso/tt.html"
+    }
+  ]
+}

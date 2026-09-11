@@ -1,0 +1,63 @@
+{
+  "number": "0012",
+  "items": [
+    {
+      "country": "China",
+      "capital": "Beijing",
+      "source": "https://data.un.org/en/iso/cn.html"
+    },
+    {
+      "country": "Mongolia",
+      "capital": "Ulaanbaatar",
+      "source": "https://data.un.org/en/iso/mn.html",
+      "aliases": [
+        "Ulan Bator"
+      ]
+    },
+    {
+      "country": "Japan",
+      "capital": "Tokyo",
+      "source": "https://data.un.org/en/iso/jp.html"
+    },
+    {
+      "country": "North Korea",
+      "capital": "Pyongyang",
+      "source": "https://data.un.org/en/iso/kp.html"
+    },
+    {
+      "country": "South Korea",
+      "capital": "Seoul",
+      "source": "https://data.un.org/en/iso/kr.html"
+    },
+    {
+      "country": "Vietnam",
+      "capital": "Hanoi",
+      "source": "https://data.un.org/en/iso/vn.html"
+    },
+    {
+      "country": "Laos",
+      "capital": "Vientiane",
+      "source": "https://data.un.org/en/iso/la.html"
+    },
+    {
+      "country": "Cambodia",
+      "capital": "Phnom Penh",
+      "source": "https://data.un.org/en/iso/kh.html"
+    },
+    {
+      "country": "Thailand",
+      "capital": "Bangkok",
+      "source": "https://data.un.org/en/iso/th.html"
+    },
+    {
+      "country": "Myanmar",
+      "capital": "Nay Pyi Taw",
+      "source": "https://data.un.org/en/iso/mm.html",
+      "aliases": [
+        "Naypyidaw",
+        "Nay Pyi Daw",
+        "Naypyitaw"
+      ]
+    }
+  ]
+}
