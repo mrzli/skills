@@ -1,0 +1,40 @@
+{
+  "number": "0021",
+  "items": [
+    {
+      "country": "Madagascar",
+      "capital": "Antananarivo",
+      "source": "https://data.un.org/en/iso/mg.html"
+    },
+    {
+      "country": "Mauritius",
+      "capital": "Port Louis",
+      "source": "https://data.un.org/en/iso/mu.html"
+    },
+    {
+      "country": "Seychelles",
+      "capital": "Victoria",
+      "source": "https://data.un.org/en/iso/sc.html"
+    },
+    {
+      "country": "Comoros",
+      "capital": "Moroni",
+      "source": "https://data.un.org/en/iso/km.html"
+    },
+    {
+      "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "capital": "S\u00e3o Tom\u00e9",
+      "source": "https://data.un.org/en/iso/st.html"
+    },
+    {
+      "country": "Republic of the Congo",
+      "capital": "Brazzaville",
+      "source": "https://data.un.org/en/iso/cg.html"
+    },
+    {
+      "country": "Equatorial Guinea",
+      "capital": "Ciudad de la Paz",
+      "source": "https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial"
+    }
+  ]
+}

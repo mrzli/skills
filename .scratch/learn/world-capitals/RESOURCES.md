@@ -359,3 +359,87 @@ UN Statistics Division country profiles, Capital city field and capital footnote
 - [Chad](https://data.un.org/en/iso/td.html)
 - [Central African Republic](https://data.un.org/en/iso/cf.html)
 - [Gabon](https://data.un.org/en/iso/ga.html)
+
+## Lesson 0019 — verified 2026-09-11
+
+UN Statistics Division country profiles, Capital city field:
+
+- [Sudan](https://data.un.org/en/iso/sd.html)
+- [South Sudan](https://data.un.org/en/iso/ss.html)
+- [Eritrea](https://data.un.org/en/iso/er.html)
+- [Djibouti](https://data.un.org/en/iso/dj.html)
+- [Ethiopia](https://data.un.org/en/iso/et.html)
+- [Somalia](https://data.un.org/en/iso/so.html)
+- [Kenya](https://data.un.org/en/iso/ke.html)
+- [Uganda](https://data.un.org/en/iso/ug.html)
+- [Rwanda](https://data.un.org/en/iso/rw.html)
+- [Burundi](https://data.un.org/en/iso/bi.html)
+- [Tanzania](https://data.un.org/en/iso/tz.html)
+- [Democratic Republic of the Congo](https://data.un.org/en/iso/cd.html)
+
+## Lesson 0020 — verified 2026-09-11
+
+UN Statistics Division profiles, capital fields and footnotes (including multiple capital roles):
+
+- [Angola](https://data.un.org/en/iso/ao.html)
+- [Zambia](https://data.un.org/en/iso/zm.html)
+- [Malawi](https://data.un.org/en/iso/mw.html)
+- [Mozambique](https://data.un.org/en/iso/mz.html)
+- [Zimbabwe](https://data.un.org/en/iso/zw.html)
+- [Botswana](https://data.un.org/en/iso/bw.html)
+- [Namibia](https://data.un.org/en/iso/na.html)
+- [South Africa (administrative capital)](https://data.un.org/en/iso/za.html)
+- [South Africa (legislative capital)](https://data.un.org/en/iso/za.html)
+- [South Africa (judicial capital)](https://data.un.org/en/iso/za.html)
+- [Lesotho](https://data.un.org/en/iso/ls.html)
+- [Eswatini (administrative capital)](https://data.un.org/en/iso/sz.html)
+- [Eswatini (legislative capital)](https://data.un.org/en/iso/sz.html)
+
+## Lesson 0021 — verified 2026-09-11
+
+UN profiles for six capitals; official 2 January 2026 decree for Equatorial Guinea (Ciudad de la Paz).
+
+- [Madagascar](https://data.un.org/en/iso/mg.html)
+- [Mauritius](https://data.un.org/en/iso/mu.html)
+- [Seychelles](https://data.un.org/en/iso/sc.html)
+- [Comoros](https://data.un.org/en/iso/km.html)
+- [São Tomé and Príncipe](https://data.un.org/en/iso/st.html)
+- [Republic of the Congo](https://data.un.org/en/iso/cg.html)
+- [Equatorial Guinea](https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial)
+
+## Lesson 0022 — verified 2026-09-11
+
+- [Sri Lanka (legislative capital)](https://data.un.org/en/iso/lk.html)
+- [Maldives](https://data.un.org/en/iso/mv.html)
+- [Malaysia (national capital)](https://data.un.org/en/iso/my.html)
+- [Malaysia (administrative capital)](https://data.un.org/en/iso/my.html)
+- [Singapore](https://data.un.org/en/iso/sg.html)
+- [Brunei](https://data.un.org/en/iso/bn.html)
+- [Indonesia](https://data.un.org/en/iso/id.html)
+- [Philippines](https://data.un.org/en/iso/ph.html)
+- [Timor-Leste](https://data.un.org/en/iso/tl.html)
+- [Indonesia capital transfer: Constitutional Court, May 2026](https://www.mkri.id/berita/waktu-pemindahan-ikn-bergantung-pada-pemberlakuan-keputusan-presiden-25031)
+- [Nusantara authority: 2028 target](https://ikn.go.id/id/posts/otorita-ikn-hadirkan-pagelaran-seni-dan-permainan-rakyat-sambut-awal-tahun-2026)
+
+- [Sri Lanka government: capital and commercial capital](https://www.gov.lk/sri-lanka/country-overview)
+- [Sri Lanka Foreign Ministry: administrative capital](https://www.mfa.gov.lk/national-profile-and-geography)
+
+## Lesson 0023 — verified 2026-09-11
+
+- [Kiribati](https://www.mfed.gov.ki/node/43)
+- [Marshall Islands](https://data.un.org/en/iso/mh.html)
+- [Federated States of Micronesia](https://data.un.org/en/iso/fm.html)
+- [Nauru (seat of government)](https://cove.army.gov.au/kyr/nauru)
+- [Kiribati: Tarawa variant](https://www.dfat.gov.au/geo/kiribati/kiribati-country-brief)
+- [Kiribati: UN Bairiki entry](https://data.un.org/en/iso/ki.html)
+
+## Lesson 0024 — verified 2026-09-11
+
+- [United Arab Emirates](https://data.un.org/en/iso/ae.html)
+- [Oman](https://data.un.org/en/iso/om.html)
+- [Yemen (capital listed by UNData)](https://data.un.org/en/iso/ye.html)
+- [Israel (declared capital)](https://data.un.org/en/iso/il.html)
+- [State of Palestine (claimed capital)](https://data.un.org/en/iso/ps.html)
+- [Monaco](https://data.un.org/en/iso/mc.html)
+- [Jerusalem final status](https://www.dfat.gov.au/geo/palestine)
+- [UNDP: Aden interim capital](https://www.undp.org/yemen/aden-sub-office)

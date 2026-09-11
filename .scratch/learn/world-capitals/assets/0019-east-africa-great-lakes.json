@@ -1,0 +1,68 @@
+{
+  "number": "0019",
+  "items": [
+    {
+      "country": "Sudan",
+      "capital": "Khartoum",
+      "source": "https://data.un.org/en/iso/sd.html"
+    },
+    {
+      "country": "South Sudan",
+      "capital": "Juba",
+      "source": "https://data.un.org/en/iso/ss.html"
+    },
+    {
+      "country": "Eritrea",
+      "capital": "Asmara",
+      "source": "https://data.un.org/en/iso/er.html"
+    },
+    {
+      "country": "Djibouti",
+      "capital": "Djibouti",
+      "source": "https://data.un.org/en/iso/dj.html",
+      "aliases": [
+        "Djibouti City"
+      ]
+    },
+    {
+      "country": "Ethiopia",
+      "capital": "Addis Ababa",
+      "source": "https://data.un.org/en/iso/et.html"
+    },
+    {
+      "country": "Somalia",
+      "capital": "Mogadishu",
+      "source": "https://data.un.org/en/iso/so.html"
+    },
+    {
+      "country": "Kenya",
+      "capital": "Nairobi",
+      "source": "https://data.un.org/en/iso/ke.html"
+    },
+    {
+      "country": "Uganda",
+      "capital": "Kampala",
+      "source": "https://data.un.org/en/iso/ug.html"
+    },
+    {
+      "country": "Rwanda",
+      "capital": "Kigali",
+      "source": "https://data.un.org/en/iso/rw.html"
+    },
+    {
+      "country": "Burundi",
+      "capital": "Gitega",
+      "source": "https://data.un.org/en/iso/bi.html"
+    },
+    {
+      "country": "Tanzania",
+      "capital": "Dodoma",
+      "source": "https://data.un.org/en/iso/tz.html"
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "capital": "Kinshasa",
+      "source": "https://data.un.org/en/iso/cd.html"
+    }
+  ]
+}

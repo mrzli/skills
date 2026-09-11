@@ -97,3 +97,131 @@
 - Record 0049: Ngerulmud correct immediately after letter-order correction. Pending short consolidation quiz: Bhutan, Bahrain, Cambodia (after intervening activities since record 0047). Then proceed to next regional lesson; retain Palau/Laos for later mixed review. Historical total remains 136 pairs both ways.
 
 - Record 0050: Thimphu, Manama, Phnom Penh all correct after intervening activities (3/3). Lesson 0018 prepared; unassessed. Pending first quiz: Burkina Faso, Ghana, Chad, Benin (constitutional capital), Mali, Gabon, Niger, Côte d’Ivoire (capital; Yamoussoukro expected), Cameroon, Togo, Central African Republic, Nigeria. Then reverse. Accept Ivory Coast for Côte d’Ivoire. Historical total 136 both ways; Palau/Laos remain due in later mixed review.
+
+- Record 0051: lesson 0018 forward recall 12/12 correct, including spelling (accents ignored). Total forward: 148; both ways: 136. Pending reverse quiz: Lomé, Bangui, Yamoussoukro, Niamey, Libreville, Porto-Novo, Abuja, Ouagadougou, Yaoundé, Bamako, N'Djamena, Accra. Palau/Laos remain due in later mixed review.
+
+- Record 0052: lesson 0018 reverse complete, all 12 identified; “cote d'ivore” corrected to Côte d’Ivoire. Historical total 148 pairs both ways, including corrections; retention across days untested. Pending mixed forward quiz: Palau, Niger, Bhutan, Central African Republic, Laos, Benin (constitutional capital), Gambia, Côte d’Ivoire (political capital), Bahrain, Cameroon, Cambodia, Burkina Faso.
+
+- Record 0053: mixed forward 10/12. Palau “ngelurmud” → Ngerulmud (repeated r/l transposition); Gambia unanswered → Banjul. Bangui correct for Central African Republic. Vientiane/Thimphu/Manama/Phnom Penh held after intervening activities. Pending focused drill: Gambia, Palau, Central African Republic, after hiding corrections. Historical total remains 148 both ways; current gaps remain.
+
+- Record 0054: Banjul, Ngerulmud, Bangui correction drill 3/3 correct immediately after exposure. Recheck Gambia/Palau later without cues. Pending reverse mixed quiz: Ouagadougou, Castries, Nouakchott, Bishkek, Libreville, Paramaribo, Porto-Novo, Funafuti, Niamey, Yerevan, Yaoundé, Port of Spain. Then proceed to next regional lesson. Historical total remains 148 both ways.
+
+- Record 0055: reverse mixed 11/12 associations identified, 9 standard names/spellings. Funafuti answered Vanuatu → Tuvalu (contrast Vanuatu → Port Vila). Repeated “santa lucia” → Saint Lucia and “kyrgizstan” → Kyrgyzstan. Pending focused reverse drill: Port Vila, Castries, Funafuti, Bishkek. Then next regional lesson. Later recheck Tuvalu/Vanuatu, Palau and Gambia. Historical total remains 148 both ways.
+
+- Record 0056: reverse correction drill 4/4 correct, including Saint Lucia and Kyrgyzstan spelling. Lesson 0019 prepared; unassessed. Pending first quiz: Burundi, Ethiopia, South Sudan, Rwanda, Djibouti, Tanzania, Eritrea, Democratic Republic of the Congo, Kenya, Sudan, Uganda, Somalia. Then reverse. Accept DRC/DR Congo/Congo-Kinshasa for Democratic Republic of the Congo; require distinction from Republic of the Congo. Historical total remains 148 both ways. Recheck Palau/Gambia/Tuvalu/Vanuatu later.
+
+- Record 0057: lesson 0019 forward 12/12 correct, including spelling. Historical total forward: 160; both ways: 148. Pending reverse quiz: Asmara, Kampala, Gitega, Khartoum, Kinshasa, Mogadishu, Dodoma, Juba, Addis Ababa, Kigali, Nairobi, Djibouti. Recheck Palau/Gambia/Tuvalu/Vanuatu in later mixed review.
+
+- Record 0058: lesson 0019 reverse eleven unambiguous correct answers; Kinshasa answered “congo”, clarification pending without answer cue. Ask for more specific country name; accept DRC/DR Congo/Democratic Republic of the Congo/Congo-Kinshasa. Historical total forward 160; both ways 159 until clarified.
+
+- Record 0059: Kinshasa → DR Congo correctly clarified without answer cue. Lesson 0019 complete; historical total 160 pairs demonstrated both ways, including corrections and prompts. Pending mixed forward quiz: Palau, Burundi, Gambia, Tuvalu, Eritrea, Central African Republic, Vanuatu, Tanzania, Laos, South Sudan, Burkina Faso, Democratic Republic of the Congo. Retention across days untested.
+
+- Record 0060: mixed forward all 12 identified, 11 spelled correctly; “bagngui” → Bangui. Ngerulmud/Banjul/Funafuti/Port Vila/Vientiane all held without cues after intervening activities. Pending reverse mixed quiz: Gitega, Ngerulmud, Asmara, Banjul, Dodoma, Funafuti, Kinshasa, Vientiane, Juba, Port Vila, Bangui, Ouagadougou. Then next regional lesson. Historical total remains 160 both ways; retention across days untested.
+
+- Record 0061: reverse mixed eleven answers, all match if Dodoma (item 5) is treated as omitted. Pending uncued prompt: Dodoma → which country? Accept CAR and DR Congo for their respective countries. Then next regional lesson. Historical total remains 160 both ways.
+
+- Record 0062: Dodoma → Tanzania correctly supplied uncued; reverse review complete. Lesson 0020 prepared, ten countries/thirteen capital-role pairs; unassessed. Pending first quiz: Namibia, Malawi, South Africa (administrative), Botswana, Eswatini (legislative), Angola, Lesotho, Mozambique, South Africa (judicial), Zambia, Zimbabwe, Eswatini (administrative), South Africa (legislative). Then reverse. Historical total 160 countries both ways; count extra capital roles separately.
+
+- Record 0063: lesson 0020 forward all 13 capital-role associations identified, 12 spelled correctly; “widdhoek” → Windhoek. Forward coverage 170 countries/173 capital-role pairs; both ways 160 countries/pairs. Pending reverse quiz: Maseru, Lusaka, Windhoek, Lobamba, Harare, Bloemfontein, Lilongwe, Luanda, Cape Town, Gaborone, Mbabane, Maputo, Pretoria. Request country plus role for South Africa/Eswatini. Recheck Windhoek later.
+
+- Record 0064: lesson 0020 reverse 10/13 correct; all SA/Eswatini roles correct. Maseru unanswered → Lesotho; Lusaka/Angola and Luanda/Zambia swapped (correct Zambia/Lusaka, Angola/Luanda). Pending focused reverse drill: Luanda, Maseru, Lusaka after hiding corrections. Historical both-way coverage 167 countries/170 capital-role pairs; forward 170 countries/173 pairs. Recheck Windhoek spelling later.
+
+- Record 0065: Angola, Lesotho, Zambia reverse correction drill 3/3 correct immediately after exposure. Lesson 0020 demonstrated both ways including corrections; historical coverage 170 countries/173 capital-role pairs. Pending mixed forward quiz: Namibia, Burundi, Angola, Palau, Lesotho, Malawi, Gambia, Zambia, Botswana, Tanzania, Eswatini (legislative), South Africa (judicial). Recheck corrected associations after intervening activities; retention across days untested.
+
+- Record 0066: mixed forward all 12 identified, 11 spelled correctly; “widnhoek” → Windhoek (Wind · hoek). Angola/Lesotho/Zambia and Palau/Gambia correct. Pending focused spelling recall: Namibia after hiding correction. Historical coverage remains 170 countries/173 capital-role pairs both ways; retention across days untested.
+
+- Record 0067: Windhoek spelling correctly supplied immediately after correction. Pending reverse mixed quiz: Lusaka, Funafuti, Maseru, Gitega, Luanda, Port Vila, Windhoek, Ngerulmud, Lilongwe, Banjul, Gaborone, Dodoma. Then next regional lesson. Recheck Windhoek forward spelling later; historical coverage remains 170 countries/173 capital-role pairs both ways.
+
+- Record 0068: reverse mixed 11/12 correct. Banjul answered CAR; correct Banjul → Gambia, Bangui → Central African Republic. Angola/Zambia, Tuvalu/Vanuatu and Lesotho held after intervening activities. Pending focused reverse drill: Bangui, Banjul after hiding corrections. Then next regional lesson. Historical coverage unchanged; recheck Windhoek spelling later.
+
+- Record 0069: Bangui/CAR, Banjul/Gambia correction 2/2 correct immediately. Lesson 0021 prepared: seven remaining African UN member countries, unassessed. Pending first quiz: Seychelles, Republic of the Congo, Comoros, Equatorial Guinea, Mauritius, São Tomé and Príncipe, Madagascar. Equatorial Guinea → Ciudad de la Paz per official decree of 2 January 2026; use current capital. Then reverse. Historical coverage 170 countries/173 capital-role pairs. Recheck Windhoek and Banjul/Bangui later.
+
+- Record 0070: lesson 0021 forward 7/7 correct, including spelling (accents ignored). Historical forward coverage 177 countries/180 capital-role pairs; both ways 170 countries/173 pairs. Pending reverse quiz: Moroni, Antananarivo, Brazzaville, Port Louis, Ciudad de la Paz, Victoria, São Tomé. Require Republic of the Congo/Congo-Brazzaville for Brazzaville. Recheck Windhoek and Banjul/Bangui later.
+
+- Record 0071: lesson 0021 reverse 7/7 correct; “r congo” accepted as Republic of the Congo. Historical both-way coverage 177 countries/180 capital-role pairs; all 54 African UN member countries demonstrated both ways, including corrections. Pending mixed forward quiz: Gambia, Madagascar, Namibia, Republic of the Congo, Palau, Mauritius, Central African Republic, Equatorial Guinea, Lesotho, Democratic Republic of the Congo, Seychelles, Zambia. Then remaining regional coverage. Retention across days untested.
+
+- Record 0072: mixed Africa 12/12 correct including Windhoek/Ngerulmud/Banjul/Bangui and both Congos. Lesson 0022 prepared, eight countries/nine tested capital-role pairs; unassessed. Pending first quiz: Brunei, Maldives, Malaysia (administrative), Timor-Leste, Sri Lanka (legislative), Indonesia, Philippines, Singapore, Malaysia (national). Then reverse. Sri Lanka: Sri Jayewardenepura Kotte (accept Jayawardenepura spelling or Kotte); Colombo noted, untested. Indonesia Jakarta; Nusantara transition note verified with primary sources. Historical coverage remains 177 countries/180 pairs both ways.
+
+- Lesson 0022 clarification: user asked about Colombo and Kuala Lumpur. Clarified Kuala Lumpur is Malaysia’s national capital, Putrajaya administrative; Sri Jayewardenepura Kotte is Sri Lanka’s administrative/legislative capital, Colombo commercial. Updated lesson/reference to explain government terminology alongside UNData. Quiz remains pending, order unchanged.
+
+- Record 0073: lesson 0022 forward all 9 associations identified, 8 spelled correctly; “bandar sari bawagan” → Bandar Seri Begawan. Full Sri Jayewardenepura Kotte correct. Forward coverage 185 countries/189 tested capital-role pairs; both ways 177 countries/180 pairs. Pending reverse quiz: Dili, Kuala Lumpur, Malé, Bandar Seri Begawan, Jakarta, Sri Jayewardenepura Kotte, Singapore, Putrajaya, Manila. Request country plus role for Malaysia entries. Recheck Brunei capital spelling later.
+
+- Record 0074: lesson 0022 reverse all 9 correct including Malaysia roles; “philipines” → Philippines spelling correction. Historical coverage 185 countries/189 tested capital-role pairs both ways, including corrections. Pending mixed forward quiz: Brunei, Namibia, Sri Lanka (legislative), Gambia, Maldives, Palau, Malaysia (administrative), Central African Republic, Timor-Leste, Madagascar, Philippines, Malaysia (national). Then remaining regional coverage. Retention across days untested.
+
+- Record 0075: mixed forward 12/12 correct including all recent spelling corrections. Lesson 0023 prepared, four remaining Pacific countries; unassessed. Pending first quiz: Marshall Islands, Nauru (seat of government), Federated States of Micronesia, Kiribati. Answers Majuro, Yaren (District), Palikir, South Tarawa (accept Tarawa/Bairiki). Nauru has no official capital. Then reverse. Historical coverage remains 185 countries/189 tested capital-role pairs both ways.
+
+- Record 0076: lesson 0023 forward 4/4 correct including spelling. Historical forward 189 countries/193 capital-role or government-seat pairs; both ways 185 countries/189 pairs. Pending reverse quiz: Palikir, South Tarawa, Majuro, Yaren (seat of government). Accept FSM/Micronesia for Federated States of Micronesia in country context.
+
+- Record 0077: lesson 0023 reverse 4/4 correct. Historical both-way coverage 189 countries/193 tested capital-role or government-seat pairs. Lesson 0024 prepared; six countries unassessed. Pending first quiz: Oman, State of Palestine (claimed capital), Monaco, United Arab Emirates, Yemen (UNData capital), Israel (declared capital). Answers Muscat, East Jerusalem, Monaco, Abu Dhabi, Sana’a, Jerusalem. Disputed status and Aden interim role explained in lesson; Aden untested. Then reverse, audit 193 UN members + Holy See/Palestine coverage, begin cumulative mixed recall.
+
+- Record 0078: lesson 0024 forward 6/6 correct. Forward coverage 195 countries/199 tested capital-role or government-seat pairs; both ways 189 countries/193 pairs, subject to final coverage audit. Pending reverse quiz: Abu Dhabi, Sana'a (UNData capital), Muscat, Jerusalem (declared capital), Monaco, East Jerusalem (claimed capital). Then audit coverage and begin cumulative mixed review. Palestine recognition and Jerusalem status discussed; no scope change requested.
+
+- Record 0079: final group reverse 6/6 correct. All lessons complete both ways including corrections. Actual lesson extraction confirms 195 countries/199 tested capital-role or government-seat pairs; see COVERAGE.md and assets/world-review-pool.json. Pending cumulative mixed forward round 1: Tajikistan, Saint Lucia, Botswana, Brunei, Moldova, Marshall Islands, Benin (constitutional), Bhutan, Suriname, Eritrea, Slovakia, Samoa. Retention across days untested.
+
+- Record 0080: cumulative mixed forward round 1 scored 9/12; Botswana, Brunei, Benin unanswered. Corrections Gaborone, Bandar Seri Begawan, Porto-Novo supplied. All nine supplied answers correct. Pending focused forward retry: Benin (constitutional), Botswana, Brunei after hiding corrections. Recheck these later; historical coverage does not imply reliable retention.
+
+- Record 0081: Benin/Botswana/Brunei immediate correction drill 3/3 correct, including spelling. Recheck after intervening activities. Pending cumulative mixed forward round 2: Kyrgyzstan, Dominica, Mozambique, Nauru (seat of government), Albania, Guinea, Mongolia, Belize, Lesotho, Timor-Leste, Saint Kitts and Nevis, Rwanda.
+
+- Record 0082: cumulative mixed forward round 2 scored 10/12, all supplied answers correct; Guinea and Saint Kitts and Nevis unanswered. Corrections Conakry and Basseterre supplied. Pending focused retry: Saint Kitts and Nevis, Guinea. Then recheck Benin/Botswana/Brunei in mixed practice; retention across days untested.
+
+- Record 0083: Basseterre correct in immediate correction drill; “canakry” → Conakry (Co · na · kry). Pending focused spelling recall: Guinea after hiding correction. Later mixed review due: Guinea, Saint Kitts and Nevis, Benin, Botswana, Brunei.
+
+- Record 0084: Conakry correctly spelled immediately after correction. Recheck Guinea/Saint Kitts and Nevis later. Pending cumulative mixed forward round 3: Botswana, Armenia, Comoros, Benin (constitutional capital), Iceland, Paraguay, Brunei, Uganda, Antigua and Barbuda, Nepal, Gabon, Federated States of Micronesia. Rechecks round 1 gaps after intervening activities.
+
+- Record 0085: cumulative round 3: 8/12 fully correct, 9 associations identified. “gadorone” → Gaborone; Comoros, Brunei and FSM unanswered → Moroni, Bandar Seri Begawan, Palikir. Porto-Novo held. Pending focused drill: Federated States of Micronesia, Botswana, Comoros, Brunei after hiding corrections. Guinea/Saint Kitts and Nevis also due later; Brunei repeatedly fails mixed recall despite immediate correction success.
+
+- Record 0086: Palikir/Gaborone/Moroni/Bandar Seri Begawan immediate correction drill 4/4 correct. Recheck after intervening activities. Pending cumulative mixed forward round 4: Guinea, Latvia, Saint Kitts and Nevis, Oman, Zambia, Kiribati, Uruguay, Bahrain, Sierra Leone, Cambodia, North Macedonia, Trinidad and Tobago. Rechecks round 2 gaps.
+
+- Record 0087: cumulative round 4: 10/12 correct; Guinea again unanswered → Conakry, Sierra Leone unanswered → Freetown. Basseterre held. Pending focused retry: Sierra Leone, Guinea after hiding corrections. Later uncued rechecks due for FSM/Botswana/Comoros/Brunei; Guinea immediate success has not held.
+
+- Record 0088: Sierra Leone/Guinea correction drill initially reversed, spontaneously corrected before feedback to Freetown/Conakry (final 2/2). Pending cumulative mixed forward round 5: Comoros, Austria, Federated States of Micronesia, Senegal, Brunei, Ecuador, Botswana, South Korea, Malta, Nepal, Equatorial Guinea, Croatia. Rechecks round 3 gaps; Guinea/Sierra Leone due later without cues.
+
+- Record 0089: cumulative round 5: 10/12 fully correct. Botswana “goborone” → Gaborone (first vowel a); Brunei “bhagar seri bagawat” → Bandar Seri Begawan (partial recall, substantial distortion). Moroni/Palikir held. Pending focused retry: Botswana, Brunei after hiding corrections. Brunei needs exact word structure Bandar / Seri / Begawan reinforced; Guinea/Sierra Leone also due later.
+
+- Record 0090: Gaborone/Bandar Seri Begawan immediate correction drill 2/2 correct. Recheck later without cues. Pending cumulative mixed forward round 6: Sierra Leone, Lithuania, Honduras, Guinea, Bangladesh, Namibia, Saint Vincent and the Grenadines, Tunisia, Azerbaijan, Solomon Islands, Peru, Oman. Rechecks round 4 gaps.
+
+- Record 0091: cumulative round 6: 10/12 fully correct, 11 associations identified. Honduras “teguucigalpa” → Tegucigalpa (extra u); Solomon Islands unanswered → Honiara. Freetown/Conakry/Windhoek held. Pending focused retry: Solomon Islands, Honduras after hiding corrections. Botswana/Brunei due later in mixed recall.
+
+- Record 0092: Honiara/Tegucigalpa immediate correction drill 2/2 correct. Recheck later. Pending cumulative mixed forward round 7: Brunei, Romania, Madagascar, Botswana, Jordan, Portugal, South Sudan, Guyana, Vanuatu, Turkmenistan, Seychelles, Montenegro. Rechecks Brunei/Botswana after intervening activities.
+
+- Record 0093: cumulative forward round 7: 12/12 correct, including Bandar Seri Begawan/Gaborone after intervening activities. Pending reverse mixed round 8: Honiara, Tegucigalpa, Moroni, Conakry, Basseterre, Palikir, Freetown, Porto-Novo, Gaborone, Bandar Seri Begawan, Banjul, Bangui. Forward Honiara/Tegucigalpa recheck due later; retention across days untested.
+
+- Record 0094: reverse mixed round 8: 12/12 correct; extra comma ignored, all nonempty answers align. Pending cumulative mixed forward round 9: Solomon Islands, Uzbekistan, Grenada, Mali, Honduras, Finland, Mauritius, Chad, North Korea, El Salvador, Lesotho, Tonga. Rechecks Honiara/Tegucigalpa forward and extends cumulative coverage.
+
+- Record 0095: cumulative forward round 9: 12/12 correct, including Honiara/Tegucigalpa after intervening activities. Rounds 7–9 each 12/12. Pending cumulative mixed forward round 10: Andorra, Nigeria, Kuwait, Jamaica, Pakistan, São Tomé and Príncipe, Hungary, Djibouti, Bolivia (constitutional capital), Myanmar, Guinea-Bissau, United Arab Emirates. Retention across days untested.
+
+- Record 0096: cumulative forward round 10: 11/12 correct, Myanmar unanswered. Correction Nay Pyi Taw (also Naypyidaw) supplied. Pending focused retry: Myanmar after hiding correction; recheck later without cues. All other supplied answers correct.
+
+- Record 0097: Myanmar → Nay Pyi Taw correct immediately after correction. Recheck later. Pending cumulative mixed forward round 11: Albania, Nepal, Liberia, Canada, Bahrain, Fiji, Belgium, Rwanda, Argentina, Oman, Bulgaria, Malaysia (national capital).
+
+- Record 0098: cumulative forward round 11: 10/12 correct; Liberia/Fiji unanswered → Monrovia/Suva. Pending focused retry: Fiji, Liberia after hiding corrections. Myanmar remains due for later uncued recall.
+
+- Record 0099: Fiji/Liberia correction drill 2/2 correct (Suva/Monrovia), immediately after exposure. Recheck later. Pending cumulative mixed forward round 12: Myanmar, Denmark, Venezuela, Algeria, Lebanon, New Zealand, Czechia, Ethiopia, Panama, Maldives, Germany, Zimbabwe. Rechecks Myanmar without cues.
+
+- Record 0100: cumulative forward round 12: 12/12 correct. Nay Pyi Taw held without cues after intervening activities. Pending cumulative mixed forward round 13: Fiji, Spain, Liberia, Vietnam, Mexico, Saudi Arabia, Ireland, Kenya, Haiti, Kazakhstan, Italy, Australia. Rechecks Fiji/Liberia and extends cumulative coverage.
+
+- Record 0101: cumulative forward round 13: 12/12 correct; Suva/Monrovia held without cues. Pending cumulative reverse mixed round 14: Nay Pyi Taw, Suva, Monrovia, Ljubljana, Nouakchott, Dhaka, San José, Tehran, Tallinn, Santiago, Port Moresby, Doha. Historical coverage unchanged; retention across days untested.
+
+- Record 0102: cumulative reverse round 14 all 12 countries identified, 11 spelled correctly; “papua new guiena” → Papua New Guinea. Pending cumulative mixed forward round 15: Afghanistan, Luxembourg, Togo, Nicaragua, Russia, Barbados, South Africa (legislative capital), Thailand, San Marino, Somalia, Bahamas, Eswatini (administrative capital).
+
+- Record 0103: cumulative forward round 15: 12/12 correct, including capital roles. Pending cumulative mixed forward round 16: Belgium, Cameroon, Cuba, Georgia, South Africa (administrative capital), Indonesia, Liechtenstein, Sudan, Guatemala, Ukraine, Eswatini (legislative capital), China. Retention across days untested.
+
+- Record 0104: cumulative forward round 16: 12/12 correct. Pending cumulative mixed forward round 17: Sweden, Egypt, Colombia, Iraq, Netherlands, Dominican Republic, Japan, Greece, United States, Belarus, Cabo Verde, United Kingdom. Extends cumulative coverage; retention across days untested.
+
+- Record 0105 (2026-09-12): cumulative forward round 17: 11/12 correct; Cabo Verde unanswered → Praia. Pending focused retry: Cabo Verde after hiding correction. Date changed but interval/break unknown; do not infer overnight retention from date alone. Recheck Praia later without cues.
+
+- Record 0106: Praia correctly supplied immediately after correction. Recheck later. Pending cumulative mixed forward round 18: Norway, Ghana, Brazil, Syria, Poland, Laos, Morocco, India, Bosnia and Herzegovina, Libya, France, Serbia. Extends forward review coverage.
+
+- Record 0107: cumulative forward round 18: 12/12 correct, including Vientiane/Belgrade. Pending cumulative mixed forward round 19: Cabo Verde, Switzerland, Iran, Angola, Cyprus, Costa Rica, Türkiye, Côte d’Ivoire (political capital), Slovenia, Qatar, Vatican City, Chile. Rechecks Praia and extends forward coverage.
+
+- Record 0108: cumulative forward round 19 all 12 identified, 11 spelled correctly; “amoussoukro” → Yamoussoukro (initial Y missing). Praia held. Pending focused spelling retry: Côte d’Ivoire (political capital) after hiding correction. Then continue remaining forward coverage.
+
+- Record 0109: Yamoussoukro correctly spelled immediately after correction. Recheck later. Pending cumulative mixed forward round 20: Estonia, Mauritania, Tuvalu, Burkina Faso, Sri Lanka (legislative capital), Republic of the Congo, Singapore, Yemen (UNData capital), Burundi, State of Palestine (claimed capital), South Africa (judicial capital), Monaco.
+
+- Record 0110: cumulative round 20: 10/12 fully correct; recognizable but misspelled Sri Jayewardenepura Kotte (“sri jayewardenarana kotte”) and Bloemfontein (“blaumfontein”). Pending focused retry: South Africa (judicial), Sri Lanka (legislative) after hiding corrections. Recheck Yamoussoukro later.
+
+- Record 0111: Bloemfontein/Sri Jayewardenepura Kotte immediate correction drill 2/2 correct. Recheck later. Pending cumulative mixed forward round 21: Côte d’Ivoire (political capital), Papua New Guinea, Democratic Republic of the Congo, Israel (declared capital), Malaysia (administrative capital), Tanzania, Philippines, Saint Lucia, Malawi, Palau, Gambia, Benin (constitutional capital). Rechecks Yamoussoukro.
+
+- Record 0112: cumulative round 21: 11/12 correct; Tanzania “dolome” → Dodoma (Do · do · ma). Yamoussoukro held. Pending focused retry: Tanzania after hiding correction. Sri Jayewardenepura Kotte/Bloemfontein due for later uncued recheck.
+
+- Record 0113: Dodoma correct immediately after correction; recheck later. Pending cumulative mixed forward round 22: Sri Lanka (legislative capital), Botswana, South Africa (judicial capital), Guinea, Brunei, Sierra Leone, Solomon Islands, Cabo Verde, Comoros, Myanmar, Federated States of Micronesia, Fiji. Rechecks recent corrections.

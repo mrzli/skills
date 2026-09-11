@@ -1,0 +1,1032 @@
+{
+  "number": "world-review",
+  "items": [
+    {
+      "country": "Norway",
+      "capital": "Oslo"
+    },
+    {
+      "country": "Sweden",
+      "capital": "Stockholm"
+    },
+    {
+      "country": "Finland",
+      "capital": "Helsinki"
+    },
+    {
+      "country": "Denmark",
+      "capital": "Copenhagen"
+    },
+    {
+      "country": "Iceland",
+      "capital": "Reykjavík"
+    },
+    {
+      "country": "Estonia",
+      "capital": "Tallinn"
+    },
+    {
+      "country": "Latvia",
+      "capital": "Riga"
+    },
+    {
+      "country": "Lithuania",
+      "capital": "Vilnius"
+    },
+    {
+      "country": "Poland",
+      "capital": "Warsaw"
+    },
+    {
+      "country": "Czechia",
+      "capital": "Prague"
+    },
+    {
+      "country": "Slovakia",
+      "capital": "Bratislava"
+    },
+    {
+      "country": "Austria",
+      "capital": "Vienna"
+    },
+    {
+      "country": "Hungary",
+      "capital": "Budapest"
+    },
+    {
+      "country": "France",
+      "capital": "Paris"
+    },
+    {
+      "country": "Belgium",
+      "capital": "Brussels"
+    },
+    {
+      "country": "Netherlands",
+      "capital": "Amsterdam"
+    },
+    {
+      "country": "Luxembourg",
+      "capital": "Luxembourg",
+      "aliases": [
+        "Luxembourg City"
+      ]
+    },
+    {
+      "country": "Germany",
+      "capital": "Berlin"
+    },
+    {
+      "country": "Spain",
+      "capital": "Madrid"
+    },
+    {
+      "country": "Portugal",
+      "capital": "Lisbon"
+    },
+    {
+      "country": "Andorra",
+      "capital": "Andorra la Vella"
+    },
+    {
+      "country": "United Kingdom",
+      "capital": "London"
+    },
+    {
+      "country": "Ireland",
+      "capital": "Dublin"
+    },
+    {
+      "country": "Italy",
+      "capital": "Rome"
+    },
+    {
+      "country": "San Marino",
+      "capital": "San Marino"
+    },
+    {
+      "country": "Vatican City",
+      "capital": "Vatican City"
+    },
+    {
+      "country": "Malta",
+      "capital": "Valletta"
+    },
+    {
+      "country": "Switzerland",
+      "capital": "Bern",
+      "aliases": [
+        "Berne"
+      ]
+    },
+    {
+      "country": "Liechtenstein",
+      "capital": "Vaduz"
+    },
+    {
+      "country": "Slovenia",
+      "capital": "Ljubljana"
+    },
+    {
+      "country": "Croatia",
+      "capital": "Zagreb"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "capital": "Sarajevo"
+    },
+    {
+      "country": "Serbia",
+      "capital": "Belgrade"
+    },
+    {
+      "country": "Montenegro",
+      "capital": "Podgorica"
+    },
+    {
+      "country": "Albania",
+      "capital": "Tirana"
+    },
+    {
+      "country": "North Macedonia",
+      "capital": "Skopje"
+    },
+    {
+      "country": "Bulgaria",
+      "capital": "Sofia"
+    },
+    {
+      "country": "Romania",
+      "capital": "Bucharest"
+    },
+    {
+      "country": "Greece",
+      "capital": "Athens"
+    },
+    {
+      "country": "Belarus",
+      "capital": "Minsk",
+      "source": "https://data.un.org/en/iso/by.html"
+    },
+    {
+      "country": "Ukraine",
+      "capital": "Kyiv",
+      "source": "https://data.un.org/en/iso/ua.html"
+    },
+    {
+      "country": "Moldova",
+      "capital": "Chișinău",
+      "source": "https://data.un.org/en/iso/md.html"
+    },
+    {
+      "country": "Russia",
+      "capital": "Moscow",
+      "source": "https://data.un.org/en/iso/ru.html"
+    },
+    {
+      "country": "Türkiye",
+      "capital": "Ankara",
+      "source": "https://data.un.org/en/iso/tr.html"
+    },
+    {
+      "country": "Cyprus",
+      "capital": "Nicosia",
+      "source": "https://data.un.org/en/iso/cy.html"
+    },
+    {
+      "country": "Georgia",
+      "capital": "Tbilisi",
+      "source": "https://data.un.org/en/iso/ge.html"
+    },
+    {
+      "country": "Armenia",
+      "capital": "Yerevan",
+      "source": "https://data.un.org/en/iso/am.html"
+    },
+    {
+      "country": "Azerbaijan",
+      "capital": "Baku",
+      "source": "https://data.un.org/en/iso/az.html"
+    },
+    {
+      "country": "Kazakhstan",
+      "capital": "Astana",
+      "source": "https://data.un.org/en/iso/kz.html"
+    },
+    {
+      "country": "Egypt",
+      "capital": "Cairo",
+      "source": "https://data.un.org/en/iso/eg.html"
+    },
+    {
+      "country": "Jordan",
+      "capital": "Amman",
+      "source": "https://data.un.org/en/iso/jo.html"
+    },
+    {
+      "country": "Lebanon",
+      "capital": "Beirut",
+      "source": "https://data.un.org/en/iso/lb.html"
+    },
+    {
+      "country": "Syria",
+      "capital": "Damascus",
+      "source": "https://data.un.org/en/iso/sy.html"
+    },
+    {
+      "country": "Iraq",
+      "capital": "Baghdad",
+      "source": "https://data.un.org/en/iso/iq.html"
+    },
+    {
+      "country": "Iran",
+      "capital": "Tehran",
+      "source": "https://data.un.org/en/iso/ir.html"
+    },
+    {
+      "country": "Saudi Arabia",
+      "capital": "Riyadh",
+      "source": "https://data.un.org/en/iso/sa.html"
+    },
+    {
+      "country": "Kuwait",
+      "capital": "Kuwait City",
+      "source": "https://data.un.org/en/iso/kw.html"
+    },
+    {
+      "country": "Bahrain",
+      "capital": "Manama",
+      "source": "https://data.un.org/en/iso/bh.html"
+    },
+    {
+      "country": "Qatar",
+      "capital": "Doha",
+      "source": "https://data.un.org/en/iso/qa.html"
+    },
+    {
+      "country": "Turkmenistan",
+      "capital": "Ashgabat",
+      "source": "https://data.un.org/en/iso/tm.html"
+    },
+    {
+      "country": "Uzbekistan",
+      "capital": "Tashkent",
+      "source": "https://data.un.org/en/iso/uz.html"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "capital": "Bishkek",
+      "source": "https://data.un.org/en/iso/kg.html"
+    },
+    {
+      "country": "Tajikistan",
+      "capital": "Dushanbe",
+      "source": "https://data.un.org/en/iso/tj.html"
+    },
+    {
+      "country": "Afghanistan",
+      "capital": "Kabul",
+      "source": "https://data.un.org/en/iso/af.html"
+    },
+    {
+      "country": "Pakistan",
+      "capital": "Islamabad",
+      "source": "https://data.un.org/en/iso/pk.html"
+    },
+    {
+      "country": "India",
+      "capital": "New Delhi",
+      "source": "https://data.un.org/en/iso/in.html"
+    },
+    {
+      "country": "Nepal",
+      "capital": "Kathmandu",
+      "source": "https://data.un.org/en/iso/np.html"
+    },
+    {
+      "country": "Bhutan",
+      "capital": "Thimphu",
+      "source": "https://data.un.org/en/iso/bt.html"
+    },
+    {
+      "country": "Bangladesh",
+      "capital": "Dhaka",
+      "source": "https://data.un.org/en/iso/bd.html"
+    },
+    {
+      "country": "China",
+      "capital": "Beijing",
+      "source": "https://data.un.org/en/iso/cn.html"
+    },
+    {
+      "country": "Mongolia",
+      "capital": "Ulaanbaatar",
+      "source": "https://data.un.org/en/iso/mn.html",
+      "aliases": [
+        "Ulan Bator"
+      ]
+    },
+    {
+      "country": "Japan",
+      "capital": "Tokyo",
+      "source": "https://data.un.org/en/iso/jp.html"
+    },
+    {
+      "country": "North Korea",
+      "capital": "Pyongyang",
+      "source": "https://data.un.org/en/iso/kp.html"
+    },
+    {
+      "country": "South Korea",
+      "capital": "Seoul",
+      "source": "https://data.un.org/en/iso/kr.html"
+    },
+    {
+      "country": "Vietnam",
+      "capital": "Hanoi",
+      "source": "https://data.un.org/en/iso/vn.html"
+    },
+    {
+      "country": "Laos",
+      "capital": "Vientiane",
+      "source": "https://data.un.org/en/iso/la.html"
+    },
+    {
+      "country": "Cambodia",
+      "capital": "Phnom Penh",
+      "source": "https://data.un.org/en/iso/kh.html"
+    },
+    {
+      "country": "Thailand",
+      "capital": "Bangkok",
+      "source": "https://data.un.org/en/iso/th.html"
+    },
+    {
+      "country": "Myanmar",
+      "capital": "Nay Pyi Taw",
+      "source": "https://data.un.org/en/iso/mm.html",
+      "aliases": [
+        "Naypyidaw",
+        "Nay Pyi Daw",
+        "Naypyitaw"
+      ]
+    },
+    {
+      "country": "Australia",
+      "capital": "Canberra",
+      "source": "https://data.un.org/en/iso/au.html"
+    },
+    {
+      "country": "New Zealand",
+      "capital": "Wellington",
+      "source": "https://data.un.org/en/iso/nz.html"
+    },
+    {
+      "country": "Papua New Guinea",
+      "capital": "Port Moresby",
+      "source": "https://data.un.org/en/iso/pg.html"
+    },
+    {
+      "country": "Fiji",
+      "capital": "Suva",
+      "source": "https://data.un.org/en/iso/fj.html"
+    },
+    {
+      "country": "Solomon Islands",
+      "capital": "Honiara",
+      "source": "https://data.un.org/en/iso/sb.html"
+    },
+    {
+      "country": "Vanuatu",
+      "capital": "Port Vila",
+      "source": "https://data.un.org/en/iso/vu.html"
+    },
+    {
+      "country": "Samoa",
+      "capital": "Apia",
+      "source": "https://data.un.org/en/iso/ws.html"
+    },
+    {
+      "country": "Tonga",
+      "capital": "Nuku'alofa",
+      "source": "https://data.un.org/en/iso/to.html",
+      "aliases": [
+        "Nukualofa",
+        "Nuku’alofa",
+        "Nukuʻalofa"
+      ]
+    },
+    {
+      "country": "Tuvalu",
+      "capital": "Funafuti",
+      "source": "https://data.un.org/en/iso/tv.html"
+    },
+    {
+      "country": "Palau",
+      "capital": "Ngerulmud",
+      "source": "https://www.dfat.gov.au/sites/default/files/our-indo-pacific-community-3-4-country-fact-files.pdf"
+    },
+    {
+      "country": "Canada",
+      "capital": "Ottawa",
+      "source": "https://data.un.org/en/iso/ca.html"
+    },
+    {
+      "country": "United States",
+      "capital": "Washington, D.C.",
+      "source": "https://data.un.org/en/iso/us.html",
+      "aliases": [
+        "Washington DC",
+        "Washington D.C.",
+        "Washington, DC",
+        "Washington"
+      ]
+    },
+    {
+      "country": "Mexico",
+      "capital": "Mexico City",
+      "source": "https://data.un.org/en/iso/mx.html"
+    },
+    {
+      "country": "Guatemala",
+      "capital": "Guatemala City",
+      "source": "https://data.un.org/en/iso/gt.html"
+    },
+    {
+      "country": "Belize",
+      "capital": "Belmopan",
+      "source": "https://data.un.org/en/iso/bz.html"
+    },
+    {
+      "country": "Honduras",
+      "capital": "Tegucigalpa",
+      "source": "https://data.un.org/en/iso/hn.html"
+    },
+    {
+      "country": "El Salvador",
+      "capital": "San Salvador",
+      "source": "https://data.un.org/en/iso/sv.html"
+    },
+    {
+      "country": "Nicaragua",
+      "capital": "Managua",
+      "source": "https://data.un.org/en/iso/ni.html"
+    },
+    {
+      "country": "Costa Rica",
+      "capital": "San José",
+      "source": "https://data.un.org/en/iso/cr.html"
+    },
+    {
+      "country": "Panama",
+      "capital": "Panama City",
+      "source": "https://data.un.org/en/iso/pa.html"
+    },
+    {
+      "country": "Cuba",
+      "capital": "Havana",
+      "source": "https://data.un.org/en/iso/cu.html"
+    },
+    {
+      "country": "Haiti",
+      "capital": "Port-au-Prince",
+      "source": "https://data.un.org/en/iso/ht.html",
+      "aliases": [
+        "Port au Prince"
+      ]
+    },
+    {
+      "country": "Dominican Republic",
+      "capital": "Santo Domingo",
+      "source": "https://data.un.org/en/iso/do.html"
+    },
+    {
+      "country": "Jamaica",
+      "capital": "Kingston",
+      "source": "https://data.un.org/en/iso/jm.html"
+    },
+    {
+      "country": "Bahamas",
+      "capital": "Nassau",
+      "source": "https://data.un.org/en/iso/bs.html"
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "capital": "Saint John's",
+      "source": "https://data.un.org/en/iso/ag.html",
+      "aliases": [
+        "St. John's",
+        "St John's",
+        "Saint Johns",
+        "St Johns",
+        "Saint John’s",
+        "St. John’s"
+      ]
+    },
+    {
+      "country": "Dominica",
+      "capital": "Roseau",
+      "source": "https://data.un.org/en/iso/dm.html"
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "capital": "Basseterre",
+      "source": "https://data.un.org/en/iso/kn.html"
+    },
+    {
+      "country": "Saint Lucia",
+      "capital": "Castries",
+      "source": "https://data.un.org/en/iso/lc.html"
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "capital": "Kingstown",
+      "source": "https://data.un.org/en/iso/vc.html"
+    },
+    {
+      "country": "Barbados",
+      "capital": "Bridgetown",
+      "source": "https://data.un.org/en/iso/bb.html"
+    },
+    {
+      "country": "Grenada",
+      "capital": "Saint George's",
+      "source": "https://data.un.org/en/iso/gd.html",
+      "aliases": [
+        "St. George's",
+        "St George's",
+        "Saint Georges",
+        "St Georges",
+        "Saint George’s",
+        "St. George’s"
+      ]
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "capital": "Port of Spain",
+      "source": "https://data.un.org/en/iso/tt.html"
+    },
+    {
+      "country": "Argentina",
+      "capital": "Buenos Aires",
+      "source": "https://data.un.org/en/iso/ar.html"
+    },
+    {
+      "country": "Bolivia",
+      "capital": "Sucre",
+      "source": "https://data.un.org/en/iso/bo.html"
+    },
+    {
+      "country": "Brazil",
+      "capital": "Brasília",
+      "source": "https://data.un.org/en/iso/br.html"
+    },
+    {
+      "country": "Chile",
+      "capital": "Santiago",
+      "source": "https://data.un.org/en/iso/cl.html"
+    },
+    {
+      "country": "Colombia",
+      "capital": "Bogotá",
+      "source": "https://data.un.org/en/iso/co.html"
+    },
+    {
+      "country": "Ecuador",
+      "capital": "Quito",
+      "source": "https://data.un.org/en/iso/ec.html"
+    },
+    {
+      "country": "Guyana",
+      "capital": "Georgetown",
+      "source": "https://data.un.org/en/iso/gy.html"
+    },
+    {
+      "country": "Paraguay",
+      "capital": "Asunción",
+      "source": "https://data.un.org/en/iso/py.html"
+    },
+    {
+      "country": "Peru",
+      "capital": "Lima",
+      "source": "https://data.un.org/en/iso/pe.html"
+    },
+    {
+      "country": "Suriname",
+      "capital": "Paramaribo",
+      "source": "https://data.un.org/en/iso/sr.html"
+    },
+    {
+      "country": "Uruguay",
+      "capital": "Montevideo",
+      "source": "https://data.un.org/en/iso/uy.html"
+    },
+    {
+      "country": "Venezuela",
+      "capital": "Caracas",
+      "source": "https://data.un.org/en/iso/ve.html"
+    },
+    {
+      "country": "Morocco",
+      "capital": "Rabat",
+      "source": "https://data.un.org/en/iso/ma.html"
+    },
+    {
+      "country": "Algeria",
+      "capital": "Algiers",
+      "source": "https://data.un.org/en/iso/dz.html"
+    },
+    {
+      "country": "Tunisia",
+      "capital": "Tunis",
+      "source": "https://data.un.org/en/iso/tn.html"
+    },
+    {
+      "country": "Libya",
+      "capital": "Tripoli",
+      "source": "https://data.un.org/en/iso/ly.html"
+    },
+    {
+      "country": "Mauritania",
+      "capital": "Nouakchott",
+      "source": "https://data.un.org/en/iso/mr.html"
+    },
+    {
+      "country": "Senegal",
+      "capital": "Dakar",
+      "source": "https://data.un.org/en/iso/sn.html"
+    },
+    {
+      "country": "Gambia",
+      "capital": "Banjul",
+      "source": "https://data.un.org/en/iso/gm.html"
+    },
+    {
+      "country": "Guinea-Bissau",
+      "capital": "Bissau",
+      "source": "https://data.un.org/en/iso/gw.html"
+    },
+    {
+      "country": "Guinea",
+      "capital": "Conakry",
+      "source": "https://data.un.org/en/iso/gn.html"
+    },
+    {
+      "country": "Sierra Leone",
+      "capital": "Freetown",
+      "source": "https://data.un.org/en/iso/sl.html"
+    },
+    {
+      "country": "Liberia",
+      "capital": "Monrovia",
+      "source": "https://data.un.org/en/iso/lr.html"
+    },
+    {
+      "country": "Cabo Verde",
+      "capital": "Praia",
+      "source": "https://data.un.org/en/iso/cv.html"
+    },
+    {
+      "country": "Mali",
+      "capital": "Bamako",
+      "source": "https://data.un.org/en/iso/ml.html"
+    },
+    {
+      "country": "Burkina Faso",
+      "capital": "Ouagadougou",
+      "source": "https://data.un.org/en/iso/bf.html"
+    },
+    {
+      "country": "Niger",
+      "capital": "Niamey",
+      "source": "https://data.un.org/en/iso/ne.html"
+    },
+    {
+      "country": "Nigeria",
+      "capital": "Abuja",
+      "source": "https://data.un.org/en/iso/ng.html"
+    },
+    {
+      "country": "Ghana",
+      "capital": "Accra",
+      "source": "https://data.un.org/en/iso/gh.html"
+    },
+    {
+      "country": "Togo",
+      "capital": "Lomé",
+      "source": "https://data.un.org/en/iso/tg.html"
+    },
+    {
+      "country": "Benin",
+      "capital": "Porto-Novo",
+      "source": "https://data.un.org/en/iso/bj.html",
+      "aliases": [
+        "Porto Novo"
+      ]
+    },
+    {
+      "country": "Côte d’Ivoire",
+      "capital": "Yamoussoukro",
+      "source": "https://data.un.org/en/iso/ci.html"
+    },
+    {
+      "country": "Cameroon",
+      "capital": "Yaoundé",
+      "source": "https://data.un.org/en/iso/cm.html"
+    },
+    {
+      "country": "Chad",
+      "capital": "N'Djamena",
+      "source": "https://data.un.org/en/iso/td.html",
+      "aliases": [
+        "Ndjamena",
+        "N’Djamena",
+        "N Djamena"
+      ]
+    },
+    {
+      "country": "Central African Republic",
+      "capital": "Bangui",
+      "source": "https://data.un.org/en/iso/cf.html"
+    },
+    {
+      "country": "Gabon",
+      "capital": "Libreville",
+      "source": "https://data.un.org/en/iso/ga.html"
+    },
+    {
+      "country": "Sudan",
+      "capital": "Khartoum",
+      "source": "https://data.un.org/en/iso/sd.html"
+    },
+    {
+      "country": "South Sudan",
+      "capital": "Juba",
+      "source": "https://data.un.org/en/iso/ss.html"
+    },
+    {
+      "country": "Eritrea",
+      "capital": "Asmara",
+      "source": "https://data.un.org/en/iso/er.html"
+    },
+    {
+      "country": "Djibouti",
+      "capital": "Djibouti",
+      "source": "https://data.un.org/en/iso/dj.html",
+      "aliases": [
+        "Djibouti City"
+      ]
+    },
+    {
+      "country": "Ethiopia",
+      "capital": "Addis Ababa",
+      "source": "https://data.un.org/en/iso/et.html"
+    },
+    {
+      "country": "Somalia",
+      "capital": "Mogadishu",
+      "source": "https://data.un.org/en/iso/so.html"
+    },
+    {
+      "country": "Kenya",
+      "capital": "Nairobi",
+      "source": "https://data.un.org/en/iso/ke.html"
+    },
+    {
+      "country": "Uganda",
+      "capital": "Kampala",
+      "source": "https://data.un.org/en/iso/ug.html"
+    },
+    {
+      "country": "Rwanda",
+      "capital": "Kigali",
+      "source": "https://data.un.org/en/iso/rw.html"
+    },
+    {
+      "country": "Burundi",
+      "capital": "Gitega",
+      "source": "https://data.un.org/en/iso/bi.html"
+    },
+    {
+      "country": "Tanzania",
+      "capital": "Dodoma",
+      "source": "https://data.un.org/en/iso/tz.html"
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "capital": "Kinshasa",
+      "source": "https://data.un.org/en/iso/cd.html"
+    },
+    {
+      "country": "Angola",
+      "capital": "Luanda",
+      "source": "https://data.un.org/en/iso/ao.html"
+    },
+    {
+      "country": "Zambia",
+      "capital": "Lusaka",
+      "source": "https://data.un.org/en/iso/zm.html"
+    },
+    {
+      "country": "Malawi",
+      "capital": "Lilongwe",
+      "source": "https://data.un.org/en/iso/mw.html"
+    },
+    {
+      "country": "Mozambique",
+      "capital": "Maputo",
+      "source": "https://data.un.org/en/iso/mz.html"
+    },
+    {
+      "country": "Zimbabwe",
+      "capital": "Harare",
+      "source": "https://data.un.org/en/iso/zw.html"
+    },
+    {
+      "country": "Botswana",
+      "capital": "Gaborone",
+      "source": "https://data.un.org/en/iso/bw.html"
+    },
+    {
+      "country": "Namibia",
+      "capital": "Windhoek",
+      "source": "https://data.un.org/en/iso/na.html"
+    },
+    {
+      "country": "South Africa (administrative capital)",
+      "capital": "Pretoria",
+      "source": "https://data.un.org/en/iso/za.html"
+    },
+    {
+      "country": "South Africa (legislative capital)",
+      "capital": "Cape Town",
+      "source": "https://data.un.org/en/iso/za.html"
+    },
+    {
+      "country": "South Africa (judicial capital)",
+      "capital": "Bloemfontein",
+      "source": "https://data.un.org/en/iso/za.html"
+    },
+    {
+      "country": "Lesotho",
+      "capital": "Maseru",
+      "source": "https://data.un.org/en/iso/ls.html"
+    },
+    {
+      "country": "Eswatini (administrative capital)",
+      "capital": "Mbabane",
+      "source": "https://data.un.org/en/iso/sz.html"
+    },
+    {
+      "country": "Eswatini (legislative capital)",
+      "capital": "Lobamba",
+      "source": "https://data.un.org/en/iso/sz.html"
+    },
+    {
+      "country": "Madagascar",
+      "capital": "Antananarivo",
+      "source": "https://data.un.org/en/iso/mg.html"
+    },
+    {
+      "country": "Mauritius",
+      "capital": "Port Louis",
+      "source": "https://data.un.org/en/iso/mu.html"
+    },
+    {
+      "country": "Seychelles",
+      "capital": "Victoria",
+      "source": "https://data.un.org/en/iso/sc.html"
+    },
+    {
+      "country": "Comoros",
+      "capital": "Moroni",
+      "source": "https://data.un.org/en/iso/km.html"
+    },
+    {
+      "country": "São Tomé and Príncipe",
+      "capital": "São Tomé",
+      "source": "https://data.un.org/en/iso/st.html"
+    },
+    {
+      "country": "Republic of the Congo",
+      "capital": "Brazzaville",
+      "source": "https://data.un.org/en/iso/cg.html"
+    },
+    {
+      "country": "Equatorial Guinea",
+      "capital": "Ciudad de la Paz",
+      "source": "https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial"
+    },
+    {
+      "country": "Sri Lanka (legislative capital)",
+      "capital": "Sri Jayewardenepura Kotte",
+      "source": "https://data.un.org/en/iso/lk.html",
+      "aliases": [
+        "Sri Jayawardenepura Kotte",
+        "Kotte"
+      ]
+    },
+    {
+      "country": "Maldives",
+      "capital": "Malé",
+      "source": "https://data.un.org/en/iso/mv.html"
+    },
+    {
+      "country": "Malaysia (national capital)",
+      "capital": "Kuala Lumpur",
+      "source": "https://data.un.org/en/iso/my.html"
+    },
+    {
+      "country": "Malaysia (administrative capital)",
+      "capital": "Putrajaya",
+      "source": "https://data.un.org/en/iso/my.html"
+    },
+    {
+      "country": "Singapore",
+      "capital": "Singapore",
+      "source": "https://data.un.org/en/iso/sg.html"
+    },
+    {
+      "country": "Brunei",
+      "capital": "Bandar Seri Begawan",
+      "source": "https://data.un.org/en/iso/bn.html"
+    },
+    {
+      "country": "Indonesia",
+      "capital": "Jakarta",
+      "source": "https://data.un.org/en/iso/id.html"
+    },
+    {
+      "country": "Philippines",
+      "capital": "Manila",
+      "source": "https://data.un.org/en/iso/ph.html"
+    },
+    {
+      "country": "Timor-Leste",
+      "capital": "Dili",
+      "source": "https://data.un.org/en/iso/tl.html"
+    },
+    {
+      "country": "Kiribati",
+      "capital": "South Tarawa",
+      "aliases": [
+        "Tarawa",
+        "Bairiki"
+      ],
+      "source": "https://www.mfed.gov.ki/node/43"
+    },
+    {
+      "country": "Marshall Islands",
+      "capital": "Majuro",
+      "source": "https://data.un.org/en/iso/mh.html"
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "capital": "Palikir",
+      "source": "https://data.un.org/en/iso/fm.html"
+    },
+    {
+      "country": "Nauru (seat of government)",
+      "capital": "Yaren",
+      "aliases": [
+        "Yaren District"
+      ],
+      "source": "https://cove.army.gov.au/kyr/nauru"
+    },
+    {
+      "country": "United Arab Emirates",
+      "capital": "Abu Dhabi",
+      "source": "https://data.un.org/en/iso/ae.html"
+    },
+    {
+      "country": "Oman",
+      "capital": "Muscat",
+      "source": "https://data.un.org/en/iso/om.html"
+    },
+    {
+      "country": "Yemen (capital listed by UNData)",
+      "capital": "Sana'a",
+      "source": "https://data.un.org/en/iso/ye.html",
+      "aliases": [
+        "Sanaa",
+        "Sana’a",
+        "Sana"
+      ]
+    },
+    {
+      "country": "Israel (declared capital)",
+      "capital": "Jerusalem",
+      "source": "https://data.un.org/en/iso/il.html"
+    },
+    {
+      "country": "State of Palestine (claimed capital)",
+      "capital": "East Jerusalem",
+      "source": "https://data.un.org/en/iso/ps.html"
+    },
+    {
+      "country": "Monaco",
+      "capital": "Monaco",
+      "source": "https://data.un.org/en/iso/mc.html"
+    }
+  ]
+}

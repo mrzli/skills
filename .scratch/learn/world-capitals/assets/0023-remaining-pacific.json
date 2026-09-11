@@ -1,0 +1,32 @@
+{
+  "number": "0023",
+  "items": [
+    {
+      "country": "Kiribati",
+      "capital": "South Tarawa",
+      "aliases": [
+        "Tarawa",
+        "Bairiki"
+      ],
+      "source": "https://www.mfed.gov.ki/node/43"
+    },
+    {
+      "country": "Marshall Islands",
+      "capital": "Majuro",
+      "source": "https://data.un.org/en/iso/mh.html"
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "capital": "Palikir",
+      "source": "https://data.un.org/en/iso/fm.html"
+    },
+    {
+      "country": "Nauru (seat of government)",
+      "capital": "Yaren",
+      "aliases": [
+        "Yaren District"
+      ],
+      "source": "https://cove.army.gov.au/kyr/nauru"
+    }
+  ]
+}

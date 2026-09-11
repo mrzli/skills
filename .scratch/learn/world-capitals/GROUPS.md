@@ -72,8 +72,36 @@ Morocco, Algeria, Tunisia, Libya, Mauritania, Senegal, Gambia, Guinea-Bissau, Gu
 
 Forward and reverse recall: 12/12 correct each. Total: 136 pairs demonstrated both ways, including earlier corrections. Mixed review pending (record 0042).
 
-## Current batch: 0018 — West and Central Africa, set 2 (12)
+## Completed batch: 0018 — West and Central Africa, set 2 (12)
 
 Mali, Burkina Faso, Niger, Nigeria, Ghana, Togo, Benin, Côte d’Ivoire, Cameroon, Chad, Central African Republic, Gabon.
 
-Recall unassessed.
+Forward: 12/12 correct. Reverse: all twelve identified, one spelling correction to Côte d’Ivoire. Historical total: 148 pairs demonstrated both ways, including corrections. Mixed review pending (record 0052).
+
+## Completed batch: 0019 — East Africa and the Great Lakes (12)
+
+Sudan, South Sudan, Eritrea, Djibouti, Ethiopia, Somalia, Kenya, Uganda, Rwanda, Burundi, Tanzania, Democratic Republic of the Congo.
+
+Forward recall: 12/12 correct, including spelling. Reverse: all twelve identified, with DR Congo clarified after an ambiguous “congo” answer (record 0059). Historical total: 160 pairs demonstrated both ways. Mixed review pending. This study group includes Sudan and DR Congo alongside East African countries.
+
+## Completed batch: 0020 — Southern Africa (10 countries, 13 capital-role pairs)
+
+Angola, Zambia, Malawi, Mozambique, Zimbabwe, Botswana, Namibia, South Africa, Lesotho, Eswatini. Includes all three conventional South African capitals and both Eswatini capitals, with roles. Forward: all 13 associations identified, 12 spelled correctly; Windhoek correction supplied. Reverse: 10/13 initially correct, all capital roles correct; Lesotho and Angola/Zambia subsequently correct in immediate correction drill (record 0065). Historical coverage: 170 countries/173 capital-role pairs demonstrated both ways. Mixed recall pending.
+
+## Completed batch: 0021 — African islands and Central Africa (7)
+
+Madagascar, Mauritius, Seychelles, Comoros, São Tomé and Príncipe, Republic of the Congo, Equatorial Guinea.
+
+Forward and reverse recall: 7/7 correct each, accepting accents omitted and R Congo for Republic of the Congo. All 54 African UN member countries demonstrated both ways, including earlier corrections. Historical coverage: 177 countries/180 capital-role pairs. Mixed review pending (record 0071).
+
+## Completed batch: 0022 — South and Southeast Asia (8 countries, 9 tested capital-role pairs)
+
+Sri Lanka, Maldives, Malaysia, Singapore, Brunei, Indonesia, Philippines, Timor-Leste. Malaysia includes national and administrative capitals; Sri Lanka asks for legislative capital. Forward: all 9 associations identified, 8 spelled correctly; Bandar Seri Begawan correction supplied. Reverse: all 9 correct including roles; Philippines spelling corrected (record 0074). Historical coverage: 185 countries/189 tested capital-role pairs demonstrated both ways. Mixed review pending.
+
+## Completed batch: 0023 — Remaining Pacific countries (4)
+
+Kiribati, Marshall Islands, Federated States of Micronesia, Nauru. Nauru asks for seat of government. Forward and reverse: 4/4 correct each (record 0077).
+
+## Completed batch: 0024 — Western Asia plus Monaco (6)
+
+United Arab Emirates, Oman, Yemen, Israel, State of Palestine, Monaco. Monaco fills an earlier Europe omission. Capital status distinctions explained in lesson. Forward and reverse: 6/6 correct each (record 0079). All 24 lessons complete; cumulative mixed review now active. See COVERAGE.md.

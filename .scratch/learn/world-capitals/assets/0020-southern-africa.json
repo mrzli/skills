@@ -1,0 +1,70 @@
+{
+  "number": "0020",
+  "items": [
+    {
+      "country": "Angola",
+      "capital": "Luanda",
+      "source": "https://data.un.org/en/iso/ao.html"
+    },
+    {
+      "country": "Zambia",
+      "capital": "Lusaka",
+      "source": "https://data.un.org/en/iso/zm.html"
+    },
+    {
+      "country": "Malawi",
+      "capital": "Lilongwe",
+      "source": "https://data.un.org/en/iso/mw.html"
+    },
+    {
+      "country": "Mozambique",
+      "capital": "Maputo",
+      "source": "https://data.un.org/en/iso/mz.html"
+    },
+    {
+      "country": "Zimbabwe",
+      "capital": "Harare",
+      "source": "https://data.un.org/en/iso/zw.html"
+    },
+    {
+      "country": "Botswana",
+      "capital": "Gaborone",
+      "source": "https://data.un.org/en/iso/bw.html"
+    },
+    {
+      "country": "Namibia",
+      "capital": "Windhoek",
+      "source": "https://data.un.org/en/iso/na.html"
+    },
+    {
+      "country": "South Africa (administrative capital)",
+      "capital": "Pretoria",
+      "source": "https://data.un.org/en/iso/za.html"
+    },
+    {
+      "country": "South Africa (legislative capital)",
+      "capital": "Cape Town",
+      "source": "https://data.un.org/en/iso/za.html"
+    },
+    {
+      "country": "South Africa (judicial capital)",
+      "capital": "Bloemfontein",
+      "source": "https://data.un.org/en/iso/za.html"
+    },
+    {
+      "country": "Lesotho",
+      "capital": "Maseru",
+      "source": "https://data.un.org/en/iso/ls.html"
+    },
+    {
+      "country": "Eswatini (administrative capital)",
+      "capital": "Mbabane",
+      "source": "https://data.un.org/en/iso/sz.html"
+    },
+    {
+      "country": "Eswatini (legislative capital)",
+      "capital": "Lobamba",
+      "source": "https://data.un.org/en/iso/sz.html"
+    }
+  ]
+}
