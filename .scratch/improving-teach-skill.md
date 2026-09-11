@@ -6,7 +6,9 @@ Remaining proposals from our discussion. Remove items once implemented in `teach
 
 The active [teach skill](../.agents/skills/teach/SKILL.md) creates or resumes a learning workspace in `.scratch/learn/<lesson-slug>`. It uses `MISSION.md`, `RESOURCES.md`, learning records, HTML lessons and references, shared assets, a glossary, and notes.
 
-The [experimental design](../experimental/skills/teach/SKILL.md) adds a learning map, a progress checkpoint, and an explicit activity flow. That flow is incomplete. The remaining notes below concern this design and possible future work, not additional requirements for the active skill. Try the active skill on a learning task before adding structure.
+The [experimental design](../experimental/skills/teach/SKILL.md) adds a learning map, a progress checkpoint, and an explicit activity flow. That flow is incomplete. The remaining notes below concern this design and possible future work, not additional requirements for the active skill.
+
+The [world-capitals workspace](learn/world-capitals/NOTES.md) now provides a practical trial: 24 lessons, shared quiz assets, references, and learning records through 0113. Its [coverage audit](learn/world-capitals/COVERAGE.md) records 195 countries and 199 tested pairs, including capital roles and government seats. Cumulative review continues, and retention across a known break remains untested. Use this experience to evaluate further structure.
 
 ## Experimental design: remaining work
 
@@ -26,7 +28,7 @@ Proposed relationship: one workspace supports multiple lessons. A lesson may inc
 
 ## Open decisions
 
-1. Decide how HTML exercise results reach the learning records or progress file.
+1. Decide how HTML exercise results reach the learning records or progress file. The world-capitals trial shows copyable results for the user to paste into chat, then the agent records demonstrated knowledge. It does not write browser results directly to workspace files. Decide whether to retain this approach in the experimental design.
 2. Clarify whether lesson independence means no prerequisite knowledge or only no need to open earlier lesson files. The prerequisite map must respect that choice.
 3. When revising the protected TODO section, reconcile `MISSION.md` with `mission.md`, the undefined `GLOSSARY.md` with HTML reference materials, and `Status: superseded by LR-NNNN` with the record template's `status: superseded by ####`. The protected text remains unchanged.
 
@@ -34,4 +36,4 @@ Proposed relationship: one workspace supports multiple lessons. A lesson may inc
 
 Matt Pocock's [teach skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/SKILL.md) informed lesson outcomes, recall, reliable sources, learning records, HTML lessons, references, and shared assets. His [learning-record format](https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/LEARNING-RECORD-FORMAT.md) distinguishes demonstrated learning from exposure and routine activity logs.
 
-The explicit learning map, resume checkpoint, and flexible artifact creation were our proposed adaptations. The immediate use case is learning how skills support software development, beginning with the overall process.
+The explicit learning map, resume checkpoint, and flexible artifact creation were our proposed adaptations. The originally proposed use case was learning how skills support software development, beginning with the overall process. The current repository trial covers world capitals.
