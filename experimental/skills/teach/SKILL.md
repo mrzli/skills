@@ -4,6 +4,8 @@ description: Help the user learn a topic or ability through small explanations, 
 argument-hint: What would you like to learn?
 ---
 
+This experimental skill is unfinished. The activity flow and learning loop below contain unresolved TODOs. The final section preserves design notes pending integration.
+
 ## Name
 
 Create a topic name of one or a few words and derive its kebab-cased form.
@@ -209,7 +211,7 @@ List recommended resources.
 #### Rules
 
 - **Reliable sources.** Prefer primary sources, recognized experts, peer-reviewed work, and communities with strong moderation. Avoid marketing.
-- **Describe entries.** Include a link, a short description of one sentence, and a `Use for: <purpose>.` sentence for each entry.
+- **Describe entries.** Include a link, a one-sentence description, and a `Use for: <purpose>.` sentence for each entry.
 - **Gaps.** Record areas without good resources in a separate `## Gaps` section.
 - **Prune.** Aggressively remove incorrect, outdated, low-quality, or broken resources.
 - **Exclusions.** Record resources the user has excluded in a separate `## Exclusions` section.
@@ -223,7 +225,7 @@ Location: `notes.md`.
 #### Format
 
 ```md
-Notes: <topic-name>
+# Notes: <topic-name>
 
 Add content in any suitable form, including paragraphs and sections.
 ```
@@ -262,7 +264,7 @@ Briefly explain where the user is in the learning process, what they learned pre
 
 Executed after orientation, or when the previous activity is finished.
 
-Recommend the next activity for the user. Recommend a new lesson, practice, or review based on prerequisites, demonstrated understanding, and unresolved gaps.
+Recommend a new lesson, practice, or review based on prerequisites, demonstrated understanding, and unresolved gaps.
 
 Leave the ultimate choice to the user.
 
