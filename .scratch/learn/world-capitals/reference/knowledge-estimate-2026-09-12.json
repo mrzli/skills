@@ -1,0 +1,5313 @@
+{
+  "method": "Estimate as of 12 September 2026, through cumulative round 35. Round 36 is pending and excluded. This is an estimate of demonstrated recall, not general knowledge about a country, a probability, or a retention test after a known break. No self-reported prior knowledge was used.\n\nAll 195 countries were identified in both directions during lessons, sometimes after corrections or omission prompts. This ranking emphasizes the subsequent cumulative tests: 30 forward rounds (360 item attempts) and 5 reverse rounds (60 item attempts). Immediate correction drills do not add successful mixed checks. Accepted spelling variants count as correct; recognizable spelling slips are separated from missing, incomplete or substantially distorted answers.\n\nCountries are sorted by band, then alphabetically, ignoring accents. The strongest band requires repeated clean mixed forward retrieval: at least three consecutive correct answers, or at least two with no cumulative forward errors. The next band includes correctly demonstrated items with fewer confirming checks and items recovering from earlier errors. Name-accuracy cases have a latest spelling slip, or repeated slips without three subsequent clean answers. Fragile cases have a recall gap among their last two forward appearances, even if the latest retry succeeded. These are transparent working rules, not a validated psychometric model. Earlier lesson and review evidence establishes the baseline; country-specific counts below cover cumulative rounds only.\n\nFewer checks means less confidence, not proof of less knowledge. A correct reverse answer does not establish forward retrieval. Multi-capital countries are grouped into one country row; counts span the tested roles. Spelling and actual forgetting should continue to receive different treatment. Recognition of a capital does not imply its disputed status is resolved.\n",
+  "countries": [
+    {
+      "country": "Albania",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Andorra",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Angola",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Armenia",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Azerbaijan",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Bahrain",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        },
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Bangladesh",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Belgium",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        },
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Bhutan",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Burundi",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Cabo Verde",
+      "level": 1,
+      "forward_checks": 5,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 4,
+      "last_error_record": 105,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "miss"
+        },
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Cameroon",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Canada",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Comoros",
+      "level": 1,
+      "forward_checks": 5,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 4,
+      "last_error_record": 85,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "miss"
+        },
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Croatia",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Ecuador",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Eritrea",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Fiji",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 3,
+      "last_error_record": 98,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "miss"
+        },
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Finland",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Gabon",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Georgia",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Ghana",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 4,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Guatemala",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Guinea",
+      "level": 1,
+      "forward_checks": 5,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 2,
+      "consecutive_correct": 3,
+      "last_error_record": 87,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "miss"
+        },
+        {
+          "record": 87,
+          "round": 4,
+          "result": "miss"
+        },
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Guinea-Bissau",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Honduras",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 3,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": 91,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "spelling"
+        },
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Iceland",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Ireland",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Jordan",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Kuwait",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Kyrgyzstan",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Latvia",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Lebanon",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Lesotho",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 4,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Malaysia",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 4,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        },
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "National Kuala Lumpur and administrative Putrajaya both tested."
+    },
+    {
+      "country": "Malta",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Mauritius",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Mongolia",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Namibia",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 4,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Nepal",
+      "level": 1,
+      "forward_checks": 5,
+      "correct": 5,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 5,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Norway",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Oman",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 4,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        },
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Paraguay",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Portugal",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Romania",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Rwanda",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "level": 1,
+      "forward_checks": 5,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 4,
+      "last_error_record": 82,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "miss"
+        },
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Saint Lucia",
+      "level": 1,
+      "forward_checks": 4,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 4,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Samoa",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Sierra Leone",
+      "level": 1,
+      "forward_checks": 5,
+      "correct": 4,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 4,
+      "last_error_record": 87,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "miss"
+        },
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Slovakia",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "South Africa",
+      "level": 1,
+      "forward_checks": 6,
+      "correct": 5,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": 110,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        },
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        },
+        {
+          "record": 110,
+          "round": 20,
+          "result": "spelling"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "All three roles tested. Judicial-capital spelling corrected and subsequently correct repeatedly."
+    },
+    {
+      "country": "South Korea",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Suriname",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Tunisia",
+      "level": 1,
+      "forward_checks": 3,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 3,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Uganda",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Uruguay",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Zambia",
+      "level": 1,
+      "forward_checks": 2,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": null,
+      "evidence": "Repeated correct mixed forward recall; recent answers stable.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Strongest demonstrated recall",
+      "note": "Repeated correct mixed forward recall; recent answers stable."
+    },
+    {
+      "country": "Afghanistan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Algeria",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Argentina",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Australia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Austria",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Bahamas",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Barbados",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Belarus",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Belize",
+      "level": 2,
+      "forward_checks": 4,
+      "correct": 3,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": 120,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "spelling"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Bolivia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Brazil",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Bulgaria",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Burkina Faso",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Cambodia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Central African Republic",
+      "level": 2,
+      "forward_checks": 0,
+      "correct": 0,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 0,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [],
+      "reverse_checks": 3,
+      "reverse_correct": 3,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "No forward attempt in cumulative rounds yet; multiple correct reverse checks. Earlier forward recalls and Banjul/Bangui confusion are recorded."
+    },
+    {
+      "country": "Chad",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Chile",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "China",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Colombia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Costa Rica",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Côte d’Ivoire",
+      "level": 2,
+      "forward_checks": 2,
+      "correct": 1,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": 108,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "spelling"
+        },
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Cuba",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Cyprus",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Czechia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Denmark",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Djibouti",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Dominica",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Dominican Republic",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Egypt",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "El Salvador",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Equatorial Guinea",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Estonia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Eswatini",
+      "level": 2,
+      "forward_checks": 5,
+      "correct": 4,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": 122,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        },
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "spelling"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Both roles tested; Mbabane vowel slip followed by correct recall. Latest legislative answer correct."
+    },
+    {
+      "country": "Ethiopia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "France",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Gambia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 3,
+      "reverse_correct": 3,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Germany",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Greece",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Grenada",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Guyana",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Haiti",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Hungary",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "India",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Indonesia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Iran",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Iraq",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Israel",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Italy",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Jamaica",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Japan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Kazakhstan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Kenya",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Kiribati",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Laos",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Liberia",
+      "level": 2,
+      "forward_checks": 3,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 2,
+      "last_error_record": 98,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 98,
+          "round": 11,
+          "result": "miss"
+        },
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Libya",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Liechtenstein",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Lithuania",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Luxembourg",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Madagascar",
+      "level": 2,
+      "forward_checks": 4,
+      "correct": 3,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 2,
+      "last_error_record": 124,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "spelling"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Malawi",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Maldives",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Mauritania",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Mexico",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Moldova",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Monaco",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Montenegro",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Morocco",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Myanmar",
+      "level": 2,
+      "forward_checks": 5,
+      "correct": 3,
+      "spelling_slips": 1,
+      "recall_gaps": 1,
+      "consecutive_correct": 2,
+      "last_error_record": 114,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "miss"
+        },
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "spelling"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Nauru",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Tested on government seat Yaren; no official capital."
+    },
+    {
+      "country": "Netherlands",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "New Zealand",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Nicaragua",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Niger",
+      "level": 2,
+      "forward_checks": 0,
+      "correct": 0,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 0,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "No cumulative forward check yet; correctly identified in earlier lessons/reviews."
+    },
+    {
+      "country": "Nigeria",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "North Korea",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "North Macedonia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Pakistan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Palau",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Panama",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Papua New Guinea",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Peru",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Philippines",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Poland",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Qatar",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Republic of the Congo",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Russia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "San Marino",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "São Tomé and Príncipe",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Saudi Arabia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Senegal",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Serbia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Seychelles",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Singapore",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Slovenia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Solomon Islands",
+      "level": 2,
+      "forward_checks": 5,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 2,
+      "consecutive_correct": 2,
+      "last_error_record": 114,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 91,
+          "round": 6,
+          "result": "miss"
+        },
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "miss"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Somalia",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "South Sudan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Spain",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "State of Palestine",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Sudan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Sweden",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Switzerland",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Syria",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 107,
+          "round": 18,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Tajikistan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Tanzania",
+      "level": 2,
+      "forward_checks": 3,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 2,
+      "last_error_record": 112,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 112,
+          "round": 21,
+          "result": "miss"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 2,
+      "reverse_correct": 2,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Thailand",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Togo",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 103,
+          "round": 15,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Tonga",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 87,
+          "round": 4,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Türkiye",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Turkmenistan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Ukraine",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 104,
+          "round": 16,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "United Arab Emirates",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 96,
+          "round": 10,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "United Kingdom",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "United States",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 105,
+          "round": 17,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Uzbekistan",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Vanuatu",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Vatican City",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 108,
+          "round": 19,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Venezuela",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Vietnam",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 101,
+          "round": 13,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Yemen",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Zimbabwe",
+      "level": 2,
+      "forward_checks": 1,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 0,
+      "consecutive_correct": 1,
+      "last_error_record": null,
+      "evidence": "Correct tested association; fewer stable mixed checks or earlier gap.",
+      "events": [
+        {
+          "record": 100,
+          "round": 12,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Good recall; less confirmation or still consolidating",
+      "note": "Correct tested association; fewer stable mixed checks or earlier gap."
+    },
+    {
+      "country": "Benin",
+      "level": 3,
+      "forward_checks": 5,
+      "correct": 3,
+      "spelling_slips": 1,
+      "recall_gaps": 1,
+      "consecutive_correct": 0,
+      "last_error_record": 138,
+      "evidence": "Association usually available; exact capital name still slips.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "miss"
+        },
+        {
+          "record": 85,
+          "round": 3,
+          "result": "correct"
+        },
+        {
+          "record": 112,
+          "round": 21,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "correct"
+        },
+        {
+          "record": 138,
+          "round": 35,
+          "result": "spelling"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Association known; name accuracy inconsistent",
+      "note": "Latest answer Porto-Nuevo; correct Porto-Novo. Earlier blank recovered."
+    },
+    {
+      "country": "Botswana",
+      "level": 3,
+      "forward_checks": 7,
+      "correct": 3,
+      "spelling_slips": 3,
+      "recall_gaps": 1,
+      "consecutive_correct": 1,
+      "last_error_record": 130,
+      "evidence": "Association usually available; exact capital name still slips.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "miss"
+        },
+        {
+          "record": 85,
+          "round": 3,
+          "result": "spelling"
+        },
+        {
+          "record": 89,
+          "round": 5,
+          "result": "spelling"
+        },
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "correct"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "spelling"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 3,
+      "reverse_correct": 2,
+      "reverse_omissions": 1,
+      "band": "Association known; name accuracy inconsistent",
+      "note": "Repeated minor Gaborone spelling slips; latest forward answer correct. One reverse omission was resolved without answer exposure."
+    },
+    {
+      "country": "Brunei",
+      "level": 3,
+      "forward_checks": 9,
+      "correct": 2,
+      "spelling_slips": 3,
+      "recall_gaps": 4,
+      "consecutive_correct": 0,
+      "last_error_record": 135,
+      "evidence": "Association usually available; exact capital name still slips.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "miss"
+        },
+        {
+          "record": 85,
+          "round": 3,
+          "result": "miss"
+        },
+        {
+          "record": 89,
+          "round": 5,
+          "result": "miss"
+        },
+        {
+          "record": 93,
+          "round": 7,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "miss"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "spelling"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "spelling"
+        },
+        {
+          "record": 130,
+          "round": 30,
+          "result": "correct"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "spelling"
+        }
+      ],
+      "reverse_checks": 3,
+      "reverse_correct": 3,
+      "reverse_omissions": 0,
+      "band": "Association known; name accuracy inconsistent",
+      "note": "Association now usually available; Seri/Begawan vowels and letters remain inconsistent. Earlier blanks and incomplete names."
+    },
+    {
+      "country": "Sri Lanka",
+      "level": 3,
+      "forward_checks": 5,
+      "correct": 1,
+      "spelling_slips": 4,
+      "recall_gaps": 0,
+      "consecutive_correct": 0,
+      "last_error_record": 136,
+      "evidence": "Association usually available; exact capital name still slips.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "spelling"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "spelling"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "spelling"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "spelling"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Association known; name accuracy inconsistent",
+      "note": "Legislative capital consistently identifiable; full-name spelling still varies. Jayawardenepura is accepted. Colombo not separately tested."
+    },
+    {
+      "country": "Timor-Leste",
+      "level": 3,
+      "forward_checks": 2,
+      "correct": 1,
+      "spelling_slips": 1,
+      "recall_gaps": 0,
+      "consecutive_correct": 0,
+      "last_error_record": 136,
+      "evidence": "Association usually available; exact capital name still slips.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "spelling"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Association known; name accuracy inconsistent",
+      "note": "Latest mixed answer tili instead of Dili; immediate correction correct, uncued recheck pending."
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "level": 4,
+      "forward_checks": 7,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 4,
+      "consecutive_correct": 1,
+      "last_error_record": 131,
+      "evidence": "Recent forward recall gap; subsequent success needs confirmation.",
+      "events": [
+        {
+          "record": 85,
+          "round": 3,
+          "result": "miss"
+        },
+        {
+          "record": 89,
+          "round": 5,
+          "result": "correct"
+        },
+        {
+          "record": 114,
+          "round": 22,
+          "result": "miss"
+        },
+        {
+          "record": 120,
+          "round": 25,
+          "result": "miss"
+        },
+        {
+          "record": 124,
+          "round": 27,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "miss"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 3,
+      "reverse_correct": 3,
+      "reverse_omissions": 0,
+      "band": "Forward recall still fragile",
+      "note": "Palikir repeatedly distorted; latest mixed answer correct after another earlier failure. Needs confirmation after longer spacing."
+    },
+    {
+      "country": "Mali",
+      "level": 4,
+      "forward_checks": 3,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 1,
+      "last_error_record": 122,
+      "evidence": "Recent forward recall gap; subsequent success needs confirmation.",
+      "events": [
+        {
+          "record": 95,
+          "round": 9,
+          "result": "correct"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "miss"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Forward recall still fragile",
+      "note": "Recent Bamako blank followed by one clean forward check and a correct reverse check."
+    },
+    {
+      "country": "Marshall Islands",
+      "level": 4,
+      "forward_checks": 5,
+      "correct": 3,
+      "spelling_slips": 0,
+      "recall_gaps": 2,
+      "consecutive_correct": 1,
+      "last_error_record": 131,
+      "evidence": "Recent forward recall gap; subsequent success needs confirmation.",
+      "events": [
+        {
+          "record": 80,
+          "round": 1,
+          "result": "correct"
+        },
+        {
+          "record": 118,
+          "round": 24,
+          "result": "miss"
+        },
+        {
+          "record": 122,
+          "round": 26,
+          "result": "correct"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "miss"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 1,
+      "reverse_correct": 1,
+      "reverse_omissions": 0,
+      "band": "Forward recall still fragile",
+      "note": "Majuro sometimes blank or replaced; latest mixed forward answer correct, needs another spaced confirmation."
+    },
+    {
+      "country": "Mozambique",
+      "level": 4,
+      "forward_checks": 4,
+      "correct": 2,
+      "spelling_slips": 0,
+      "recall_gaps": 2,
+      "consecutive_correct": 1,
+      "last_error_record": 131,
+      "evidence": "Recent forward recall gap; subsequent success needs confirmation.",
+      "events": [
+        {
+          "record": 82,
+          "round": 2,
+          "result": "correct"
+        },
+        {
+          "record": 126,
+          "round": 29,
+          "result": "miss"
+        },
+        {
+          "record": 131,
+          "round": 31,
+          "result": "miss"
+        },
+        {
+          "record": 135,
+          "round": 33,
+          "result": "correct"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Forward recall still fragile",
+      "note": "Repeated Maputo gaps/distortions; latest mixed answer correct, needs confirmation after longer spacing."
+    },
+    {
+      "country": "Tuvalu",
+      "level": 4,
+      "forward_checks": 2,
+      "correct": 1,
+      "spelling_slips": 0,
+      "recall_gaps": 1,
+      "consecutive_correct": 0,
+      "last_error_record": 136,
+      "evidence": "Recent forward recall gap; subsequent success needs confirmation.",
+      "events": [
+        {
+          "record": 110,
+          "round": 20,
+          "result": "correct"
+        },
+        {
+          "record": 136,
+          "round": 34,
+          "result": "miss"
+        }
+      ],
+      "reverse_checks": 0,
+      "reverse_correct": 0,
+      "reverse_omissions": 0,
+      "band": "Forward recall still fragile",
+      "note": "Latest forward Funafuti blank; immediate correction correct, next uncued check pending."
+    }
+  ]
+}

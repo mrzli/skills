@@ -225,3 +225,122 @@
 - Record 0112: cumulative round 21: 11/12 correct; Tanzania “dolome” → Dodoma (Do · do · ma). Yamoussoukro held. Pending focused retry: Tanzania after hiding correction. Sri Jayewardenepura Kotte/Bloemfontein due for later uncued recheck.
 
 - Record 0113: Dodoma correct immediately after correction; recheck later. Pending cumulative mixed forward round 22: Sri Lanka (legislative capital), Botswana, South Africa (judicial capital), Guinea, Brunei, Sierra Leone, Solomon Islands, Cabo Verde, Comoros, Myanmar, Federated States of Micronesia, Fiji. Rechecks recent corrections.
+
+- Record 0114: gap-focused round 22: 7/12 fully correct. Sri Jayewardenepura Kotte (pura, not para) and Nay Pyi Taw (“nye”) spelling slips; Brunei incomplete → Bandar Seri Begawan; Solomon Islands blank → Honiara; FSM “patopik” → Palikir. Pending focused retry: FSM, Brunei, Solomon Islands, Sri Lanka (legislative), Myanmar. Dodoma due later. Do not treat this deliberately difficult sample as an overall retention estimate.
+
+- Record 0115: immediate five-item drill all associations identified, 3/5 spelled correctly. Palikir/Honiara/Nay Pyi Taw correct. “begavan” → Begawan (w); “jayewardenepua” → Jayewardenepura (r in pura). Pending focused spelling retry: Sri Lanka (legislative), Brunei. Later uncued rechecks due; distinguish spelling from association errors.
+
+- Record 0116: Bandar Seri Begawan correct; Sri Jayewardenepura Kotte identified with extra r after Jaye (“jayerwardenepura”). Correction supplied; move on from exact-spelling loop. Pending reverse mixed round 23: Palikir, Honiara, Nay Pyi Taw, Dodoma, Bandar Seri Begawan, Sri Jayewardenepura Kotte, Gaborone, Bloemfontein, Conakry, Freetown, Banjul, Bangui. Later uncued forward rechecks still needed.
+
+- Record 0117: reverse round 23: 12/12 correct, including South Africa judicial role. Pending cumulative mixed forward round 24: Tanzania, Saint Kitts and Nevis, Azerbaijan, Namibia, Marshall Islands, Benin (constitutional capital), Bhutan, Suriname, Eritrea, Slovakia, Samoa, Jordan. Rechecks Dodoma. Later forward checks due for FSM/Solomon Islands/Myanmar/Brunei/Sri Lanka.
+
+- Record 0118: forward round 24: 11/12 correct; Marshall Islands “yaman” → Majuro (Ma · ju · ro). Dodoma held. Pending focused retry: Marshall Islands after hiding correction. Later forward rechecks still due for FSM/Solomon Islands/Myanmar/Brunei/Sri Lanka.
+
+- Record 0119: Majuro correct immediately after correction; recheck later. Pending cumulative mixed forward round 25: Federated States of Micronesia, Portugal, Brunei, Ghana, Solomon Islands, Romania, Myanmar, Belize, Sri Lanka (legislative capital), Uganda, Mauritius, Norway. Rechecks earlier forward gaps after intervening activities.
+
+- Record 0120: round 25: 8/12 fully correct. FSM “parakit” → Palikir; spelling slips Begawan (“benawan”), Belmopan (“balmopan”), Jayewardenepura (“jayewardnepura”). Honiara/Nay Pyi Taw held. Correct spellings supplied; avoid exact-spelling loops on recognizable associations. Pending focused retry only: FSM → Palikir. Majuro due later without cues.
+
+- Record 0121: Palikir correct immediately after correction; recheck later without cues. Pending cumulative mixed forward round 26: Marshall Islands, Tunisia, Armenia, Saint Vincent and the Grenadines, Bangladesh, Gabon, Croatia, Guatemala, Eswatini (administrative capital), South Korea, Mali, Andorra. Rechecks Majuro; gives Palikir intervening practice.
+
+- Record 0122: round 26: 10/12 fully correct, 11 associations identified. Eswatini “mbebene” → Mbabane; Mali blank → Bamako. Majuro held. Pending focused retry: Mali, Eswatini (administrative capital) after hiding corrections. Palikir due later without cues.
+
+- Record 0123: Bamako/Mbabane immediate correction drill 2/2 correct. Recheck later. Pending cumulative mixed forward round 27: Federated States of Micronesia, Honduras, Oman, Lesotho, Guinea-Bissau, Brunei, Ecuador, Tanzania, Saint Kitts and Nevis, Namibia, Madagascar, Kyrgyzstan. Rechecks Palikir after intervening activities.
+
+- Record 0124: round 27 all 12 associations identified, 10 spelled correctly; “bagawan” → Begawan, “antananaviro” → Antananarivo. Palikir held. Correct spelling without immediate retry loop. Pending reverse mixed round 28: Bamako, Mbabane (administrative), Antananarivo, Bandar Seri Begawan, Palikir, Majuro, Maseru, Lusaka, Luanda, Dodoma, Banjul, Bangui. Forward Bamako/Mbabane still due later.
+
+- Record 0125: reverse round 28: 12/12 correct. Pending cumulative mixed forward round 29: Mali, Canada, Eswatini (administrative capital), Nepal, Uruguay, Eritrea, Ireland, Mozambique, Armenia, Fiji, Belgium, Kuwait. Rechecks Bamako/Mbabane forward after intervening activities.
+
+- Record 0126: forward round 29: 11/12 correct; Mozambique blank → Maputo (Ma · pu · to). Bamako/Mbabane held. Pending focused retry: Mozambique after hiding correction; recheck later without cues.
+
+- Record 0127: Maputo correct immediately after correction. Recheck after intervening activities. Pending cumulative mixed forward round 30: Madagascar, Lebanon, Botswana, Iceland, Solomon Islands, Ghana, Brunei, Paraguay, Sierra Leone, Malaysia (national capital), Comoros, South Africa (judicial capital).
+
+- Record 0128: retrospective baseline: Europe all known; North America known with Caribbean separately weak but some knowledge; South America mostly known; Asia approximately 30–40% by country count; Africa very weak; Oceania almost unknown except Australia/New Zealand. Africa/Oceania/Caribbean strongest evidence of new learning, not all 195 countries. Ratings informal, no percentile evidence. Round 30 remains pending, unchanged; Maputo due later.
+
+- Testing preference (supersedes any use of record 0128 for test design): select items and set review spacing solely from observed test performance and review intervals. Do not use the user's explicit prior-knowledge claims to weight regions, skip items, or lengthen intervals. Let easier items earn longer intervals through demonstrated recall; keep broad coverage and distinguish immediate correction from later uncued retrieval. Record 0128 is retrospective context only. Current round 30 remains pending unchanged.
+
+- Record 0130: round 30 all 12 associations identified, 11 spelled correctly; “gaborono” → Gaborone (final e), no immediate retry loop. Antananarivo/Honiara/Bandar Seri Begawan/Bloemfontein correct. Pending forward round 31: Mozambique, Latvia, Nepal, Marshall Islands, Tunisia, Belize, Sri Lanka (legislative capital), Angola, Saint Lucia, Federated States of Micronesia, Georgia, Cabo Verde. Rechecks Maputo and earlier observed gaps; selection based only on tested performance.
+
+- Record 0131: round 31: 9/12 correct. Mozambique “mopate” → Maputo; Marshall Islands blank → Majuro; FSM “pirokik” → Palikir. Sri Jayawardenepura Kotte accepted variant. Pending focused retry: Marshall Islands, Federated States of Micronesia, Mozambique after hiding corrections. Later uncued checks needed for all three; selection based on observed performance only.
+
+- Record 0132: Majuro/Palikir/Maputo immediate correction drill 3/3 correct; recheck later without cues. Pending reverse mixed round 32: Yamoussoukro, Nuku'alofa, Chisinau, Gaborone, Port-au-Prince, Asmara, Vientiane, Paramaribo, Mbabane (administrative capital), Thimphu, Basseterre, Dushanbe. Provides intervening practice before retrying round 31 gaps.
+
+- Record 0133: reverse round 32 eleven supplied answers all align if Gaborone (item 4) was omitted. Pending uncued prompt: Gaborone → which country? Do not treat shifted answers as errors. Majuro/Palikir/Maputo due for later forward recheck.
+
+- Record 0134: Botswana correctly supplied for Gaborone after omission notice, without answer exposure. Round 32 all twelve identified with one omission notice. Pending forward round 33: Mozambique, Finland, Marshall Islands, Jordan, Federated States of Micronesia, Honduras, Ghana, Lesotho, Malaysia (administrative capital), Guinea, Brunei, Namibia. Rechecks Maputo/Majuro/Palikir after intervening activities.
+
+- Record 0135: round 33 all 12 identified, 11 spelled correctly; Brunei “bandar sari bagawan” → Bandar Seri Begawan. Maputo/Majuro/Palikir held uncued. Correct spelling without immediate loop. Pending forward round 34: Burundi, Malta, Mongolia, Liberia, Saint Kitts and Nevis, Sri Lanka (legislative capital), Cameroon, Tuvalu, Botswana, Timor-Leste, South Africa (judicial capital), Cabo Verde.
+
+- Record 0136: round 34: 9/12 fully correct; Sri Lanka name recognizable but misspelled → Sri Jayewardenepura Kotte; Tuvalu blank → Funafuti; Timor-Leste “tili” → Dili. Gaborone/Bloemfontein correct. No immediate Sri Lanka spelling loop. Pending focused retry: Timor-Leste, Tuvalu after hiding corrections.
+
+- Record 0137: Dili/Funafuti immediate correction 2/2 correct; parenthetical Sri Jayawardenepura Kotte accepted as correct voluntary spelling correction. Pending forward round 35: Benin (constitutional capital), Rwanda, Saint Lucia, Zambia, Comoros, Kuwait, Madagascar, Myanmar, Sierra Leone, Belize, Eswatini (legislative capital), Suriname. Recheck Timor-Leste/Tuvalu later without cues.
+
+- Record 0138: round 35 all 12 associations identified, 11 exact names/spellings correct; “porto-nuevo” → Porto-Novo. Correct without immediate retry loop. Pending forward round 36: Tuvalu, Lebanon, Timor-Leste, Botswana, Honduras, Mali, Brunei, Guinea, Solomon Islands, Sri Lanka (legislative capital), Mozambique, Marshall Islands. Rechecks Dili/Funafuti.
+
+- Record 0139: all-country recall estimate saved in reference/knowledge-estimate-2026-09-12.html (.md/.json also). 195 rows sorted by estimated band then alphabetically; evidence counts cumulative rounds 1–35 only (360 forward/60 reverse attempts), excludes correction drills. Prior lessons provide baseline; no self-report used. Four bands 59/126/5/5; heuristic, not probabilities. Round 36 still pending unchanged.
+
+- Record 0140: round 36: 10/12 fully correct, 11 associations identified. Mali blank → Bamako; Brunei “bewagan” → Begawan (g/w transposition). Sri Jayawardenepura Kotte accepted; Funafuti/Dili/Gaborone/Maputo/Majuro correct. Pending focused retry: Mali after hiding correction. No immediate Brunei spelling loop. Ranking report remains snapshot through round 35.
+
+- Record 0141: Bamako immediate correction correct; voluntary Bandar Seri Begawan spelling correction also correct. Recheck later uncued. Pending forward round 37: Nauru (seat of government), Albania, Grenada, Eswatini (administrative capital), South Sudan, Costa Rica, Kiribati, Rwanda, Côte d’Ivoire (political capital), Seychelles, Armenia, Benin (constitutional capital).
+
+- Record 0142: round 37: 10/12 fully correct, 11 associations identified. Nauru “yaman” → Yaren; Kiribati “south tawara” → South Tarawa (ra/wa transposition). Mbabane/Porto-Novo correct. Pending focused retry: Kiribati, Nauru (seat of government) after hiding corrections. Mali/Brunei due later uncued.
+
+- Record 0143: South Tarawa/Yaren immediate correction drill 2/2 correct; recheck later. Pending forward round 38: Mali, Uruguay, Federated States of Micronesia, Botswana, Oman, Brunei, Moldova, Saint Kitts and Nevis, Belize, Tanzania, Madagascar, Solomon Islands. Rechecks Mali/Brunei after intervening activities.
+
+- Record 0144: round 38 12/12 correct, including Bamako/Bandar Seri Begawan after intervening activity; Palikir held. Pending forward round 39: Nauru (seat of government), Pakistan, Dominica, Chad, Kiribati, Hungary, Samoa, Equatorial Guinea, Bolivia (constitutional capital), North Korea, Mauritania, United Arab Emirates. Rechecks Yaren/South Tarawa and broadens less recent coverage; within-session evidence only.
+
+
+2026-09-12 — Cumulative round 39: 12/12 correct including spelling. Yaren and South Tarawa held after intervening round 38; within-session evidence only. Record: learning-records/0145-round-39.md. Pending forward round 40: Tuvalu, Lebanon, Mozambique, Latvia, Sri Lanka (legislative), Gabon, Marshall Islands, Ireland, Eswatini (administrative), Peru, Benin, Seychelles. Selection based only on testing evidence.
+
+
+2026-09-12 — Cumulative round 40: 12/12 correct including accepted Sri Jayawardenepura Kotte variant. Consolidating items held; within-session evidence only. Record: learning-records/0146-round-40.md. Pending reverse round 41: Palikir, Lusaka, Castries, Nay Pyi Taw, Gitega, Bandar Seri Begawan, Port Vila, Yamoussoukro, Dili, Banjul, Bangui, Ngerulmud. Testing evidence only informs selection.
+
+
+2026-09-12 — Reverse round 41: 12/12 correct. Record: learning-records/0147-round-41.md. Both Sri Jayawardenepura Kotte and Sri Jayewardenepura Kotte are fully correct spellings; avoid wording suggesting tolerance of error. Pending forward round 42: Nauru (government seat), Romania, FSM, Senegal, Brunei, Ecuador, Mali, South Korea, Kiribati, North Macedonia, Solomon Islands, Bahrain. Selection uses testing evidence only; reverse success remains distinct from forward retention.
+
+
+2026-09-12 — Forward round 42: 12/12 correct including spelling. Yaren, Palikir, Bandar Seri Begawan, Bamako, South Tarawa and Honiara held; lengthen spacing based on observed success, without delayed-retention claims. Record: learning-records/0148-round-42.md. Pending forward round 43: Chad, Honduras, Comoros, Austria, Sierra Leone, Bhutan, Republic of the Congo, Canada, Guinea-Bissau, Nepal, South Africa (judicial), Trinidad and Tobago.
+
+
+2026-09-12 — Forward round 43: 12/12 identified, 11/12 spelling. bloumfontein → Bloemfontein; recognizable spelling slip, no forced immediate retry, revisit later. Record: learning-records/0149-round-43.md. Pending forward round 44: Mozambique, Lithuania, Benin, Kuwait, Tuvalu, Argentina, Sri Lanka (legislative), Namibia, Marshall Islands, Italy, Botswana, Haiti. Selection uses observed testing evidence only.
+
+
+2026-09-12 — Forward round 44: 12/12 correct including spelling. Maputo, Funafuti, Majuro, Porto-Novo, Sri Jayawardenepura Kotte, Windhoek and Gaborone held; increase spacing. Within-session evidence only. Record: learning-records/0150-round-44.md. Pending forward round 45: Guinea, Germany, Eswatini (legislative), Laos, Jamaica, South Africa (judicial), Armenia, Maldives, CAR, Portugal, Suriname, Uganda. Selection uses observed testing evidence only.
+
+
+2026-09-12 — Forward round 45: 11/12 associations, 10/12 fully correct. Jamaica kington → Kingston spelling omission; Maldives Port Louis → Malé association error (Port Louis = Mauritius). Bloemfontein held correctly. Record: learning-records/0151-round-45.md. Pending immediate forward correction: Maldives, Mauritius. Then resume mixed review and retest Maldives after intervening activity.
+
+
+2026-09-12 — Round 45 immediate correction: Maldives → Malé, Mauritius → Port Louis, 2/2 correct. Immediate correction only; retest Maldives after intervening activity. Record: learning-records/0152-round-45-correction.md. Pending forward round 46: Burkina Faso, Sweden, Timor-Leste, Egypt, Republic of the Congo, Costa Rica, Kyrgyzstan, Belgium, Saint Kitts and Nevis, Ethiopia, Palau, Oman.
+
+
+2026-09-12 — Forward round 46: 12/12 correct including spelling. Record: learning-records/0153-round-46.md. Pending forward round 47: Maldives, Poland, Angola, Jamaica, Cambodia, United States, Burundi, Mauritius, Montenegro, Bangladesh, DR Congo, Australia. Maldives retested after intervening round; Jamaica spelling recheck. Within-session evidence only; selection uses observed testing performance.
+
+
+2026-09-12 — Forward round 47: 12/12 correct including spelling. Maldives/Mauritius held after intervening round 46; Kingston spelling recovered. Within-session evidence only. Record: learning-records/0154-round-47.md. Pending reverse round 48: Majuro, Maputo, Bloemfontein (judicial), Funafuti, Porto-Novo, Sri Jayawardenepura Kotte, Gaborone, Conakry, Honiara, Yaren (government seat), South Tarawa, Bamako. Selection uses observed testing evidence only.
+
+
+2026-09-12 — Reverse round 48: 12/12 correct including spelling. Record: learning-records/0155-round-48.md. Reverse evidence distinct from forward recall; no delayed-retention claim. Pending forward round 49: Afghanistan, Luxembourg, Togo, Nicaragua, Russia, Barbados, South Africa (legislative), Thailand, San Marino, Somalia, Bahamas, Eswatini (administrative). Selection uses observed testing evidence only.
+
+
+2026-09-12 — Forward round 49: 12/12 correct including spelling. Record: learning-records/0156-round-49.md. Pending forward round 50: Maldives, Finland, Cameroon, Cuba, Georgia, South Africa (administrative), Liechtenstein, Sudan, Guatemala, Ukraine, China, Lesotho. Maldives recheck after two intervening rounds. Within-session evidence only; selection uses observed testing evidence.
+
+
+2026-09-12 — Forward round 50: 12/12 correct including spelling. Malé held after two intervening rounds; extend interval. Record: learning-records/0157-round-50.md. Pending forward round 51: FSM, Spain, Brunei, Tunisia, Solomon Islands, Azerbaijan, Mali, Dominican Republic, Kiribati, Greece, Nauru (government seat), Belarus. Within-session evidence only; selection uses observed testing evidence.
+
+
+2026-09-12 — Forward round 51: 12/12 correct including spelling. Previously fragile items held after longer forward interval from round 42; some reverse exposure occurred round 48. Extend forward spacing; within-session evidence only. Record: learning-records/0158-round-51.md. Pending forward round 52: Zambia, Netherlands, Mauritania, Vietnam, Saint Vincent and the Grenadines, Iran, Malawi, Kazakhstan, Andorra, Nigeria, New Zealand, Jordan. Selection uses observed testing performance only.
+
+
+2026-09-12 — Forward round 52: 12/12 correct including spelling. Record: learning-records/0159-round-52.md. Pending forward round 53: Sri Lanka (legislative), Mexico, Botswana, Lebanon, Tuvalu, Czech Republic, Marshall Islands, Rwanda, Benin, United Kingdom, Mozambique, South Africa (judicial). Within-session evidence only; some consolidating items had reverse exposure round 48. Selection uses observed testing performance only.
+
+
+2026-09-12 — Forward round 53: 11 answers supplied, all correct; Botswana (position 3) omitted, following answers align with 4–12. No association failure inferred from omission alone. Record: learning-records/0160-round-53-omission.md. Pending: Botswana capital, answer not exposed. Then complete round and continue automatically.
+
+
+2026-09-12 — Round 53 completed: Botswana → Gaborone supplied without answer exposure. All 12 correct including spelling, Botswana separate after omission. Record: learning-records/0161-round-53-completion.md. Pending forward round 54: Estonia, Guinea-Bissau, Malaysia (administrative), El Salvador, Eritrea, Uruguay, Nepal, Cabo Verde, Philippines, Albania, Tanzania, Grenada. Selection uses testing evidence only.
+
+
+2026-09-12 — Forward round 54: 12/12 correct including spelling. Record: learning-records/0162-round-54.md. Pending forward round 55: Maldives, France, Niger, Samoa, Saudi Arabia, Slovenia, Guyana, South Sudan, Denmark, Comoros, UAE, Fiji. Maldives rechecked after longer gap since round 50. Within-session evidence only; selection uses observed testing performance only.
+
+
+2026-09-12 — Updated country ranking through round 54: reference/knowledge-estimate-2026-09-12-round-54.html (.md/.json also). 144 strongest, 51 good/consolidating, none currently in lower bands. Last ten forward rounds 117/120 exact first answers, one spelling slip, one association error, one resolved omission. Record0163. Round55 remains pending unchanged.
