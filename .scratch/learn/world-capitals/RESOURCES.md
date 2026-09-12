@@ -443,3 +443,9 @@ UN profiles for six capitals; official 2 January 2026 decree for Equatorial Guin
 - [Monaco](https://data.un.org/en/iso/mc.html)
 - [Jerusalem final status](https://www.dfat.gov.au/geo/palestine)
 - [UNDP: Aden interim capital](https://www.undp.org/yemen/aden-sub-office)
+
+
+### Capital-status recheck, 2026-09-12
+
+- Equatorial Guinea government, 2 January 2026 declaration: https://www.guineaecuatorialpress.com/noticias/el_presidente_de_la_republica_proclama_la_ciudad_de_la_paz_como_capital_de_la_republica_de_guinea_ecuatorial_con_la_firma_de_un_decreto_ley — confirms Ciudad de la Paz, already in the review pool.
+- Indonesia Constitutional Court, 17 June 2026: https://en.mkri.id/news/details/2026-06-17/Court_Declares_Petition_to_Review_DKJ_Law_Legally_Unfounded — capital relocation provisions depend on issuance of a presidential decree. Round 72 asks explicitly for the capital listed by UNData, using the existing sourced pool.

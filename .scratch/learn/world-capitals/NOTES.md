@@ -344,3 +344,66 @@
 
 
 2026-09-12 — Updated country ranking through round 54: reference/knowledge-estimate-2026-09-12-round-54.html (.md/.json also). 144 strongest, 51 good/consolidating, none currently in lower bands. Last ten forward rounds 117/120 exact first answers, one spelling slip, one association error, one resolved omission. Record0163. Round55 remains pending unchanged.
+
+
+2026-09-12 — Forward round 55: 12/12 correct including spelling; accent-free male accepted for Malé. Maldives held after four intervening rounds; extend spacing. Within-session evidence only. Record: learning-records/0164-round-55.md. Pending forward round 56: Iceland, Senegal, Japan, Saint Lucia, Belgium, Chad, Portugal, Seychelles, Uzbekistan, Gabon, Haiti, Vanuatu. Selection uses observed testing performance only.
+
+
+2026-09-12 — Forward round 56: 12/12 correct including spelling; accent-free Reykjavik accepted. Broader mixed recall held; within-session evidence only. Record: learning-records/0165-round-56.md. Pending forward round 57: Latvia, Ethiopia, Jamaica, Turkmenistan, Namibia, Ireland, Cambodia, Angola, Saint Kitts and Nevis, Hungary, Burkina Faso, Tonga. Selection uses observed testing history, including a later Kingston spelling recheck.
+
+
+2026-09-12 — Forward round 57: all 12 correct after spontaneous spelling correction of ouaagadougou to Ouagadougou before feedback. Accidental early submission completed with Nuku'alofa; no recall omission inferred. Kingston, Windhoek and Phnom Penh correct uncued. Within-session evidence only. Record: learning-records/0166-round-57.md. Pending forward round 58: Lithuania, Panama, Lesotho, Mongolia, Dominica, Croatia, Guinea, Qatar, Sierra Leone, Paraguay, Bhutan, Madagascar. Selection uses observed testing history.
+
+
+2026-09-12 — Forward round 58: 12/12 associations identified, 11/12 spelling. Madagascar adenanarivo → Antananarivo; recognizable spelling error, revisit after intervening practice without an immediate spelling loop. Conakry and Ulaanbaatar correct; Asuncion accepted. Within-session evidence only. Record: learning-records/0167-round-58.md. Pending forward round 59: Mali, Canada, Kiribati, Azerbaijan, Brunei, Greece, Federated States of Micronesia, Dominican Republic, Solomon Islands, Belarus, Tunisia, Spain. Rechecks consolidating items after longer spacing; Madagascar spelling due afterward.
+
+
+2026-09-12 — Forward round 59: 12/12 correct including spelling. Bamako, South Tarawa, Bandar Seri Begawan, Palikir and Honiara held after seven intervening rounds since round 51; extend spacing. Within-session evidence only. Record: learning-records/0168-round-59.md. Pending forward round 60: Madagascar, Germany, Maldives, Kenya, Laos, Argentina, Burkina Faso, Norway, Mauritius, Romania, Nicaragua, Uganda. Rechecks Madagascar and Burkina Faso spelling, plus Maldives/Mauritius, mixed with older items.
+
+
+2026-09-12 — Forward round 60: 12/12 correct including spelling. Antananarivo recovered after intervening round 59; Ouagadougou correct following round-57 self-correction. Maldives/Mauritius and Vientiane held; extend spacing. Within-session evidence only. Record: learning-records/0169-round-60.md. Pending reverse round 61: Castries, Lobamba (legislative capital), Dili, Porto-Novo, Basseterre, Asmara, Thimphu, Brazzaville, Bissau, Apia, Praia, Gitega. Ask for countries; keep reverse evidence distinct from forward recall.
+
+
+2026-09-12 — Reverse round 61: 12/12 correct; r congo accepted as Republic of the Congo. Reverse evidence remains distinct from forward recall; within-session evidence only. Record: learning-records/0170-round-61.md. Pending forward round 62: Nauru (seat of government), Switzerland, Marshall Islands, Pakistan, Botswana, Cameroon, Sri Lanka (legislative capital), Belize, Mozambique, Oman, Tuvalu, South Africa (judicial capital). Selection uses observed testing history, revisiting consolidating items after longer intervals.
+
+
+2026-09-12 — Forward round 62: 12/12 correct including spelling. Sri Jayawardenepura Kotte fully correct; accent-free Yaounde accepted. Previously consolidating items held after longer forward intervals; extend spacing. Within-session evidence only. Record: learning-records/0171-round-62.md. Pending forward round 63: Peru, Slovakia, Bangladesh, Ghana, Honduras, Armenia, Malawi, New Zealand, Lebanon, Suriname, Kazakhstan, Seychelles. Selection uses observed testing history.
+
+
+2026-09-12 — Forward round 63: 12/12 correct including spelling. Broad mixed recall held; within-session evidence only. Record: learning-records/0172-round-63.md. Pending forward round 64: Madagascar, Austria, Senegal, Nepal, Cuba, Tanzania, Finland, Jordan, Togo, Australia, Saint Vincent and the Grenadines, Moldova. Madagascar spelling recheck after three intervening rounds since round 60; selection uses observed testing history.
+
+
+2026-09-12 — Forward round 64: 12/12 correct including spelling; accent-free Lome and Chisinau accepted. Antananarivo held after three intervening rounds; extend spacing. Within-session evidence only. Record: learning-records/0173-round-64.md. Pending forward round 65: Palau, Italy, Zambia, Vietnam, Grenada, Serbia, Mauritania, Thailand, Gambia, Ecuador, Luxembourg, Rwanda. Selection uses observed testing history.
+
+
+2026-09-12 — User confirms sleep between rounds 54 and 55. Update interpretation of records 0164–0173: first encounters in rounds 55–64 demonstrate post-sleep retrieval; within-block repeats remain fresh practice. 108/108 forward associations, 106/108 exact first submissions, 12/12 reverse; 102 countries tested forward, 110 either direction, 85 not retested after sleep. Informal tested-recall rating ~9.5/10. New all-country report through round 64: reference/knowledge-estimate-2026-09-12-round-64.html (.md/.json also); bands 157/37/1/0, with Madagascar conservatively awaiting a third clean check after repeated historical spelling slips. Record: learning-records/0174-post-sleep-status-round-64.md. Round 65 pending unchanged.
+
+
+2026-09-12 — Forward round 65: 12/12 correct including spelling. Continues confirmed post-sleep block beginning round 55. Record: learning-records/0175-round-65.md. Pending forward round 66: Afghanistan, Bulgaria, Algeria, Barbados, South Korea, San Marino, Somalia, Bahamas, China, Sudan, Guatemala, Liechtenstein. Expand post-sleep coverage with countries not tested in rounds 55–65. Round-64 report remains a historical snapshot.
+
+
+2026-09-12 — Forward round 66: 12/12 correct including spelling. Adds twelve previously untested countries to post-sleep coverage. Record: learning-records/0176-round-66.md. Pending forward round 67: Kyrgyzstan, Sweden, Liberia, Antigua and Barbuda, India, Malta, Central African Republic, Brazil, Bahrain, Poland, Papua New Guinea, Zimbabwe. Continue expanding post-sleep coverage. Round-64 report remains a historical snapshot.
+
+
+2026-09-12 — Forward round 67: 12/12 correct including spelling; accent-free Brasilia accepted. Adds twelve previously untested countries to post-sleep coverage. Record: learning-records/0177-round-67.md. Pending forward round 68: Andorra, Nigeria, Philippines, Chile, Georgia, Djibouti, Trinidad and Tobago, Czechia, Iran, Costa Rica, North Macedonia, Democratic Republic of the Congo. Continue expanding post-sleep coverage. Round-64 report remains a historical snapshot.
+
+
+2026-09-12 — Forward round 68: 12/12 correct including spelling; accent-free San Jose accepted. Adds twelve previously untested countries to post-sleep coverage. Record: learning-records/0178-round-68.md. Pending forward round 69: Estonia, Egypt, Mexico, Tajikistan, Montenegro, Morocco, Singapore, Colombia, Kuwait, Ukraine, El Salvador, São Tomé and Príncipe. Continue expanding post-sleep coverage. Round-64 report remains a historical snapshot.
+
+
+2026-09-12 — Forward round 69: 12/12 correct including spelling; accent-free Bogota and Sao Tome accepted. Adds twelve previously untested countries to post-sleep coverage. Record: learning-records/0179-round-69.md. Pending forward round 70: Bolivia (constitutional capital), Cyprus, United States, Bosnia and Herzegovina, North Korea, Netherlands, Iraq, Uruguay, Monaco, Russia, Albania, United Kingdom. Continue expanding post-sleep coverage. Round-64 report remains a historical snapshot.
+
+
+2026-09-12 — Forward round 70: 12/12 correct including spelling; Washington DC accepted. Adds twelve previously untested countries to post-sleep coverage. Record: learning-records/0180-round-70.md. Pending forward round 71: Myanmar, Benin, Venezuela, Malaysia (national capital), Eritrea, Türkiye, Côte d’Ivoire (political capital), Vatican City, Timor-Leste, Libya, Cabo Verde, Burundi. Expand post-sleep forward coverage, including countries previously checked only in reverse. Round-64 report remains a historical snapshot.
+
+
+2026-09-12 — Forward round 71: 12/12 correct including spelling. Nine countries remain without post-sleep forward evidence. Record: learning-records/0181-round-71.md. Pending forward round 72: Equatorial Guinea, Eswatini (administrative capital), Indonesia (capital listed by UNData), Guinea-Bissau, Israel (declared capital), Syria, Republic of the Congo, State of Palestine (claimed capital), Yemen (capital listed by UNData), Madagascar, South Africa (legislative capital), Malaysia (administrative capital). Covers remaining nine plus spaced Madagascar recheck and additional capital roles. Round-64 report remains historical.
+
+
+2026-09-12 — Forward round 72: 12/12 correct including spelling. All 195 countries now tested forward after confirmed sleep between rounds 54 and 55. Post-sleep totals through round 72: 204/204 associations, 202/204 exact first submissions (one self-corrected spelling, one feedback-corrected spelling), plus 12/12 reverse. Antananarivo correct in rounds 60, 64, 72; now meets strongest-band streak rule. Record: learning-records/0182-round-72.md. Pending reverse round 73: Belmopan, Vientiane, Windhoek, Kingstown, Ouagadougou, Ulaanbaatar, Nouakchott, Ngerulmud, Lilongwe, Paramaribo, Honiara, Majuro. Ask for countries. Round-64 report remains historical.
+
+
+2026-09-12 — New all-country status through round 72: reference/knowledge-estimate-2026-09-12-round-72.html (.md/.json also). All 195 tested forward after sleep; 204/204 associations, 202/204 exact spelling (99.0%), 12/12 reverse. Informal association grade 10/10. Bands 192/3/0/0; Burkina Faso, Jamaica, Niger need more clean confirmation under unchanged rules. Madagascar now strongest. Record: learning-records/0183-post-sleep-status-round-72.md. Reverse round 73 remains pending unchanged.
+
+
+2026-09-12 — Reverse round 73: 11/12 correct. Ngerulmud → Tonga incorrect; corrected to Palau, with Tonga → Nukuʻalofa contrast. Reverse association error; correction unassessed. Revisit later when practice resumes. Post-sleep reverse total 23/24; forward association evidence remains separate. Record: learning-records/0184-round-73.md. Round-72 report is historical and excludes this error. User requests no automatic new questions after this specific prompt; stopped with no pending quiz. One-turn exception only.
