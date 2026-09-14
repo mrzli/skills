@@ -1,5 +1,7 @@
 # Country coverage audit
 
+2026-09-13 update: the active study pool now contains **204 pairs across 195 countries**. Lesson 0025 adds La Paz, The Hague, Cotonou, Abidjan and Colombo with explicit roles. These five scored 15/15 across forward, reverse and shuffled forward practice; delayed recall remains pending. The completed full test remains **199/199** for its original set. The audit below is historical.
+
 2026-09-11. Extracted the actual study/quiz entries from all 24 lessons: **195 distinct countries and 199 tested capital-role or government-seat pairs**. Country labels with role qualifiers were normalized before counting.
 
 Scope: the 193 UN member states plus the Holy See (taught as Vatican City) and State of Palestine. All appear in the list below. Extra tested roles: two additional South African capitals, one Eswatini capital and one Malaysian capital. Nauru is assessed by its government seat. Contextual cities such as Colombo and Aden are not counted as tested pairs.

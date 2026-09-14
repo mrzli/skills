@@ -1,0 +1,3 @@
+# Five additional pairs recalled across three tests
+
+2026-09-13. Final shuffled forward test: 5/5 correct, including spelling: Netherlands (seat of government) → The Hague; Côte d’Ivoire (administrative) → Abidjan; Benin (administrative) → Cotonou; Sri Lanka (UNData capital) → Colombo; Bolivia (seat of government) → La Paz. All three requested tests complete, 15/15 answers correct (five forward, five reverse, five shuffled forward). These five pairs have immediate recall evidence in both directions, but no delayed check yet; preserve the original 199/199 post-sleep result as a separate assessment. No pending quiz.

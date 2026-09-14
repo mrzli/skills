@@ -407,3 +407,29 @@
 
 
 2026-09-12 — Reverse round 73: 11/12 correct. Ngerulmud → Tonga incorrect; corrected to Palau, with Tonga → Nukuʻalofa contrast. Reverse association error; correction unassessed. Revisit later when practice resumes. Post-sleep reverse total 23/24; forward association evidence remains separate. Record: learning-records/0184-round-73.md. Round-72 report is historical and excludes this error. User requests no automatic new questions after this specific prompt; stopped with no pending quiz. One-turn exception only.
+
+
+2026-09-13 — User resumes world capitals. Pending reverse round 74: Bamako, Ngerulmud, Kingston, Thimphu, Nuku’alofa, Niamey, Antananarivo, Banjul, Funafuti, Conakry, Bangui, Yamoussoukro. Ask for countries without answer cues. Recheck the round-73 reverse association error amid mixed review. No answers assessed yet; do not infer another sleep boundary from the date alone.
+
+
+2026-09-13 — User replaces pending round 74 with a full 195-country forward test. Four chunks of 50/50/50/45, each displayed as five columns (10 rows, final 9). Answers transposed: one user row per displayed column, read top to bottom. Withhold all grading, corrections and results until all four chunks are answered. Fixed complete test and answer key: tests/0001-full-test-2026-09-13.json. Each country appears once; role qualifiers retained. Awaiting chunk 1 answers.
+
+2026-09-13 — Full test chunk 1: all 50 answers received and saved verbatim in tests/0001-full-test-2026-09-13.json, grouped by displayed column. No results disclosed. Awaiting chunk 2 answers; withhold grading until all four chunks complete.
+
+2026-09-13 — Full test chunk 2: all 50 answers received and saved verbatim in tests/0001-full-test-2026-09-13.json, grouped by displayed column. 100 answers collected. No results disclosed. Awaiting chunk 3 answers; withhold grading until all four chunks complete.
+
+2026-09-13 — Full test chunk 3: all 50 answers received and saved verbatim in tests/0001-full-test-2026-09-13.json, grouped by displayed column. 150 answers collected. No results disclosed. Awaiting final chunk 4, five columns of nine countries; withhold grading until its answers arrive.
+
+2026-09-13 — User expands full test to all 199 covered capital-role/government-seat pairs, including all studied roles for South Africa, Eswatini and Malaysia. First 150 answers preserved. Original unanswered chunk 4 replaced by 49 remaining prompts, displayed in five columns of 10/10/10/10/9; answer rows follow those lengths. Test file unchanged. Withhold results until final answers.
+
+2026-09-13 — Full 199-pair test complete: 199/199 correct (100%), chunks 50/50, 50/50, 50/50, 49/49; no feedback before all submissions. All 195 countries and four extra practiced capital roles included exactly once. No spelling errors with standard normalization and aliases. Record 0185; full results in tests/0001-full-test-2026-09-13-results.md and .json. Forward recall only; earlier reverse Ngerulmud error remains unassessed in reverse. No pending quiz; requested complete results delivered.
+
+2026-09-13 — User confirms full 199/199 test was on the second day, after sleep. Record 0186 updates record 0185 timing uncertainty. Perfect day-two post-sleep forward recall; informal 10/10 for this tested skill. Saved test summary and results updated. Longer-term retention and reverse recall remain separate.
+
+2026-09-13 — User authorizes adding five recognized additional capital/seat pairs and requests a few tests limited strictly to those five, excluding the mastered 199. Lesson/reference/assets 0025 prepared; review pool expanded to 204, old full-test records preserved. Plan three chat tests with feedback between rounds: forward, reverse, reshuffled forward. Test 1 pending: Benin (administrative), Bolivia (seat of government), Sri Lanka (UNData capital), Netherlands (seat of government), Côte d’Ivoire (administrative). Do not mix older pairs into this practice. Newly added pairs remain unassessed.
+
+2026-09-13 — Additional-pairs test 1/3: 5/5 forward correct including spelling. Record 0187. All 204 pairs now have forward recall evidence, but only the original 199 were assessed in the complete post-sleep test. Pending reverse test 2/3: Abidjan, Colombo, La Paz, Cotonou, The Hague; ask for countries only. Then shuffled forward test 3/3, limited to the same five.
+
+2026-09-13 — Additional-pairs test 2/3: 5/5 reverse correct. Record 0188. Pending final forward test 3/3: Netherlands (seat of government), Côte d’Ivoire (administrative), Benin (administrative), Sri Lanka (UNData capital), Bolivia (seat of government). Only these five additions. Both directions now demonstrated immediately; delayed recall remains unassessed.
+
+2026-09-13 — Additional-pairs test 3/3: 5/5 correct including spelling. Three-test practice complete: 15/15 across forward, reverse and shuffled forward rounds. Record 0189. Lesson 0025 complete for immediate practice, delayed recall pending. All 204 study pairs now have forward recall evidence; the original 199/199 post-sleep test remains separate. No pending quiz; do not automatically mix the older 199 into this completed targeted practice.

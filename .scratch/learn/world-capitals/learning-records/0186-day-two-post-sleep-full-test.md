@@ -1,0 +1,3 @@
+# Perfect day-two recall after sleep
+
+2026-09-13. User confirms the complete 199-pair test occurred on the second day, after sleep. This updates the timing uncertainty in record 0185: 199/199 practiced pairs across 195 countries were recalled correctly after sleep, with all answers submitted before feedback. Informal rating: 10/10 for tested day-two forward recall, not a validated overall memory score. Reverse recall and retention over longer intervals remain separate and unassessed by this test; extend forward spacing before the next comprehensive check. Exact interval, sleep duration and causal benefit of sleep are not established.

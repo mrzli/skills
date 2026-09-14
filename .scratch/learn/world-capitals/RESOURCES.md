@@ -449,3 +449,18 @@ UN profiles for six capitals; official 2 January 2026 decree for Equatorial Guin
 
 - Equatorial Guinea government, 2 January 2026 declaration: https://www.guineaecuatorialpress.com/noticias/el_presidente_de_la_republica_proclama_la_ciudad_de_la_paz_como_capital_de_la_republica_de_guinea_ecuatorial_con_la_firma_de_un_decreto_ley — confirms Ciudad de la Paz, already in the review pool.
 - Indonesia Constitutional Court, 17 June 2026: https://en.mkri.id/news/details/2026-06-17/Court_Declares_Petition_to_Review_DKJ_Law_Legally_Unfounded — capital relocation provisions depend on issuance of a presidential decree. Round 72 asks explicitly for the capital listed by UNData, using the existing sourced pool.
+
+
+## Additional capital roles — lesson 0025
+
+Sources checked in the 2026-09-13 coverage discussion; reused for this lesson.
+
+- [Bolivia (seat of government): La Paz](https://data.un.org/en/iso/bo.html). Supports the specified role.
+
+- [Netherlands (seat of government): The Hague](https://www.government.nl/binaries/government/documenten/publications/2017/04/21/culture-at-a-first-glance/CIB2015_ENG_publicatie_v8_DEF.pdf). Supports the specified role.
+
+- [Benin (administrative capital): Cotonou](https://decentralisation.gouv.bj/prefecture/8/littoral/). Supports the specified role.
+
+- [Côte d’Ivoire (administrative capital): Abidjan](https://data.un.org/en/iso/ci.html). Supports the specified role.
+
+- [Sri Lanka (capital listed by UNData): Colombo](https://data.un.org/en/iso/lk.html). Supports the specified role.

@@ -1,0 +1,33 @@
+{
+  "number": "0025",
+  "items": [
+    {
+      "country": "Bolivia (seat of government)",
+      "capital": "La Paz",
+      "source": "https://data.un.org/en/iso/bo.html"
+    },
+    {
+      "country": "Netherlands (seat of government)",
+      "capital": "The Hague",
+      "aliases": [
+        "Den Haag"
+      ],
+      "source": "https://www.government.nl/binaries/government/documenten/publications/2017/04/21/culture-at-a-first-glance/CIB2015_ENG_publicatie_v8_DEF.pdf"
+    },
+    {
+      "country": "Benin (administrative capital)",
+      "capital": "Cotonou",
+      "source": "https://decentralisation.gouv.bj/prefecture/8/littoral/"
+    },
+    {
+      "country": "Côte d’Ivoire (administrative capital)",
+      "capital": "Abidjan",
+      "source": "https://data.un.org/en/iso/ci.html"
+    },
+    {
+      "country": "Sri Lanka (capital listed by UNData)",
+      "capital": "Colombo",
+      "source": "https://data.un.org/en/iso/lk.html"
+    }
+  ]
+}

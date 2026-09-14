@@ -1,0 +1,3 @@
+# Five additional capital roles recalled forward
+
+2026-09-13. User correctly answered all five role-qualified prompts: Benin (administrative) → Cotonou; Bolivia (seat of government) → La Paz; Sri Lanka (UNData capital) → Colombo; Netherlands (seat of government) → The Hague; Côte d’Ivoire (administrative) → Abidjan. Test 1/3: 5/5 correct including spelling. These newly added pairs now have immediate forward recall evidence, separate from the prior 199/199 post-sleep test; delayed recall remains unassessed. Test 2/3 asks for countries in order: Abidjan, Colombo, La Paz, Cotonou, The Hague. Limit all three tests to these five pairs.

@@ -105,3 +105,8 @@ Kiribati, Marshall Islands, Federated States of Micronesia, Nauru. Nauru asks fo
 ## Completed batch: 0024 — Western Asia plus Monaco (6)
 
 United Arab Emirates, Oman, Yemen, Israel, State of Palestine, Monaco. Monaco fills an earlier Europe omission. Capital status distinctions explained in lesson. Forward and reverse: 6/6 correct each (record 0079). All 24 lessons complete; cumulative mixed review now active. See COVERAGE.md.
+
+
+## Completed batch: 0025 — Additional capital roles (5)
+
+Bolivia—La Paz; Netherlands—The Hague; Benin—Cotonou; Côte d’Ivoire—Abidjan; Sri Lanka—Colombo. See lesson 0025 for role qualifiers. All three tests complete: forward 5/5, reverse 5/5, shuffled forward 5/5. Delayed recall pending. Active study set: 204 pairs; demonstrated full-test set remains 199.
