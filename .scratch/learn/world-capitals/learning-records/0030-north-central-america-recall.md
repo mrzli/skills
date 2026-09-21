@@ -1,3 +1,0 @@
-# Ten North and Central American capitals recalled
-
-The user correctly answered Belize, Canada, Honduras, Costa Rica, Mexico, Nicaragua, United States, El Salvador, Panama, and Guatemala with Belmopan, Ottawa, Tegucigalpa, San Jose, Mexico City, Managua, Washington DC, San Salvador, Panama City, and Guatemala City. Accent-free San Jose and unpunctuated Washington DC are accepted. This establishes 10/10 immediate country-to-capital recall for lesson 0014. Total: 99 capitals identified; reverse recall established for the preceding 89 pairs. Next test these ten in reverse. Laos-to-Vientiane still needs rechecking; delayed retention remains untested.

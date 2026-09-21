@@ -1,1 +1,0 @@
-const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();document.querySelector('#filter').addEventListener('input',e=>{const q=norm(e.target.value);let n=0;document.querySelectorAll('tbody tr').forEach(r=>{r.hidden=!norm(r.cells[1].textContent).includes(q);if(!r.hidden)n++});document.querySelector('#count').textContent=n+' countries'});

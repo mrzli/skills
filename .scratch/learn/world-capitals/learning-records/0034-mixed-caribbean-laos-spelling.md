@@ -1,3 +1,0 @@
-# Twelve capitals identified; Vientiane spelling still unstable
-
-In the mixed review of Laos, Saint Lucia, Honduras, Dominica, Palau, Grenada, Belize, Saint Vincent and the Grenadines, Bhutan, Antigua and Barbuda, Jamaica, and Cambodia, the user identified all twelve capitals. Eleven were spelled correctly; “vientiene” was interpreted as Vientiane and corrected. This is stronger evidence of Laos-to-capital identification than the earlier “viatia,” but the spelling remains unstable. Phnom Penh and Kingston/Kingstown were correct. Give a short spelling follow-up, then proceed to new material. Coverage remains 111 pairs; delayed retention remains untested.

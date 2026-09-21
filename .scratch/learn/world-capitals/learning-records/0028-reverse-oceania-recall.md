@@ -1,3 +1,0 @@
-# Ten Oceanian countries recalled from capitals
-
-The user correctly answered Honiara, Canberra, Funafuti, Port Vila, Ngerulmud, Suva, Nuku’alofa, Wellington, Port Moresby, and Apia with Solomon Islands, Australia, Tuvalu, Vanuatu, Palau, Fiji, Tonga, New Zealand, Papua New Guinea, and Samoa. This establishes 10/10 immediate reverse recall for lesson 0013. All 89 studied pairs have now been identified in both directions, including earlier corrections and omission prompts. Next mix recent Oceanian capitals with earlier Asian material; revisit Phnom Penh spelling. Delayed retention remains untested.
