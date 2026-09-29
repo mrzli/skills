@@ -1,12 +1,12 @@
 ---
 name: restate
 description: Restate the user's goals and the problem they are trying to solve.
-argument-hint: "[focus]"
+argument-hint: "[text or focus]"
 disable-model-invocation: true
 ---
 
-Treat optional text supplied with the invocation as free-form guidance about what the user wants restated. Use it to narrow or redirect the focus, including relevant goals, problems, reasoning, or constraints.
+By default, restate the other text in the same user prompt as this skill invocation, whether it appears before or after the invocation. If that text points to a topic or earlier context rather than supplying content to restate, use it as guidance about what to restate.
 
-If no focus is supplied, restate the user's current goal and the problem they are trying to solve in the active conversation. Use earlier context where relevant, giving priority to the user's latest corrections.
+If the user prompt contains only the skill invocation, restate the user's current goal and the problem they are trying to solve in the active conversation. Use earlier context where relevant, giving priority to the user's latest corrections.
 
 Restate your understanding in your own words. Keep it concise, and distinguish assumptions or uncertainties from what the user has stated.
