@@ -1,6 +1,9 @@
 ---
 name: clarify
-description: "Stop. That last message did not land: re-pitch it."
+description: Explain a topic or part of the conversation more clearly. Defaults to the last response.
+argument-hint: "[topic or conversation scope]"
 ---
 
-Wait, I don't understand where you've got to here. Re-pitch that: give me a little bit of context, talk in ASD-STE100 Simplified Technical English, and use the ubiquitous language from `CONTEXT.md` (follow `CONTEXT-MAP.md` to the right one if the repo has more than one).
+Explain the topic or portion of the conversation specified by the argument. If no argument is provided, re-explain your last response.
+
+Give the context needed to understand it, use plain language, and explain unfamiliar terms. Follow the project's terminology where available. Use a small example if it helps.
