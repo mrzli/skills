@@ -19,19 +19,30 @@ if [[ ! -d $skills_root || -L $skills_root || ! -r $skills_root || ! -x $skills_
 fi
 
 declare -A desired=()
-for category in "$skills_root"/*; do
-  [[ -d $category && ! -L $category ]] || continue
-  [[ ${category##*/} == experimental ]] && continue
-  for skill in "$category"/*; do
-    [[ -d $skill && ! -L $skill && -f $skill/SKILL.md ]] || continue
-    name=${skill##*/}
+discover_skills() {
+  local directory=$1 child name
+  if [[ ! -r $directory || ! -x $directory ]]; then
+    printf 'Source directory must be readable and searchable: %s\n' "$directory" >&2
+    exit 1
+  fi
+  for child in "$directory"/*; do
+    [[ -d $child && ! -L $child ]] || continue
+    [[ $child == "$skills_root/experimental" ]] && continue
+    if [[ ! -f $child/SKILL.md ]]; then
+      discover_skills "$child"
+      continue
+    fi
+    name=${child##*/}
     if [[ -v desired[$name] ]]; then
       printf 'Duplicate skill name: %s\n' "$name" >&2
       exit 1
     fi
-    desired[$name]=../../skills/${category##*/}/$name
+    # A skill's supporting directories are not separate skills.
+    desired[$name]=../../skills/${child#"$skills_root/"}
   done
-done
+}
+
+discover_skills "$skills_root"
 
 validate_destination() {
   local destination=$1 path name

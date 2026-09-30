@@ -57,6 +57,46 @@ class SyncSkillsTests(unittest.TestCase):
         for directory in self.destinations:
             self.assertTrue((directory / 'example').is_symlink())
 
+    def test_nested_skills_and_relocation(self):
+        self.assertEqual(self.sync().returncode, 0)
+        nested = self.repo / 'skills/engineering/delivery/deep group'
+        nested.mkdir(parents=True)
+        (self.repo / 'skills/productivity/example').rename(nested / 'example')
+        self.add_skill('engineering/planning', 'plan')
+        result = self.sync()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for directory in self.destinations:
+            self.assertEqual((directory / 'example').resolve(), nested / 'example')
+            self.assertEqual((directory / 'plan').resolve(),
+                             self.repo / 'skills/engineering/planning/plan')
+        repeat = self.sync()
+        self.assertEqual(repeat.returncode, 0, repeat.stderr)
+        self.assertEqual(repeat.stdout, '')
+
+    def test_nested_duplicate_aborts_before_changing_links(self):
+        self.assertEqual(self.sync().returncode, 0)
+        self.add_skill('engineering/delivery', 'example')
+        result = self.sync()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('Duplicate skill name: example', result.stderr)
+        self.assertEqual(result.stdout, '')
+        for directory in self.destinations:
+            self.assertEqual((directory / 'example').resolve(),
+                             self.repo / 'skills/productivity/example')
+
+    def test_recursive_discovery_skips_experimental_symlinks_and_skill_contents(self):
+        self.add_skill('experimental/nested', 'unfinished')
+        self.add_skill('productivity/example/assets', 'embedded')
+        external = self.base / 'external'
+        external.mkdir()
+        (external / 'SKILL.md').write_text('test\n')
+        (self.repo / 'skills/productivity/linked').symlink_to(external)
+        (self.repo / 'skills/productivity/loop').symlink_to(self.repo / 'skills')
+        result = self.sync()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for directory in self.destinations:
+            self.assertEqual({path.name for path in directory.iterdir()}, {'example'})
+
     def test_existing_empty_source_removes_last_skill(self):
         self.assertEqual(self.sync().returncode, 0)
         shutil.rmtree(self.repo / 'skills/productivity')
