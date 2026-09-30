@@ -1,5 +1,5 @@
 ---
-name: elif
+name: clarify
 description: "Stop. That last message did not land: re-pitch it."
 ---
 
