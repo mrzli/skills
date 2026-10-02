@@ -29,10 +29,11 @@ Reusable skills for AI agents.
 | --- | --- |
 | [teach](skills/learning/teach/SKILL.md) | Teach a topic through lessons that track the user's progress across sessions. |
 
-### Engineering
+### [Engineering](skills/engineering)
 
 #### [Delivery](skills/engineering/delivery)
 
 | Skill | Description |
 | --- | --- |
 | [implement](skills/engineering/delivery/implement/SKILL.md) | Build a scoped code change, verify it, and resolve review findings. |
+| [review-code](skills/engineering/delivery/review-code/SKILL.md) | Review a change against intended behavior and project conventions, with actionable findings. |
