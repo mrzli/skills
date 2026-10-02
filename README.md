@@ -55,3 +55,9 @@ Reusable skills for AI agents.
 | Skill | Description |
 | --- | --- |
 | [investigate](skills/engineering/investigation/investigate/SKILL.md) | Resolve a concrete unknown through inspection, research, or experiments. |
+
+#### [Workflow](skills/engineering/workflow)
+
+| Skill | Description |
+| --- | --- |
+| [deliver-feature](skills/engineering/workflow/deliver-feature/SKILL.md) | Coordinate a feature across tasks through its authorized delivery endpoint. |
