@@ -38,6 +38,7 @@ Reusable skills for AI agents.
 | [write-spec](skills/engineering/planning/write-spec/SKILL.md) | Capture agreed requirements, scope, and verifiable acceptance criteria in a durable specification. |
 | [plan](skills/engineering/planning/plan/SKILL.md) | Break agreed work into verifiable tasks with explicit dependencies. |
 | [shape-feature](skills/engineering/planning/shape-feature/SKILL.md) | Clarify a feature’s user problem, behavior, and useful scope. |
+| [design](skills/engineering/planning/design/SKILL.md) | Choose a technical approach and record the important tradeoffs. |
 
 #### [Delivery](skills/engineering/delivery)
 

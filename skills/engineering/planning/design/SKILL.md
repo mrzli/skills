@@ -1,0 +1,30 @@
+---
+name: design
+description: Choose a technical approach for a scoped change by comparing meaningful alternatives and their tradeoffs. Use when interfaces, data, architecture, or migration choices need resolution before implementation.
+---
+
+Produce a technical decision that fits the requirements and existing system. Keep the depth of design proportional to the consequences and reversibility of the choice.
+
+## Understand the constraints
+
+Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Preserve settled product choices; expose contradictions rather than silently redesigning the feature.
+
+Inspect the current approach before introducing a new abstraction or dependency. Trace who calls the affected interfaces and what they rely on, including errors, ordering, data ownership, and side effects. Resolve factual uncertainty through inspection or focused investigation.
+
+## Compare approaches
+
+Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification.
+
+Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology; a particular design vocabulary or pattern is not a requirement.
+
+Describe the important interfaces, state transitions, data changes, and failure behavior. Include migration, rollout, and recovery where the design affects existing users or stored data. Use a small diagram, contract, or code sketch when it makes the decision clearer than prose.
+
+Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility or performance, gather evidence with a focused experiment before presenting it as settled. Separate evidence, assumptions, and expected benefits.
+
+## Record the decision
+
+Recommend an approach with its reasons, rejected alternatives, and remaining risks. Make routine technical choices within the authorized scope. Ask for user judgment when alternatives materially change product behavior, cost, compatibility, or an established commitment that the evidence cannot settle.
+
+Record accepted decisions in the existing specification or project design records. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Keep task breakdown in the implementation plan rather than duplicating it here.
+
+Finish when the next implementer can understand the chosen approach, constraints, verification strategy, and remaining blockers. Design alone does not request production implementation.
