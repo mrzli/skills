@@ -64,4 +64,5 @@ Reusable skills for AI agents.
 | Skill | Description |
 | --- | --- |
 | [deliver-feature](skills/engineering/workflow/deliver-feature/SKILL.md) | Coordinate a feature across tasks through its authorized delivery endpoint. |
+| [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next engineering activity or skill, with a concrete example invocation. |
 | [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) | Improve the development process using evidence from completed work. |

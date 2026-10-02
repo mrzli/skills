@@ -27,8 +27,9 @@ The learning handoff is `/tmp/software-engineering-flow-handoff-wb0g9t9d.md`. It
 | 13 | investigation | review-architecture | Committed as 3561798; real-task evaluation pending |
 | 14 | investigation | review-product | Committed as db6b08b; real-task evaluation pending |
 | 15 | workflow | improve-workflow | Committed as 6be9dcd; real-task evaluation pending |
+| 16 | workflow | guide | Written and synced; awaiting user review |
 
-Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. All 15 skills are now implemented. The remaining 12 skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set; real-task evaluation is still recommended.
+Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`; `guide` was added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set; real-task evaluation is still recommended.
 
 ## Implement design
 
@@ -84,7 +85,15 @@ Matt's operational files were read from the local clone as source material, not 
 - Sync completed in the sandbox without approval under the updated permission profile.
 - Diff whitespace checks pass. Instructions were manually reviewed for scope, outputs, authorization boundaries, and composition. This is not independent behavioral evaluation or proof of real-task effectiveness.
 
-## Resume
+## Guide design
+
+Location: `skills/engineering/workflow/guide/SKILL.md`. Reference: Matt's `ask-matt`, read again for this addition. Provides situation-based routing across all 15 engineering activities, reads only the recommended skill, and gives one concrete next step with a tailored invocation. Supports projects without a repository and questions without an explicit argument. Keeps advice separate from execution, respects an accompanying request to proceed, and allows ordinary conversation when a skill adds no value. No mandatory tracker, document, or multi-stage process.
+
+Validation: bundled validator and diff whitespace check passed; all 15 routing links resolve and both discovery links were verified. Manually reviewed routing for a new project, a small agreed change, diagnosis without edits, and advice with or without authorization to proceed. Real-session behavioral evaluation remains pending.
+
+## Current next step
+
+Review the uncommitted `guide` addition. The original development branch was merged into `master` and deleted; the new guide is being added directly on `master`.
 
 The permission configuration is committed as b0e6cf7. It selects `local-development`, permits Git and skill-discovery writes, and protects the sync script from edits. The user requested retaining these scratch notes in version control when merging the work into `master`.
 
