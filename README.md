@@ -31,6 +31,12 @@ Reusable skills for AI agents.
 
 ### [Engineering](skills/engineering)
 
+#### [Planning](skills/engineering/planning)
+
+| Skill | Description |
+| --- | --- |
+| [write-spec](skills/engineering/planning/write-spec/SKILL.md) | Capture agreed requirements, scope, and verifiable acceptance criteria in a durable specification. |
+
 #### [Delivery](skills/engineering/delivery)
 
 | Skill | Description |
