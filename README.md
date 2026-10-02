@@ -48,6 +48,7 @@ Reusable skills for AI agents.
 | [review-code](skills/engineering/delivery/review-code/SKILL.md) | Review a change against intended behavior and project conventions, with actionable findings. |
 | [fix-bug](skills/engineering/delivery/fix-bug/SKILL.md) | Diagnose a failure, repair its cause, and verify the fix. |
 | [refactor](skills/engineering/delivery/refactor/SKILL.md) | Improve code structure while preserving required behavior. |
+| [release](skills/engineering/delivery/release/SKILL.md) | Prepare, execute, and verify an authorized release. |
 
 #### [Investigation](skills/engineering/investigation)
 
