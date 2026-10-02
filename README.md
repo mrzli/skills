@@ -45,3 +45,9 @@ Reusable skills for AI agents.
 | --- | --- |
 | [implement](skills/engineering/delivery/implement/SKILL.md) | Build a scoped code change, verify it, and resolve review findings. |
 | [review-code](skills/engineering/delivery/review-code/SKILL.md) | Review a change against intended behavior and project conventions, with actionable findings. |
+
+#### [Investigation](skills/engineering/investigation)
+
+| Skill | Description |
+| --- | --- |
+| [investigate](skills/engineering/investigation/investigate/SKILL.md) | Resolve a concrete unknown through inspection, research, or experiments. |
