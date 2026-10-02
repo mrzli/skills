@@ -39,6 +39,7 @@ Reusable skills for AI agents.
 | [plan](skills/engineering/planning/plan/SKILL.md) | Break agreed work into verifiable tasks with explicit dependencies. |
 | [shape-feature](skills/engineering/planning/shape-feature/SKILL.md) | Clarify a feature’s user problem, behavior, and useful scope. |
 | [design](skills/engineering/planning/design/SKILL.md) | Choose a technical approach and record the important tradeoffs. |
+| [start-project](skills/engineering/planning/start-project/SKILL.md) | Define project purpose, users, first useful scope, and success criteria. |
 
 #### [Delivery](skills/engineering/delivery)
 
