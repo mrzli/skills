@@ -9,7 +9,7 @@ Produce a project brief that guides what to build and why. Project definition ma
 
 Read the user's idea, existing notes, and any related product or repository context. Establish the intended users, the problem they face, their current alternatives, and why solving it matters. Separate observed needs from assumptions and desired features from the outcomes they serve.
 
-Ask focused questions about missing goals and constraints. Offer concrete examples when the user does not yet know the options. Prioritize decisions that determine direction; defer detail that depends on learning from the first useful version.
+Ask focused questions about missing goals and constraints. Offer concrete examples when the user does not yet know the options. Prioritize decisions that determine direction. Defer detail that depends on learning from the first useful version.
 
 Identify constraints that materially shape the project, such as available time, budget, deployment environment, integration needs, data handling, and maintenance responsibility. Do not infer an organization-scale process for a solo project or require a commercial business case for a personal tool.
 

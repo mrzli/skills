@@ -27,4 +27,4 @@ Turn the reproduction into regression coverage where practical. Establish that t
 
 Remove temporary instrumentation you added or retain it only when it has an explicit ongoing purpose. Preserve useful reproduction artifacts in the project's test or scratch conventions and keep unrelated user work intact.
 
-Complete the implementation review and address its findings without duplicating a review already performed by `implement`. Report the cause and evidence, the repair, verification results, and any remaining uncertainty. Completion requires evidence that the reported behavior is corrected; otherwise state the unresolved verification or blocker.
+Complete the implementation review and address its findings without duplicating a review already performed by `implement`. Report the cause and evidence, the repair, verification results, and any remaining uncertainty. Completion requires evidence that the reported behavior is corrected. Otherwise state the unresolved verification or blocker.

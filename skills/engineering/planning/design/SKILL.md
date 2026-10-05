@@ -7,7 +7,7 @@ Produce a technical decision that fits the requirements and existing system. Kee
 
 ## Understand the constraints
 
-Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Preserve settled product choices; expose contradictions rather than silently redesigning the feature.
+Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Preserve settled product choices. Expose contradictions rather than silently redesigning the feature.
 
 Inspect the current approach before introducing a new abstraction or dependency. Trace who calls the affected interfaces and what they rely on, including errors, ordering, data ownership, and side effects. Resolve factual uncertainty through inspection or focused investigation.
 
@@ -15,7 +15,7 @@ Inspect the current approach before introducing a new abstraction or dependency.
 
 Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification.
 
-Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology; a particular design vocabulary or pattern is not a requirement.
+Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology. A particular design vocabulary or pattern is not a requirement.
 
 Describe the important interfaces, state transitions, data changes, and failure behavior. Include migration, rollout, and recovery where the design affects existing users or stored data. Use a small diagram, contract, or code sketch when it makes the decision clearer than prose.
 

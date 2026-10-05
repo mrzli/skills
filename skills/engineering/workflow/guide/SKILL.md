@@ -7,7 +7,7 @@ Recommend a useful next step without requiring the user to understand the skill 
 
 ## Understand where the user is
 
-Identify the desired outcome, what is already settled or completed, and what currently prevents progress. Use relevant conversation and existing project artifacts before asking the user to repeat information. Inspect only enough context to choose the next activity; a routing question does not require a full codebase review.
+Identify the desired outcome, what is already settled or completed, and what currently prevents progress. Use relevant conversation and existing project artifacts before asking the user to repeat information. Inspect only enough context to choose the next activity. A routing question does not require a full codebase review.
 
 A new project may have no repository, specification, or technical choices yet. Start from the idea and explain the next activity in ordinary language. If a missing distinction would change the recommendation, ask one focused question, offering concrete possibilities when helpful.
 
@@ -34,9 +34,9 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Improve the development process after observed friction | [improve-workflow](../improve-workflow/SKILL.md) |
 | Review the skill collection or compare it with external skill repositories | [maintain-skills](../maintain-skills/SKILL.md) |
 
-Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it; settled decisions do not need another interview. A small, clear change can go directly to implementation without separate design, specification, or planning documents.
+Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without separate design, specification, or planning documents.
 
-Distinguish advice from execution: `guide` recommends a route, while `deliver-feature` manages authorized work along it. A request to fix a bug belongs with `fix-bug`; a request to understand the cause without edits belongs with `investigate`. Recommend a conversation or explanation when no specialized workflow is needed. Broader uncertainty or sustained learning may fit `explore` or `teach` if available.
+Distinguish advice from execution: `guide` recommends a route, while `deliver-feature` manages authorized work along it. A request to fix a bug belongs with `fix-bug`. A request to understand the cause without edits belongs with `investigate`. Recommend a conversation or explanation when no specialized workflow is needed. Broader uncertainty or sustained learning may fit `explore` or `teach` if available.
 
 ## Make the recommendation usable
 
@@ -44,4 +44,4 @@ Lead with one recommended next step, why it fits, and what the user should get f
 
 Keep the answer short. Show a longer route or alternatives only when the user asks or when a meaningful choice needs explanation. Treat any route as adaptable, not a mandatory sequence.
 
-Finish once the user knows what to do next. When the user has also asked you to proceed, use the chosen skill within that authorization; otherwise leave the example ready for them to invoke. Recommending a skill does not grant additional permissions or require creating a tracking document.
+Finish once the user knows what to do next. When the user has also asked you to proceed, use the chosen skill within that authorization. Otherwise leave the example ready for them to invoke. Recommending a skill does not grant additional permissions or require creating a tracking document.

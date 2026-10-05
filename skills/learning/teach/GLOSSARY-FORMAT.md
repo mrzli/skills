@@ -32,4 +32,4 @@ _Avoid_: Effort score, intensity rating
 - **Use the glossary's own terms.** Prefer established terms everywhere, including when defining other concepts.
 - **Group under subheadings** within `## Terms` when natural clusters emerge (e.g. `### Anatomy`, `### Programming`). A flat list is fine when terms cohere.
 - **Flag ambiguities explicitly.** If a term is used loosely in the wider field, note the resolution: "In this workspace, 'set' always means a working set; warm-ups are tracked separately."
-- **Revise as understanding deepens.** A definition the user wrote in week one may be wrong by week six. Update in place; do not leave stale entries.
+- **Revise as understanding deepens.** A definition the user wrote in week one may be wrong by week six. Update in place. Do not leave stale entries.

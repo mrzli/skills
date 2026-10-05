@@ -15,12 +15,12 @@ Look up facts available in the repository rather than asking the user to supply 
 
 Describe the main user journey and relevant alternatives, permissions, failure cases, and compatibility expectations. Choose the smallest useful scope that still solves the stated problem. Record explicit exclusions and what success would look like in observable terms.
 
-Separate required outcomes from suggested implementations. Investigate technical uncertainty when it changes feasibility or scope; leave routine technical choices for design or implementation. Use an example or sketch to make a consequential choice concrete, without turning clarification into production coding.
+Separate required outcomes from suggested implementations. Investigate technical uncertainty when it changes feasibility or scope. Leave routine technical choices for design or implementation. Use an example or sketch to make a consequential choice concrete, without turning clarification into production coding.
 
-Keep agreed decisions, working assumptions, and open questions distinct. Ask for a decision when competing interpretations would produce materially different features. Low-impact details can be deferred explicitly; uncertainty that changes the feature's purpose or required behavior cannot be silently treated as agreement.
+Keep agreed decisions, working assumptions, and open questions distinct. Ask for a decision when competing interpretations would produce materially different features. Low-impact details can be deferred explicitly. Uncertainty that changes the feature's purpose or required behavior cannot be silently treated as agreement.
 
 ## Capture the result
 
-Summarize the problem, intended users, chosen scope, key behavior, success criteria, exclusions, and remaining questions. Keep this in the existing feature artifact when one exists. For a discussion alone, a concise response is enough; save a separate brief when requested or needed for a handoff, following project conventions or `.scratch/features/<descriptive-slug>.md`.
+Summarize the problem, intended users, chosen scope, key behavior, success criteria, exclusions, and remaining questions. Keep this in the existing feature artifact when one exists. For a discussion alone, a concise response is enough. Save a separate brief when requested or needed for a handoff, following project conventions or `.scratch/features/<descriptive-slug>.md`.
 
 Finish when there is enough shared understanding for the intended next step, or explain the specific decision or evidence still needed. Recommend design for unresolved technical choices, or specification when the behavior is settled. Shaping alone does not request implementation or creation of tracker issues.

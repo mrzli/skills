@@ -9,7 +9,7 @@ Write a specification that another agent or developer can use without reconstruc
 
 Read the request, relevant conversation, referenced artifacts, and applicable project instructions. Inspect enough of the codebase to distinguish current behavior from the proposed change and to identify relevant interfaces and constraints. Follow established terminology and architectural decisions.
 
-Separate agreed requirements from suggestions, assumptions, and unresolved decisions. Resolve factual questions from available evidence. Ask focused questions only when missing information materially changes the specification. Draft the settled parts while questions remain open; mark the document as a draft if unresolved decisions block implementation. Keep routine implementation choices open unless they are actual constraints.
+Separate agreed requirements from suggestions, assumptions, and unresolved decisions. Resolve factual questions from available evidence. Ask focused questions only when missing information materially changes the specification. Draft the settled parts while questions remain open. Mark the document as a draft if unresolved decisions block implementation. Keep routine implementation choices open unless they are actual constraints.
 
 ## Describe the change
 
@@ -23,13 +23,13 @@ Use the project's specification format if one exists. Otherwise, organize the do
 
 Make acceptance criteria specific enough for an implementer and reviewer to reach the same conclusion. Replace vague requirements such as "handles errors gracefully" with the expected response to concrete failure cases. Cover the important behaviors and constraints without inventing requirements to fill a template.
 
-Choose verification appropriate to each criterion, such as automated tests, application interaction, or operational checks. Prefer existing test boundaries and tools. Identify verification gaps; code inspection or a passing unit test may not prove an end-to-end outcome. Leave test implementation details to implementation unless already agreed.
+Choose verification appropriate to each criterion, such as automated tests, application interaction, or operational checks. Prefer existing test boundaries and tools. Identify verification gaps. Code inspection or a passing unit test may not prove an end-to-end outcome. Leave test implementation details to implementation unless already agreed.
 
 Include paths, interfaces, or small examples when they materially clarify a requirement or decision. Distinguish references to the current implementation from required future structure. Keep task breakdown and scheduling for planning.
 
 ## Save and check
 
-Update the existing specification when it covers the same change. Otherwise use the requested destination or project convention; absent either, save to `docs/specs/<descriptive-slug>.md`. Read the target before editing, preserve unrelated content, and consolidate superseded statements so the specification expresses the current agreement.
+Update the existing specification when it covers the same change. Otherwise use the requested destination or project convention. Absent either, save to `docs/specs/<descriptive-slug>.md`. Read the target before editing, preserve unrelated content, and consolidate superseded statements so the specification expresses the current agreement.
 
 Publish to an external tracker only when authorized by the request or established workflow. Otherwise report the saved local path.
 

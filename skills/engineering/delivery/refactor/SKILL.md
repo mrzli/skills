@@ -3,7 +3,7 @@ name: refactor
 description: Improve the structure of a selected area of code while preserving its intended observable behavior. Use for a scoped restructuring, simplification, or internal migration whose purpose is maintainability rather than new functionality.
 ---
 
-Deliver a structural improvement with evidence that required behavior is preserved. Start from a selected problem; if the target or benefit is unclear, inspect the area and recommend a bounded scope before a broad rewrite.
+Deliver a structural improvement with evidence that required behavior is preserved. Start from a selected problem. If the target or benefit is unclear, inspect the area and recommend a bounded scope before a broad rewrite.
 
 ## Define what must stay the same
 
@@ -19,7 +19,7 @@ Choose a target structure that addresses the demonstrated problem with minimal u
 
 Use [implement](../implement/SKILL.md) for execution, supplying the preservation constraints and baseline checks. Prefer small transformations that keep checks passing. For widespread changes, introduce a compatible form, migrate consumers, and remove the old form only after confirming no required consumers remain. Account for external consumers when repository search cannot establish that fact.
 
-Keep unrelated formatting, dependency updates, and feature additions out of the refactor. Update tests that depend on removed internals while retaining equivalent behavioral coverage; deleting inconvenient assertions is not evidence of preservation.
+Keep unrelated formatting, dependency updates, and feature additions out of the refactor. Update tests that depend on removed internals while retaining equivalent behavioral coverage. Deleting inconvenient assertions is not evidence of preservation.
 
 ## Verify the result
 

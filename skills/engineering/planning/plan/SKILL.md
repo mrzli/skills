@@ -3,7 +3,7 @@ name: plan
 description: Break agreed engineering work into manageable, verifiable tasks with explicit dependencies. Use when a specification or scoped change is too large to implement as one piece, or when an existing implementation plan needs revision.
 ---
 
-Produce an executable work plan from the request, specification, or agreed conversation. Planning organizes work; it does not authorize implementation or settle unresolved product choices by assumption.
+Produce an executable work plan from the request, specification, or agreed conversation. Planning organizes work. It does not authorize implementation or settle unresolved product choices by assumption.
 
 ## Understand the work
 
@@ -24,11 +24,11 @@ For each task, provide:
 - Observable completion criteria and appropriate verification.
 - Genuine prerequisites, including unresolved decisions, or an explicit statement that it can start now.
 
-Choose tasks small enough to understand and finish without reconstructing the entire effort. One task is valid for a small change. Dependencies express necessity, not a preferred ordering; distinguish independent work from tasks that would conflict over shared files or state.
+Choose tasks small enough to understand and finish without reconstructing the entire effort. One task is valid for a small change. Dependencies express necessity, not a preferred ordering. Distinguish independent work from tasks that would conflict over shared files or state.
 
 ## Save and check
 
-Update the existing plan or follow the requested destination and project convention. Otherwise save one Markdown plan to `docs/plans/<descriptive-slug>.md`; split it only when the size or workflow warrants it. Creating external tickets requires authorization. Preserve completed work and evidence when revising a plan.
+Update the existing plan or follow the requested destination and project convention. Otherwise save one Markdown plan to `docs/plans/<descriptive-slug>.md`. Split it only when the size or workflow warrants it. Creating external tickets requires authorization. Preserve completed work and evidence when revising a plan.
 
 Check that every in-scope acceptance criterion is covered, dependencies are acyclic and resolvable, and tasks have enough context to execute. Identify the tasks ready to start and any blocked work. Include final integration and verification where individual task checks cannot establish the overall outcome.
 

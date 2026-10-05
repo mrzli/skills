@@ -3,13 +3,13 @@ name: investigate
 description: Answer a concrete engineering question through code inspection, primary-source research, or a focused experiment. Use when an unknown needs evidence before a decision or implementation can proceed.
 ---
 
-Produce a supported answer to the question, including the limits of the evidence. Investigation may recommend a change; it does not imply production implementation.
+Produce a supported answer to the question, including the limits of the evidence. Investigation may recommend a change. It does not imply production implementation.
 
 ## Define the question
 
 Identify the unknown, the decision it affects, and what evidence would answer it. Use the request and available context to bound the work. Ask for clarification only when different interpretations would lead to materially different investigations.
 
-Read relevant project instructions and existing findings. Record important versions, configuration, and environmental assumptions. Prefer the smallest useful investigation; broaden it when the evidence exposes a necessary dependency or contradicts the initial explanation.
+Read relevant project instructions and existing findings. Record important versions, configuration, and environmental assumptions. Prefer the smallest useful investigation. Broaden it when the evidence exposes a necessary dependency or contradicts the initial explanation.
 
 ## Gather evidence
 
@@ -29,4 +29,4 @@ Lead with the conclusion or the unresolved question. Support it with file locati
 
 For substantial investigations or later handoff, save findings using the existing project convention or `.scratch/investigations/<descriptive-slug>.md`. Include enough setup and artifact references to reproduce important results. A short answer with evidence is sufficient for a small question.
 
-Stop when the question is answered well enough for its decision, or when a specific evidence gap prevents further useful progress. Return the result to the caller; production fixes, design commitments, and discarded experimental artifacts should remain distinguishable from findings.
+Stop when the question is answered well enough for its decision, or when a specific evidence gap prevents further useful progress. Return the result to the caller. Production fixes, design commitments, and discarded experimental artifacts should remain distinguishable from findings.

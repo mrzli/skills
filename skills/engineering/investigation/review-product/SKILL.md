@@ -7,7 +7,7 @@ Evaluate product value against the intended user outcome. Keep this distinct fro
 
 ## Establish the evaluation
 
-Read the project brief, feature goals, prior evaluations, and available product evidence. Identify the audience, outcome, scope, and decision this review should inform. Reuse existing success criteria; if they are absent, propose observable criteria and label them as provisional.
+Read the project brief, feature goals, prior evaluations, and available product evidence. Identify the audience, outcome, scope, and decision this review should inform. Reuse existing success criteria. If they are absent, propose observable criteria and label them as provisional.
 
 Gather available evidence such as user feedback, support reports, usage data, task completion, and observed interaction with the product. Note the population, time period, collection method, and gaps that affect interpretation. For personal tools, the user's actual experience and representative tasks may be sufficient.
 
@@ -27,4 +27,4 @@ Identify the most important opportunities or reasons to retain the current produ
 
 Propose a concrete next step and how its effect would be evaluated. Distinguish a product decision from an experiment intended to inform one. Carry unresolved assumptions into any subsequent feature shaping or specification.
 
-Return the findings and recommended decision, following the project's reporting convention. When a persistent report is useful or requested, save it to the established location or `.scratch/product-reviews/<descriptive-slug>.md`. Finish with evidence limitations and the next decision or learning step; implementing product changes remains separate work.
+Return the findings and recommended decision, following the project's reporting convention. When a persistent report is useful or requested, save it to the established location or `.scratch/product-reviews/<descriptive-slug>.md`. Finish with evidence limitations and the next decision or learning step. Implementing product changes remains separate work.

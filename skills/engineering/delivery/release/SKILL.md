@@ -3,17 +3,17 @@ name: release
 description: Prepare and execute a software release using the project's delivery procedure, then verify the result. Use for deploying a verified change or publishing a version to a specified environment or audience.
 ---
 
-Deliver a known revision or artifact to the intended target and record evidence of its state. Use the project's release procedure and available tools; release preparation and an actual release are distinct outcomes.
+Deliver a known revision or artifact to the intended target and record evidence of its state. Use the project's release procedure and available tools. Release preparation and an actual release are distinct outcomes.
 
 ## Establish the release boundary
 
 Read the request, project instructions, release documentation, CI configuration, and relevant change and verification records. Identify the revision or artifact, target environment or registry, version where applicable, and the authorized actions. Resolve ambiguous targets before an external mutation.
 
-Inspect the working tree, branch, and release state. Ensure the artifact being released corresponds to the verified change; account for any subsequent edits or rebuilds. Check required tests, review findings, dependencies, configuration, migrations, and compatibility with the running system. If evidence is missing, complete the available preparation and report what blocks release.
+Inspect the working tree, branch, and release state. Ensure the artifact being released corresponds to the verified change. Account for any subsequent edits or rebuilds. Check required tests, review findings, dependencies, configuration, migrations, and compatibility with the running system. If evidence is missing, complete the available preparation and report what blocks release.
 
 ## Prepare the operation
 
-Use established automation and versioning conventions. Identify the release steps, post-release checks, and relevant failure signals. For changes to persistent data or public contracts, establish deployment ordering, backward compatibility, and the recovery procedure. Check whether rollback is actually safe; restoring an old binary may not reverse a data migration.
+Use established automation and versioning conventions. Identify the release steps, post-release checks, and relevant failure signals. For changes to persistent data or public contracts, establish deployment ordering, backward compatibility, and the recovery procedure. Check whether rollback is actually safe. Restoring an old binary may not reverse a data migration.
 
 Prepare required release notes or artifacts using the project convention. Keep secrets in the configured credential mechanism. Verify access with read-only checks where possible. Avoid inventing infrastructure, deployment commands, or credentials when the project has not established them.
 
@@ -29,6 +29,6 @@ If verification fails, use the established recovery procedure within the authori
 
 ## Record the result
 
-Update the existing release record or use the project's convention; if absent, save a concise record to `docs/releases/<version-or-descriptive-slug>.md`. Include revision and artifact identifiers, target, actions taken, verification evidence, and any recovery or remaining limitations. Record unsuccessful attempts too when they changed external state.
+Update the existing release record or use the project's convention. If absent, save a concise record to `docs/releases/<version-or-descriptive-slug>.md`. Include revision and artifact identifiers, target, actions taken, verification evidence, and any recovery or remaining limitations. Record unsuccessful attempts too when they changed external state.
 
 Finish with an explicit status: prepared but not released, released and verified, or incomplete with the known target state. Do not equate a created pull request or local tag with a completed deployment or publication.

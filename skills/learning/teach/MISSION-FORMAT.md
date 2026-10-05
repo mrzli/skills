@@ -9,7 +9,7 @@
 
 ## Why
 
-{1-3 sentences. The concrete real-world goal the user is chasing. What changes in their life or work when they have this skill? Avoid abstract framings like "to understand X"; push for the underlying outcome.}
+{1-3 sentences. The concrete real-world goal the user is chasing. What changes in their life or work when they have this skill? Avoid abstract framings like "to understand X". Push for the underlying outcome.}
 
 ## Success looks like
 

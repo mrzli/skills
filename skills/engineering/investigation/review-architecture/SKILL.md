@@ -3,7 +3,7 @@ name: review-architecture
 description: Assess an existing codebase's structure and identify evidence-backed improvement opportunities. Use for architectural friction, coupling, unclear responsibilities, or difficulty changing and testing a subsystem, rather than review of one diff.
 ---
 
-Produce a scoped assessment and prioritized recommendations. Architecture review identifies worthwhile work; it does not automatically redesign or refactor the codebase.
+Produce a scoped assessment and prioritized recommendations. Architecture review identifies worthwhile work. It does not automatically redesign or refactor the codebase.
 
 ## Select the scope
 

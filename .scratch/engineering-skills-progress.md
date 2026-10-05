@@ -12,25 +12,25 @@ The learning handoff is `/tmp/software-engineering-flow-handoff-wb0g9t9d.md`. It
 
 | Order | Group | Skill | Status |
 | --- | --- | --- | --- |
-| 1 | delivery | implement | Committed as ff6d342; real-task evaluation pending |
-| 2 | delivery | review-code | Committed as 8b20bf5; real-task evaluation pending |
-| 3 | planning | write-spec | Committed as df7f048; real-task evaluation pending |
-| 4 | planning | plan | Committed as a6fa869; real-task evaluation pending |
-| 5 | planning | shape-feature | Committed as 2f94814; real-task evaluation pending |
-| 6 | investigation | investigate | Committed as 7737504; real-task evaluation pending |
-| 7 | planning | design | Committed as 2d9c775; real-task evaluation pending |
-| 8 | delivery | fix-bug | Committed as 5292e24; real-task evaluation pending |
-| 9 | delivery | refactor | Committed as 62ec0c2; real-task evaluation pending |
-| 10 | delivery | release | Committed as 6700d6b; real-task evaluation pending |
-| 11 | workflow | deliver-feature | Committed as 60bfb01; real-task evaluation pending |
-| 12 | planning | start-project | Committed as 4481a22; real-task evaluation pending |
-| 13 | investigation | review-architecture | Committed as 3561798; real-task evaluation pending |
-| 14 | investigation | review-product | Committed as db6b08b; real-task evaluation pending |
-| 15 | workflow | improve-workflow | Committed as 6be9dcd; used in the 2026-10-05 retrospective, with findings below |
-| 16 | workflow | guide | Committed as 799d5d6; used for skill comparison in the 2026-10-05 session |
-| 17 | workflow | maintain-skills | Committed as 604e369; collection-review evaluation pending |
+| 1 | delivery | implement | Committed as ff6d342. Real-task evaluation pending |
+| 2 | delivery | review-code | Committed as 8b20bf5. Real-task evaluation pending |
+| 3 | planning | write-spec | Committed as df7f048. Real-task evaluation pending |
+| 4 | planning | plan | Committed as a6fa869. Real-task evaluation pending |
+| 5 | planning | shape-feature | Committed as 2f94814. Real-task evaluation pending |
+| 6 | investigation | investigate | Committed as 7737504. Real-task evaluation pending |
+| 7 | planning | design | Committed as 2d9c775. Real-task evaluation pending |
+| 8 | delivery | fix-bug | Committed as 5292e24. Real-task evaluation pending |
+| 9 | delivery | refactor | Committed as 62ec0c2. Real-task evaluation pending |
+| 10 | delivery | release | Committed as 6700d6b. Real-task evaluation pending |
+| 11 | workflow | deliver-feature | Committed as 60bfb01. Real-task evaluation pending |
+| 12 | planning | start-project | Committed as 4481a22. Real-task evaluation pending |
+| 13 | investigation | review-architecture | Committed as 3561798. Real-task evaluation pending |
+| 14 | investigation | review-product | Committed as db6b08b. Real-task evaluation pending |
+| 15 | workflow | improve-workflow | Committed as 6be9dcd. Used in the 2026-10-05 retrospective, with findings below |
+| 16 | workflow | guide | Committed as 799d5d6. Used for skill comparison in the 2026-10-05 session |
+| 17 | workflow | maintain-skills | Committed as 604e369. Collection-review evaluation pending |
 
-Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`; `guide` and `maintain-skills` were added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set; broader real-task evaluation is still recommended.
+Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`. `guide` and `maintain-skills` were added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set. Broader real-task evaluation is still recommended.
 
 ## Implement design
 
@@ -38,7 +38,7 @@ Location: `skills/engineering/delivery/implement/SKILL.md`.
 
 References inspected: Matt's engineering `implement`, `implement-spec`, `tdd`, and `code-review`, plus the learning map. Retained scoped implementation, incremental verification, behavior-focused tests, and review with correction. Kept large task-graph orchestration out of this skill.
 
-Differences from Matt: accepts a clear request without requiring tickets; follows project testing requirements without a mandatory interview about test boundaries; uses `review-code` when available, with self-review as a fallback; does not prescribe commits or parallel agents. No additional reference files or metadata are needed for this first version. Automatic discovery remains enabled by default.
+Compared with Matt's skill, this skill accepts a clear request without requiring tickets. It follows project testing requirements without a mandatory interview about test boundaries. It uses `review-code` when available, with self-review as a fallback. It does not prescribe commits or parallel agents. No additional reference files or metadata are needed for this first version. Automatic discovery remains enabled by default.
 
 ## Review code design
 
@@ -46,9 +46,9 @@ Location: `skills/engineering/delivery/review-code/SKILL.md`.
 
 Reference: Matt's `skills/engineering/code-review/SKILL.md`. Retains review against both requirements and project conventions. Replaces mandatory issue-tracker setup, parallel agents, fixed smell catalogue, and separate verbatim reports with a self-contained review and prioritized evidence-backed findings.
 
-Supports working-tree changes including relevant untracked files, as well as commits, branches, and pull requests. Infers scope when clear and asks only for consequential ambiguity. Accepts conversation requirements without a formal spec. Standalone review reports findings; an enclosing implementation task can authorize corrections. No mandatory subagent dependency; self-review must be identified.
+Supports working-tree changes including relevant untracked files, as well as commits, branches, and pull requests. Infers scope when clear and asks only for consequential ambiguity. Accepts conversation requirements without a formal spec. Standalone review reports findings. An enclosing implementation task can authorize corrections. No mandatory subagent dependency. Self-review must be identified.
 
-Validation: all eight sync tests and the diff whitespace check passed. Both discovery links resolve to the new skill. Manually checked scope handling, missing requirements, standalone versus implementation-authorized fixes, and compatibility with `implement`. The initial validation attempt lacked PyYAML; this is now resolved by using `/usr/bin/python3`. No independent behavioral evaluation has been performed. Syncing initially required escalation; the later permission configuration now permits writes to the discovery directories.
+Validation: all eight sync tests and the diff whitespace check passed. Both discovery links resolve to the new skill. Manually checked scope handling, missing requirements, standalone versus implementation-authorized fixes, and compatibility with `implement`. The initial validation attempt lacked PyYAML. This is now resolved by using `/usr/bin/python3`. No independent behavioral evaluation has been performed. Syncing initially required escalation. The later permission configuration now permits writes to the discovery directories.
 
 ## Write spec design
 
@@ -64,25 +64,25 @@ Matt's operational files were read from the local clone as source material, not 
 
 | Our skill | Reference and adaptation |
 | --- | --- |
-| plan | `to-tickets`: verifiable behavior slices and real dependencies; local plan by default, no mandatory tracker or approval round. |
+| plan | `to-tickets`: verifiable behavior slices and real dependencies, local plan by default, no mandatory tracker or approval round. |
 | shape-feature | `grill-with-docs`, `domain-modeling`, and the learning map: focused clarification and explicit scope, without exhaustive interviewing. |
-| investigate | `research` and `prototype`: primary evidence and focused experiments; no mandatory background agent or production edits. |
-| design | `codebase-design`: useful interfaces and localized complexity, with broader compatibility and operational considerations; no imposed vocabulary. |
-| fix-bug | `diagnosing-bugs`: symptom-specific reproduction, evidence-led diagnosis, regression verification; static investigation remains useful when reproduction is unavailable. |
-| refactor | `codebase-design`, `implement`, and `to-tickets`: preservation contracts and incremental migration; reuses our implementation skill. |
-| release | No direct equivalent in the inspected set; `pr` and the learning map inform evidence and recovery considerations. Uses project-specific delivery procedures. |
-| deliver-feature | `implement-spec` and `ask-matt`: coordination and dependencies; sequential by default, durable progress, selective stages, no automatic tracker/branch/deployment assumptions. |
-| start-project | `wayfinder`, `grill-with-docs`, and the learning map: direction and uncertainty; produces a brief without scaffolding a project. |
-| review-architecture | `improve-codebase-architecture`: evidence of structural friction and prioritized candidates; no mandatory HTML, deep-module terminology, or automatic redesign. |
-| review-product | No direct equivalent; follows the learning map's product-outcome responsibility and explicitly distinguishes observed use from heuristic assessment. |
+| investigate | `research` and `prototype`: primary evidence and focused experiments, no mandatory background agent or production edits. |
+| design | `codebase-design`: useful interfaces and localized complexity, with broader compatibility and operational considerations, no imposed vocabulary. |
+| fix-bug | `diagnosing-bugs`: symptom-specific reproduction, evidence-led diagnosis, regression verification. Static investigation remains useful when reproduction is unavailable. |
+| refactor | `codebase-design`, `implement`, and `to-tickets`: preservation contracts and incremental migration. Reuses our implementation skill. |
+| release | No direct equivalent in the inspected set. `pr` and the learning map inform evidence and recovery considerations. Uses project-specific delivery procedures. |
+| deliver-feature | `implement-spec` and `ask-matt`: coordination and dependencies, sequential by default, durable progress, selective stages, no automatic tracker/branch/deployment assumptions. |
+| start-project | `wayfinder`, `grill-with-docs`, and the learning map: direction and uncertainty. Produces a brief without scaffolding a project. |
+| review-architecture | `improve-codebase-architecture`: evidence of structural friction and prioritized candidates, no mandatory HTML, deep-module terminology, or automatic redesign. |
+| review-product | No direct equivalent. Follows the learning map's product-outcome responsibility and explicitly distinguishes observed use from heuristic assessment. |
 | improve-workflow | `retro` and the learning map: evidence-based corrections, appropriate automation, and an explicit later evaluation point. |
 
 ## Original implementation validation (2026-10-02)
 
-- All 15 engineering skills pass the bundled skill validator using `/usr/bin/python3`; its system environment includes PyYAML.
+- All 15 engineering skills pass the bundled skill validator using `/usr/bin/python3`. Its system environment includes PyYAML.
 - All local skill references and README links resolve.
-- The 12 skill implementation commits each contain one new skill and a README update; these notes are preserved in a separate documentation commit.
-- All eight sync tests pass. Both discovery directories contain valid links for all 15 engineering skills; repeat sync makes no changes.
+- The 12 skill implementation commits each contain one new skill and a README update. These notes are preserved in a separate documentation commit.
+- All eight sync tests pass. Both discovery directories contain valid links for all 15 engineering skills. Repeat sync makes no changes.
 - Sync completed in the sandbox without approval under the updated permission profile.
 - Diff whitespace checks pass. Instructions were manually reviewed for scope, outputs, authorization boundaries, and composition. This is not independent behavioral evaluation or proof of real-task effectiveness.
 
@@ -90,17 +90,17 @@ Matt's operational files were read from the local clone as source material, not 
 
 Location: `skills/engineering/workflow/guide/SKILL.md`. Reference: Matt's `ask-matt`, read again for this addition. Provides situation-based routing across all 15 engineering activities, reads only the recommended skill, and gives one concrete next step with a tailored invocation. Supports projects without a repository and questions without an explicit argument. Keeps advice separate from execution, respects an accompanying request to proceed, and allows ordinary conversation when a skill adds no value. No mandatory tracker, document, or multi-stage process.
 
-Validation: bundled validator and diff whitespace check passed; all 15 routing links resolve and both discovery links were verified. Manually reviewed routing for a new project, a small agreed change, diagnosis without edits, and advice with or without authorization to proceed. Real-session behavioral evaluation remains pending.
+Validation: bundled validator and diff whitespace check passed. All 15 routing links resolve and both discovery links were verified. Manually reviewed routing for a new project, a small agreed change, diagnosis without edits, and advice with or without authorization to proceed. Real-session behavioral evaluation remains pending.
 
 ## Maintenance additions (2026-10-05)
 
 `guide` was committed as 799d5d6. `maintain-skills` was added in 604e369 and linked from `guide` and `improve-workflow`. It reviews collection-level gaps, overlap, and retirement candidates. Small corrections within one skill remain direct work for `improve-workflow`.
 
-The initial external idea source is Matt Pocock's engineering and productivity directories. The extensible list lives in [sources.md](../skills/engineering/workflow/maintain-skills/references/sources.md). This configures future reviews; it does not mean the collection has been reviewed against current upstream content.
+The initial external idea source is Matt Pocock's engineering and productivity directories. The extensible list lives in [sources.md](../skills/engineering/workflow/maintain-skills/references/sources.md). This configures future reviews. It does not mean the collection has been reviewed against current upstream content.
 
 The retrospective identified ambiguity between repository-local and user-installed copies with identical names. [AGENTS.md](../AGENTS.md) now contains the local-copy preference and the synchronization requirement, committed as 92dbb26 and 1c12c4c respectively.
 
-A proposed repository-owned validator, dependency environment, and tests were implemented but removed before commit at the user's request. Keep validation proportional to observed problems. The failed external-validator invocation used a Python interpreter without PyYAML; `/usr/bin/python3` has PyYAML on this machine, reconfirmed on 2026-10-05. This is an environment-specific fact, not a dependency guarantee for other machines.
+A proposed repository-owned validator, dependency environment, and tests were implemented but removed before commit at the user's request. Keep validation proportional to observed problems. The failed external-validator invocation used a Python interpreter without PyYAML. `/usr/bin/python3` has PyYAML on this machine, reconfirmed on 2026-10-05. This is an environment-specific fact, not a dependency guarantee for other machines.
 
 ## Current next step
 

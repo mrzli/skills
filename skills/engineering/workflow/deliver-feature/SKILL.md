@@ -3,11 +3,11 @@ name: deliver-feature
 description: Coordinate a feature through clarification, planning, implementation, verification, and authorized delivery. Use when the user wants the whole feature completed across multiple tasks rather than manually driving each activity.
 ---
 
-Carry the feature to the user's requested endpoint using the relevant skills. Choose activities based on the work; a small change does not need every stage or a separate artifact for each one.
+Carry the feature to the user's requested endpoint using the relevant skills. Choose activities based on the work. A small change does not need every stage or a separate artifact for each one.
 
 ## Establish the outcome and state
 
-Read the request, existing feature artifacts, project instructions, and working tree. Identify acceptance criteria, current progress, and the endpoint: verified local code, a pull request, or a release. Honor existing authorization; the skill's name alone does not authorize a push, merge, or deployment.
+Read the request, existing feature artifacts, project instructions, and working tree. Identify acceptance criteria, current progress, and the endpoint: verified local code, a pull request, or a release. Honor existing authorization. The skill's name alone does not authorize a push, merge, or deployment.
 
 Reuse the current specification and plan when they remain accurate. For work spanning tasks or sessions, keep a durable progress record in the existing plan or `.scratch/delivery/<feature-slug>.md`. Record artifact links, decisions, task dependencies and status, relevant revisions, verification evidence, and the next action. On resumption, reconcile the record with actual repository and external state before repeating work.
 
@@ -21,15 +21,15 @@ Reuse the current specification and plan when they remain accurate. For work spa
 
 Read the applicable skill before using it. Carry its output into the next activity rather than asking the user to restate information. If a skill is unavailable, perform the bounded activity directly when feasible and report material limitations.
 
-Ask for user judgment only when evidence cannot resolve a consequential decision. Continue independent work while waiting. Reuse settled decisions and update affected artifacts when new evidence requires a change of approach; do not quietly expand the feature.
+Ask for user judgment only when evidence cannot resolve a consequential decision. Continue independent work while waiting. Reuse settled decisions and update affected artifacts when new evidence requires a change of approach. Do not quietly expand the feature.
 
 ## Execute and integrate
 
-Work on tasks whose prerequisites are satisfied. Use sequential execution by default. If delegation is separately authorized and useful, give each worker a bounded task and coordinate shared files, branches, and state. Skills define the procedure; continuation and concurrency depend on the tools actually available.
+Work on tasks whose prerequisites are satisfied. Use sequential execution by default. If delegation is separately authorized and useful, give each worker a bounded task and coordinate shared files, branches, and state. Skills define the procedure. Continuation and concurrency depend on the tools actually available.
 
 Update task status from evidence, not intent. Capture blockers precisely and switch to independent work when possible. Inspect failures and change the approach rather than repeating ineffective actions without new evidence.
 
-After the tasks are integrated, verify the feature's acceptance criteria and important interactions across task boundaries. Reuse valid task checks and reviews; add an integrated review for consequences they did not cover. Resolve blocking findings and rerun affected checks after corrections.
+After the tasks are integrated, verify the feature's acceptance criteria and important interactions across task boundaries. Reuse valid task checks and reviews. Add an integrated review for consequences they did not cover. Resolve blocking findings and rerun affected checks after corrections.
 
 ## Finish or hand off
 
