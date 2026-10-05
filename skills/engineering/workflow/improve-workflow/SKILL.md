@@ -17,6 +17,8 @@ Trace the problem to its source. Consider unclear requirements, missing informat
 
 Consider clarifying or removing an instruction, improving access to evidence, changing a skill's inputs or outputs, moving a step, or automating a reliable check. Add, merge, or remove skills only when their responsibilities justify it. Retaining the current process is a valid recommendation.
 
+When the evidence calls for reviewing skill boundaries, missing capabilities, or overlapping responsibilities across the collection, use [maintain-skills](../maintain-skills/SKILL.md). Pass the observed friction, affected skills, and existing authorization; use its findings in the correction. Handle a small correction within one skill directly, without expanding it into a collection review.
+
 Prefer a deterministic check for a recurring mechanical error when its maintenance cost is justified. Use guidance for decisions that require judgment. Put a correction at the narrowest appropriate level: project-specific behavior belongs in the project, while a reusable skill change should be supported by a general need.
 
 For each proposal, state the evidence, suspected cause, change, expected benefit, cost, and how to evaluate it. Prioritize a small number of corrections. Treat broad changes based on one incident as hypotheses, and preserve useful flexibility rather than adding universal rules for every failure.

@@ -32,6 +32,7 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Find structural problems worth addressing in existing code | [review-architecture](../../investigation/review-architecture/SKILL.md) |
 | Assess whether the product helps its intended users | [review-product](../../investigation/review-product/SKILL.md) |
 | Improve the development process after observed friction | [improve-workflow](../improve-workflow/SKILL.md) |
+| Review the skill collection or compare it with external skill repositories | [maintain-skills](../maintain-skills/SKILL.md) |
 
 Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it; settled decisions do not need another interview. A small, clear change can go directly to implementation without separate design, specification, or planning documents.
 
