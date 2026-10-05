@@ -19,3 +19,5 @@ Apply [writing-text](../writing-text/SKILL.md) and other relevant writing skills
 Resolve inconsistencies and outdated links. Preserve behavior, requirements, and invocation settings.
 
 Update evolving documents, such as specs, tasks, and improvement notes, to reflect the repo's current state. Distinguish intended behavior from implemented behavior. Preserve unresolved requirements and decisions.
+
+Before finishing, check the edited documents against [writing-text](../writing-text/SKILL.md), including prose punctuation. Reading the guidance alone does not complete the review.
