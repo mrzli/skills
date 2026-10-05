@@ -16,4 +16,4 @@ Before implementing anything, help me figure out how to explore and define that 
 
 ## Where to resume
 
-The original goals above are retained for context. The productivity review is complete, and all 15 planned engineering skills are implemented. `guide` and `maintain-skills` were added afterward. Future collection reviews use `maintain-skills`, whose initial idea sources are Matt Pocock's engineering and productivity directories. See [engineering-skills-progress.md](engineering-skills-progress.md) for current decisions, skill commits, reference mapping, and validation status.
+The original goals above are retained for context. The productivity review is complete, and all 15 planned engineering skills are implemented. `guide`, `maintain-skills`, and `prototype` were added afterward. Future collection reviews use `maintain-skills`, whose initial idea sources are Matt Pocock's engineering and productivity directories. See [engineering-skills-progress.md](engineering-skills-progress.md) for current decisions, skill commits, reference mapping, and validation status.

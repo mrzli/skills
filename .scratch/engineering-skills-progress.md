@@ -28,9 +28,10 @@ The learning handoff is `/tmp/software-engineering-flow-handoff-wb0g9t9d.md`. It
 | 14 | investigation | review-product | Committed as db6b08b. Real-task evaluation pending |
 | 15 | workflow | improve-workflow | Committed as 6be9dcd. Used in the 2026-10-05 retrospective, with findings below |
 | 16 | workflow | guide | Committed as 799d5d6. Used for skill comparison in the 2026-10-05 session |
-| 17 | workflow | maintain-skills | Committed as 604e369. Collection-review evaluation pending |
+| 17 | workflow | maintain-skills | Committed as 604e369. Initial collection review recorded on 2026-10-05 |
+| 18 | investigation | prototype | Added at the user's request. Real-task evaluation pending |
 
-Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`. `guide` and `maintain-skills` were added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set. Broader real-task evaluation is still recommended.
+Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`. `guide`, `maintain-skills`, and `prototype` were added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set. Broader real-task evaluation is still recommended.
 
 ## Implement design
 
@@ -96,7 +97,7 @@ Validation: bundled validator and diff whitespace check passed. All 15 routing l
 
 `guide` was committed as 799d5d6. `maintain-skills` was added in 604e369 and linked from `guide` and `improve-workflow`. It reviews collection-level gaps, overlap, and retirement candidates. Small corrections within one skill remain direct work for `improve-workflow`.
 
-The initial external idea source is Matt Pocock's engineering and productivity directories. The extensible list lives in [sources.md](../skills/engineering/workflow/maintain-skills/references/sources.md). This configures future reviews. It does not mean the collection has been reviewed against current upstream content.
+The initial external idea source is Matt Pocock's engineering and productivity directories. The extensible list lives in [sources.md](../skills/engineering/workflow/maintain-skills/references/sources.md). The [initial collection review](skills/2026-10-05-collection-review.md) records the inspected upstream revision, scope, and remaining evidence gaps.
 
 The retrospective identified ambiguity between repository-local and user-installed copies with identical names. [AGENTS.md](../AGENTS.md) now contains the local-copy preference and the synchronization requirement, committed as 92dbb26 and 1c12c4c respectively.
 
@@ -104,7 +105,7 @@ A proposed repository-owned validator, dependency environment, and tests were im
 
 ## Current next step
 
-Evaluate `maintain-skills` on a collection review and continue trying the other skills on real work. In particular, exercise a small request through implementation, a multi-task feature through coordination, a bug with incomplete reproduction evidence, and release preparation without publication authorization. A successful invocation alone does not establish a skill's effectiveness.
+Evaluate the recommendations from the initial collection review and try `prototype` on a UI comparison and an interactive logic demonstration. Continue trying the other skills on real work. In particular, exercise a small request through implementation, a multi-task feature through coordination, a bug with incomplete reproduction evidence, and release preparation without publication authorization. A successful invocation alone does not establish a skill's effectiveness.
 
 The original development branch was merged into `master` and deleted with the user's authorization on 2026-10-02. No push was requested. The permission configuration was committed as b0e6cf7. The user requested retaining these scratch notes in version control when merging the work into `master`.
 

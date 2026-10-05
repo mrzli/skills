@@ -19,6 +19,8 @@ Choose the method that can resolve the uncertainty:
 - Consult primary sources for external contracts and capabilities, checking that they apply to the version and environment in use.
 - Run a focused experiment or prototype when inspection cannot settle behavior, feasibility, or performance.
 
+Use [prototype](../prototype/SKILL.md) when the question needs an interactive demonstration of UI or logic for the user to explore. Keep benchmarks and other technical experiments here, and interpret prototype observations against the original question.
+
 For experiments, state the question and expected distinguishing observation before running them. Use representative inputs and a comparison or baseline where needed. Keep experimental code and data isolated in the project's scratch area or a temporary directory. Document how to reproduce the result and distinguish observed behavior from simulation or mocks.
 
 Test competing explanations when the first plausible answer lacks support. Track failed approaches only when they prevent repeated work or explain the conclusion. If further access or a consequential external action is needed, gather what is available first and identify the exact missing evidence. Do not change live systems merely to obtain an answer.

@@ -56,6 +56,7 @@ Reusable skills for AI agents.
 | Skill | Description |
 | --- | --- |
 | [investigate](skills/engineering/investigation/investigate/SKILL.md) | Resolve a concrete unknown through inspection, research, or experiments. |
+| [prototype](skills/engineering/investigation/prototype/SKILL.md) | Build an interactive demonstration to explore UI alternatives or logic before implementation. |
 | [review-architecture](skills/engineering/investigation/review-architecture/SKILL.md) | Assess code structure and prioritize evidence-backed improvements. |
 | [review-product](skills/engineering/investigation/review-product/SKILL.md) | Evaluate product usefulness and recommend the next improvement or experiment. |
 

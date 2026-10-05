@@ -20,6 +20,7 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Establish a new project's purpose, users, and first useful scope | [start-project](../../planning/start-project/SKILL.md) |
 | Clarify what one feature should do and what it excludes | [shape-feature](../../planning/shape-feature/SKILL.md) |
 | Answer a concrete unknown with evidence or an experiment | [investigate](../../investigation/investigate/SKILL.md) |
+| Try an interaction, compare UI alternatives, or explore a logic model before implementation | [prototype](../../investigation/prototype/SKILL.md) |
 | Choose a technical approach or resolve design tradeoffs | [design](../../planning/design/SKILL.md) |
 | Preserve agreed requirements and acceptance criteria | [write-spec](../../planning/write-spec/SKILL.md) |
 | Divide agreed work into verifiable tasks and dependencies | [plan](../../planning/plan/SKILL.md) |
