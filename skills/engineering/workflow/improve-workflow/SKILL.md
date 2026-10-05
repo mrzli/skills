@@ -9,6 +9,8 @@ Find the smallest useful correction to how work is performed. Base recommendatio
 
 Use the named session, change, or recurring problem; default to the current work when the scope is clear. Read relevant conversation or logs, task artifacts, diffs, verification results, and the skills or project instructions that governed the work.
 
+For historical reviews, compare incidents with the instructions and versions available at the time, later fixes, and the version currently installed. State uncertainty when the evidence cannot establish a version. Distinguish unresolved gaps from already-addressed issues, deployment gaps, and failures to follow existing guidance. An old failure alone does not justify another instruction.
+
 Describe the observed friction and its consequence: repeated clarification, wasted investigation, missed requirements, rework, tool failures, or weak verification. Separate a one-off mistake from a recurring pattern and distinguish observed facts from explanations that still need testing.
 
 Trace the problem to its source. Consider unclear requirements, missing information, conflicting instructions, poor activity boundaries, unavailable tools, and checks that existed but were not run. Inspect existing automation before proposing a duplicate check or new tool.
