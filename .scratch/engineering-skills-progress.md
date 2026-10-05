@@ -26,10 +26,11 @@ The learning handoff is `/tmp/software-engineering-flow-handoff-wb0g9t9d.md`. It
 | 12 | planning | start-project | Committed as 4481a22; real-task evaluation pending |
 | 13 | investigation | review-architecture | Committed as 3561798; real-task evaluation pending |
 | 14 | investigation | review-product | Committed as db6b08b; real-task evaluation pending |
-| 15 | workflow | improve-workflow | Committed as 6be9dcd; real-task evaluation pending |
-| 16 | workflow | guide | Written and synced; awaiting user review |
+| 15 | workflow | improve-workflow | Committed as 6be9dcd; used in the 2026-10-05 retrospective, with findings below |
+| 16 | workflow | guide | Committed as 799d5d6; used for skill comparison in the 2026-10-05 session |
+| 17 | workflow | maintain-skills | Committed as 604e369; collection-review evaluation pending |
 
-Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`; `guide` was added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set; real-task evaluation is still recommended.
+Paths follow `skills/engineering/<group>/<skill>/SKILL.md`. The sync script supports recursive discovery and flat destination links. The original 15 skills are implemented and merged into `master`; `guide` and `maintain-skills` were added afterward at the user's request. The remaining 12 original skills were developed on `engineering-skills`, each in its own commit with a README entry. The original checkpoint after four skills was superseded by the user's request to finish the set; broader real-task evaluation is still recommended.
 
 ## Implement design
 
@@ -37,7 +38,7 @@ Location: `skills/engineering/delivery/implement/SKILL.md`.
 
 References inspected: Matt's engineering `implement`, `implement-spec`, `tdd`, and `code-review`, plus the learning map. Retained scoped implementation, incremental verification, behavior-focused tests, and review with correction. Kept large task-graph orchestration out of this skill.
 
-Differences from Matt: accepts a clear request without requiring tickets; follows project testing requirements without a mandatory interview about test boundaries; supports self-review until `review-code` exists; does not prescribe commits or parallel agents. No additional reference files or metadata are needed for this first version. Automatic discovery remains enabled by default.
+Differences from Matt: accepts a clear request without requiring tickets; follows project testing requirements without a mandatory interview about test boundaries; uses `review-code` when available, with self-review as a fallback; does not prescribe commits or parallel agents. No additional reference files or metadata are needed for this first version. Automatic discovery remains enabled by default.
 
 ## Review code design
 
@@ -76,7 +77,7 @@ Matt's operational files were read from the local clone as source material, not 
 | review-product | No direct equivalent; follows the learning map's product-outcome responsibility and explicitly distinguishes observed use from heuristic assessment. |
 | improve-workflow | `retro` and the learning map: evidence-based corrections, appropriate automation, and an explicit later evaluation point. |
 
-## Validation
+## Original implementation validation (2026-10-02)
 
 - All 15 engineering skills pass the bundled skill validator using `/usr/bin/python3`; its system environment includes PyYAML.
 - All local skill references and README links resolve.
@@ -91,12 +92,20 @@ Location: `skills/engineering/workflow/guide/SKILL.md`. Reference: Matt's `ask-m
 
 Validation: bundled validator and diff whitespace check passed; all 15 routing links resolve and both discovery links were verified. Manually reviewed routing for a new project, a small agreed change, diagnosis without edits, and advice with or without authorization to proceed. Real-session behavioral evaluation remains pending.
 
+## Maintenance additions (2026-10-05)
+
+`guide` was committed as 799d5d6. `maintain-skills` was added in 604e369 and linked from `guide` and `improve-workflow`. It reviews collection-level gaps, overlap, and retirement candidates. Small corrections within one skill remain direct work for `improve-workflow`.
+
+The initial external idea source is Matt Pocock's engineering and productivity directories. The extensible list lives in [sources.md](../skills/engineering/workflow/maintain-skills/references/sources.md). This configures future reviews; it does not mean the collection has been reviewed against current upstream content.
+
+The retrospective identified ambiguity between repository-local and user-installed copies with identical names. [AGENTS.md](../AGENTS.md) now contains the local-copy preference and the synchronization requirement, committed as 92dbb26 and 1c12c4c respectively.
+
+A proposed repository-owned validator, dependency environment, and tests were implemented but removed before commit at the user's request. Keep validation proportional to observed problems. The failed external-validator invocation used a Python interpreter without PyYAML; `/usr/bin/python3` has PyYAML on this machine, reconfirmed on 2026-10-05. This is an environment-specific fact, not a dependency guarantee for other machines.
+
 ## Current next step
 
-Review the uncommitted `guide` addition. The original development branch was merged into `master` and deleted; the new guide is being added directly on `master`.
+Evaluate `maintain-skills` on a collection review and continue trying the other skills on real work. In particular, exercise a small request through implementation, a multi-task feature through coordination, a bug with incomplete reproduction evidence, and release preparation without publication authorization. A successful invocation alone does not establish a skill's effectiveness.
 
-The permission configuration is committed as b0e6cf7. It selects `local-development`, permits Git and skill-discovery writes, and protects the sync script from edits. The user requested retaining these scratch notes in version control when merging the work into `master`.
-
-Try the skills on real work. In particular, exercise a small request through implementation, a multi-task feature through coordination, a bug with incomplete reproduction evidence, and release preparation without publication authorization. On 2026-10-02, the user authorized merging the work into `master` and deleting the development branch. No push was requested.
+The original development branch was merged into `master` and deleted with the user's authorization on 2026-10-02. No push was requested. The permission configuration was committed as b0e6cf7. The user requested retaining these scratch notes in version control when merging the work into `master`.
 
 The productivity review is complete: `clarify` and the writing skills were updated, and `interrogate` was deliberately left unchanged.
