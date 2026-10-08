@@ -11,6 +11,8 @@ Read the relevant skill descriptions and bodies, collection conventions, prior r
 
 Distinguish lack of use from lack of opportunity. If relevant work occurred, determine whether a skill was undiscoverable, deliberately avoided, or unhelpful. Do not infer usage from installation or invent usage counts when records are unavailable. Rare but valuable activities can justify retaining a skill.
 
+When local transcripts are available, run [skill-usage.sh](scripts/skill-usage.sh) on the collection root, excluding the collection's own repository with `--exclude-cwd`. It counts sessions that invoked or read each skill in Claude Code and Codex transcripts. Save its output in the maintenance record, because transcripts can expire. Counts show recorded use, not opportunity.
+
 ## Explore sources
 
 Use the repositories and collection subsets named by the user. Otherwise use [sources.md](references/sources.md). Keep that list extensible as the user adds sources. Record the last reviewed revision or date and inspected scope in the maintenance record, so later reviews can resume without treating a partial review as complete.
@@ -27,7 +29,7 @@ Use these decisions as appropriate:
 - Improve useful skills whose triggers, instructions, or outputs cause demonstrated problems.
 - Add a skill for a relevant unmet need when it contributes a reusable procedure beyond an ordinary prompt.
 - Merge skills when their situations and outcomes substantially coincide and separation causes confusion.
-- Retire a skill when its need has disappeared, another skill fully covers it, or its costs outweigh its value.
+- Retire a skill when its need has disappeared, another skill fully covers it, or its costs outweigh its value. Propose retirement for a skill that saved usage records show unused for several months, unless reviewed work shows a missed opportunity or the user expects its activity to recur. The user decides.
 - Trial a plausible addition or change when evidence is insufficient. Name a representative task and the signal for keeping, revising, or reverting it.
 
 For each recommendation, give the evidence, benefit, overlap or replacement implications, and evaluation method. Prioritize a small useful set. Keeping the collection unchanged is valid. Distinguish observed problems from hypotheses and avoid treating popularity or upstream changes as a reason to install or overwrite local skills.
