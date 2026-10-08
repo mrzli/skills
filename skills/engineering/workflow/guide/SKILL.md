@@ -27,6 +27,7 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Build a clear, scoped change | [implement](../../delivery/implement/SKILL.md) |
 | Assess an existing change before proceeding | [review-code](../../delivery/review-code/SKILL.md) |
 | Diagnose and repair unexpected behavior | [fix-bug](../../delivery/fix-bug/SKILL.md) |
+| Reduce a measured performance cost, such as latency or frame time | [optimize](../../delivery/optimize/SKILL.md) |
 | Improve selected code structure while preserving behavior | [refactor](../../delivery/refactor/SKILL.md) |
 | Publish or deploy verified work to a specified target | [release](../../delivery/release/SKILL.md) |
 | Have the agent coordinate a feature or backlog across activities and tasks | [deliver-feature](../deliver-feature/SKILL.md) |

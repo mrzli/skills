@@ -16,7 +16,7 @@ Reuse the current specification and plan when they remain accurate. For work spa
 - Use [shape-feature](../../planning/shape-feature/SKILL.md) for unresolved user behavior or scope.
 - Use [investigate](../../investigation/investigate/SKILL.md) to gather evidence for a concrete unknown, and [design](../../planning/design/SKILL.md) for consequential technical choices.
 - Use [write-spec](../../planning/write-spec/SKILL.md) when agreed requirements need a durable specification, and [plan](../../planning/plan/SKILL.md) when the work needs a task breakdown.
-- Use [fix-bug](../../delivery/fix-bug/SKILL.md) or [refactor](../../delivery/refactor/SKILL.md) for backlog items of those kinds.
+- Use [fix-bug](../../delivery/fix-bug/SKILL.md), [refactor](../../delivery/refactor/SKILL.md), or [optimize](../../delivery/optimize/SKILL.md) for backlog items of those kinds.
 - Use [implement](../../delivery/implement/SKILL.md) for each other ready task. Pass its scope, requirements, prerequisites, and verification expectations.
 - Use [review-code](../../delivery/review-code/SKILL.md) for review and [release](../../delivery/release/SKILL.md) when the requested endpoint includes an authorized release.
 

@@ -11,7 +11,7 @@ Read the report, relevant instructions, code, tests, and available logs. Establi
 
 Build the smallest useful reproduction or check that detects the reported symptom. Confirm that it fails for the relevant reason, rather than because of unrelated setup problems. Use an existing test, a CLI or API invocation, a browser interaction, or a focused harness as appropriate. Prefer a fast, repeatable signal, but do not demand perfect minimization before useful investigation can proceed.
 
-For intermittent failures, capture the conditions and failure rate over repeated trials. For performance regressions, establish a comparable baseline and workload. Keep captured evidence relevant and exclude secrets from shared logs and artifacts.
+For intermittent failures, capture the conditions and failure rate over repeated trials. For performance regressions, establish a comparable baseline and workload, and vet measurements with [optimize's measurement checks](../optimize/references/measurement.md). Use [optimize](../optimize/SKILL.md) instead when the goal is improving performance rather than restoring it. Keep captured evidence relevant and exclude secrets from shared logs and artifacts.
 
 ## Diagnose before repairing
 
