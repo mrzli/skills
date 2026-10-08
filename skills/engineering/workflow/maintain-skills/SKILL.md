@@ -40,4 +40,6 @@ For authorized changes, use [writing-skills](../../../docs/writing-skills/SKILL.
 
 Validate skill structure and links, check routing against representative requests, and exercise changed mechanics where applicable. Separate these checks from evidence of improved outcomes in later use.
 
+To check routing, keep realistic requests that do not name a skill, with the skills that should load, in the collection's routing cases file, or `.scratch/skills/routing-cases.tsv` if none exists. Include near-misses that should route elsewhere. Run [routing-test.sh](scripts/routing-test.sh) on that file during a review, after changing a skill's description, or when skipping is suspected. It runs each request in a fresh read-only session and reports which skills actually loaded. Each case costs a full agent run, so select cases that cover the skills under review. Treat a skill as unavailable rather than missed when the installed copy lacks it.
+
 Save substantial reviews in the existing maintenance record or `.scratch/skills/<descriptive-slug>.md`, including source revisions, decisions, evidence gaps, and follow-up criteria. Reuse that record on later reviews. Finish with recommendations or applied changes, validation, and the next evaluation point. Do not schedule recurring reviews unless requested.

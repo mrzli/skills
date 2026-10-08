@@ -1,0 +1,5 @@
+# Routing test cases for skills/engineering/workflow/maintain-skills/scripts/routing-test.sh.
+# PROJECT_DIR<TAB>EXPECTED<TAB>REQUEST
+~/projects/personal/mrzli/qt-market-chart	fix-bug	The chart stutters and jumps when I zoom past the last bar. Find out why and fix it.
+~/projects/personal/mrzli/qt-market-chart	clarify,investigate	How does zooming work in the chart right now?
+~/projects/personal/mrzli/qt-market-chart	optimize	Rendering feels slow with large datasets, I want frames well under 10 ms.
