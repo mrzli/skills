@@ -1,12 +1,15 @@
 ---
 name: handoff
 description: Compact the current session into a format suitable for handoff to another agent.
-argument-hint: Same machine or different one?
+argument-hint: "[same or other machine] [scope or next focus]"
 ---
 
 ## Argument
 
-Use the argument to determine whether the handoff is to the same machine or another one. Default to the same machine.
+The argument can specify the target, the scope, or both, in any order:
+
+- **Target:** whether the next session runs on the same machine or another one. Default to the same machine.
+- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation.
 
 If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the current workspace, and report its path. If the handoff is to another machine, print the handoff content to the console.
 
@@ -20,4 +23,4 @@ Reference existing artifacts (specs, plans, ADRs, issues, commits, and diffs) by
 
 Redact any sensitive information, such as API keys, passwords, or personally identifiable information.
 
-If the user also specifies the next session's focus, tailor the document accordingly.
+When a scope is given, cover that part of the work and the context it depends on, and leave out unrelated threads.
