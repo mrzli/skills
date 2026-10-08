@@ -61,3 +61,14 @@ These are one sentence each. Apply them alongside a related change, or skip them
 ## Next review
 
 Start from `cursor/plugins` `ccb5507` and diff `pstack/` only.
+
+## Metadata audit, 2026-10-08
+
+At the user's request, all skills were checked for names, descriptions, and invocation settings. The changes below were applied on this branch.
+
+- Invocation now matches between Claude and Codex. `clarify` and `tidy-docs` load implicitly in both. `handoff`, `teach`, `explore`, and `restate` are user-invoked in both.
+- Descriptions now include use-when triggers for `clarify`, `explore`, `handoff`, `restate`, `interrogate`, and `teach`, cover editing and reviewing in `writing-agents` and `writing-skills`, and list the audit scope of `maintain-skills`.
+- `deliver-feature` was renamed to `deliver`, because it also coordinates backlogs. Historical records keep the old name.
+- `maintain-skills` gained the metadata audit step and the routing-test policy. Tests run for changed skills after the user installs them, and the full set runs only on request. `AGENTS.md` step 3 records this.
+- [routing-cases.tsv](routing-cases.tsv) now has 30 cases. They have not been run, because Claude Code prefers the installed personal copies over repository copies. The only override, `--bare --add-dir`, requires an API key. Run the cases for the changed skills after the user installs this branch.
+- Claude Code's built-in `code-review` appears beside `review-code`. It cannot be renamed. Local skills call `review-code` by name.
