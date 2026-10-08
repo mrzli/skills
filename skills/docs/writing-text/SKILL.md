@@ -13,4 +13,6 @@ Use headings, lists, and tables only when they make the content easier to follow
 
 Fix typos and grammar errors.
 
+Before finishing, check the text against [tells.md](tells.md) and remove the patterns it lists.
+
 Simplify larger sections where needed, resolving inconsistencies and contradictions. Ask the user for clarification when necessary.
