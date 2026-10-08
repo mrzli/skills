@@ -1,6 +1,6 @@
 # pstack source review, 2026-10-08
 
-First review of [pstack](https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack) at `cursor/plugins` `ccb5507` (2026-10-07). pstack is MIT licensed, © 2026 Lauren Tan. Any adapted text needs her notice added to `LICENSES.md`. The user approved recommendation 1, which was applied with ideas rather than copied text. The other recommendations remain under discussion. Other changes: adding pstack to [sources.md](../../skills/engineering/workflow/maintain-skills/references/sources.md).
+First review of [pstack](https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack) at `cursor/plugins` `ccb5507` (2026-10-07). pstack is MIT licensed, © 2026 Lauren Tan. Any adapted text needs her notice added to `LICENSES.md`. The user approved recommendations 1, 3, 4, and 5 and the smaller candidates. These were applied on branch `pstack-source-review`. The pstack MIT notice was added to `LICENSES.md` for adapted text. Recommendation 2 (`clarify`) and recommendation 6 (routing tests) remain under discussion. The `refactor` rename check was already covered by the search for references the compiler cannot see. Other changes: adding pstack to [sources.md](../../skills/engineering/workflow/maintain-skills/references/sources.md).
 
 ## Scope and method
 
