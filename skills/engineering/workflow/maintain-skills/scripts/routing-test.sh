@@ -4,7 +4,7 @@ set -euo pipefail
 
 usage() {
   cat >&2 <<'EOF'
-Usage: routing-test.sh [--agent claude|codex] [--budget USD] CASES_FILE
+Usage: routing-test.sh [--agent claude|codex] [--budget USD] [--allow-api-key] CASES_FILE
 
 CASES_FILE is tab-separated, one case per line, with "#" comments allowed:
   PROJECT_DIR<TAB>EXPECTED<TAB>REQUEST
@@ -17,6 +17,9 @@ Prints each case with the skills the agent invoked or read and a verdict:
   missed   an expected skill did not load
   extra    a skill loaded when "none" was expected
   absent   no expected skill was available to the agent (Claude only)
+Runs use the skills installed for the agent, not the copies in this repository.
+Claude runs stop if ANTHROPIC_API_KEY is set, since it would bill the API
+instead of the subscription, unless --allow-api-key is given.
 Raw output is kept in a temporary directory, printed at the end.
 EOF
   exit 2
@@ -24,10 +27,12 @@ EOF
 
 agent=claude
 budget=0.50
+allow_api_key=false
 while (($#)); do
   case $1 in
     --agent) agent=${2:?}; shift 2 ;;
     --budget) budget=${2:?}; shift 2 ;;
+    --allow-api-key) allow_api_key=true; shift ;;
     -h|--help|-*) usage ;;
     *) break ;;
   esac
@@ -37,6 +42,11 @@ done
 cases=$1
 command -v jq >/dev/null || { printf 'jq is required\n' >&2; exit 1; }
 command -v "$agent" >/dev/null || { printf '%s is not installed\n' "$agent" >&2; exit 1; }
+
+if [[ $agent == claude && -n ${ANTHROPIC_API_KEY:-} && $allow_api_key == false ]]; then
+  printf 'ANTHROPIC_API_KEY is set, so runs would bill the API. Unset it or pass --allow-api-key.\n' >&2
+  exit 1
+fi
 
 out_dir=$(mktemp -d "${TMPDIR:-/tmp}/routing-test.XXXXXX")
 
