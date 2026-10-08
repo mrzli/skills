@@ -24,6 +24,8 @@ For each task, provide:
 - Observable completion criteria and appropriate verification.
 - Genuine prerequisites, including unresolved decisions, or an explicit statement that it can start now.
 
+Group tasks under a few named phases or workstreams when a flat list would hide the plan's overall shape. Nest a group further only when it is too large to follow. Number tasks within their group, such as `2.3`, so each level stays identifiable.
+
 Choose tasks small enough to understand and finish without reconstructing the entire effort. One task is valid for a small change. Dependencies express necessity, not a preferred ordering. Distinguish independent work from tasks that would conflict over shared files or state.
 
 ## Save and check
@@ -32,4 +34,4 @@ Update the existing plan or follow the requested destination and project convent
 
 Check that every in-scope acceptance criterion is covered, dependencies are acyclic and resolvable, and tasks have enough context to execute. Identify the tasks ready to start and any blocked work. Include final integration and verification where individual task checks cannot establish the overall outcome.
 
-Finish with the plan link, recommended starting task, and blocking decisions. Leave execution to the user or the calling delivery workflow.
+Report the plan from the top down. In the response, summarize the overall goal and the groups in a few lines, then give the plan link, the recommended starting task, and the blocking decisions. Leave task details in the plan file unless the user asks for them. Leave execution to the user or the calling delivery workflow.
