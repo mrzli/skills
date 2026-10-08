@@ -1,5 +1,5 @@
 ---
-name: deliver-feature
+name: deliver
 description: Coordinate a feature or a backlog of related work items through clarification, planning, implementation, verification, and authorized delivery. Use when the user wants the whole effort completed across multiple tasks rather than manually driving each activity.
 ---
 

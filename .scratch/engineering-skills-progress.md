@@ -22,7 +22,7 @@ The learning handoff is `/tmp/software-engineering-flow-handoff-wb0g9t9d.md`. It
 | 8 | delivery | fix-bug | Committed as 5292e24. Real-task evaluation pending |
 | 9 | delivery | refactor | Committed as 62ec0c2. Real-task evaluation pending |
 | 10 | delivery | release | Committed as 6700d6b. Real-task evaluation pending |
-| 11 | workflow | deliver-feature | Committed as 60bfb01. Real-task evaluation pending |
+| 11 | workflow | deliver (formerly deliver-feature, renamed 2026-10-08) | Committed as 60bfb01. Real-task evaluation pending |
 | 12 | planning | start-project | Committed as 4481a22. Real-task evaluation pending |
 | 13 | investigation | review-architecture | Committed as 3561798. Real-task evaluation pending |
 | 14 | investigation | review-product | Committed as db6b08b. Real-task evaluation pending |

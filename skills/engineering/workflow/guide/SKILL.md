@@ -30,7 +30,7 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Reduce a measured performance cost, such as latency or frame time | [optimize](../../delivery/optimize/SKILL.md) |
 | Improve selected code structure while preserving behavior | [refactor](../../delivery/refactor/SKILL.md) |
 | Publish or deploy verified work to a specified target | [release](../../delivery/release/SKILL.md) |
-| Have the agent coordinate a feature or backlog across activities and tasks | [deliver-feature](../deliver-feature/SKILL.md) |
+| Have the agent coordinate a feature or backlog across activities and tasks | [deliver](../deliver/SKILL.md) |
 | Find structural problems worth addressing in existing code | [review-architecture](../../investigation/review-architecture/SKILL.md) |
 | Assess whether the product helps its intended users | [review-product](../../investigation/review-product/SKILL.md) |
 | Improve the development process after observed friction | [improve-workflow](../improve-workflow/SKILL.md) |
@@ -44,7 +44,7 @@ Neighboring skills are easy to confuse:
 
 Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without separate design, specification, or planning documents.
 
-Distinguish advice from execution: `guide` recommends a route, while `deliver-feature` manages authorized work along it. A request to fix a bug belongs with `fix-bug`. A request to understand the cause without edits belongs with `investigate`. Recommend a conversation or explanation when no specialized workflow is needed. Broader uncertainty or sustained learning may fit `explore` or `teach` if available.
+Distinguish advice from execution: `guide` recommends a route, while `deliver` manages authorized work along it. A request to fix a bug belongs with `fix-bug`. A request to understand the cause without edits belongs with `investigate`. Recommend a conversation or explanation when no specialized workflow is needed. Broader uncertainty or sustained learning may fit `explore` or `teach` if available.
 
 ## Make the recommendation usable
 
