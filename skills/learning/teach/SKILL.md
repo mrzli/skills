@@ -80,7 +80,7 @@ Link to external sources to support every claim in a lesson.
 
 Use quizzes, light in-browser tasks, or guided real-world steps such as yoga poses. Each activity should give feedback on the user's performance as immediately as possible, ideally automatically.
 
-For quizzes, each answer should have exactly the same number of words and, if possible, characters. Do not reveal the answer through formatting.
+For quizzes, each answer should have exactly the same number of words and, if possible, characters. Vary which position holds the correct answer across questions. Do not reveal the answer through formatting or order.
 
 ## Assets
 
