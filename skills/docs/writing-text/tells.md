@@ -1,6 +1,6 @@
 # Writing tells
 
-Patterns that make text read as generated. Adapted from `unslop` and `technical-writing` in [pstack](https://github.com/cursor/plugins/tree/main/pstack). Remove each one found, preserving meaning.
+Patterns that make text read as generated. Remove each one found, preserving meaning.
 
 ## Words
 
