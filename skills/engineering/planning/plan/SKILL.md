@@ -15,7 +15,7 @@ Separate implementation work from unknowns that prevent planning it. Resolve fac
 
 Prefer small, complete slices of behavior that can be implemented and verified independently. Include the code, tests, documentation, and configuration each slice needs. Avoid splitting by technical layer when that leaves several tasks unable to demonstrate anything useful on their own.
 
-Use structural or migration tasks when a complete behavior slice is impractical. For broad compatibility changes, consider adding the new form, migrating consumers, then removing the old form. State when intermediate steps require a shared integration point rather than claiming each is independently releasable.
+Use structural or migration tasks when a complete behavior slice is impractical. When replacing an interface used only within the repository, migrate its consumers and delete the old form in the same task, or in consecutive tasks completed before merging. Plan a temporary compatible form only for consumers outside the repository, persisted data, or an explicit user request. State when intermediate steps require a shared integration point rather than claiming each is independently releasable.
 
 For each task, provide:
 

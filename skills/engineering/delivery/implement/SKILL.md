@@ -9,7 +9,7 @@ Deliver the requested change with verification evidence. A clear request is enou
 
 Read applicable project instructions, the request and referenced artifacts, and the relevant code and tests. Inspect the working tree so existing changes remain distinguishable from your work.
 
-Identify the intended behavior, completion criteria, and how to verify them. Resolve routine implementation choices from the repository. Ask only when an unresolved decision materially affects behavior, scope, or compatibility and cannot be settled from available evidence. Continue independent work while that decision is pending.
+Identify the intended behavior, completion criteria, and how to verify them. Resolve routine implementation choices from the repository. Ask only when an unresolved decision materially affects behavior, scope, or compatibility and cannot be settled from available evidence. Continue independent work while that decision is pending. Do not add fallbacks, aliases, or deprecated paths for callers inside the repository. Update the callers instead.
 
 For work with several steps, keep a short plan or update the supplied task artifact. If implementing one task from a larger plan, use the surrounding plan as context and keep execution within the assigned scope.
 

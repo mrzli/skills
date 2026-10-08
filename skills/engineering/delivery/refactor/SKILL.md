@@ -17,7 +17,7 @@ Inspect the working tree and establish a verification baseline. Add characteriza
 
 Choose a target structure that addresses the demonstrated problem with minimal unnecessary abstraction. Use design work when interface or ownership decisions are consequential. A small refactor may need only a short explanation.
 
-Use [implement](../implement/SKILL.md) for execution, supplying the preservation constraints and baseline checks. Prefer small transformations that keep checks passing. For widespread changes, introduce a compatible form, migrate consumers, and remove the old form only after confirming no required consumers remain. Account for external consumers when repository search cannot establish that fact.
+Use [implement](../implement/SKILL.md) for execution, supplying the preservation constraints and baseline checks. Prefer small transformations that keep checks passing. When every consumer is in the repository, migrate all of them and delete the old form in the same change. A large migration may span several commits on the same branch, but the old form must be deleted before the work is complete, and an intermediate state is never merged. Keep a compatible form only for consumers outside the repository, persisted data, or an explicit user request, and state which applies. Search for references the compiler or type checker cannot see, such as strings, configuration, and documentation.
 
 Keep unrelated formatting, dependency updates, and feature additions out of the refactor. Update tests that depend on removed internals while retaining equivalent behavioral coverage. Deleting inconvenient assertions is not evidence of preservation.
 
