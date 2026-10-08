@@ -8,14 +8,15 @@ Usage: routing-test.sh [--agent claude|codex] [--budget USD] [--allow-api-key] C
 
 CASES_FILE is tab-separated, one case per line, with "#" comments allowed:
   PROJECT_DIR<TAB>EXPECTED<TAB>REQUEST
-EXPECTED is a skill name, several acceptable names separated by commas,
-or "none" when no skill should load.
+EXPECTED is a comma-separated list. A plain name is an acceptable skill, at
+least one of which must load. A name prefixed with "!" must not load.
+"none" means no skill should load.
 
 Each request runs once in a fresh, read-only, unsaved session in PROJECT_DIR.
 Prints each case with the skills the agent invoked or read and a verdict:
   pass     an expected skill loaded (or nothing loaded for "none")
   missed   an expected skill did not load
-  extra    a skill loaded when "none" was expected
+  extra    a skill loaded when "none" was expected, or a "!" skill loaded
   absent   no expected skill was available to the agent (Claude only)
 Runs use the skills installed for the agent, not the copies in this repository.
 Claude runs stop if ANTHROPIC_API_KEY is set, since it would bill the API
@@ -90,11 +91,18 @@ while IFS=$'\t' read -r dir expected request || [[ -n ${dir:-} ]]; do
   printf 'Running case %d in %s\n' "$n" "$dir" >&2
   run_case "$dir" "$request" "$log"
   loaded=$(loaded_skills "$log")
-  verdict=missed
+  wanted=() forbidden=()
+  if [[ $expected != none ]]; then
+    IFS=, read -ra names <<<"$expected"
+    for name in "${names[@]}"; do
+      [[ $name == !* ]] && forbidden+=("${name#!}") || wanted+=("$name")
+    done
+  fi
+  verdict=pass
   if [[ $expected == none ]]; then
-    [[ -z $loaded ]] && verdict=pass || verdict=extra
-  else
-    IFS=, read -ra wanted <<<"$expected"
+    [[ -n $loaded ]] && verdict=extra
+  elif ((${#wanted[@]})); then
+    verdict=missed
     available=$(available_skills "$log")
     if [[ -n $available ]]; then
       verdict=absent
@@ -106,6 +114,9 @@ while IFS=$'\t' read -r dir expected request || [[ -n ${dir:-} ]]; do
       [[ ",$loaded," == *",$skill,"* ]] && verdict=pass
     done
   fi
+  for skill in "${forbidden[@]}"; do
+    [[ ",$loaded," == *",$skill,"* ]] && verdict=extra
+  done
   printf '%d\t%s\t%s\t%s\t%s\n' "$n" "$expected" "${loaded:--}" "$verdict" "${request:0:60}" >>"$out_dir/results.tsv"
 done <"$cases"
 
