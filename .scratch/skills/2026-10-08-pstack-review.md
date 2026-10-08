@@ -1,6 +1,14 @@
 # pstack source review, 2026-10-08
 
-First review of [pstack](https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack) at `cursor/plugins` `ccb5507` (2026-10-07). pstack is MIT licensed, © 2026 Lauren Tan. Any adapted text needs her notice added to `LICENSES.md`. The user approved recommendations 1, 3, 4, and 5 and the smaller candidates. These were applied on branch `pstack-source-review`. The pstack MIT notice was added to `LICENSES.md` for adapted text. Recommendation 2 (`clarify`) and recommendation 6 (routing tests) remain under discussion. The `refactor` rename check was already covered by the search for references the compiler cannot see. Other changes: adding pstack to [sources.md](../../skills/engineering/workflow/maintain-skills/references/sources.md).
+First review of [pstack](https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack) at `cursor/plugins` `ccb5507` (2026-10-07). pstack is MIT licensed, © 2026 Lauren Tan. Any adapted text needs her notice added to `LICENSES.md`. The user approved recommendations 1, 3, 4, and 5 and the smaller candidates. These were applied on branch `pstack-source-review`. The pstack MIT notice was added to `LICENSES.md` for adapted text. Recommendation 2 was applied in a general form. `clarify` checks code, documents, or earlier conversation before explaining, cites where claims come from, and states its reading of a possibly misread question. `restate` stays user-invoked, since the user relies on it to see dictated input put clearly. Recommendation 6 was applied as `routing-test.sh` with cases in [routing-cases.tsv](routing-cases.tsv).
+
+Routing trial on 2026-10-08 with Claude Code 2.1.294 in qt-market-chart, using installed global skills, cost about $0.96 in total and took 2 minutes:
+
+- A zoom bug request loaded `fix-bug`.
+- "How does zooming work in the chart right now?" loaded no skill. The agent read the code and answered directly. The case expected `clarify` or `investigate`. Neither description clearly claims plain how-it-works questions. Decide whether that answer is acceptable before changing a description.
+- A frame-time target loaded no skill because `optimize` is not installed globally yet. The script now reports this as `absent`.
+
+Plan mode in the test runs wrote plan files to `~/.claude/plans`. The `refactor` rename check was already covered by the search for references the compiler cannot see. Other changes: adding pstack to [sources.md](../../skills/engineering/workflow/maintain-skills/references/sources.md).
 
 ## Scope and method
 
