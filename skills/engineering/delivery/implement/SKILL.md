@@ -23,7 +23,7 @@ Test through stable interfaces, with expected results derived from requirements 
 
 Run focused checks during implementation. Before completion, run the project's required checks and broader tests appropriate to the affected behavior. For changes whose correctness is not established by automated tests, inspect or exercise the relevant application behavior too.
 
-Investigate failures and fix those caused by the change. Distinguish existing failures and environment limitations from regressions, and report what remains unverified. Passing a narrow check does not establish completion of unrelated acceptance criteria.
+Investigate failures and fix those caused by the change. When a verification setup itself fails or gives implausible results, check the observation method before concluding the application is wrong. Distinguish existing failures and environment limitations from regressions, and report what remains unverified. Passing a narrow check does not establish completion of unrelated acceptance criteria.
 
 ## Review and finish
 
