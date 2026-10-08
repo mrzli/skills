@@ -2,6 +2,7 @@
 name: handoff
 description: Compact the current session into a format suitable for handoff to another agent.
 argument-hint: "[same or other machine] [scope or next focus]"
+disable-model-invocation: true
 ---
 
 ## Argument
