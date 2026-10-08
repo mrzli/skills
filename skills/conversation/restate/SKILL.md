@@ -1,6 +1,6 @@
 ---
 name: restate
-description: Restate the user's goals and the problem they are trying to solve.
+description: Restate the user's goals and the problem they are trying to solve. Use to put a long, dictated, or tangled request into clear words the user can check.
 argument-hint: "[text or focus]"
 disable-model-invocation: true
 ---

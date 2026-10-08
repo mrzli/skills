@@ -1,6 +1,6 @@
 ---
 name: clarify
-description: Explain a topic or part of the conversation more clearly. Defaults to the last response.
+description: Explain a topic, how something works, or part of the conversation more clearly. Use when the user asks what something means or how it works, or says they do not understand. Defaults to the last response.
 argument-hint: "[topic or conversation scope]"
 ---
 

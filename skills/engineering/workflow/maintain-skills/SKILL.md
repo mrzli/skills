@@ -1,6 +1,6 @@
 ---
 name: maintain-skills
-description: Review a skill collection for useful additions, improvements, overlap, and retirement, including comparison with external skill repositories. Use for repertoire reviews or collection-level problems. Use improve-workflow to diagnose friction in completed work.
+description: Review a skill collection for useful additions, improvements, overlap, and retirement, including names, descriptions, invocation settings, usage, routing tests, and comparison with external skill repositories. Use for repertoire reviews or collection-level problems. Use improve-workflow to diagnose friction in completed work.
 ---
 
 Keep the collection useful for the user's actual activities. Review the requested collection or subset and recommend evidence-backed changes. A review produces recommendations. Apply changes when already authorized.

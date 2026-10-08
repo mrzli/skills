@@ -1,6 +1,6 @@
 ---
 name: explore
-description: Help find direction when an interest, difficulty, or question is too unclear to define a goal.
+description: Help find direction when an interest, difficulty, or question is too unclear to define a goal. Use when the user wants to work out what they actually want before planning anything.
 disable-model-invocation: true
 ---
 

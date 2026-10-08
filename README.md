@@ -17,12 +17,12 @@ Reusable skills for AI agents.
 
 | Skill | Description |
 | --- | --- |
-| [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic or part of the conversation more clearly, splitting longer explanations into manageable parts. Defaults to the last response. |
+| [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, splitting longer explanations into manageable parts. Defaults to the last response. |
 | [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [recap](skills/conversation/recap/SKILL.md) | List what is done, in progress, and remaining in a multi-item effort. |
-| [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and the problem they are trying to solve. |
+| [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
 
 ### [Learning](skills/learning)
 

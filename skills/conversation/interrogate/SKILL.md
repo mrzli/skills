@@ -1,6 +1,6 @@
 ---
 name: interrogate
-description: Interrogate the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'interrogate' trigger phrases.
+description: Question the user in structured rounds about their plan, decision, or idea until every branch is resolved. Use when the user wants their own thinking challenged or stress-tested.
 ---
 
 Interview the user until you reach a shared understanding. Map decisions and their dependencies as a **design tree**.

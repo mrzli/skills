@@ -1,6 +1,6 @@
 ---
 name: writing-skills
-description: Use when writing agent skills.
+description: Use when writing, editing, or reviewing agent skills.
 ---
 
 Read and apply [writing-text](../writing-text/SKILL.md) to the target document.

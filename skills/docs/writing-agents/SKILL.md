@@ -1,6 +1,6 @@
 ---
 name: writing-agents
-description: Use when writing AGENTS.md.
+description: Use when writing, editing, or reviewing AGENTS.md files.
 ---
 
 Read and apply [writing-text](../writing-text/SKILL.md) to the target document.

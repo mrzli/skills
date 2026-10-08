@@ -1,6 +1,6 @@
 ---
 name: teach
-description: Teach the user a new skill or concept, within this workspace.
+description: Teach the user a topic through a multi-session course of lessons and practice, tracked in .scratch/learn/. Use when the user wants to learn a subject or skill over time.
 argument-hint: "What would you like to learn about?"
 disable-model-invocation: true
 ---
