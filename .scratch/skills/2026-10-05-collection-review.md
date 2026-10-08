@@ -62,7 +62,7 @@ Trial a single local map on the next genuinely uncertain effort spanning at leas
 
 This was a static responsibility comparison, not behavioral testing of upstream skills. No skill code, invocation settings, discovery links, or installed copies changed. Local links in this record and diff whitespace were checked. No skill-change tidy/sync cycle was triggered by adding a review record alone.
 
-On the next review, start from upstream `24fe0ef7737efae15c87225755e9f6f5965e4888`, inspect relevant changes since that revision, and revisit the trial criteria only when new work supplies evidence. Do not infer retirement candidates from elapsed time or lack of recorded invocations. No recurring review was scheduled.
+On the next review, start from upstream `24fe0ef7737efae15c87225755e9f6f5965e4888`, inspect relevant changes since that revision, and revisit the trial criteria only when new work supplies evidence. The [2026-10-08 review](2026-10-08-collection-review.md) superseded the guidance on retirement. Reviews now save usage counts and may propose retiring skills unused for several months. No recurring review was scheduled.
 
 ## Authorized prototype addition
 
