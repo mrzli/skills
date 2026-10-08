@@ -21,7 +21,7 @@ Consider clarifying or removing an instruction, improving access to evidence, ch
 
 When the evidence calls for reviewing skill boundaries, missing capabilities, or overlapping responsibilities across the collection, use [maintain-skills](../maintain-skills/SKILL.md). Pass the observed friction, affected skills, and existing authorization. Use its findings in the correction. Handle a small correction within one skill directly, without expanding it into a collection review.
 
-Prefer a deterministic check for a recurring mechanical error when its maintenance cost is justified. Use guidance for decisions that require judgment. Put a correction at the narrowest appropriate level: project-specific behavior belongs in the project, while a reusable skill change should be supported by a general need.
+Prefer a deterministic check for a recurring mechanical error when its maintenance cost is justified. Fix it at the highest level that works, in this order: structure that makes the mistake impossible, types, a lint whose message names the fix, a test, then documentation. Show that a new check catches a real past instance. Use guidance for decisions that require judgment. Put a correction at the narrowest appropriate level: project-specific behavior belongs in the project, while a reusable skill change should be supported by a general need.
 
 For each proposal, state the evidence, suspected cause, change, expected benefit, cost, and how to evaluate it. Prioritize a small number of corrections. Treat broad changes based on one incident as hypotheses, and preserve useful flexibility rather than adding universal rules for every failure.
 
