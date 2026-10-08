@@ -15,7 +15,7 @@ For work with several steps, keep a short plan or update the supplied task artif
 
 ## Build and verify
 
-Work in small, verifiable increments using the project's conventions and existing abstractions. Include documentation, configuration, and migration changes needed to make the requested behavior usable. Keep unrelated cleanup separate.
+Work in small, verifiable increments using the project's conventions and existing abstractions. Report deviations from an agreed design instead of absorbing them silently. Include documentation, configuration, and migration changes needed to make the requested behavior usable. Keep unrelated cleanup separate.
 
 Choose checks that demonstrate observable behavior and protect affected existing behavior. For a reproducible bug, establish the failure before changing the code. Add regression coverage where practical. Use a failing test first when it provides a useful check of the change. Follow any project requirement for test-driven development.
 

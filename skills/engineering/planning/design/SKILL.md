@@ -17,6 +17,8 @@ Consider the simplest viable change and materially different alternatives where 
 
 Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology. A particular design vocabulary or pattern is not a requirement.
 
+For a new interface, write two or three realistic call sites before the types and fit the types to them. Reject shapes that offer two ways to do one task, require keeping parallel lists in sync by hand, expose internals to callers, or give one piece of state more than one writer.
+
 Describe the important interfaces, state transitions, data changes, and failure behavior. Include migration, rollout, and recovery where the design affects existing users or stored data. Use a small diagram, contract, or code sketch when it makes the decision clearer than prose.
 
 Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility or performance, gather evidence with a focused experiment before presenting it as settled. Separate evidence, assumptions, and expected benefits.
