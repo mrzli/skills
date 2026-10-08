@@ -8,7 +8,7 @@ argument-hint: Same machine or different one?
 
 Use the argument to determine whether the handoff is to the same machine or another one. Default to the same machine.
 
-If the handoff is to the same machine, save the document in the operating system's temporary directory, outside the current workspace. If the handoff is to another machine, print the handoff content to the console.
+If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the current workspace, and report its path. If the handoff is to another machine, print the handoff content to the console.
 
 ## Content
 
