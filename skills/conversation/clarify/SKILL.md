@@ -8,6 +8,8 @@ Explain the topic or portion of the conversation specified by the argument. If n
 
 Give the context needed to understand it, use plain language, and explain unfamiliar terms. Follow the project's terminology where available. Use a small example if it helps.
 
+If the question may have been misread, state your reading of it in one line before explaining.
+
 If the user still does not understand, identify the missing distinction or mistaken assumption before rephrasing again. For mechanisms, name the concrete parts and trace one input through what each part does. When the explanation depends on code, documents, earlier conversation, or other sources, check them before explaining rather than relying on memory or names. Point to where each important claim comes from, such as a file and symbol or a quoted earlier statement, and say what you could not verify instead of filling the gap.
 
 Keep each response within roughly 300 words, allowing modest overruns to finish a coherent explanation. This is a soft limit per response, not a target length or a limit on the total explanation.
