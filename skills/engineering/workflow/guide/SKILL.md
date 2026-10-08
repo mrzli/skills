@@ -29,7 +29,7 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Diagnose and repair unexpected behavior | [fix-bug](../../delivery/fix-bug/SKILL.md) |
 | Improve selected code structure while preserving behavior | [refactor](../../delivery/refactor/SKILL.md) |
 | Publish or deploy verified work to a specified target | [release](../../delivery/release/SKILL.md) |
-| Have the agent coordinate a feature across activities and tasks | [deliver-feature](../deliver-feature/SKILL.md) |
+| Have the agent coordinate a feature or backlog across activities and tasks | [deliver-feature](../deliver-feature/SKILL.md) |
 | Find structural problems worth addressing in existing code | [review-architecture](../../investigation/review-architecture/SKILL.md) |
 | Assess whether the product helps its intended users | [review-product](../../investigation/review-product/SKILL.md) |
 | Improve the development process after observed friction | [improve-workflow](../improve-workflow/SKILL.md) |
