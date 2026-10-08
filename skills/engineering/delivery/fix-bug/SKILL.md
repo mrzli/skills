@@ -15,7 +15,7 @@ For intermittent failures, capture the conditions and failure rate over repeated
 
 ## Diagnose before repairing
 
-Trace the failing path and form explanations with testable predictions. Use targeted inspection, instrumentation, experiments, or history to distinguish plausible causes. Change one relevant variable at a time when testing a hypothesis and update the explanation when evidence disagrees.
+Trace the failing path and form explanations with testable predictions. Use targeted inspection, instrumentation, experiments, or history to distinguish plausible causes. Change one relevant variable at a time when testing a hypothesis and update the explanation when evidence disagrees. When evidence refutes a hypothesis, revert the changes it motivated.
 
 If reproduction is unavailable, continue useful static analysis or log inspection, but distinguish a suspected cause from a confirmed one. Identify the specific access, input, or evidence needed to verify it. Do not present a speculative edit as a proven repair or modify a live environment without authorization.
 
