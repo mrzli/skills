@@ -24,9 +24,9 @@ Check both:
 
 Treat complexity, duplication, and naming as findings when they have a concrete cost or violate an applicable convention. Separate those judgments from demonstrated defects. Prefer useful evidence over stylistic preferences or a fixed catalogue of code smells.
 
-Check that tests exercise the intended behavior and could detect relevant failures. Read supplied verification results and run focused checks when they can resolve a concern. State which checks you ran, which results were supplied by others, and what remains unverified. Passing tests alone do not establish that the requirements are met.
+Check that tests exercise the intended behavior and could detect relevant failures. A test that would still pass if the code under test returned nothing does not verify behavior. Read supplied verification results and run focused checks when they can resolve a concern. State which checks you ran, which results were supplied by others, and what remains unverified. Passing tests alone do not establish that the requirements are met.
 
-Investigate suspected problems before reporting them. Trace a realistic failing case, reproduce it where practical, or explain the code path and evidence. When evidence is incomplete, make the uncertainty explicit rather than presenting a guess as a defect.
+Investigate suspected problems before reporting them. Trace a realistic failing case, reproduce it where practical, or explain the code path and evidence. When evidence is incomplete, make the uncertainty explicit rather than presenting a guess as a defect. For a risky change, name the fact its safety depends on and how it was established: asserted, located in code, reasoned through, or demonstrated by running it. Look beyond symbol search for affected persisted formats, file or protocol contracts, configuration, and readers in other languages.
 
 ## Report and follow through
 
