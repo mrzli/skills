@@ -22,7 +22,7 @@ Reuse the current specification and plan when they remain accurate. For work spa
 
 Read the applicable skill before using it. Carry its output into the next activity rather than asking the user to restate information. If a skill is unavailable, perform the bounded activity directly when feasible and report material limitations.
 
-Ask for user judgment only when evidence cannot resolve a consequential decision. Continue independent work while waiting. Reuse settled decisions and update affected artifacts when new evidence requires a change of approach. Do not quietly expand the scope.
+Ask for user judgment only when evidence cannot resolve a consequential decision. Continue independent work while waiting. Reuse settled decisions and update affected artifacts when new evidence requires a change of approach. Do not quietly expand the scope. A question from the user is not approval, and approving one item does not approve others.
 
 ## Execute and integrate
 
