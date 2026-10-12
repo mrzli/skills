@@ -1,6 +1,6 @@
 # Skill collection review, 2026-10-12
 
-Follows the [2026-10-08 collection review](2026-10-08-collection-review.md) and the [pstack review](2026-10-08-pstack-review.md). This review produced recommendations only.
+Follows the [2026-10-08 collection review](2026-10-08-collection-review.md) and the [pstack review](2026-10-08-pstack-review.md). The user approved all recommendations. Recommendations 1 to 5 were applied on branch `skills-review-2026-10-12`, one commit each, with routing cases added for `recap`, `clarify`, and `create-verification`. `create-verification` is user-invoked. The global `AGENTS.md` items were handed off for the archon setup.
 
 ## Scope and sources
 
