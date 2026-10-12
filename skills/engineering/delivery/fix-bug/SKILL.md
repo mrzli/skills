@@ -23,7 +23,7 @@ If reproduction is unavailable, continue useful static analysis or log inspectio
 
 Use [implement](../implement/SKILL.md) for the bounded repair, carrying forward the cause, expected behavior, reproduction, and constraints. Correct the cause rather than merely suppressing the symptom. Include other affected paths when they share that cause and remain within scope.
 
-Turn the reproduction into regression coverage where practical. Establish that the check detects the original failure and passes after the repair. Rerun the original scenario as well as relevant neighboring behavior and project checks. For intermittent or performance problems, compare equivalent trials and report the limits of the evidence.
+Turn the reproduction into regression coverage where practical. Establish that the check detects the original failure and passes after the repair. Rerun the original scenario as well as relevant neighboring behavior and project checks, using the project's verification skill when one exists. For intermittent or performance problems, compare equivalent trials and report the limits of the evidence.
 
 Remove temporary instrumentation you added or retain it only when it has an explicit ongoing purpose. Preserve useful reproduction artifacts in the project's test or scratch conventions and keep unrelated user work intact.
 

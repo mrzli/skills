@@ -33,6 +33,7 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Have the agent coordinate a feature or backlog across activities and tasks | [deliver](../deliver/SKILL.md) |
 | Find structural problems worth addressing in existing code | [review-architecture](../../investigation/review-architecture/SKILL.md) |
 | Assess whether the product helps its intended users | [review-product](../../investigation/review-product/SKILL.md) |
+| Give agents a scripted way to drive the real application and capture evidence | [create-verification](../create-verification/SKILL.md) |
 | Improve the development process after observed friction | [improve-workflow](../improve-workflow/SKILL.md) |
 | Review the skill collection or compare it with external skill repositories | [maintain-skills](../maintain-skills/SKILL.md) |
 

@@ -28,7 +28,7 @@ SOFTWARE.
 
 ## pstack
 
-Some skill content is adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack).
+Some skill content is adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack), including `optimize`, `create-verification`, and the writing tells.
 
 ```txt
 MIT License

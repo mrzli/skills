@@ -9,7 +9,7 @@ Deliver the requested change with verification evidence. A clear request is enou
 
 Read applicable project instructions, the request and referenced artifacts, and the relevant code and tests. Inspect the working tree so existing changes remain distinguishable from your work.
 
-Identify the intended behavior, completion criteria, and how to verify them. Resolve routine implementation choices from the repository. Ask only when an unresolved decision materially affects behavior, scope, or compatibility and cannot be settled from available evidence. Continue independent work while that decision is pending. A question from the user is not approval: answer it and wait. Approval covers only what the user approved. Propose changes outside the request instead of making them, including convenience changes. Do not add fallbacks, aliases, or deprecated paths for callers inside the repository. Update the callers instead.
+Identify the intended behavior, completion criteria, and how to verify them. Resolve routine implementation choices from the repository. Ask only when an unresolved decision materially affects behavior, scope, or compatibility and cannot be settled from available evidence. Continue independent work while that decision is pending. A question from the user is not approval. Answer it and wait. Approval covers only what the user approved. Propose changes outside the request instead of making them, including convenience changes. Do not add fallbacks, aliases, or deprecated paths for callers inside the repository. Update the callers instead.
 
 For work with several steps, keep a short plan or update the supplied task artifact. If implementing one task from a larger plan, use the surrounding plan as context and keep execution within the assigned scope.
 
@@ -21,7 +21,7 @@ Choose checks that demonstrate observable behavior and protect affected existing
 
 Test through stable interfaces, with expected results derived from requirements or known examples. Avoid tests that merely repeat the implementation. Small documentation or configuration edits may need direct inspection or a focused check rather than new tests.
 
-Run focused checks during implementation. Before completion, run the project's required checks and broader tests appropriate to the affected behavior. For changes whose correctness is not established by automated tests, inspect or exercise the relevant application behavior too.
+Run focused checks during implementation. Before completion, run the project's required checks and broader tests appropriate to the affected behavior. For changes whose correctness is not established by automated tests, inspect or exercise the relevant application behavior too. Use the project's verification skill when one exists. When the user would otherwise have to check results by hand, suggest creating one with [create-verification](../../workflow/create-verification/SKILL.md).
 
 Investigate failures and fix those caused by the change. When a verification setup itself fails or gives implausible results, check the observation method before concluding the application is wrong. Distinguish existing failures and environment limitations from regressions, and report what remains unverified. Passing a narrow check does not establish completion of unrelated acceptance criteria.
 
