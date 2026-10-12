@@ -21,7 +21,7 @@ Reusable skills for AI agents.
 | [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
-| [recap](skills/conversation/recap/SKILL.md) | List what is done, in progress, and remaining in a multi-item effort. |
+| [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status. |
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
 
 ### [Learning](skills/learning)
