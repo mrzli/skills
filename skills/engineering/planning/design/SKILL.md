@@ -29,6 +29,6 @@ Use [prototype](../../investigation/prototype/SKILL.md) when choosing an approac
 
 Recommend an approach with its reasons, rejected alternatives, and remaining risks. Make routine technical choices within the authorized scope. Ask for user judgment when alternatives materially change product behavior, cost, compatibility, or an established commitment that the evidence cannot settle.
 
-Record accepted decisions in the existing specification or project design records. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Keep task breakdown in the implementation plan rather than duplicating it here.
+Record accepted decisions in the existing specification or project design records. When a design is worked out in conversation across several exchanges or sessions, write each decision to the record when it is agreed, not at the end, and note rejected options and open questions there too. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Keep task breakdown in the implementation plan rather than duplicating it here.
 
 Finish when the next implementer can understand the chosen approach, constraints, verification strategy, and remaining blockers. Design alone does not request production implementation.

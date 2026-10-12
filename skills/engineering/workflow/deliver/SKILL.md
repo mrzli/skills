@@ -9,7 +9,7 @@ Carry the feature or backlog to the user's requested endpoint using the relevant
 
 Read the request, existing artifacts, project instructions, and working tree. Identify acceptance criteria, current progress, and the endpoint: verified local code, a pull request, or a release. Honor existing authorization. The skill's name alone does not authorize a push, merge, or deployment.
 
-Reuse the current specification and plan when they remain accurate. For work spanning tasks or sessions, keep a durable progress record in the existing plan or `.scratch/delivery/<slug>.md`. Record artifact links, decisions, task dependencies and status, relevant revisions, verification evidence, and the next action. On resumption, reconcile the record with actual repository and external state before repeating work.
+Reuse the current specification and plan when they remain accurate. For work spanning tasks or sessions, keep a durable progress record in the existing plan or `.scratch/delivery/<slug>.md`. Record artifact links, decisions as they are agreed, task dependencies and status, relevant revisions, verification evidence, and the next action. On resumption, reconcile the record with actual repository and external state before repeating work.
 
 ## Choose the necessary activities
 
