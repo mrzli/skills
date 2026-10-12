@@ -31,3 +31,6 @@
 ~/projects/personal/mrzli/archon	improve-workflow	The agent keeps forgetting to run the formatter before committing. Fix the process so it stops happening.
 ~/projects/personal/mrzli/learning	!teach	What is the capital of Australia?
 ~/projects/personal/mrzli/learning	!explore	I'm kind of interested in something around music, not sure what.
+~/projects/personal/mrzli/qt-market-chart	recap	Reiterate what we discussed about the renderer architecture and where we left off.
+~/projects/personal/mrzli/qt-market-chart	clarify	Am I right that the builders run before the renderer, or not?
+~/projects/personal/mrzli/qt-market-chart	!create-verification	I keep having to check the chart by hand after every change, can agents check it themselves?
