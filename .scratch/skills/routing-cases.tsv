@@ -3,7 +3,7 @@
 # EXPECTED: acceptable skills (one must load), "!skill" must not load, or "none".
 ~/projects/personal/mrzli/qt-market-chart	fix-bug	The chart stutters and jumps when I zoom past the last bar. Find out why and fix it.
 ~/projects/personal/mrzli/qt-market-chart	fix-bug	./bin/check started failing after the last commit, sort it out.
-~/projects/personal/mrzli/qt-market-chart	clarify	How does zooming work in the chart right now?
+~/projects/personal/mrzli/qt-market-chart	clarify,investigate	How does zooming work in the chart right now?
 ~/projects/personal/mrzli/qt-market-chart	clarify	I don't get what the renderer's primitives are, explain it again.
 ~/projects/personal/mrzli/qt-market-chart	investigate	Before we pick a line rendering approach, find out whether Qt's RHI supports wide lines on Vulkan here.
 ~/projects/personal/mrzli/qt-market-chart	optimize	Rendering feels slow with large datasets, I want frames well under 10 ms.
