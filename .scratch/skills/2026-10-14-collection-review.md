@@ -1,6 +1,8 @@
 # Skill collection review, 2026-10-14
 
-Follows the [2026-10-12 review](2026-10-12-collection-review.md). This review produced recommendations only.
+Follows the [2026-10-12 review](2026-10-12-collection-review.md). The user approved all recommendations. Recommendations 1, 4, and 5 were applied on branch `skills-review-2026-10-14`, one commit each. Recommendations 2 and 3 were handed off for the archon setup in `/tmp/handoff-archon-agents-rules-2.md`.
+
+Rerun of the nine missed cases with the fixed method, which runs in dontAsk mode with editing disallowed in a temporary worktree: eight passed, namely `fix-bug` twice, `investigate`, `refactor`, `prototype`, `review-code`, `deliver`, and `writing-agents`. A single-case trial of `implement` also passed. The plan-mode misses were a defect in the test method. The remaining miss, "Am I right that…", ran against the installed `clarify`, which still has its old description. Rerun it after this branch is installed. The project worktrees were removed, and both projects were left clean.
 
 ## Scope and sources
 
