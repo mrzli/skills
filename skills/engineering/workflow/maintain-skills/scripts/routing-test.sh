@@ -12,7 +12,11 @@ EXPECTED is a comma-separated list. A plain name is an acceptable skill, at
 least one of which must load. A name prefixed with "!" must not load.
 "none" means no skill should load.
 
-Each request runs once in a fresh, read-only, unsaved session in PROJECT_DIR.
+Each request runs once in a fresh, unsaved session. When PROJECT_DIR is a Git
+repository, the run uses a temporary detached worktree of its HEAD, removed
+afterward. Claude runs in dontAsk mode with file-editing tools disallowed, so
+the agent can start the work and load the skills it would use, but tools that
+the user's settings do not already allow are denied. Codex runs read-only.
 Prints each case with the skills the agent invoked or read and a verdict:
   pass     an expected skill loaded (or nothing loaded for "none")
   missed   an expected skill did not load
@@ -52,13 +56,21 @@ fi
 out_dir=$(mktemp -d "${TMPDIR:-/tmp}/routing-test.XXXXXX")
 
 run_case() {
-  local dir=$1 request=$2 log=$3
+  local dir=$1 request=$2 log=$3 work=$1 tree=
+  if git -C "$dir" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    tree=$out_dir/tree-$n
+    git -C "$dir" worktree add --quiet --detach "$tree" HEAD >/dev/null 2>&1 && work=$tree || tree=
+  fi
   if [[ $agent == claude ]]; then
-    (cd "$dir" && claude -p "$request" --permission-mode plan --no-session-persistence \
+    (cd "$work" && claude -p "$request" --permission-mode dontAsk \
+      --disallowedTools "Edit Write NotebookEdit" --no-session-persistence \
       --output-format stream-json --verbose --max-budget-usd "$budget" </dev/null) >"$log" 2>&1 || true
   else
-    codex exec -C "$dir" -s read-only --ephemeral --skip-git-repo-check --json "$request" \
+    codex exec -C "$work" -s read-only --ephemeral --skip-git-repo-check --json "$request" \
       </dev/null >"$log" 2>&1 || true
+  fi
+  if [[ -n $tree ]]; then
+    git -C "$dir" worktree remove --force "$tree" >/dev/null 2>&1 || true
   fi
 }
 
