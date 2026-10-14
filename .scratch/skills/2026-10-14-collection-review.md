@@ -4,6 +4,8 @@ Follows the [2026-10-12 review](2026-10-12-collection-review.md). The user appro
 
 Rerun of the nine missed cases with the fixed method, which runs in dontAsk mode with editing disallowed in a temporary worktree: eight passed, namely `fix-bug` twice, `investigate`, `refactor`, `prototype`, `review-code`, `deliver`, and `writing-agents`. A single-case trial of `implement` also passed. The plan-mode misses were a defect in the test method. The remaining miss, "Am I right that…", ran against the installed `clarify`, which still has its old description. Rerun it after this branch is installed. The project worktrees were removed, and both projects were left clean.
 
+After the user installed `3bb4246`, the six cases for the changed `clarify` and `fix-bug` passed. These include "Am I right that the builders run before the renderer, or not?", which now loads `clarify`. The run left no plan files, and both project working trees and worktree lists stayed clean.
+
 ## Scope and sources
 
 - The resolved skill was `skills/engineering/workflow/maintain-skills/SKILL.md`. The installed copy is identical, at `ce45880`.
