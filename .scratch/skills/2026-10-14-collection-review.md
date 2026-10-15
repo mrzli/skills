@@ -101,3 +101,5 @@ Outside this repository: move the qt-market-chart memory notes into that project
 ## Next review
 
 Start from Matt Pocock `49dd158`, pstack `1e5c90a`, and transcripts after 2026-10-14. Check real use of `optimize`, `create-verification`, `deliver`, and the new `recap` and `clarify` behavior.
+
+Added after this review: `queue-work`, user-invoked, with dependency ordering and an optional parallel mode. Check its real use, including whether footprint estimates held in parallel mode. Its parallel-execution guidance (footprints, worktrees, checks that must not overlap, integration one item at a time, recording misjudged footprints) duplicates what `deliver` covers in one sentence about delegation. Once parallel mode has been used a few times, move that guidance into a shared reference that both skills link to.
