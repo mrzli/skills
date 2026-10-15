@@ -34,3 +34,4 @@
 ~/projects/personal/mrzli/qt-market-chart	recap	Reiterate what we discussed about the renderer architecture and where we left off.
 ~/projects/personal/mrzli/qt-market-chart	clarify	Am I right that the builders run before the renderer, or not?
 ~/projects/personal/mrzli/qt-market-chart	!create-verification	I keep having to check the chart by hand after every change, can agents check it themselves?
+~/projects/personal/mrzli/qt-market-chart	!queue-work	Implement the rename we just agreed on, and meanwhile let's go through the next naming item.
