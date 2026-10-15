@@ -33,7 +33,7 @@ While the batch runs, keep discussing the next items and adding agreed ones to t
 
 ## Integrate and report
 
-When the implementer finishes, read each commit's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) when a commit goes beyond its decision or the implementer reports a finding it did not resolve. Bring the commits onto the user's branch, rerun the required checks if integration changed them, update the queue, and remove the worktree.
+When the implementer finishes, read each commit's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) when a commit goes beyond its decision or the implementer reports a finding it did not resolve. Bring the commits onto the user's branch following the user's integration rules, rerun the required checks if integration changed them, and update the queue. Then remove the worktree and delete the implementer's branch.
 
 Report for each item what changed, its commit, and the checks and their results. List every choice the implementer made beyond the agreed decision, or state that there were none. Raise any blocking question in the discussion.
 
