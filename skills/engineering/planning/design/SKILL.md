@@ -15,7 +15,7 @@ Inspect the current approach before introducing a new abstraction or dependency.
 
 Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification.
 
-Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology. A particular design vocabulary or pattern is not a requirement.
+Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology, and record each new or renamed concept using [glossary](../../../docs/glossary/SKILL.md). A particular design vocabulary or pattern is not a requirement.
 
 For a new interface, write two or three realistic call sites before the types and fit the types to them. Reject shapes that offer two ways to do one task, require keeping parallel lists in sync by hand, expose internals to callers, or give one piece of state more than one writer.
 

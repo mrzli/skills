@@ -19,7 +19,7 @@ Describe a small coherent outcome that would be worth using, with essential user
 
 Identify the riskiest assumptions and how to test them cheaply. Where need or feasibility is uncertain, recommend an interview, prototype, investigation, or other concrete learning step before committing to a large build. Keep proposed technologies distinct from requirements and avoid selecting a stack without a relevant reason.
 
-Establish enough terminology and boundaries to avoid conflicting interpretations. Respect existing project commitments when revisiting direction and make any proposed change to them explicit.
+Establish enough terminology and boundaries to avoid conflicting interpretations. Record the first terms in the project's glossary using [glossary](../../../docs/glossary/SKILL.md). Respect existing project commitments when revisiting direction and make any proposed change to them explicit.
 
 ## Save the brief
 

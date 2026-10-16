@@ -6,7 +6,7 @@ argument-hint: "[topic or conversation scope]"
 
 Explain the topic or portion of the conversation specified by the argument. If no argument is provided, re-explain your last response.
 
-Give the context needed to understand it, use plain language, and explain unfamiliar terms. Follow the project's terminology where available. Use a small example if it helps.
+Give the context needed to understand it, use plain language, and explain unfamiliar terms. Follow the project's terminology where available. Use a small example if it helps. When the user asks what a project term means or says they keep forgetting it, offer to add or sharpen its entry using [glossary](../../docs/glossary/SKILL.md).
 
 If the question may have been misread, state your reading of it in one line before explaining. When the user asks a direct question, such as whether they are right, answer it first with yes, no, or partly, then explain.
 

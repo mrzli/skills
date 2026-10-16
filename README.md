@@ -8,6 +8,7 @@ Reusable skills for AI agents.
 
 | Skill | Description |
 | --- | --- |
+| [glossary](skills/docs/glossary/SKILL.md) | Keep a project's agreed terms and short definitions current. |
 | [tidy-docs](skills/docs/tidy-docs/SKILL.md) | Review and clean up documentation in a repository. |
 | [writing-agents](skills/docs/writing-agents/SKILL.md) | Guide the writing of `AGENTS.md` files. |
 | [writing-skills](skills/docs/writing-skills/SKILL.md) | Guide the writing of agent skills. |

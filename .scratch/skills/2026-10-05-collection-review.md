@@ -46,7 +46,9 @@ Trial a single local map on the next genuinely uncertain effort spanning at leas
 
 ### Domain modeling and interactive prototypes
 
-`domain-modeling` adds active terminology checks against code and persistent domain definitions. Local planning skills address terminology and record decisions, but do not supply the same dedicated glossary procedure. Trial it only when conflicting domain terms repeatedly cause design mistakes. First add the needed definition to that project's existing documentation. A reusable skill becomes worthwhile if the same procedure helps across projects.
+`domain-modeling` adds active terminology checks against code and persistent domain definitions. Local planning skills address terminology and record decisions, but do not supply the same dedicated glossary procedure. This review deferred it until conflicting domain terms repeatedly caused design mistakes.
+
+Update, 2026-10-16: a different failure appeared first. In qt-market-chart, terms clear to the agent, such as "inspection" and "engine", stayed opaque to the user across sessions, and a naming pass did not catch them because the names were accurate. The skills consumed terminology, but none created or maintained it. The glossary part of `domain-modeling` was adapted as `glossary`, without its ADR part, with code names allowed in entries and `docs/glossary.md` as the default location. `start-project`, `design`, `shape-feature`, `refactor`, `clarify`, and `writing-agents` point to it. `teach` keeps its own glossary format for learning workspaces.
 
 `prototype` offers concrete UI alternatives and interactive state demonstrations beyond the general experiments in `investigate` and sketches in `design`. On the next design decision that words cannot settle, use a disposable demonstration through those existing skills. A useful trial resolves the stated choice without leaving prototype scaffolding in production. Add a separate skill if repeated requests benefit from a consistent procedure. No such gap was confirmed by this review.
 

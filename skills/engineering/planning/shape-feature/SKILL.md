@@ -21,6 +21,6 @@ Keep agreed decisions, working assumptions, and open questions distinct. Ask for
 
 ## Capture the result
 
-Summarize the problem, intended users, chosen scope, key behavior, success criteria, exclusions, and remaining questions. Keep this in the existing feature artifact when one exists. For a discussion alone, a concise response is enough. Save a separate brief when requested or needed for a handoff, following project conventions or `.scratch/features/<descriptive-slug>.md`.
+Summarize the problem, intended users, chosen scope, key behavior, success criteria, exclusions, and remaining questions. Keep this in the existing feature artifact when one exists. Record each new or renamed concept using [glossary](../../../docs/glossary/SKILL.md). For a discussion alone, a concise response is enough. Save a separate brief when requested or needed for a handoff, following project conventions or `.scratch/features/<descriptive-slug>.md`.
 
 Finish when there is enough shared understanding for the intended next step, or explain the specific decision or evidence still needed. Recommend design for unresolved technical choices, or specification when the behavior is settled. Shaping alone does not request implementation or creation of tracker issues.
