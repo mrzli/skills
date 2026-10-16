@@ -11,7 +11,7 @@ Run one implementer at a time by default. With `parallel`, run up to N independe
 
 ## Keep a queue
 
-Keep the queue in a temporary plan file that follows the project's conventions for plans, or in `.scratch/delivery/<slug>.md` if the project has none. For each item, record:
+Keep the queue in a temporary plan file that follows the project's conventions for plans, or in `.scratch/delivery/<slug>.md` if the project has none. If that location is ignored by Git, choose a tracked one, since the final state is committed. For each item, record:
 
 - The agreed decision, with exact names, values, and choices, so an implementer can act without the conversation.
 - Its footprint: the files and areas it is expected to touch, estimated from the decision and a search of the code.
@@ -48,4 +48,4 @@ A conflict or failing check between items run in parallel means their footprints
 
 Report for each item what changed, its commit, and the checks and their results. List every choice the implementer made beyond the agreed decision, or state that there were none. Raise any blocking question in the discussion.
 
-Follow the user's and the project's branch and commit conventions. Merge only when the user asks. When the queue is done, finish the plan file as the project's conventions say, such as moving lasting decisions into the permanent docs and deleting the plan.
+Follow the user's and the project's branch and commit conventions. Merge only when the user asks. When the queue is done, finish the plan file as the project's conventions say. Otherwise move lasting decisions into the permanent docs, commit the plan file in its final state so the queue stays in history, and delete it in the next commit.
