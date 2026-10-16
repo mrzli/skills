@@ -36,3 +36,8 @@
 ~/projects/personal/mrzli/qt-market-chart	!create-verification	I keep having to check the chart by hand after every change, can agents check it themselves?
 ~/projects/personal/mrzli/qt-market-chart	!queue-work	Implement the rename we just agreed on, and meanwhile let's go through the next naming item.
 ~/projects/personal/mrzli/qt-market-chart	recap,!warmup	Where are we with the naming work? What is done and what is left?
+~/projects/personal/mrzli/qt-market-chart	glossary	I keep forgetting what pointer target and pane mean here. Can we write these terms down so I can look them up?
+~/projects/personal/mrzli/qt-market-chart	glossary	We just agreed to call the engine the pipeline from now on. Make sure that name is recorded.
+~/projects/personal/mrzli/qt-market-chart	clarify	What is a slot in this project again?
+~/projects/personal/mrzli/qt-market-chart	handoff	I have to stop for today. Write up what the next session needs to pick this up tomorrow.
+~/projects/personal/mrzli/skills	handoff	The global AGENTS.md rule we agreed on has to be done in the archon repo. Prepare it for a session there.
