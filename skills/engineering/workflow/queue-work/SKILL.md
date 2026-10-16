@@ -27,7 +27,7 @@ Add an item only when the user has agreed to it. A question is not approval, and
 
 Start a batch only when the user asks, such as "do the next three agreed items". Start ready items from the batch in queue order, up to the mode's limit, and start more as items are integrated and their dependents become ready.
 
-Give each item its own background agent, started from the tip of the user's branch, with its own worktree and build directory when the tools allow. A chain of dependent items may go to one agent in order. Pass the agreed decisions themselves, not only a pointer to the queue. Tell each agent to:
+Give each item its own background agent, started from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order. Pass the agreed decisions themselves, not only a pointer to the queue. Tell each agent to:
 
 - Use [implement](../../delivery/implement/SKILL.md) for each item, with one commit each, and run the project's required checks.
 - Leave the queue file to the main agent.
