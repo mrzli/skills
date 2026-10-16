@@ -1,8 +1,7 @@
 ---
 name: handoff
-description: Compact the current session into a handoff document so another agent can continue the work. Use when the user wants to continue in a new session on this or another machine, optionally for a given scope or focus.
+description: Compact the current session into a handoff document so another agent can continue the work. Use when the user wants to continue in a new session on this or another machine, or when agreed work must be passed to a session in another repository, optionally for a given scope or focus.
 argument-hint: "[same or other machine] [scope or next focus]"
-disable-model-invocation: true
 ---
 
 ## Argument

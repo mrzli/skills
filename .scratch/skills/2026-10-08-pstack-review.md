@@ -66,7 +66,7 @@ Start from `cursor/plugins` `ccb5507` and diff `pstack/` only.
 
 At the user's request, all skills were checked for names, descriptions, and invocation settings. The changes below were applied on this branch.
 
-- Invocation now matches between Claude and Codex. `clarify` and `tidy-docs` load implicitly in both. `handoff`, `teach`, `explore`, and `restate` are user-invoked in both.
+- Invocation now matches between Claude and Codex. `clarify` and `tidy-docs` load implicitly in both. `handoff`, `teach`, `explore`, and `restate` are user-invoked in both. Since 2026-10-16, `handoff` also loads implicitly in both.
 - Descriptions now include use-when triggers for `clarify`, `explore`, `handoff`, `restate`, `interrogate`, and `teach`, cover editing and reviewing in `writing-agents` and `writing-skills`, and list the audit scope of `maintain-skills`.
 - `deliver-feature` was renamed to `deliver`, because it also coordinates backlogs. Historical records keep the old name.
 - `maintain-skills` gained the metadata audit step and the routing-test policy. Tests run for changed skills after the user installs them, and the full set runs only on request. `AGENTS.md` step 3 records this.
