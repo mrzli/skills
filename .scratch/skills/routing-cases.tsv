@@ -44,3 +44,4 @@
 ~/projects/personal/mrzli/qt-market-chart	writing-agents	Add a section to AGENTS.md saying which checks to run when only Markdown changes.
 ~/projects/personal/mrzli/qt-market-chart	recap	Weren't there like 18 or 20 items total? List them again.
 ~/projects/personal/mrzli/qt-market-chart	handoff	Nothing else is needed in this repo. For the archon setup I'll run it there myself, I need a handoff file for it.
+~/projects/personal/mrzli/qt-market-chart	improve-workflow	Which commands do agents keep running by hand in this project that should be scripts instead?
