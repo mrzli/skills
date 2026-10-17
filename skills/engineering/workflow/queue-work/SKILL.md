@@ -31,6 +31,7 @@ Give each item its own background agent, started from the tip of the user's bran
 
 - Use [implement](../../delivery/implement/SKILL.md) for each item, with one commit each, and run the project's required checks.
 - Leave the queue file to the main agent.
+- Run Git as plain, separate commands from the worktree root, without `cd`, `-C`, `&&`, or pipes, so the tools can verify that each command stays inside the worktree.
 - Make routine choices that follow from the decisions and project conventions, and list every choice the decision did not settle.
 - Stop at an item that needs a choice the user would make, such as a name, user-visible behavior, an interface, or scope. Keep the commits for earlier items, and report the question.
 
