@@ -22,6 +22,6 @@ Choose the parts that fit the scope, omitting empty ones. A discussion of a desi
 - **Waiting on the user:** decisions, approvals, or actions only they can take, including ones raised before their last message.
 - **Item status:** done, with the merge or commit state, in progress, including unmerged branches and work awaiting review, remaining, in recommended order with blockers, and dropped or deferred, only when the user decided this.
 
-Keep each item short, and keep the identifiers already in use. Mark decisions and items found only in the conversation, not in a written record. Flag anything whose status is uncertain.
+Keep each item short, and keep the identifiers already in use. Give each item listed by number or ID a description of a few words, so the user can tell what it is about without asking. Mark decisions and items found only in the conversation, not in a written record. Flag anything whose status is uncertain.
 
 End with the recommended next step. Update an existing record only if the user asks.
