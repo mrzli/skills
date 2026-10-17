@@ -15,6 +15,8 @@ Describe the observed friction and its consequence: repeated clarification, wast
 
 Trace the problem to its source. Consider unclear requirements, missing information, conflicting instructions, poor activity boundaries, unavailable tools, and checks that existed but were not run. Inspect existing automation before proposing a duplicate check or new tool.
 
+When local transcripts are available, run [repeated-steps.py](scripts/repeated-steps.py) with `python3 -I` for the project, using `--since` to limit the period. It counts the shell steps that agents repeated by hand across the project's Claude Code and Codex sessions: chains, loops, output filters, and runs of two to four steps. The script only counts. Group steps that were done in different ways, drop those already covered by the project's tooling, and propose tooling for the rest only as the user's or project's rules for proposing tooling allow. Before proposing, check the project's backlog for an earlier "not now" or "don't ask again". Save the script's output in the improvement record.
+
 ## Choose a correction
 
 Consider clarifying or removing an instruction, improving access to evidence, changing a skill's inputs or outputs, moving a step, or automating a reliable check. Add, merge, or remove skills only when their responsibilities justify it. Retaining the current process is a valid recommendation.
