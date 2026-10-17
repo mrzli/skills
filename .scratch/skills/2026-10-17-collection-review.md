@@ -88,3 +88,19 @@ Evaluation:
 ## Next review
 
 Start from Matt Pocock `49dd158`, pstack `101b274`, and transcripts after 2026-10-17. Check the evaluations above, the check-cost evaluation, and real use of `deliver`, `optimize`, and `create-verification`.
+
+## Routing after install
+
+After the user installed the branch, the eight cases for `fix-bug`, `implement`, and `recap` all passed, including the new "Weren't there like 18 or 20 items total?" case. qt-market-chart's working tree and worktree list stayed clean. Recommendation 4 landed in archon as `eee0dac`.
+
+```txt
+case  expected           loaded     verdict
+1     fix-bug            fix-bug    pass
+2     fix-bug            fix-bug    pass
+3     fix-bug,!optimize  fix-bug    pass
+4     implement          implement  pass
+5     recap              recap      pass
+6     recap              recap      pass
+7     recap,!warmup      recap      pass
+8     recap              recap      pass
+```
