@@ -22,4 +22,6 @@ Write at most five short lines: what the user was doing, where it stopped, and w
 
 Then give three to five small steps in order, from easy to slightly harder. Each step names one concrete thing to look at or do, such as a commit, a file, a check to run, or a pending decision, and says what the user will know afterward. Use the project's real names and commands. Prefer steps that are part of the real work, such as reviewing the last commit or settling the next decision, over exercises. End with the step that starts the next piece of work.
 
+If the project has had activity in the last four weeks but its latest retrospective record from [improve-workflow](../../engineering/workflow/improve-workflow/SKILL.md) is older than that, or there is none, add one line suggesting a retrospective with `improve-workflow`.
+
 Stop after the steps. Wait for the user to start.
