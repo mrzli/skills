@@ -11,3 +11,5 @@ Include the steps and constraints needed to guide behavior. Leave routine choice
 
 Keep shared guidance in one authoritative place and reference it instead of repeating it. Move substantial guidance for optional cases into supporting files, with clear instructions for when to read them. Keep simple skills self-contained.
 
+Put steps that need no judgment, such as parsing transcripts or a fixed sequence of commands, into a script in the skill's `scripts/` directory, as `warmup` does with `scripts/last-session.sh`. Say in the skill when to run it and what the agent decides from its output. Skills are installed as links, and relative links in a skill's text resolve from the real files in the repository, so a skill can link to another skill's files by relative path. A script that calls another script must first find its own real location, such as with `realpath` or `os.path.realpath(__file__)`, because `cd` and some path functions resolve `..` from the link's location.
+
