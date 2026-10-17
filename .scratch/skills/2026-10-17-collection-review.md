@@ -1,6 +1,6 @@
 # Skill collection review, 2026-10-17
 
-Follows the [2026-10-14 review](2026-10-14-collection-review.md) and the [check-cost record](../workflow/2026-10-16-check-costs.md). Recommendations only. Nothing has been applied yet.
+Follows the [2026-10-14 review](2026-10-14-collection-review.md) and the [check-cost record](../workflow/2026-10-16-check-costs.md). The user approved all recommendations. Recommendations 1, 2, 3, 5, and 6 were applied on branch `skills-review-2026-10-17`, one commit each. Recommendation 4 was handed off for archon in `/tmp/handoff-archon-flag-own-choices.md`.
 
 ## Scope and sources
 
@@ -9,7 +9,7 @@ Follows the [2026-10-14 review](2026-10-14-collection-review.md) and the [check-
 - pstack: `1e5c90a` to `101b274`. Read `e5136d8` (four principles restated as reasoning), `99743e9` (cuts to interrogate, swarm, and two principles), and `afd51cf` (ketchup with screenshots and diagrams). `6ce45c5` and `182f2ce` are a version bump and Claude Code packaging, screened by title.
 - Transcripts after 2026-10-14: nine Claude sessions in qt-market-chart, archon, and learning, plus qt-market-chart implementer subagents. There were no Codex sessions. A subagent audited them. The quotes for items 17 and 18, the warmup mismatch, and the git refusals were spot-checked.
 - Invocation settings: Claude Code and Codex agree for every skill. A missing `agents/openai.yaml` defaults to implicit invocation.
-- Routing tests were not run, because no skill changed.
+- Routing tests were not run during the review. No changed skill's description changed. A `recap` case for "Weren't there like 18 or 20 items total?" was added. Run the `recap`, `implement`, and `fix-bug` cases once the branch is installed.
 
 ## Usage since 2026-10-14
 
