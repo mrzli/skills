@@ -24,14 +24,14 @@ Use the map below as a starting point. Read the recommended skill before describ
 | Choose a technical approach or resolve design tradeoffs | [design](../../planning/design/SKILL.md) |
 | Preserve agreed requirements and acceptance criteria | [write-spec](../../planning/write-spec/SKILL.md) |
 | Divide agreed work into verifiable tasks and dependencies | [plan](../../planning/plan/SKILL.md) |
-| Build a clear, scoped change | [implement](../../delivery/implement/SKILL.md) |
+| Build a clear, scoped change the user waits for | [implement](../../delivery/implement/SKILL.md) |
 | Assess an existing change before proceeding | [review-code](../../delivery/review-code/SKILL.md) |
 | Diagnose and repair unexpected behavior | [fix-bug](../../delivery/fix-bug/SKILL.md) |
 | Reduce a measured performance cost, such as latency or frame time | [optimize](../../delivery/optimize/SKILL.md) |
 | Improve selected code structure while preserving behavior | [refactor](../../delivery/refactor/SKILL.md) |
 | Publish or deploy verified work to a specified target | [release](../../delivery/release/SKILL.md) |
 | Have the agent coordinate a feature or backlog across activities and tasks | [deliver](../deliver/SKILL.md) |
-| Keep agreeing on work items while the agreed ones are implemented in the background | [queue-work](../queue-work/SKILL.md) |
+| Implement agreed items in the background while the discussion continues | [queue-work](../queue-work/SKILL.md) |
 | Find structural problems worth addressing in existing code | [review-architecture](../../investigation/review-architecture/SKILL.md) |
 | Assess whether the product helps its intended users | [review-product](../../investigation/review-product/SKILL.md) |
 | Give agents a scripted way to drive the real application and capture evidence | [create-verification](../create-verification/SKILL.md) |

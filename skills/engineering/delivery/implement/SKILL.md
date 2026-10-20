@@ -1,6 +1,6 @@
 ---
 name: implement
-description: Build and verify a scoped code change from a request, specification, or task. Use when the user is ready to implement agreed behavior.
+description: Build and verify a scoped code change from a request, specification, or task. Use when the user is ready to implement agreed behavior and waits for the result, such as a one-off request. For agreed items in an ongoing discussion, use queue-work.
 ---
 
 Deliver the requested change with verification evidence. A clear request is enough. A separate specification or ticket is optional.
