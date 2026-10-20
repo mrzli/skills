@@ -120,3 +120,5 @@ case  expected    loaded      verdict
 ```
 
 Case 3, "Implement the rename we just agreed on…", is a test artifact. In a fresh session there is no agreed rename, so the agent asked for it and said "Once I have the details, I'll use the `queue-work` skill." The routing intent was right. The "Add a keyboard shortcut…" near-miss still loads `implement`.
+
+After the user approved, case 3 was rewritten with a concrete rename, and `maintain-skills` now asks for requests a fresh session can act on. Four more cases that relied on earlier conversation now state their decision: `write-spec`, `handoff`, and two `queue-work` cases. All five rewritten cases passed with the installed skills.
