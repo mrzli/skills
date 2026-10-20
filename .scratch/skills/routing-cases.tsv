@@ -15,7 +15,7 @@
 ~/projects/personal/mrzli/trading-app	interrogate,!shape-feature	Here's my plan: one shared renderer, primitives are rect, polygon, line, text. Poke holes in it.
 ~/projects/personal/mrzli/trading-app	prototype	Show me two or three ways the crosshair tooltip could look so I can pick one.
 ~/projects/personal/mrzli/trading-app	plan	Break the renderer unification into tasks we can do one by one.
-~/projects/personal/mrzli/trading-app	write-spec	Write down what we agreed about the indicator panel so it can guide implementation.
+~/projects/personal/mrzli/trading-app	write-spec	Write down what we agreed about the indicator panel so it can guide implementation: it sits below the chart, shows one indicator per row, and each row can be collapsed.
 ~/projects/personal/mrzli/trading-app	review-code	Review the changes on this branch before I merge.
 ~/projects/personal/mrzli/trading-app	review-architecture	Take a look at the overall structure of this repo and tell me what is worth improving.
 ~/projects/personal/mrzli/trading-app	review-product	Is this chart app actually useful for how I trade? What should I improve or drop?
@@ -40,10 +40,10 @@
 ~/projects/personal/mrzli/trading-app	glossary	We just agreed to call the engine the pipeline from now on. Make sure that name is recorded.
 ~/projects/personal/mrzli/trading-app	clarify	What is a slot in this project again?
 ~/projects/personal/mrzli/trading-app	handoff	I have to stop for today. Write up what the next session needs to pick this up tomorrow.
-~/projects/personal/mrzli/skills	handoff	The global AGENTS.md rule we agreed on has to be done in the archon repo. Prepare it for a session there.
+~/projects/personal/mrzli/skills	handoff	We agreed on a global AGENTS.md rule that tests run before every commit, and it has to be done in the archon repo. Prepare it for a session there.
 ~/projects/personal/mrzli/trading-app	writing-agents	Add a section to AGENTS.md saying which checks to run when only Markdown changes.
 ~/projects/personal/mrzli/trading-app	recap	Weren't there like 18 or 20 items total? List them again.
 ~/projects/personal/mrzli/trading-app	handoff	Nothing else is needed in this repo. For the archon setup I'll run it there myself, I need a handoff file for it.
 ~/projects/personal/mrzli/trading-app	improve-workflow	Which commands do agents keep running by hand in this project that should be scripts instead?
-~/projects/personal/mrzli/trading-app	queue-work	OK, that one's agreed, queue it and let's look at the next item.
-~/projects/personal/mrzli/trading-app	queue-work	Good, we agree on the indicator settings layout. Let's do that, and meanwhile tell me what's next on the backlog.
+~/projects/personal/mrzli/trading-app	queue-work	OK, a shortcut that resets the zoom is agreed. Queue it and let's look at the next item.
+~/projects/personal/mrzli/trading-app	queue-work	Good, we agree indicator settings open in a side panel. Let's do that, and meanwhile tell me what's next on the backlog.
