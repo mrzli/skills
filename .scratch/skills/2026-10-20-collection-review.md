@@ -105,3 +105,18 @@ Evaluation:
 ## Next review
 
 Start from Matt Pocock `5beb35b`, pstack `88d4751`, and transcripts after 2026-10-20 12:47 UTC. Check the evaluations above, and real use of `deliver`, `optimize`, `create-verification`, and `plan`.
+
+## Routing after install
+
+The user merged and installed the branch and the archon handoff. The three global rules are in `~/.codex/AGENTS.md`, and the trading-app memory notes were deleted. Five cases for `queue-work`, `implement`, and `guide`:
+
+```txt
+case  expected    loaded      verdict
+1     implement   implement   pass
+2     guide       guide       pass
+3     queue-work  -           missed
+4     queue-work  queue-work  pass
+5     queue-work  queue-work  pass
+```
+
+Case 3, "Implement the rename we just agreed on…", is a test artifact. In a fresh session there is no agreed rename, so the agent asked for it and said "Once I have the details, I'll use the `queue-work` skill." The routing intent was right. The "Add a keyboard shortcut…" near-miss still loads `implement`.
