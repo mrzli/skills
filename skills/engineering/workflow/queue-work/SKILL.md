@@ -14,7 +14,7 @@ Run one implementer at a time by default. With `parallel`, run up to N independe
 Keep the queue in a temporary plan file that follows the project's conventions for plans, or in `.scratch/delivery/<slug>.md` if the project has none. If that location is ignored by Git, choose a tracked one, since the final state is committed. For each item, record:
 
 - The agreed decision, with exact names, values, and choices, so an implementer can act without the conversation.
-- Its footprint: the files and areas it is expected to touch, estimated from the decision and a search of the code.
+- Its footprint: the files and areas it is expected to touch, estimated from the decision and a search of the whole repository, including docs and comments, for the names and forms it changes.
 - The earlier items it depends on.
 - Its status: agreed, in progress, integrated, or blocked.
 - Its commit, once integrated.
