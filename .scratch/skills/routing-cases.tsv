@@ -1,29 +1,29 @@
 # Routing test cases for skills/engineering/workflow/maintain-skills/scripts/routing-test.sh.
 # PROJECT_DIR<TAB>EXPECTED<TAB>REQUEST
 # EXPECTED: acceptable skills (one must load), "!skill" must not load, or "none".
-~/projects/personal/mrzli/qt-market-chart	fix-bug	The chart stutters and jumps when I zoom past the last bar. Find out why and fix it.
-~/projects/personal/mrzli/qt-market-chart	fix-bug	./bin/check started failing after the last commit, sort it out.
-~/projects/personal/mrzli/qt-market-chart	clarify,investigate	How does zooming work in the chart right now?
-~/projects/personal/mrzli/qt-market-chart	clarify	I don't get what the renderer's primitives are, explain it again.
-~/projects/personal/mrzli/qt-market-chart	investigate	Before we pick a line rendering approach, find out whether Qt's RHI supports wide lines on Vulkan here.
-~/projects/personal/mrzli/qt-market-chart	optimize	Rendering feels slow with large datasets, I want frames well under 10 ms.
-~/projects/personal/mrzli/qt-market-chart	fix-bug,!optimize	Panning got much slower since yesterday's renderer change, it used to be smooth. Fix it.
-~/projects/personal/mrzli/qt-market-chart	refactor	ChartState.cpp has grown too big, split it up without changing behavior.
-~/projects/personal/mrzli/qt-market-chart	implement	Add a keyboard shortcut that resets the zoom to show all bars.
-~/projects/personal/mrzli/qt-market-chart	design	I need to decide what the API between the geometry builders and the renderer should look like.
-~/projects/personal/mrzli/qt-market-chart	shape-feature	I want to add drawing tools to the chart, but I'm not sure what exactly they should do yet.
-~/projects/personal/mrzli/qt-market-chart	interrogate,!shape-feature	Here's my plan: one shared renderer, primitives are rect, polygon, line, text. Poke holes in it.
-~/projects/personal/mrzli/qt-market-chart	prototype	Show me two or three ways the crosshair tooltip could look so I can pick one.
-~/projects/personal/mrzli/qt-market-chart	plan	Break the renderer unification into tasks we can do one by one.
-~/projects/personal/mrzli/qt-market-chart	write-spec	Write down what we agreed about the indicator panel so it can guide implementation.
-~/projects/personal/mrzli/qt-market-chart	review-code	Review the changes on this branch before I merge.
-~/projects/personal/mrzli/qt-market-chart	review-architecture	Take a look at the overall structure of this repo and tell me what is worth improving.
-~/projects/personal/mrzli/qt-market-chart	review-product	Is this chart app actually useful for how I trade? What should I improve or drop?
-~/projects/personal/mrzli/qt-market-chart	deliver	Go through the whole review backlog, implement each item, and get it all done.
-~/projects/personal/mrzli/qt-market-chart	guide	I have this chart app half built, what should I do next?
-~/projects/personal/mrzli/qt-market-chart	recap	Relist what is left from the backlog.
-~/projects/personal/mrzli/qt-market-chart	!handoff	Summarize what we did so far.
-~/projects/personal/mrzli/qt-market-chart	!restate	so like the thing with the lines and the renderer and the um the builders whatever, you know what I mean, sort that out conceptually
+~/projects/personal/mrzli/trading-app	fix-bug	The chart stutters and jumps when I zoom past the last bar. Find out why and fix it.
+~/projects/personal/mrzli/trading-app	fix-bug	./bin/check started failing after the last commit, sort it out.
+~/projects/personal/mrzli/trading-app	clarify,investigate	How does zooming work in the chart right now?
+~/projects/personal/mrzli/trading-app	clarify	I don't get what the renderer's primitives are, explain it again.
+~/projects/personal/mrzli/trading-app	investigate	Before we pick a line rendering approach, find out whether Qt's RHI supports wide lines on Vulkan here.
+~/projects/personal/mrzli/trading-app	optimize	Rendering feels slow with large datasets, I want frames well under 10 ms.
+~/projects/personal/mrzli/trading-app	fix-bug,!optimize	Panning got much slower since yesterday's renderer change, it used to be smooth. Fix it.
+~/projects/personal/mrzli/trading-app	refactor	ChartState.cpp has grown too big, split it up without changing behavior.
+~/projects/personal/mrzli/trading-app	implement	Add a keyboard shortcut that resets the zoom to show all bars.
+~/projects/personal/mrzli/trading-app	design	I need to decide what the API between the geometry builders and the renderer should look like.
+~/projects/personal/mrzli/trading-app	shape-feature	I want to add drawing tools to the chart, but I'm not sure what exactly they should do yet.
+~/projects/personal/mrzli/trading-app	interrogate,!shape-feature	Here's my plan: one shared renderer, primitives are rect, polygon, line, text. Poke holes in it.
+~/projects/personal/mrzli/trading-app	prototype	Show me two or three ways the crosshair tooltip could look so I can pick one.
+~/projects/personal/mrzli/trading-app	plan	Break the renderer unification into tasks we can do one by one.
+~/projects/personal/mrzli/trading-app	write-spec	Write down what we agreed about the indicator panel so it can guide implementation.
+~/projects/personal/mrzli/trading-app	review-code	Review the changes on this branch before I merge.
+~/projects/personal/mrzli/trading-app	review-architecture	Take a look at the overall structure of this repo and tell me what is worth improving.
+~/projects/personal/mrzli/trading-app	review-product	Is this chart app actually useful for how I trade? What should I improve or drop?
+~/projects/personal/mrzli/trading-app	deliver	Go through the whole review backlog, implement each item, and get it all done.
+~/projects/personal/mrzli/trading-app	guide	I have this chart app half built, what should I do next?
+~/projects/personal/mrzli/trading-app	recap	Relist what is left from the backlog.
+~/projects/personal/mrzli/trading-app	!handoff	Summarize what we did so far.
+~/projects/personal/mrzli/trading-app	!restate	so like the thing with the lines and the renderer and the um the builders whatever, you know what I mean, sort that out conceptually
 ~/projects/personal/mrzli/archon	release	Publish the setup changes to the main machine and check they applied.
 ~/projects/personal/mrzli/archon	tidy-docs	The docs in this repo are a mess, tidy them up.
 ~/projects/personal/mrzli/archon	writing-agents	Update AGENTS.md so it says to run the tests before committing.
@@ -31,17 +31,17 @@
 ~/projects/personal/mrzli/archon	improve-workflow	The agent keeps forgetting to run the formatter before committing. Fix the process so it stops happening.
 ~/projects/personal/mrzli/learning	!teach	What is the capital of Australia?
 ~/projects/personal/mrzli/learning	!explore	I'm kind of interested in something around music, not sure what.
-~/projects/personal/mrzli/qt-market-chart	recap	Reiterate what we discussed about the renderer architecture and where we left off.
-~/projects/personal/mrzli/qt-market-chart	clarify	Am I right that the builders run before the renderer, or not?
-~/projects/personal/mrzli/qt-market-chart	!create-verification	I keep having to check the chart by hand after every change, can agents check it themselves?
-~/projects/personal/mrzli/qt-market-chart	!queue-work	Implement the rename we just agreed on, and meanwhile let's go through the next naming item.
-~/projects/personal/mrzli/qt-market-chart	recap,!warmup	Where are we with the naming work? What is done and what is left?
-~/projects/personal/mrzli/qt-market-chart	glossary	I keep forgetting what pointer target and pane mean here. Can we write these terms down so I can look them up?
-~/projects/personal/mrzli/qt-market-chart	glossary	We just agreed to call the engine the pipeline from now on. Make sure that name is recorded.
-~/projects/personal/mrzli/qt-market-chart	clarify	What is a slot in this project again?
-~/projects/personal/mrzli/qt-market-chart	handoff	I have to stop for today. Write up what the next session needs to pick this up tomorrow.
+~/projects/personal/mrzli/trading-app	recap	Reiterate what we discussed about the renderer architecture and where we left off.
+~/projects/personal/mrzli/trading-app	clarify	Am I right that the builders run before the renderer, or not?
+~/projects/personal/mrzli/trading-app	!create-verification	I keep having to check the chart by hand after every change, can agents check it themselves?
+~/projects/personal/mrzli/trading-app	!queue-work	Implement the rename we just agreed on, and meanwhile let's go through the next naming item.
+~/projects/personal/mrzli/trading-app	recap,!warmup	Where are we with the naming work? What is done and what is left?
+~/projects/personal/mrzli/trading-app	glossary	I keep forgetting what pointer target and pane mean here. Can we write these terms down so I can look them up?
+~/projects/personal/mrzli/trading-app	glossary	We just agreed to call the engine the pipeline from now on. Make sure that name is recorded.
+~/projects/personal/mrzli/trading-app	clarify	What is a slot in this project again?
+~/projects/personal/mrzli/trading-app	handoff	I have to stop for today. Write up what the next session needs to pick this up tomorrow.
 ~/projects/personal/mrzli/skills	handoff	The global AGENTS.md rule we agreed on has to be done in the archon repo. Prepare it for a session there.
-~/projects/personal/mrzli/qt-market-chart	writing-agents	Add a section to AGENTS.md saying which checks to run when only Markdown changes.
-~/projects/personal/mrzli/qt-market-chart	recap	Weren't there like 18 or 20 items total? List them again.
-~/projects/personal/mrzli/qt-market-chart	handoff	Nothing else is needed in this repo. For the archon setup I'll run it there myself, I need a handoff file for it.
-~/projects/personal/mrzli/qt-market-chart	improve-workflow	Which commands do agents keep running by hand in this project that should be scripts instead?
+~/projects/personal/mrzli/trading-app	writing-agents	Add a section to AGENTS.md saying which checks to run when only Markdown changes.
+~/projects/personal/mrzli/trading-app	recap	Weren't there like 18 or 20 items total? List them again.
+~/projects/personal/mrzli/trading-app	handoff	Nothing else is needed in this repo. For the archon setup I'll run it there myself, I need a handoff file for it.
+~/projects/personal/mrzli/trading-app	improve-workflow	Which commands do agents keep running by hand in this project that should be scripts instead?
