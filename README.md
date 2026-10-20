@@ -69,7 +69,7 @@ Reusable skills for AI agents.
 | Skill | Description |
 | --- | --- |
 | [deliver](skills/engineering/workflow/deliver/SKILL.md) | Coordinate a feature or backlog across tasks through its authorized delivery endpoint. |
-| [queue-work](skills/engineering/workflow/queue-work/SKILL.md) | Keep discussing upcoming work items while background agents implement the agreed ones in dependency order, optionally in parallel. |
+| [queue-work](skills/engineering/workflow/queue-work/SKILL.md) | Keep discussing upcoming work items while background agents implement the agreed ones in parallel, in dependency order. |
 | [create-verification](skills/engineering/workflow/create-verification/SKILL.md) | Create a tested, project-local skill and tool for driving the real application and capturing evidence. |
 | [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next engineering activity or skill, with a concrete example invocation. |
 | [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) | Improve the development process using evidence from completed work. |

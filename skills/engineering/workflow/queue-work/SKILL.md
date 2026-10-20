@@ -1,13 +1,13 @@
 ---
 name: queue-work
-description: Keep discussing upcoming work items with the user while background agents implement the agreed ones in dependency order, one at a time or in parallel. Use when the user wants to agree on items in conversation without waiting for each implementation.
-argument-hint: "[parallel [N]]"
+description: Keep discussing upcoming work items with the user while background agents implement the agreed ones in parallel, in dependency order. Use when the user wants to agree on items in conversation without waiting for each implementation.
+argument-hint: "[N]"
 disable-model-invocation: true
 ---
 
 Let the user keep deciding the next work items while the items already agreed are implemented in the background. The user decides what is agreed and when a batch starts. Discussion can run ahead of implementation.
 
-Run one implementer at a time by default. With `parallel`, run up to N independent items at once, or 4 when N is not given. The user can switch modes during the session.
+Run up to N ready items at once, or 4 when N is not given. The user can change N during the session.
 
 ## Keep a queue
 
@@ -25,7 +25,7 @@ Add an item only when the user has agreed to it. A question is not approval, and
 
 ## Run a batch
 
-Start a batch only when the user asks, such as "do the next three agreed items". Start ready items from the batch in queue order, up to the mode's limit, and start more as items are integrated and their dependents become ready.
+Start a batch only when the user asks, such as "do the next three agreed items". Start ready items from the batch in queue order, up to N at once, and start more as items are integrated and their dependents become ready.
 
 Give each item its own background agent, started from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order. Pass the agreed decisions themselves, not only a pointer to the queue. Tell each agent to:
 
