@@ -1,6 +1,12 @@
 # Skill collection review, 2026-10-20
 
-Follows the [2026-10-17 review](2026-10-17-collection-review.md). These are recommendations only. The only change applied so far is the mechanical path fix in `e6e6c79`.
+Follows the [2026-10-17 review](2026-10-17-collection-review.md). The user's decisions, applied on branch `skills-review-2026-10-20`:
+
+- 1, one git command per call: `e7ebe27`.
+- 2, revised to searching the whole repository, including docs and comments, for the names an item changes: `09ce310`. The 10-18 footprint did include docs. A search found six more places, and the implementer got them about 20 seconds after it started, so it is unknown whether it would have found them alone.
+- 3, extended: `queue-work` has one mode, up to N items at once, 4 by default (`cfaa276`). Agents can load it, and "queue this" starts the item (`eefac1f`). It is the default for agreed items in an ongoing discussion, while `implement` stays the route for one-off requests the user waits on (`4df1ee2`).
+- 4, handed off for archon in `/tmp/handoff-archon-response-rules.md`. Response size is judged by how much the user must take in, with about 400 words of prose as a rough check, not a limit. Measured reactions were 384 words "a lot", 603 words "a lot", and 425 words with one question praised.
+- `create-verification`: keep for now. The user hasn't tried it yet while adapting the workflow. Retirement stays possible if it remains unused once the workflow settles.
 
 ## Scope and sources
 
