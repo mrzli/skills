@@ -30,7 +30,7 @@ Give each item its own background agent, started from the tip of the user's bran
 
 - Use [implement](../../delivery/implement/SKILL.md) for each item, with one commit each, and run the project's required checks.
 - Leave the queue file to the main agent.
-- Run each Git command alone in its own shell call from the worktree root, without `cd`, `-C`, `;`, `&&`, pipes, `$?`, or other commands in the same call, so the tools can verify that it stays inside the worktree.
+- Keep shell calls simple enough for the tools to verify that they stay inside the worktree. Run them from the worktree root with paths relative to it, and start none with `cd`. Run each Git command alone, without `-C`, `;`, `&&`, pipes, or `$?`. Run other commands that change files, such as `mkdir` or `cp`, one per call, without brace expansion or shell variables. Create and edit files with the file-editing tools, not through shell heredocs such as `cat > file <<'EOF'` or `python3 - <<'EOF'`, `sed -i`, or redirection. For a mechanical edit across many files, write a script with those tools and run it as one plain command.
 - Make routine choices that follow from the decisions and project conventions, and list every choice the decision did not settle.
 - Stop at an item that needs a choice the user would make, such as a name, user-visible behavior, an interface, or scope. Keep the commits for earlier items, and report the question.
 
