@@ -17,14 +17,15 @@ Keep the queue in a temporary plan file that follows the project's conventions f
 - The earlier items it depends on.
 - Its status: agreed, in progress, integrated, or blocked.
 - Its commit, once integrated.
+- Its source ID, when it came from a fork's note through [collect](../../../conversation/collect/SKILL.md), such as `Claude-1/F2a`.
 
 Make an item depend on an earlier item that is not yet integrated when it builds on that item's result, when their footprints overlap, or when either changes something many files rely on, such as a specification, a shared interface, or the build configuration. When unsure, add the dependency. An item is ready when the user has agreed to it and its dependencies are integrated. Update the dependencies whenever an item is added or changed.
 
-Add an item only when the user has agreed to it. A question is not approval, and approving one item does not approve others. When later discussion changes an item that is not yet implemented, update its decision. When it changes an item already in progress or integrated, add a new item.
+Add an item only when the user has agreed to it. A question is not approval, and approving one item does not approve others. An item listed as agreed to implement in a note taken in with collect is agreed, because the user approved it in the fork. When later discussion changes an item that is not yet implemented, update its decision. When it changes an item already in progress or integrated, add a new item.
 
 ## Run a batch
 
-Start a batch only when the user asks to implement or queue agreed items, such as "queue this" or "do the next three agreed items". Start ready items from the batch in queue order, up to N at once, and start more as items are integrated and their dependents become ready.
+Start a batch only when the user asks to implement or queue agreed items, such as "queue this" or "do the next three agreed items", or when collect brings in agreed items. Start ready items from the batch in queue order, up to N at once, and start more as items are integrated and their dependents become ready.
 
 Give each item its own background agent, started from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order. Pass the agreed decisions themselves, not only a pointer to the queue. Tell each agent to:
 

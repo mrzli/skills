@@ -11,8 +11,10 @@ Write the note in Markdown, kept short:
 
 - The topic.
 - The decisions, each with its reason. Refer to the parent's items by the parent's IDs, such as those in the fork's brief, so the note reads in the parent's terms.
+- Agreed to implement: each change the user explicitly approved in this fork, with the exact names, values, and choices an implementer needs without the conversation. Give each a source ID made of this fork's name and the item's ID, such as `Claude-1/F2a`, and keep it unchanged in later versions of the note. Give an item without an ID in the conversation the next free one. Leave out changes that were discussed but not approved.
 - What is still open.
-- Files changed and commits made, if any.
+
+When this fork has collected notes from forks below it, carry their agreed items into this note with their source IDs unchanged, so they reach the top tab.
 
 Use the argument, if given, to narrow or focus the note.
 

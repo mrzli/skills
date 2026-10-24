@@ -19,7 +19,8 @@ spawn    Opens a fork of the current tab in a new herdr or tmux tab in the
          files and start without the file-editing tools.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
-collect  Prints the notes of forks below the current tab, at any depth, that
+collect  Says whether the current tab is a top tab or a fork, and prints
+         the notes of forks below it, at any depth, that
          are new or changed since this tab last collected, and records them as
          read. Deletes notes that every tab above their fork has read, and lists
          trees with no activity for 14 days.
@@ -227,6 +228,11 @@ cmd_yield() {
 
 cmd_collect() {
   (($# == 0)) || usage
+  if [[ -n $me && ${parent[$me]} != - ]]; then
+    printf 'This tab: %s, a fork of %s.\n\n' "$me" "${parent[$me]}"
+  else
+    printf 'This tab: %s, a top tab.\n\n' "${me:-unnamed}"
+  fi
   if [[ -z $me ]]; then
     echo 'No forks are recorded for this tab.'
   else
