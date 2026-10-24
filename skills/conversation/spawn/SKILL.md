@@ -29,6 +29,6 @@ With `full`, the fork is a copy of this whole conversation. Run [agent-joins.sh]
 
 The script names the fork after this tab, such as `Claude-1` for the first fork of `Claude` and `Claude-1-1` for a fork of that, records it, and opens it in a new herdr or tmux tab. If it reports that the agent or terminal is unsupported, tell the user and stop.
 
-Report only the fork's name and topic, in one line. The user runs [yield](../yield/SKILL.md) in the fork to pass its results up, and [collect](../collect/SKILL.md) here or in any tab above to take them in.
+Treat spawning like a command: write nothing to the user before or after it, and report only a failure. The user runs [yield](../yield/SKILL.md) in the fork to pass its results up, and [collect](../collect/SKILL.md) here or in any tab above to take them in.
 
 Codex is not supported yet. The script needs Codex's own session ID to fork it exactly with `codex fork <id>`, and it is not known whether Codex exposes that ID to commands.
