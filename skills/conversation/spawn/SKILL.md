@@ -19,7 +19,7 @@ Write the brief in Markdown, kept short. It holds what the fork needs to discuss
 - The decisions, constraints, and rejected options that bear on it, with the IDs this conversation uses for them.
 - Pointers to the relevant files, commits, records, or handoffs, rather than their contents.
 
-Show the brief to the user and wait for their corrections or approval, because it is all the fork will know. Then pass it on standard input to [agent-joins.sh](../../shared/scripts/agent-joins.sh) `spawn TOPIC`.
+Pass it on standard input to [agent-joins.sh](../../shared/scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 
 ## Full copy
 
@@ -29,6 +29,6 @@ With `full`, the fork is a copy of this whole conversation. Run [agent-joins.sh]
 
 The script names the fork after this tab, such as `Claude-1` for the first fork of `Claude` and `Claude-1-1` for a fork of that, records it, and opens it in a new herdr or tmux tab. If it reports that the agent or terminal is unsupported, tell the user and stop.
 
-Report the fork's name. Tell the user to run [yield](../yield/SKILL.md) in the fork to pass its results up, and [collect](../collect/SKILL.md) here or in any tab above to take them in. Then continue this conversation.
+Report only the fork's name and topic, in one line. The user runs [yield](../yield/SKILL.md) in the fork to pass its results up, and [collect](../collect/SKILL.md) here or in any tab above to take them in.
 
 Codex is not supported yet. The script needs Codex's own session ID to fork it exactly with `codex fork <id>`, and it is not known whether Codex exposes that ID to commands.
