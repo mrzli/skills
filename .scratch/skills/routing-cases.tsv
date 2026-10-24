@@ -47,6 +47,6 @@
 ~/projects/personal/mrzli/trading-app	improve-workflow	Which commands do agents keep running by hand in this project that should be scripts instead?
 ~/projects/personal/mrzli/trading-app	queue-work	OK, a shortcut that resets the zoom is agreed. Queue it and let's look at the next item.
 ~/projects/personal/mrzli/trading-app	queue-work	Good, we agree indicator settings open in a side panel. Let's do that, and meanwhile tell me what's next on the backlog.
-~/projects/personal/mrzli/trading-app	recap,!conclude	We are done with the zoom topic. Summarize what we settled on so I can take it back to the main thread.
+~/projects/personal/mrzli/trading-app	recap,!conclude	The zoom topic is done: we agreed the cap stays at 2,000 records per pixel and the reset shortcut is Home. Summarize that so I can take it back to the main thread.
 ~/projects/personal/mrzli/trading-app	handoff,!fork-tab	I want to discuss the indicator settings panel separately without cluttering this session. Write up what a new session needs to pick that topic up.
 ~/projects/personal/mrzli/trading-app	!join	The other threads I had open about naming are finished. What did they decide?
