@@ -1,16 +1,14 @@
 ---
 name: spawn
-description: Open a fork of the current conversation in a new terminal tab, to discuss one topic there and later hand the result back with yield and collect.
+description: Open a fork of the current conversation in a new terminal tab, to discuss one topic there and later bring the result back with yield and collect.
 argument-hint: "[topic]"
 disable-model-invocation: true
 ---
 
-Open a fork of this conversation in a new tab, so the user can discuss one topic there while this thread continues. A fork is a copy of the conversation so far that continues as its own session. When the topic is done, the user runs [yield](../yield/SKILL.md) in the fork and [collect](../collect/SKILL.md) here.
+Open a fork of this conversation in a new tab, so the user can discuss one topic there while this tab continues. A fork is a copy of the conversation so far that continues as its own session. Forks can spawn forks of their own.
 
-Take the topic from the argument, or from the conversation if none is given. Keep it to a few words, since it becomes the tab label and the fork's session name.
+Run [agent-joins.sh](../../shared/scripts/agent-joins.sh) `spawn`, with the topic as an argument if the user gave one. Do not make up a topic. The script names the fork after this tab, such as `Claude-1` for the first fork of `Claude` and `Claude-1-1` for a fork of that, records it, and opens it in a new herdr or tmux tab. If it reports that the agent or terminal is unsupported, tell the user and stop.
 
-Run [open-fork.sh](scripts/open-fork.sh) with the topic as its only argument. It detects the agent and the terminal multiplexer from the environment, opens a tab in the current directory that starts the fork, and passes this session's ID to the fork as `AGENT_PARENT_SESSION`. It supports Claude Code inside herdr or tmux. If it reports that the agent or multiplexer is unsupported, tell the user and stop.
+Report the fork's name. Tell the user to run [yield](../yield/SKILL.md) in the fork to pass its results up, and [collect](../collect/SKILL.md) here or in any tab above to take them in. Then continue this conversation.
 
-Report the tab label, and tell the user to run `yield` in the fork when its topic is done and then `collect` here. Then continue this thread.
-
-Codex is not supported yet. `yield` addresses each note to the parent's session ID, so the script needs Codex's own session ID, which `codex fork <id>` would then fork exactly. It is not known whether Codex exposes that ID to commands, and `codex fork --last` alone cannot address the notes.
+Codex is not supported yet. The script needs Codex's own session ID to fork it exactly with `codex fork <id>`, and it is not known whether Codex exposes that ID to commands.

@@ -1,23 +1,21 @@
 ---
 name: yield
-description: Write a short note of what a forked conversation resolved, for the thread it was forked from to take in with collect. Use in a fork opened by spawn when its topic is done.
+description: Write a short note of what a forked conversation has resolved, for the tabs above it to take in with collect. Use in a fork opened by spawn, once or again whenever its results change.
 argument-hint: "[focus]"
 disable-model-invocation: true
 ---
 
-Record what this fork resolved, so the thread it came from can take it in with [collect](../collect/SKILL.md) without the user copying summaries.
+Record what this fork has resolved so far, so the tabs it came from can take it in with [collect](../collect/SKILL.md) without the user copying summaries. Each fork has one note. Yielding again replaces it with the latest state, so write the whole picture each time, not only what changed.
 
-1. Read the environment variable `AGENT_PARENT_SESSION`. If it is not set, this thread was not opened by [spawn](../spawn/SKILL.md). Say so and stop.
-2. Find the repository's shared Git directory with `git rev-parse --path-format=absolute --git-common-dir`. It is the same from every worktree. If the current directory is not in a Git repository, say so and stop.
-3. Write the note to `<shared Git directory>/agent-joins/<AGENT_PARENT_SESSION>/<topic-slug>.md`, creating the directories as needed. If that file holds another fork's note, add a numeric suffix to the name.
-4. Tell the user the note's path and to run `collect` in the parent thread.
-
-Keep the note short. Include:
+Write the note in Markdown, kept short:
 
 - The topic.
 - The decisions, each with its reason.
 - What is still open.
 - Files changed and commits made, if any.
-- This fork's own session ID, so the user can return to it. In Claude Code, it is `CLAUDE_CODE_SESSION_ID`.
 
 Use the argument, if given, to narrow or focus the note.
+
+Pass the note on standard input to [agent-joins.sh](../../shared/scripts/agent-joins.sh) `yield`. The script adds the fork's name, parent, session ID, and version. If it reports that this tab is not a fork opened by [spawn](../spawn/SKILL.md), tell the user and stop.
+
+Report the note's version and the tabs above that can collect it.
