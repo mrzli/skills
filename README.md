@@ -19,15 +19,15 @@ Reusable skills for AI agents.
 | Skill | Description |
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts. Defaults to the last response. |
-| [conclude](skills/conversation/conclude/SKILL.md) | Write a short note of what a forked conversation resolved, for its parent thread to join. |
+| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of this thread's finished forks. |
 | [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
-| [fork-tab](skills/conversation/fork-tab/SKILL.md) | Open a fork of the conversation in a new terminal tab to discuss one topic there. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
-| [join](skills/conversation/join/SKILL.md) | Take in the notes of this thread's finished forks. |
 | [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status. |
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
+| [spawn](skills/conversation/spawn/SKILL.md) | Open a fork of the conversation in a new terminal tab to discuss one topic there. |
 | [warmup](skills/conversation/warmup/SKILL.md) | Get back into a project after a break, with a very short summary and a few small steps. |
+| [yield](skills/conversation/yield/SKILL.md) | Write a short note of what a forked conversation resolved, for its parent thread to collect. |
 
 ### [Learning](skills/learning)
 
