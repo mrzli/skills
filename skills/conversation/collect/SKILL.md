@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Bring the results of forks below this tab into the conversation. Each fork wrote its note with [yield](../yield/SKILL.md).
 
-Run [agent-joins.sh](../../shared/scripts/agent-joins.sh) `collect`. It prints the notes that are new or changed since this tab last collected, from children, grandchildren, and further down, and records them as read. A note stays until every tab above its fork has collected its latest version.
+Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It prints the notes that are new or changed since this tab last collected, from children, grandchildren, and further down, and records them as read. A note stays until every tab above its fork has collected its latest version.
 
 For each note, state its decisions and what they mean for the current work, including anything they change in what this conversation planned or agreed. For a changed note, say what changed since the version this conversation already knew. List what is still open. If there are no new notes, say so.
 

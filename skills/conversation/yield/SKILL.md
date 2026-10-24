@@ -16,6 +16,6 @@ Write the note in Markdown, kept short:
 
 Use the argument, if given, to narrow or focus the note.
 
-Pass the note on standard input to [agent-joins.sh](../../shared/scripts/agent-joins.sh) `yield`. The script adds the fork's name, parent, session ID, and version. If it reports that this tab is not a fork opened by [spawn](../spawn/SKILL.md), tell the user and stop.
+Pass the note on standard input to [agent-joins.sh](scripts/agent-joins.sh) `yield`. The script adds the fork's name, parent, session ID, and version. If it reports that this tab is not a fork opened by [spawn](../spawn/SKILL.md), tell the user and stop.
 
 Report the note's version and the tabs above that can collect it.

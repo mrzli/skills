@@ -19,11 +19,11 @@ Write the brief in Markdown, kept short. It holds what the fork needs to discuss
 - The decisions, constraints, and rejected options that bear on it, with the IDs this conversation uses for them.
 - Pointers to the relevant files, commits, records, or handoffs, rather than their contents.
 
-Pass it on standard input to [agent-joins.sh](../../shared/scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
+Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 
 ## Full copy
 
-With `full`, the fork is a copy of this whole conversation. Run [agent-joins.sh](../../shared/scripts/agent-joins.sh) `spawn --full`, adding the topic if a point is given, so the fork is told to focus on it.
+With `full`, the fork is a copy of this whole conversation. Run [agent-joins.sh](scripts/agent-joins.sh) `spawn --full`, adding the topic if a point is given, so the fork is told to focus on it.
 
 ## After spawning
 

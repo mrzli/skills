@@ -1,0 +1,1 @@
+../../../shared/scripts/agent-joins.sh
