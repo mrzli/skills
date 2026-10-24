@@ -4,14 +4,18 @@ set -euo pipefail
 
 usage() {
   cat >&2 <<'EOF'
-Usage: agent-joins.sh spawn [TOPIC]
+Usage: agent-joins.sh spawn TOPIC < BRIEF
+       agent-joins.sh spawn --full [TOPIC]
        agent-joins.sh yield < NOTE
        agent-joins.sh collect
        agent-joins.sh prune TREE...
 
-spawn    Opens a fork of the current session in a new herdr or tmux tab in the
+spawn    Opens a fork of the current tab in a new herdr or tmux tab in the
          current directory. The tab and the fork are named after the parent:
-         Claude, Claude-1, Claude-1-1, and so on.
+         Claude, Claude-1, Claude-1-1, and so on. By default the fork is a new
+         session that starts by reading the brief from standard input. With
+         --full it is a copy of the current session, told to focus on TOPIC
+         if one is given.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Prints the notes of forks below the current tab, at any depth, that
@@ -24,6 +28,7 @@ prune    Deletes everything recorded for the named trees, each given by the
 State lives in <git common dir>/agent-joins/:
   forks.tsv       one line per tab: name, parent, session ID, topic, created,
                   note version, updated ("-" marks an empty field)
+  briefs/NAME.md  the brief fork NAME started from
   notes/NAME.md   the latest note yielded by fork NAME
   read/NAME.tsv   the notes tab NAME has collected: fork name, version
 A fork knows its name from AGENT_FORK_NAME. A top tab is found by its session ID.
@@ -46,7 +51,7 @@ git_dir=$(git rev-parse --path-format=absolute --git-common-dir 2>/dev/null) ||
   die 'Not in a Git repository: notes are kept in the Git directory.'
 state=$git_dir/agent-joins
 forks_file=$state/forks.tsv
-mkdir -p "$state/notes" "$state/read"
+mkdir -p "$state/briefs" "$state/notes" "$state/read"
 touch "$forks_file"
 exec 9>"$state/lock"
 flock 9
@@ -125,12 +130,20 @@ shown_topic() {
 }
 
 cmd_spawn() {
+  local full=false
+  [[ ${1:-} == --full ]] && full=true && shift
   (($# <= 1)) || usage
   local new_topic=${1:--}
   new_topic=${new_topic//[$'\t\n']/ }
   [[ -n $new_topic ]] || new_topic=-
+  local brief=
+  if ! $full; then
+    [[ $new_topic != - ]] || die 'A brief-based fork needs a topic.'
+    brief=$(cat)
+    [[ -n ${brief//[[:space:]]/} ]] || die 'The brief is empty: pass it on standard input.'
+  fi
 
-  local fork_command
+  local fork_command prompt
   [[ -n $session_id ]] ||
     die 'Unsupported agent: only Claude Code sessions can be spawned (CLAUDECODE and CLAUDE_CODE_SESSION_ID are not set).'
   [[ -n ${HERDR_SESSION:-} || -n ${TMUX:-} ]] ||
@@ -153,7 +166,22 @@ cmd_spawn() {
     ((number > highest)) && highest=$number
   done
   local child=$me-$((highest + 1))
-  printf -v fork_command 'claude --resume %q --fork-session -n %q' "$session_id" "$child"
+  if $full; then
+    printf -v fork_command 'claude --resume %q --fork-session -n %q' "$session_id" "$child"
+    if [[ $new_topic != - ]]; then
+      prompt="This tab is $child, a fork of this conversation. Focus on: $new_topic"
+      printf -v fork_command '%s %q' "$fork_command" "$prompt"
+    fi
+  else
+    local brief_file=$state/briefs/$child.md
+    {
+      printf '# Brief for %s: %s\n\n' "$child" "$new_topic"
+      printf 'Spawned from %s on %s.\n\n' "$me" "$now"
+      printf '%s\n' "$brief"
+    } >"$brief_file"
+    prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Refer to the items of $me by the IDs the brief uses."
+    printf -v fork_command 'claude -n %q %q' "$child" "$prompt"
+  fi
 
   if [[ -n ${HERDR_SESSION:-} ]]; then
     local create=(herdr tab create --cwd "$PWD" --label "$child" --env "AGENT_FORK_NAME=$child" --focus)
@@ -282,7 +310,7 @@ cmd_prune() {
   for n in "${names[@]}"; do
     r=$(root_of "$n")
     if [[ " $* " == *" $r "* ]]; then
-      rm -f "$state/notes/$n.md" "$state/read/$n.tsv"
+      rm -f "$state/briefs/$n.md" "$state/notes/$n.md" "$state/read/$n.tsv"
     else
       kept+=("$n")
     fi

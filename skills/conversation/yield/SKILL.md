@@ -10,7 +10,7 @@ Record what this fork has resolved so far, so the tabs it came from can take it 
 Write the note in Markdown, kept short:
 
 - The topic.
-- The decisions, each with its reason.
+- The decisions, each with its reason. Refer to the parent's items by the parent's IDs, such as those in the fork's brief, so the note reads in the parent's terms.
 - What is still open.
 - Files changed and commits made, if any.
 

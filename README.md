@@ -25,7 +25,7 @@ Reusable skills for AI agents.
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status. |
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
-| [spawn](skills/conversation/spawn/SKILL.md) | Open a fork of the conversation in a new terminal tab. |
+| [spawn](skills/conversation/spawn/SKILL.md) | Open a fork in a new terminal tab to discuss one point, from a short brief or a full copy of the conversation. |
 | [warmup](skills/conversation/warmup/SKILL.md) | Get back into a project after a break, with a very short summary and a few small steps. |
 | [yield](skills/conversation/yield/SKILL.md) | Write a short note of what a fork has resolved, for the tabs above it to collect. |
 
