@@ -8,7 +8,7 @@ Bring the results of forks below this tab into the conversation. Each fork wrote
 
 Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It prints the notes that are new or changed since this tab last collected, from children, grandchildren, and further down, and records them as read. A note stays until every tab above its fork has collected its latest version.
 
-Treat collecting like a command: write nothing to the user, and report only a failure. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
+Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md`, or `No new notes.` Do not summarize the decisions. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
 
 The one exception is a tree the script reports as inactive for 14 days. Ask in one line whether to delete it, and on a yes run the script's `prune` command with the tree's top tab. Do not prune without the user's answer.
 
