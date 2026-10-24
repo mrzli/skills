@@ -15,7 +15,8 @@ spawn    Opens a fork of the current tab in a new herdr or tmux tab in the
          Claude, Claude-1, Claude-1-1, and so on. By default the fork is a new
          session that starts by reading the brief from standard input. With
          --full it is a copy of the current session, told to focus on TOPIC
-         if one is given.
+         if one is given. Forks only discuss: they are told not to change
+         files and start without the file-editing tools.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Prints the notes of forks below the current tab, at any depth, that
@@ -166,12 +167,14 @@ cmd_spawn() {
     ((number > highest)) && highest=$number
   done
   local child=$me-$((highest + 1))
+  local discuss_only="Only discuss here: do not create, edit, or delete files, and do not commit. Reading is fine. Record each change the user explicitly approves, so yield can pass it up to be implemented in the top tab."
+  # The tool list comes before -n, which ends it, so the prompt is not read as a tool.
+  local no_edits='--disallowedTools Edit,Write,NotebookEdit'
   if $full; then
-    printf -v fork_command 'claude --resume %q --fork-session -n %q' "$session_id" "$child"
-    if [[ $new_topic != - ]]; then
-      prompt="This tab is $child, a fork of this conversation. Focus on: $new_topic"
-      printf -v fork_command '%s %q' "$fork_command" "$prompt"
-    fi
+    prompt="This tab is $child, a fork of this conversation."
+    [[ $new_topic != - ]] && prompt+=" Focus on: $new_topic."
+    printf -v fork_command 'claude --resume %q --fork-session %s -n %q %q' \
+      "$session_id" "$no_edits" "$child" "$prompt $discuss_only"
   else
     local brief_file=$state/briefs/$child.md
     {
@@ -179,8 +182,8 @@ cmd_spawn() {
       printf 'Spawned from %s on %s.\n\n' "$me" "$now"
       printf '%s\n' "$brief"
     } >"$brief_file"
-    prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Refer to the items of $me by the IDs the brief uses."
-    printf -v fork_command 'claude -n %q %q' "$child" "$prompt"
+    prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Refer to the items of $me by the IDs the brief uses. $discuss_only"
+    printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
   fi
 
   if [[ -n ${HERDR_SESSION:-} ]]; then
