@@ -23,7 +23,7 @@ In a top tab, implement them through [queue-work](../../engineering/workflow/que
 
 If an item conflicts with a decision made in this tab since the fork was spawned, ask about it in one line instead of queuing it.
 
-In a fork, implement nothing, because forks do not change files. Carry the agreed items into this fork's next [yield](../yield/SKILL.md).
+In a fork, implement nothing, because forks do not change the checkout. Carry the agreed items into this fork's next [yield](../yield/SKILL.md).
 
 The one exception is a tree the script reports as inactive for 14 days. Ask in one line whether to delete it, and on a yes run the script's `prune` command with the tree's top tab. Do not prune without the user's answer.
 

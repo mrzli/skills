@@ -16,7 +16,8 @@ spawn    Opens a fork of the current tab in a new herdr or tmux tab in the
          session that starts by reading the brief from standard input. With
          --full it is a copy of the current session, told to focus on TOPIC
          if one is given. Forks only discuss: they are told not to change
-         files and start without the file-editing tools.
+         the checkout and cannot use the file-editing tools inside it, but
+         may write temporary files, such as scripts, outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current tab is a top tab or a fork, and prints
@@ -168,9 +169,12 @@ cmd_spawn() {
     ((number > highest)) && highest=$number
   done
   local child=$me-$((highest + 1))
-  local discuss_only="Only discuss here: do not create, edit, or delete files, and do not commit. Reading is fine. Record each change the user explicitly approves, so yield can pass it up to be implemented in the top tab."
+  local discuss_only="Only discuss here: do not create, edit, or delete files in the checkout, and do not commit. Reading is fine, and so are temporary files outside the checkout, such as throwaway scripts in your session scratch folder. Record each change the user explicitly approves, so yield can pass it up to be implemented in the top tab."
+  # An Edit rule covers every file-editing tool; the leading // makes the path absolute.
   # The tool list comes before -n, which ends it, so the prompt is not read as a tool.
-  local no_edits='--disallowedTools Edit,Write,NotebookEdit'
+  local checkout no_edits
+  checkout=$(git rev-parse --show-toplevel)
+  printf -v no_edits -- '--disallowedTools %q' "Edit(/$checkout/**)"
   if $full; then
     prompt="This tab is $child, a fork of this conversation."
     [[ $new_topic != - ]] && prompt+=" Focus on: $new_topic."
