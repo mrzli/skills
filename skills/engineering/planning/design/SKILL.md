@@ -13,7 +13,7 @@ Inspect the current approach before introducing a new abstraction or dependency.
 
 ## Compare approaches
 
-Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification.
+Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification. Rank them as the user's rules for recommendations say. Without such rules, weigh the quality of the result far above implementation effort.
 
 Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology, and record each new or renamed concept using [glossary](../../../docs/glossary/SKILL.md). A particular design vocabulary or pattern is not a requirement.
 
