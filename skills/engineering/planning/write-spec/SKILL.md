@@ -29,7 +29,7 @@ Include paths, interfaces, or small examples when they materially clarify a requ
 
 ## Save and check
 
-Update the existing specification when it covers the same change. Otherwise use the requested destination or project convention. Absent either, save to `docs/specs/<descriptive-slug>.md`. Read the target before editing, preserve unrelated content, and consolidate superseded statements so the specification expresses the current agreement.
+Update the existing specification when it covers the same change. Otherwise use the requested destination or project convention. Absent either, save it where the user's rules put work in progress. Without such rules, save to `.scratch/specs/<descriptive-slug>.md`. Read the target before editing, preserve unrelated content, and consolidate superseded statements so the specification expresses the current agreement.
 
 Publish to an external tracker only when authorized by the request or established workflow. Otherwise report the saved local path.
 

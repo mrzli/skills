@@ -30,7 +30,7 @@ Choose tasks small enough to understand and finish without reconstructing the en
 
 ## Save and check
 
-Update the existing plan or follow the requested destination and project convention. Otherwise save one Markdown plan to `docs/plans/<descriptive-slug>.md`. Split it only when the size or workflow warrants it. Creating external tickets requires authorization. Preserve completed work and evidence when revising a plan.
+Update the existing plan or follow the requested destination and project convention. Otherwise save one Markdown plan where the user's rules put work in progress. Without such rules, save it to `.scratch/plans/<descriptive-slug>.md`. Split it only when the size or workflow warrants it. Creating external tickets requires authorization. Preserve completed work and evidence when revising a plan.
 
 Check that every in-scope acceptance criterion is covered, dependencies are acyclic and resolvable, and tasks have enough context to execute. Identify the tasks ready to start and any blocked work. Include final integration and verification where individual task checks cannot establish the overall outcome.
 

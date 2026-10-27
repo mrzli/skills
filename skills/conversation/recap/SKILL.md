@@ -10,7 +10,7 @@ Bring the user up to date so they can continue without rereading the conversatio
 
 Use the argument to narrow the scope. Otherwise cover the whole effort under discussion, not just the latest batch.
 
-Read the existing specification, design record, plan, progress record, or task list when one exists, such as a `docs/plans/` file or a `.scratch/delivery/` record. Combine it with what was raised, agreed, rejected, deferred, or dropped in the conversation. Check the repository state, such as branches, commits, and the working tree, where status depends on it. Report from evidence, not intent.
+Read the existing specification, design record, plan, progress record, or task list when one exists, such as a `.scratch/plans/` file or a `.scratch/delivery/` record. Combine it with what was raised, agreed, rejected, deferred, or dropped in the conversation. Check the repository state, such as branches, commits, and the working tree, where status depends on it. Report from evidence, not intent.
 
 ## Report
 
