@@ -17,7 +17,7 @@ Look for concrete friction: one policy duplicated across callers, a routine chan
 
 Ground each concern in specific files, call paths, examples, or historical changes. Distinguish architectural causes from isolated implementation defects, missing tests, or a lack of documentation. File size, number of modules, or deviation from a favorite pattern is not sufficient evidence on its own.
 
-Evaluate proposed improvements against the system's actual scale, constraints, and maintenance needs. Prefer concentrating related behavior and simplifying interfaces over adding layers by default. Include the option of retaining the current structure when the migration cost exceeds the likely benefit.
+Evaluate proposed improvements against the system's actual scale, constraints, and maintenance needs. Prefer concentrating related behavior and simplifying interfaces over adding layers by default. Weigh migration cost as the user's rules for recommendations say. Without such rules, weigh one-off migration work far below the lasting benefit. Include the option of retaining the current structure when the benefit does not justify the migration.
 
 Respect existing decisions and explain why new evidence warrants revisiting one. Investigate uncertain performance or operational claims rather than attributing them to architecture without evidence. Separate observed problems from speculative future concerns.
 
