@@ -5,18 +5,18 @@ description: Question the user in structured rounds about their plan, decision, 
 
 Interview the user until you reach a shared understanding. Map decisions and their dependencies as a **design tree**.
 
-Work in **rounds**. The **frontier** contains all unresolved decisions whose prerequisites are settled. Ask about every decision in the frontier in one round. Number each question, give your recommended answer, and wait for the user's answers.
+Work in **rounds**. The **frontier** contains all unresolved decisions whose prerequisites are settled. Size each round as the user's rules for response size say, asking first about the decisions others depend on. Without such rules, ask about every decision in the frontier in one round. Give each question an ID as the user's rules for IDs say. Without such rules, number the questions Q1, Q2, and so on across the session, without restarting. Give your recommended answer to each, and wait for the user's answers.
 
 Use this format:
 
 ```
-❓ **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
+❓ **<ID>** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
 
 ➡️ <your recommended answer>
 
 ---
 
-❓ **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
+❓ **<ID>** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
 
 ➡️ <your recommended answer>
 ```
