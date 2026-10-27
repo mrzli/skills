@@ -16,7 +16,7 @@ Keep the queue in a temporary plan file that follows the project's conventions f
 - Its footprint: the files and areas it is expected to touch, estimated from the decision and a search of the whole repository, including docs and comments, for the names and forms it changes.
 - The earlier items it depends on.
 - Its status: agreed, in progress, integrated, or blocked.
-- Its commit, once integrated.
+- Its commits, once integrated.
 - Its source ID, when it came from a fork's note through [collect](../../../conversation/collect/SKILL.md), such as `Claude-1/F2a`.
 
 Make an item depend on an earlier item that is not yet integrated when it builds on that item's result, when their footprints overlap, or when either changes something many files rely on, such as a specification, a shared interface, or the build configuration. When unsure, add the dependency. An item is ready when the user has agreed to it and its dependencies are integrated. Update the dependencies whenever an item is added or changed.
@@ -37,10 +37,10 @@ While a batch runs, keep discussing the next items and adding agreed ones to the
 
 ## Integrate and report
 
-Integrate finished items one at a time, in dependency order. Read each commit's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) when a commit goes beyond its decision or the implementer reports a finding it did not resolve. Bring the commits onto the user's branch following the user's integration rules. Rerun the required checks if integration changed the commits, and run any checks the implementer skipped. Update the queue, remove the worktree, delete the implementer's branch, and start items that became ready.
+Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) when an item's commits go beyond its decision or the implementer reports a finding it did not resolve. Bring the commits onto the user's branch following the user's integration rules. Rerun the required checks if integration changed the commits, and run any checks the implementer skipped. Update the queue, remove the worktree, delete the implementer's branch, and start items that became ready.
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later estimates improve.
 
-Report for each item what changed, its commit, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for choices say. Without such rules, list every one, and recommend changing any that [review-code](../../delivery/review-code/SKILL.md) would report as a design finding. State when there were none. Raise any blocking question in the discussion.
+Report for each item what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for choices say. Without such rules, list every one, and recommend changing any that [review-code](../../delivery/review-code/SKILL.md) would report as a design finding. State when there were none. Raise any blocking question in the discussion.
 
 Follow the user's and the project's branch and commit conventions. Merge only when the user asks. When the queue is done, finish the plan file as the project's conventions say. Otherwise move lasting decisions into the permanent docs, commit the plan file in its final state so the queue stays in history, and delete it in the next commit.
