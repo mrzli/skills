@@ -21,7 +21,7 @@ Keep the queue in a temporary plan file that follows the project's conventions f
 
 Make an item depend on an earlier item that is not yet integrated when it builds on that item's result, when their footprints overlap, or when either changes something many files rely on, such as a specification, a shared interface, or the build configuration. When unsure, add the dependency. An item is ready when the user has agreed to it and its dependencies are integrated. Update the dependencies whenever an item is added or changed.
 
-Add an item only when the user has agreed to it. A question is not approval, and approving one item does not approve others. An item marked `now` in a note taken in with collect is agreed, because the user approved it in the fork. When later discussion changes an item that is not yet implemented, update its decision. When it changes an item already in progress or integrated, add a new item.
+Add an item only when the user has agreed to it, as the user's rules for approval say. Without such rules, a question is not approval, and approving one item does not approve others. An item marked `now` in a note taken in with collect is agreed, because the user approved it in the fork. When later discussion changes an item that is not yet implemented, update its decision. When it changes an item already in progress or integrated, add a new item.
 
 ## Run a batch
 
