@@ -14,6 +14,7 @@ Start from Matt Pocock `59db609`, pstack `519d36a`, and transcripts after 2026-1
 | `collect` queues only `now` items from `yield`, and backlogs the rest | 10-27 | No "don't implement yet" after `/collect` | Items the user wanted now land in the backlog |
 | Choice levels in the global `AGENTS.md`, `recap`, and the `queue-work` report | 10-27 | Fewer confirmations, and recaps stop repeating accepted choices | A decision the user should have seen goes unasked |
 | `recap` description covers status and single-topic recaps | 10-27 | Recap requests in long sessions load `recap`. Before, it was 4 of about 14 | It loads for requests to explain one item, which belong to `clarify` |
+| A working design with a clearly better alternative is a recommended change in `review-code`, and `queue-work` judges implementers' choices by the user's rules | 10-27 | Reviews and reports recommend design changes that the user takes up, without the user first asking for a better design | Reviews fill up with optional notes about style, or a clearly better design still goes unmentioned |
 | `implement` fixes mechanical consequences instead of asking | 10-17 | No "just fix it" from the user, and no unflagged change in the name of consistency | Either appears |
 
 Watch without a change: responses that are too long ("put this simply"), and implementers rerunning the full verify after one failed check.
