@@ -1,6 +1,6 @@
 ---
 name: collect
-description: Take in the notes yielded by forks below this tab, at any depth, apply them to the current work, and queue the changes agreed in them. Use in a tab whose forks, opened by spawn, have run yield.
+description: Take in the notes yielded by forks below this tab, at any depth, apply them to the current work, and queue the changes agreed in them to implement now. Use in a tab whose forks, opened by spawn, have run yield.
 disable-model-invocation: true
 ---
 
@@ -14,7 +14,7 @@ Keep the reply very short: one line per collected note, saying only what happene
 
 A note's "Agreed to implement" items were approved by the user in the fork, and each has a source ID, such as `Claude-1/F2a`.
 
-In a top tab, implement them through [queue-work](../../engineering/workflow/queue-work/SKILL.md) without asking for approval again. Every yield repeats the fork's whole picture, so check each item's source ID against the queue:
+In a top tab, implement the items marked `now` through [queue-work](../../engineering/workflow/queue-work/SKILL.md) without asking for approval again. Add the items marked `backlog` to the project's backlog and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the queue:
 
 - Not in the queue: add it, and start it once it is ready.
 - In the queue with the same decision: skip it.
