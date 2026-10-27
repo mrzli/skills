@@ -17,6 +17,7 @@
 ~/projects/personal/mrzli/trading-app	plan	Break the renderer unification into tasks we can do one by one.
 ~/projects/personal/mrzli/trading-app	write-spec	Write down what we agreed about the indicator panel so it can guide implementation: it sits below the chart, shows one indicator per row, and each row can be collapsed.
 ~/projects/personal/mrzli/trading-app	review-code	Review the changes on this branch before I merge.
+~/projects/personal/mrzli/trading-app	review-code	The last commit works, but is there a better way to design it? Look it over.
 ~/projects/personal/mrzli/trading-app	review-architecture	Take a look at the overall structure of this repo and tell me what is worth improving.
 ~/projects/personal/mrzli/trading-app	review-product	Is this chart app actually useful for how I trade? What should I improve or drop?
 ~/projects/personal/mrzli/trading-app	deliver	Go through the whole review backlog, implement each item, and get it all done.
