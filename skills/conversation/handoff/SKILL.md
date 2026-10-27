@@ -21,6 +21,8 @@ Include a "suggested skills" section naming the skills the next agent should use
 
 Reference existing artifacts (specs, plans, ADRs, issues, commits, and diffs) by path or URL instead of duplicating their content. Assume another machine has the same repository. For local resources outside the repository, summarize them or include their full contents if very short.
 
+For work passed to another repository, ask only for the change to that repository's files, not for applying or deploying it, because its instructions decide how and when a change is applied.
+
 Redact any sensitive information, such as API keys, passwords, or personally identifiable information.
 
 When a scope is given, cover that part of the work and the context it depends on, and leave out unrelated threads.
