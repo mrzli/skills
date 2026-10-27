@@ -30,7 +30,7 @@ Investigate suspected problems before reporting them. Trace a realistic failing 
 
 ## Report and follow through
 
-Present findings in priority order. For each, give the affected file and location, the triggering situation, the consequence, and the supporting evidence or requirement. Suggest a correction when useful. Keep optional improvements separate from issues that should block completion, and avoid duplicating the same underlying problem across findings.
+Present findings in priority order. For each, give the affected file and location, the triggering situation, the consequence, and the supporting evidence or requirement. Suggest a correction when useful. Keep optional improvements separate from issues that should block completion. Report a design finding as a recommended change, not as an optional improvement. Avoid duplicating the same underlying problem across findings.
 
 Finish with a concise assessment of requirements coverage, blocking findings, and verification limitations. If no actionable findings remain, say so without implying that unverified behavior is proven correct. Identify a review of your own implementation as self-review.
 
