@@ -1,6 +1,6 @@
 ---
 name: recap
-description: Summarize where the current work or discussion stands, including decisions, open questions, and what is done or remaining. Use when the user asks to recap, relist, reiterate, or catch up on what was discussed or what is left.
+description: Summarize where the current work or discussion stands, including decisions, open questions, and what is done or remaining. Use when the user asks to recap, relist, reiterate, or catch up on what was discussed or what is left, asks for the status or where things stand, or wants a recap of one topic.
 argument-hint: "[scope, such as a topic, plan, group, or 'status']"
 ---
 
