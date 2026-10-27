@@ -24,7 +24,7 @@ For each task, provide:
 - Observable completion criteria and appropriate verification.
 - Genuine prerequisites, including unresolved decisions, or an explicit statement that it can start now.
 
-Group tasks under a few named phases or workstreams when a flat list would hide the plan's overall shape. Nest a group further only when it is too large to follow. Number tasks within their group by alternating numbers and lowercase letters, such as `2c` for the third task in group 2, so each level stays identifiable.
+Group tasks under a few named phases or workstreams when a flat list would hide the plan's overall shape. Nest a group further only when it is too large to follow. Number tasks as the user's rules for IDs say. Without such rules, number them within their group by alternating numbers and lowercase letters, such as `2c` for the third task in group 2, so each level stays identifiable.
 
 Choose tasks small enough to understand and finish without reconstructing the entire effort. One task is valid for a small change. Dependencies express necessity, not a preferred ordering. Distinguish independent work from tasks that would conflict over shared files or state.
 
