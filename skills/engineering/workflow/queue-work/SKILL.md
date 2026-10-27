@@ -41,6 +41,6 @@ Integrate finished items one at a time, in dependency order. Read each commit's 
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later estimates improve.
 
-Report for each item what changed, its commit, and the checks and their results. Report the choices the implementer made beyond the agreed decision as the user's rules for reporting choices say, or list every one when there are no such rules. State when there were none. Raise any blocking question in the discussion.
+Report for each item what changed, its commit, and the checks and their results. Report the choices the implementer made beyond the agreed decision as the user's rules for reporting choices say, or list every one when there are no such rules. State when there were none. Judge each choice against its realistic alternatives, and recommend changing any that has a clearly better one, as review-code describes for design findings, instead of only listing it for acceptance. Raise any blocking question in the discussion.
 
 Follow the user's and the project's branch and commit conventions. Merge only when the user asks. When the queue is done, finish the plan file as the project's conventions say. Otherwise move lasting decisions into the permanent docs, commit the plan file in its final state so the queue stays in history, and delete it in the next commit.
