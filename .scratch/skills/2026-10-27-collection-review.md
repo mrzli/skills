@@ -83,6 +83,18 @@ Evaluation:
 - `reflect` plugin-cache routing: no in-place edits of installed skills were observed. The global rule on managed files covers it.
 - Retirements: none qualify yet.
 
+## Unused skills and upstream workflows
+
+Discussed with the user after the decisions. No change now.
+
+- Matt Pocock's flow runs through specs, tickets, and pull requests. pstack adds many parallel agents with required verification, and principles as separate skills. The user's flow runs in the conversation: items get IDs and are approved in bulk, forks handle side discussions, and `queue-work` implements in the background. That explains the low use of `write-spec`, `plan`, and `shape-feature`.
+- `deliver`: largely replaced by `queue-work`. The user steers by ID rather than handing over a whole effort, and the one overnight run on 10-19 went through `queue-work`. Consider merging it into `queue-work` or retiring it at the next review.
+- `explore`: user-invoked and meant for when the user has no clear goal yet, which is rare. Keep, since it is about 100 words.
+- `create-verification`: set up once per project, so low counts are expected. Worth one real trial in trading-app if UI behavior is still checked by hand. The user has not decided on the trial.
+- `prototype`: design questions so far were settled by discussion and benchmarks. Keep for visual or interaction questions.
+- `start-project` and `release`: rare by nature. Keep. `maintain-skills` and `writing-skills` are used in this repository, which the usage counts exclude.
+- Both upstream collections have a `tdd` skill. No observed need yet, so do not add one without evidence.
+
 ## Next review
 
-Start from Matt Pocock `59db609`, pstack `519d36a`, and transcripts after 2026-10-27.
+Start from Matt Pocock `59db609`, pstack `519d36a`, and transcripts after 2026-10-27. Decide on `deliver`, and check whether `create-verification` was tried in trading-app.
