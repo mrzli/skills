@@ -23,7 +23,7 @@ For external comparison, inspect current upstream skill instructions and require
 
 Compare candidates by trigger, outcome, procedure, dependencies, and stopping point. Shared vocabulary or steps alone do not establish redundancy. Consider whether a coordinator can reuse existing skills, and whether a small local improvement would deliver the candidate's benefit. Account for required tools, maintenance cost, and licensing when adapting external material.
 
-Compare the skills with the user's own agent instructions when the project says where they live. A skill must not contradict them or copy their rules. Where a skill depends on one of their rules, it refers to the rule, such as "as the user's rules for approval say", and keeps a one-line fallback for when no such rule exists. Also flag the reverse: a rule in the user's instructions that matters only within one skill belongs in that skill, and removing it from the instructions is a change for the repository that manages them.
+Compare the skills with the user's own agent instructions when the project says where they live. A skill must not contradict them or copy their rules. Where a skill depends on one of their rules, it refers to the rule, such as "as the user's rules for approval say", and keeps a one-line fallback for when no such rule exists. Also check where each rule lives. A rule that must apply whatever the agent is doing belongs in the user's instructions, so propose moving it there from the skill. A rule in the user's instructions that matters only within one skill belongs in that skill. Either change to the instructions is for the repository that manages them.
 
 ## Choose changes
 
