@@ -102,3 +102,9 @@ Start from Matt Pocock `59db609`, pstack `519d36a`, and transcripts after 2026-1
 ## Routing after install
 
 The user merged and installed the branch, and the archon handoff is applied. Eleven cases for `recap`, `queue-work`, `collect`, `yield`, and the `implement` near-miss all passed with the installed skills, including the new single-topic recap case.
+
+## Skills and the user's rules
+
+A later session the same day made the skills consistent with the user's global rules without depending on them. Where a skill relies on one of those rules, it refers to "the user's rules for X" with a one-line fallback. Each rule lives in one place, chosen by whether it must apply to all work (the global file) or to one activity (the skill). The repository `AGENTS.md`, `writing-skills`, and `maintain-skills` now say this, and the handoff-content rule moved from the global file into `handoff` (archon `0c5b381`).
+
+With the skills installed at `0758b47`, 28 of the 29 routing cases for the changed skills passed. The `handoff` case that missed gave no change to hand off, so the fresh session declined to guess. After the request stated the agreed change, both `handoff` cases passed.
