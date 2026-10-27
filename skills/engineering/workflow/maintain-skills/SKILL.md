@@ -38,7 +38,7 @@ For each recommendation, give the evidence, benefit, overlap or replacement impl
 
 ## Apply and evaluate
 
-For authorized changes, use [writing-skills](../../../docs/writing-skills/SKILL.md). Preserve useful local adaptations. Update affected references, catalogue entries, and discovery links using repository conventions. Check callers before merging or retiring skills. Keep retired content recoverable through version control or the existing archive convention.
+For authorized changes, use [writing-skills](../../../docs/writing-skills/SKILL.md). Preserve useful local adaptations. Update affected references, catalog entries, and discovery links using repository conventions. Check callers before merging or retiring skills. Keep retired content recoverable through version control or the existing archive convention.
 
 Validate skill structure and links, check routing against representative requests, and exercise changed mechanics where applicable. Separate these checks from evidence of improved outcomes in later use.
 

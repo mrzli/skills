@@ -22,7 +22,7 @@
 
 ## Rules
 
-- **Use trusted sources.** Prefer primary sources, recognised experts, peer-reviewed work, and communities with strong moderation. Exclude marketing presented as education.
+- **Use trusted sources.** Prefer primary sources, recognized experts, peer-reviewed work, and communities with strong moderation. Exclude marketing presented as education.
 - **Annotate every entry.** Add one line describing what it covers and when to use it.
 - **Group by Knowledge / Wisdom.** Follow the philosophy in [SKILL.md](./SKILL.md). Resources need not appear in both groups.
 - **Record gaps.** If no good resource exists for an area the mission needs, list it in a `## Gaps` section to guide future searches.
