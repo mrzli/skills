@@ -8,7 +8,7 @@ The initial invocation authorized a review, which added only this maintenance re
 
 ## Evidence and scope
 
-Local baseline: `e33c7ffa1a876991bcfcf549e58a565e7a5750e2`, with a clean working tree at review start. Reviewed the collection's descriptions and bodies using this session's reads and the preceding documentation review. Reused [engineering progress](../engineering-skills-progress.md), [original goals](../skills-review-goals.md), and the [history retrospective](../workflow/2026-10-05-codex-history-review.md). This was not a second audit of the raw chat histories.
+Local baseline: `e33c7ffa1a876991bcfcf549e58a565e7a5750e2`, with a clean working tree at review start. Reviewed the collection's descriptions and bodies using this session's reads and the preceding documentation review. Reused the engineering progress record and original goals, both removed on 2026-10-27 and kept in Git history, and the [history retrospective](../workflow/2026-10-05-codex-history-review.md). This was not a second audit of the raw chat histories.
 
 The available evidence shows recurring implementation, debugging, explanation, handoff, and skill-maintenance work. It does not provide reliable per-skill usage or opportunity counts. Installation and discovery links are not usage evidence. Rare activities such as releases therefore remain eligible for retention.
 
