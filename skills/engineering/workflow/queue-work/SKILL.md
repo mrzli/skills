@@ -37,7 +37,7 @@ While a batch runs, keep discussing the next items and adding agreed ones to the
 
 ## Integrate and report
 
-Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) when an item's commits go beyond its decision or the implementer reports a finding it did not resolve. Bring the commits onto the user's branch as the user's integration rules say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if that changed the commits. Run any checks the implementer skipped. Update the queue, remove the worktree, delete the implementer's branch, and start items that became ready.
+Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) when an item's commits go beyond its decision or the implementer reports a finding it did not resolve. Bring the commits onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, remove the worktree, delete the implementer's branch, and start items that became ready.
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later estimates improve.
 
