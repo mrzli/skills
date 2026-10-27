@@ -15,7 +15,7 @@ Inspect the working tree and establish a verification baseline. Add characteriza
 
 ## Restructure incrementally
 
-Choose a target structure that addresses the demonstrated problem with minimal unnecessary abstraction. Use design work when interface or ownership decisions are consequential. A small refactor may need only a short explanation.
+Choose a target structure that addresses the demonstrated problem with minimal unnecessary abstraction. Compare it with the realistic alternative structures and choose the better one, as the user's rules for design choices say. Without such rules, choose the better one even when it takes more effort, unless the extra effort is large compared with the gain. Use design work when interface or ownership decisions are consequential. A small refactor may need only a short explanation.
 
 Use [implement](../implement/SKILL.md) for execution, supplying the preservation constraints and baseline checks. Prefer small transformations that keep checks passing. When every consumer is in the repository, migrate all of them and delete the old form in the same change. A large migration may span several commits on the same branch, but the old form must be deleted before the work is complete, and an intermediate state is never merged. Keep a compatible form only for consumers outside the repository, persisted data, or an explicit user request, and state which applies. Search for references the compiler or type checker cannot see, such as strings, configuration, and documentation. When the refactor renames a concept, update its entry using [glossary](../../../docs/glossary/SKILL.md).
 
