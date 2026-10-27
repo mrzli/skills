@@ -98,3 +98,7 @@ Discussed with the user after the decisions. No change now.
 ## Next review
 
 Start from Matt Pocock `59db609`, pstack `519d36a`, and transcripts after 2026-10-27. Decide on `deliver`, and check whether `create-verification` was tried in trading-app.
+
+## Routing after install
+
+The user merged and installed the branch, and the archon handoff is applied. Eleven cases for `recap`, `queue-work`, `collect`, `yield`, and the `implement` near-miss all passed with the installed skills, including the new single-topic recap case.
