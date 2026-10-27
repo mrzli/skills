@@ -2,7 +2,8 @@
 
 Follows the [2026-10-20 review](2026-10-20-collection-review.md). The user's decisions, applied on branch `skills-review-2026-10-27`:
 
-- 1: under discussion.
+- 1: under discussion. The proposal is a `queue-work/worktree-agent.md` file that each implementer reads from its installed path. It would not conflict with `implement`, which stays the per-item procedure.
+- Topic B, added in discussion: choices beyond approval in three levels. Routine choices are not listed. Easily reversed choices are listed once and count as accepted when the user's next reply does not object. Decisions are asked first and stay open until answered. The global rule is handed off to archon in `/tmp/handoff-archon-choice-levels.md`. `recap` leaves out choices accepted that way, and the `queue-work` report follows the user's rules for reporting choices.
 - 2: approved. The `recap` description adds status and single-topic recaps, with a new routing case.
 - 3: approved. `yield` marks each agreed item `now` or `backlog`, `collect` queues only `now` items and adds the rest to the project's backlog, and `queue-work` and the README follow.
 
