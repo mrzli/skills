@@ -26,7 +26,7 @@ Eight skills load only when you call them by name, such as `/spawn` in Claude Co
 
 ## How I use them
 
-I talk to the agent in one main session, mostly by voice dictation. My global agent instructions give every question, option, and work item an ID, such as F2 or B7d2, so I can answer or approve each one briefly.
+I talk to the agent in one main session, mostly by voice dictation. My [global agent instructions](https://github.com/mrzli/archon/blob/master/data/home/.codex/AGENTS.md), kept in my workstation setup [Archon](https://github.com/mrzli/archon), give every question, option, and work item an ID, such as F2 or B7d2, so I can answer or approve each one briefly.
 
 - **Discussion and implementation run side by side.** Once I agree to an item, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands it to a background agent, and the discussion moves on to the next item.
 - **A point that needs a longer discussion gets its own tab.** `/spawn F2` opens a fork of the session in a new terminal tab, started from a short brief or from a full copy of the conversation. Forks only discuss and never change the checkout. A fork can open forks of its own.
@@ -41,7 +41,7 @@ I talk to the agent in one main session, mostly by voice dictation. My global ag
 Most changes come from my own work with the agents. Two of the skills review that work:
 
 - [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) goes through my past sessions, such as the places where I corrected the agent or repeated a step by hand, and proposes the smallest change to a skill, the project's instructions, or its tooling that would have prevented the problem.
-- [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) reviews the collection as a whole. It counts how often I use each skill in my session history, checks that each name and description matches what I actually ask for, and keeps the skills consistent with my global agent instructions. It runs routing tests, realistic requests that check a fresh agent loads the right skill.
+- [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) reviews the collection as a whole. It counts how often I use each skill in my session history, checks that each name and description matches what I actually ask for, and keeps the skills consistent with those global instructions. It runs routing tests, realistic requests that check a fresh agent loads the right skill.
 
 maintain-skills also looks through [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack) for new ideas. It adopts one only when it fits how I work and solves a problem I actually have.
 
