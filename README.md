@@ -6,7 +6,9 @@ The skills are written to work together. Each one does one job and names the ski
 
 ## Installation
 
-Clone the repository and link each skill into the directories the agents read, `~/.claude/skills` for Claude Code and `~/.agents/skills` for Codex:
+I don't install the skills by hand. [Archon](https://github.com/mrzli/archon), my workstation setup, clones this repository and links the skills for both agents every time its setup script runs.
+
+To install them manually, clone the repository and link each skill into the directories the agents read, `~/.claude/skills` for Claude Code and `~/.agents/skills` for Codex:
 
 ```bash
 git clone https://github.com/mrzli/skills.git
