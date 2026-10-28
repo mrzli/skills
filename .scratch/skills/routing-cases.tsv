@@ -54,3 +54,5 @@
 ~/projects/personal/mrzli/trading-app	recap,!clarify	Give me a recap for the levels work: what we decided and what is still open.
 ~/projects/personal/mrzli/skills	maintain-skills	Go through the skill collection and tell me which skills overlap or contradict my global rules.
 ~/projects/personal/mrzli/skills	writing-skills	Change the recap skill so it also lists items that are blocked, and why.
+~/projects/personal/mrzli/trading-app	review-architecture	It has been a week since I last looked at this code. Check whether it still follows the rules in AGENTS.md and give me an overview of the modules.
+~/projects/personal/mrzli/trading-app	review-code	Does the last commit follow the immutability rules in AGENTS.md?
