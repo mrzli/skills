@@ -30,7 +30,7 @@ I talk to the agent in one main session, mostly by voice dictation. My [global a
 
 - **Discussion and implementation run side by side.** Once I agree to an item, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands it to a background agent, and the discussion moves on to the next item.
 - **A point that needs a longer discussion gets its own tab.** `/spawn F2` opens a fork of the session in a new terminal tab, started from a short brief or from a full copy of the conversation. Forks only discuss and never change the checkout. A fork can open forks of its own.
-- **Results come back without copying.** spawn records which tab each fork came from, so the tabs form a tree. In a fork, `/yield` writes a note of what was decided and which changes I agreed to. In the tab the fork came from, or any tab further up the tree, `/collect` takes in the new notes from all the forks below it. In the main tab, it also queues the agreed changes, so all changes to the checkout happen in one tab.
+- **Results come back without copying.** spawn records which tab each fork came from, so the tabs form a tree. In a fork, `/yield` writes a note of what was decided and which changes I agreed to. In the tab the fork came from, or in any of that tab's ancestors, `/collect` takes in the new notes from all the forks below it. In the main tab, it also queues the agreed changes, so all changes to the checkout happen in one tab.
 - **After a break,** `/warmup` says where the work stopped and suggests a few small steps to get back into it.
 - **When a session ends or work moves to another repository,** [handoff](skills/conversation/handoff/SKILL.md) writes what the next session needs.
 
