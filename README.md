@@ -2,7 +2,7 @@
 
 These are the skills I use every day with Claude Code and Codex. Most of them cover software engineering, from shaping a feature through design, implementation, review, and release. The rest help with conversations, documentation, and learning.
 
-The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it. I maintain them with [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md). It compares them with [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack), the two collections some of these skills are based on, and runs routing tests, realistic requests that check a fresh agent loads the right skill.
+The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it.
 
 ## Installation
 
@@ -30,6 +30,17 @@ A few skills assume a particular setup:
 
 - [spawn](skills/conversation/spawn/SKILL.md) opens a fork of the conversation in a new tab, so it needs Claude Code running in herdr or tmux. [yield](skills/conversation/yield/SKILL.md) and [collect](skills/conversation/collect/SKILL.md) pass notes between those forks.
 - [warmup](skills/conversation/warmup/SKILL.md) reads Claude Code and Codex session files from their default locations.
+
+## How the skills improve
+
+Most changes come from my own work with the agents. Two of the skills review that work:
+
+- [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) goes through my past sessions, such as the places where I corrected the agent or repeated a step by hand, and proposes the smallest change to a skill, the project's instructions, or its tooling that would have prevented the problem.
+- [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) reviews the collection as a whole. It counts how often I use each skill in my session history, checks that each name and description matches what I actually ask for, and keeps the skills consistent with my global agent instructions. It runs routing tests, realistic requests that check a fresh agent loads the right skill.
+
+maintain-skills also looks through [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack) for new ideas. It adopts one only when it fits how I work and solves a problem I actually have.
+
+The reviews and their results are kept in [.scratch/skills](.scratch/skills) and [.scratch/workflow](.scratch/workflow).
 
 ## Skills
 
