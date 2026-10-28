@@ -1,3 +1,4 @@
+import os
 import shutil
 import subprocess
 import tempfile
@@ -25,11 +26,70 @@ class SyncSkillsTests(unittest.TestCase):
         directory.mkdir(parents=True)
         (directory / 'SKILL.md').write_text('test\n')
 
-    def sync(self):
+    def sync(self, *args):
         return subprocess.run(
-            ['bash', str(self.repo / 'scripts/sync-skills.sh')],
+            ['bash', str(self.repo / 'scripts/sync-skills.sh'), *args],
             cwd=self.base, capture_output=True, text=True,
+            env={**os.environ, 'HOME': str(self.home)},
         )
+
+    @property
+    def home(self):
+        return self.base / 'home'
+
+    @property
+    def user_destinations(self):
+        return [self.home / directory / 'skills' for directory in ('.agents', '.claude')]
+
+    def test_rejects_unknown_arguments(self):
+        for args in (['--users'], ['--user', '--user']):
+            with self.subTest(args=args):
+                result = self.sync(*args)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn('Usage', result.stderr)
+
+    def test_user_sync_links_absolute_and_removes_stale(self):
+        result = self.sync('--user')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for directory in self.user_destinations:
+            link = directory / 'example'
+            self.assertEqual(os.readlink(link),
+                             str(self.repo / 'skills/productivity/example'))
+            (directory / 'unrelated').symlink_to(self.base / 'external')
+            (directory / 'relative').symlink_to('../../skills/productivity/gone')
+        for directory in self.destinations:
+            self.assertFalse(directory.exists())
+        repeat = self.sync('--user')
+        self.assertEqual(repeat.returncode, 0, repeat.stderr)
+        self.assertEqual(repeat.stdout, '')
+        shutil.rmtree(self.repo / 'skills/productivity/example')
+        self.add_skill('productivity', 'new')
+        self.assertEqual(self.sync('--user').returncode, 0)
+        for directory in self.user_destinations:
+            self.assertFalse((directory / 'example').is_symlink())
+            self.assertTrue((directory / 'new').is_symlink())
+            self.assertTrue((directory / 'unrelated').is_symlink())
+            self.assertTrue((directory / 'relative').is_symlink())
+
+    def test_user_sync_refuses_unmanaged_skill_before_changes(self):
+        other = self.base / 'other/example'
+        other.mkdir(parents=True)
+        self.user_destinations[1].mkdir(parents=True)
+        (self.user_destinations[1] / 'example').symlink_to(other)
+        result = self.sync('--user')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('does not manage', result.stderr)
+        self.assertFalse(self.user_destinations[0].exists())
+        self.assertEqual((self.user_destinations[1] / 'example').resolve(), other)
+
+    def test_user_sync_follows_symlinked_destination(self):
+        dotfiles = self.base / 'dotfiles/claude'
+        dotfiles.mkdir(parents=True)
+        self.home.mkdir()
+        (self.home / '.claude').symlink_to(dotfiles, target_is_directory=True)
+        result = self.sync('--user')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertTrue((dotfiles / 'skills/example').is_symlink())
 
     def test_sync_adds_removes_and_excludes_experimental(self):
         self.add_skill('experimental', 'unfinished')
