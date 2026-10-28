@@ -2,7 +2,7 @@
 
 These are the skills I use every day with Claude Code and Codex. Most of them cover software engineering, from shaping a feature through design, implementation, review, and release. The rest help with conversations, documentation, and learning.
 
-The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it. I maintain them with [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md), which compares them with other skill collections and runs routing tests, realistic requests that check a fresh agent loads the right skill.
+The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it. I maintain them with [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md). It compares them with [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack), the two collections some of these skills are based on, and runs routing tests, realistic requests that check a fresh agent loads the right skill.
 
 ## Installation
 
@@ -22,9 +22,14 @@ Without `--user`, the script links the skills only into this repository's own `.
 
 ## Getting started
 
-Ask the agent what to do next, and [guide](skills/engineering/workflow/guide/SKILL.md) picks the engineering skill that fits. The agent loads the other skills on its own when a request matches them.
+You don't need to name a skill. The agent loads one on its own when a request matches it, such as "find out why the chart stutters and fix it" for [fix-bug](skills/engineering/delivery/fix-bug/SKILL.md). When you're not sure what to do next, ask, and [guide](skills/engineering/workflow/guide/SKILL.md) suggests the next skill.
 
-[spawn](skills/conversation/spawn/SKILL.md) opens a fork of the conversation in a new tab and needs Claude Code running in herdr or tmux. [yield](skills/conversation/yield/SKILL.md) and [collect](skills/conversation/collect/SKILL.md) pass notes between those forks. [warmup](skills/conversation/warmup/SKILL.md) reads Claude Code and Codex session files from their default locations.
+Eight skills load only when you call them by name, such as `/spawn` in Claude Code: collect, create-verification, explore, restate, spawn, teach, warmup, and yield.
+
+A few skills assume a particular setup:
+
+- [spawn](skills/conversation/spawn/SKILL.md) opens a fork of the conversation in a new tab, so it needs Claude Code running in herdr or tmux. [yield](skills/conversation/yield/SKILL.md) and [collect](skills/conversation/collect/SKILL.md) pass notes between those forks.
+- [warmup](skills/conversation/warmup/SKILL.md) reads Claude Code and Codex session files from their default locations.
 
 ## Skills
 
