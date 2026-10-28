@@ -8,19 +8,17 @@ The skills are written to work together. Each one does one job and names the ski
 
 I don't install the skills by hand. [Archon](https://github.com/mrzli/archon), my workstation setup, clones this repository and links the skills for both agents every time its setup script runs.
 
-To install them manually, clone the repository and link each skill into the directories the agents read, `~/.claude/skills` for Claude Code and `~/.agents/skills` for Codex:
+To install them manually, clone the repository and run the sync script with `--user`. It links each skill into the directories the agents read, `~/.claude/skills` for Claude Code and `~/.agents/skills` for Codex:
 
 ```bash
 git clone https://github.com/mrzli/skills.git
 cd skills
-mkdir -p ~/.claude/skills ~/.agents/skills
-find "$PWD/skills" -name SKILL.md -exec dirname {} \; | while read -r skill; do
-  ln -sfn "$skill" ~/.claude/skills/"${skill##*/}"
-  ln -sfn "$skill" ~/.agents/skills/"${skill##*/}"
-done
+bash scripts/sync-skills.sh --user
 ```
 
-Link the skills rather than copying them. Some skills link to files in other skills, which a copy would break. A `git pull` then updates the installed skills. To add skills that are new since the last run, rerun the `find` loop from the repository root.
+To update, run `git pull` and the script again. The script links new skills, removes links to skills that were deleted, and leaves other skills in those directories alone. It stops without changing anything if a skill of the same name is already installed from elsewhere.
+
+Without `--user`, the script links the skills only into this repository's own `.claude/skills` and `.agents/skills`. An agent started in this repository then finds them without a user-wide installation, which is a way to try them out.
 
 ## Getting started
 
