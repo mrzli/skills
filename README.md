@@ -1,6 +1,30 @@
 # Agent Skills
 
-Reusable skills for AI agents.
+These are the skills I use every day with Claude Code and Codex. Most of them cover software engineering, from shaping a feature through design, implementation, review, and release. The rest help with conversations, documentation, and learning.
+
+The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it. I maintain them with [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md), which compares them with other skill collections and runs routing tests, realistic requests that check a fresh agent loads the right skill.
+
+## Installation
+
+Clone the repository and link each skill into the directories the agents read, `~/.claude/skills` for Claude Code and `~/.agents/skills` for Codex:
+
+```bash
+git clone https://github.com/mrzli/skills.git
+cd skills
+mkdir -p ~/.claude/skills ~/.agents/skills
+find "$PWD/skills" -name SKILL.md -exec dirname {} \; | while read -r skill; do
+  ln -sfn "$skill" ~/.claude/skills/"${skill##*/}"
+  ln -sfn "$skill" ~/.agents/skills/"${skill##*/}"
+done
+```
+
+Link the skills rather than copying them. Some skills link to files in other skills, which a copy would break. A `git pull` then updates the installed skills. To add skills that are new since the last run, rerun the `find` loop from the repository root.
+
+## Getting started
+
+Ask the agent what to do next, and [guide](skills/engineering/workflow/guide/SKILL.md) picks the engineering skill that fits. The agent loads the other skills on its own when a request matches them.
+
+[spawn](skills/conversation/spawn/SKILL.md) opens a fork of the conversation in a new tab and needs Claude Code running in herdr or tmux. [yield](skills/conversation/yield/SKILL.md) and [collect](skills/conversation/collect/SKILL.md) pass notes between those forks. [warmup](skills/conversation/warmup/SKILL.md) reads Claude Code and Codex session files from their default locations.
 
 ## Skills
 
@@ -77,3 +101,9 @@ Reusable skills for AI agents.
 | [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next engineering activity or skill, with a concrete example invocation. |
 | [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) | Improve the development process using evidence from completed work. |
 | [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) | Review the skill collection and external sources for useful additions, improvements, consolidation, or retirement. |
+
+## Credits and license
+
+Some skills are based on [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack). [LICENSES.md](LICENSES.md) lists them with their licenses.
+
+The skills are under the [MIT License](LICENSE).
