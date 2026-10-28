@@ -79,8 +79,26 @@ class SyncSkillsTests(unittest.TestCase):
         result = self.sync('--user')
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('does not manage', result.stderr)
+        self.assertNotIn('broken link', result.stderr)
         self.assertFalse(self.user_destinations[0].exists())
         self.assertEqual((self.user_destinations[1] / 'example').resolve(), other)
+
+    def test_user_sync_after_moved_clone_suggests_removing_broken_links(self):
+        self.assertEqual(self.sync('--user').returncode, 0)
+        moved = self.base / 'moved'
+        self.repo.rename(moved)
+        self.repo = moved
+        result = self.sync('--user')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('broken link', result.stderr)
+        command = next(line.strip() for line in result.stderr.splitlines()
+                       if line.strip().startswith('find '))
+        subprocess.run(command, shell=True, check=True)
+        result = self.sync('--user')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for directory in self.user_destinations:
+            self.assertEqual((directory / 'example').resolve(),
+                             moved / 'skills/productivity/example')
 
     def test_user_sync_follows_symlinked_destination(self):
         dotfiles = self.base / 'dotfiles/claude'

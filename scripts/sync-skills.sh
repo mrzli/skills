@@ -88,6 +88,11 @@ validate_destination() {
     if [[ $user == true ]]; then
       if [[ -e $path || -L $path ]] && ! managed_link "$path"; then
         printf 'Cannot replace a skill this repository does not manage: %s\n' "$path" >&2
+        if [[ ! -e $path ]]; then
+          printf 'It is a broken link, such as from a moved clone. Remove broken links with\n' >&2
+          { printf '  find -L'; printf ' %q' "${destinations[@]}"; printf ' -maxdepth 1 -type l -delete\n'; } >&2
+          printf 'and run the script again.\n' >&2
+        fi
         return 1
       fi
     elif [[ -e $path && ! -L $path ]]; then
