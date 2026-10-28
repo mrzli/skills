@@ -31,7 +31,7 @@ I talk to the agent in one main session, mostly by voice dictation. My [global a
 - **Discussion and implementation run side by side.** Once I agree to an item, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands it to a background agent, and the discussion moves on to the next item.
 - **A point that needs a longer discussion gets its own tab,** so it doesn't crowd the main session. See [Forks](#forks).
 - **After a break,** [warmup](skills/conversation/warmup/SKILL.md) says where the work stopped and suggests a few small steps to get back into it. It reads Claude Code and Codex session files from their default locations.
-- **Work that belongs in another repository goes there as a handoff.** When a discussion in one repository settles a change that belongs in another, [handoff](skills/conversation/handoff/SKILL.md) writes a document for an agent in that repository, and I start a session there with its path. For example, a new rule for my global instructions agreed while working on another project goes to Archon this way. It can also carry a topic over to a fresh session.
+- **Work that belongs in another repository goes there as a handoff.** When a discussion in one repository settles a change that belongs in another, [handoff](skills/conversation/handoff/SKILL.md) writes a document describing the change and gives me its path. I paste the path to an agent working in that repository. For example, a new rule for my global instructions agreed while working on another project goes to Archon this way. It can also carry a topic over to a fresh session.
 
 ### Forks
 
