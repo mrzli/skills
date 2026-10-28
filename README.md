@@ -24,10 +24,17 @@ You don't need to name a skill. The agent loads one on its own when a request ma
 
 Eight skills load only when you call them by name, such as `/spawn` in Claude Code: collect, create-verification, explore, restate, spawn, teach, warmup, and yield.
 
-A few skills assume a particular setup:
+## How I use them
 
-- [spawn](skills/conversation/spawn/SKILL.md) opens a fork of the conversation in a new tab, so it needs Claude Code running in herdr or tmux. [yield](skills/conversation/yield/SKILL.md) and [collect](skills/conversation/collect/SKILL.md) pass notes between those forks.
-- [warmup](skills/conversation/warmup/SKILL.md) reads Claude Code and Codex session files from their default locations.
+I talk to the agent in one main session, mostly by voice dictation. My global agent instructions give every question, option, and work item an ID, such as F2 or B7d2, so I can answer or approve each one briefly.
+
+- **Discussion and implementation run side by side.** Once I agree to an item, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands it to a background agent, and the discussion moves on to the next item.
+- **A point that needs a longer discussion gets its own tab.** `/spawn F2` opens a fork of the session in a new terminal tab, started from a short brief or from a full copy of the conversation. Forks only discuss and never change the checkout. A fork can open forks of its own.
+- **Results come back without copying.** In a fork, `/yield` records what was decided and which changes I agreed to. In the main tab, `/collect` takes in those notes and queues the agreed changes, so all changes to the checkout happen in one tab.
+- **After a break,** `/warmup` says where the work stopped and suggests a few small steps to get back into it.
+- **When a session ends or work moves to another repository,** [handoff](skills/conversation/handoff/SKILL.md) writes what the next session needs.
+
+[spawn](skills/conversation/spawn/SKILL.md) needs Claude Code running in herdr or tmux, and [yield](skills/conversation/yield/SKILL.md) and [collect](skills/conversation/collect/SKILL.md) work only with the forks it opens. [warmup](skills/conversation/warmup/SKILL.md) reads Claude Code and Codex session files from their default locations.
 
 ## How the skills improve
 
