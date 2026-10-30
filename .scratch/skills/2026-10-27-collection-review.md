@@ -108,3 +108,9 @@ The user merged and installed the branch, and the archon handoff is applied. Ele
 A later session the same day made the skills consistent with the user's global rules without depending on them. Where a skill relies on one of those rules, it refers to "the user's rules for X" with a one-line fallback. Each rule lives in one place, chosen by whether it must apply to all work (the global file) or to one activity (the skill). The repository `AGENTS.md`, `writing-skills`, and `maintain-skills` now say this, and the handoff-content rule moved from the global file into `handoff` (archon `0c5b381`).
 
 With the skills installed at `0758b47`, 28 of the 29 routing cases for the changed skills passed. The `handoff` case that missed gave no change to hand off, so the fresh session declined to guess. After the request stated the agreed change, both `handoff` cases passed.
+
+## Review hardening
+
+A handoff from archon on 2026-10-30 hardened `review-code` and made reviews independent: every review checks for secrets and unexplained behavior, the review runs in a fresh agent when the tools allow, `implement` reports which kind of review ran, and `queue-work` reviews an item again unless a fresh agent reviewed it. It goes with archon's global rule that commits get an independent review before they reach the main branch. `collection-state.md` tracks it as a trial.
+
+With the skills installed at `50e62f5`, both new `review-code` routing cases passed.
