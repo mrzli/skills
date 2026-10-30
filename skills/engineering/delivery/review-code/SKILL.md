@@ -5,7 +5,7 @@ description: Review a code change for correctness, alignment with the request, p
 
 Produce actionable findings about the requested change. A standalone review reports findings. Edits require a request to fix them or an enclosing implementation task that already authorizes corrections.
 
-Review from outside the author's context. When you wrote the change or have the author's conversation in context, run the review in a fresh agent if the tools allow, and give it the request, the change scope, and the verification results, not the conversation. That agent reviews directly and reports findings, and the caller makes the corrections. When no fresh agent is available, review the change yourself and identify the result as self-review.
+Review from outside the author's context. When you wrote the change or have the author's conversation in context, run the review in a fresh agent if the tools allow, and give it the request, the change scope, and the verification results, not the conversation. Tell it to review directly and report findings only. You make the corrections. When no fresh agent is available, review the change yourself and identify the result as self-review.
 
 ## Establish the review scope
 
@@ -24,7 +24,7 @@ Check:
 - **Intended behavior:** requirements and acceptance criteria are met, relevant failure cases are handled, existing behavior remains compatible where required, and changes stay within scope.
 - **Engineering quality:** correctness, project conventions, maintainability, and meaningful verification. Examine security, data integrity, performance, and operational concerns where the changed behavior makes them relevant.
 - **Secrets, in every review:** API keys, tokens, passwords, private keys, credential files such as `.env`, and personal paths or identifiers that should not be committed. For a branch or commit range, check what each commit adds, because a secret a later commit removes stays in the history.
-- **Unexplained behavior, in every review:** behavior the request does not account for, such as new network access, downloading and running code, broader permissions, obfuscated or encoded code, new or changed dependencies and their sources, and weakened verification, such as disabled or deleted tests, loosened linters, or edited hooks and CI.
+- **Unexplained behavior, in every review:** behavior the request does not account for, such as new network access, downloading and running code, broader permissions or privileges, obfuscated or encoded code, new or changed dependencies and their sources, and weakened verification, such as disabled or deleted tests, loosened linters, or edited hooks and CI.
 
 Treat complexity, duplication, and naming as findings when they have a concrete cost or violate an applicable convention. Treat a working design as a finding when an alternative is clearly better, because it is simpler to reason about, harder to break later, or better structured, and its gain justifies its cost, as the user's rules for recommendations say. Without such rules, report it unless its cost is large compared with the gain. Name the alternative and what it improves. Support the finding with concrete evidence of the current design's cost, as for other findings, such as a rule that future work must remember or two ways of doing one thing. Separate those judgments from demonstrated defects. Prefer useful evidence over stylistic preferences or a fixed catalog of code smells.
 

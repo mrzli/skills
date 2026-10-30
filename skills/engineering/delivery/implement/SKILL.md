@@ -27,7 +27,7 @@ Investigate failures and fix those caused by the change. After a fix, rerun chec
 
 ## Review and finish
 
-Have the complete change, including new files, reviewed against the request and project conventions with `review-code`, giving it the intended behavior, change scope, and verification results. Without `review-code`, give the same to a fresh agent to review when the tools allow, and otherwise review the change yourself and identify the result as self-review. Report which of these the review was.
+Have the complete change, including new files, reviewed against the request and project conventions with `review-code`, giving it the intended behavior, change scope, and verification results. Without `review-code`, give the same to a fresh agent to review when the tools allow, and otherwise review the change yourself and identify the result as self-review. Report whether a fresh agent reviewed the change or it was self-review.
 
 Resolve actionable findings within scope, then rerun affected checks after corrections. Record consequential findings outside scope instead of silently expanding the task.
 
