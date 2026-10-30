@@ -30,7 +30,7 @@ Work on tasks whose prerequisites are satisfied. Follow the user's and project's
 
 Update task status from evidence, not intent. Capture blockers precisely and switch to independent work when possible. Inspect failures and change the approach rather than repeating ineffective actions without new evidence.
 
-After the tasks are integrated, verify the acceptance criteria and important interactions across task boundaries, using the project's verification skill when one exists. Reuse valid task checks and reviews. Add an integrated review for consequences they did not cover. Resolve blocking findings and rerun affected checks after corrections.
+After the tasks are integrated, verify the acceptance criteria and important interactions across task boundaries, using the project's verification skill when one exists. Reuse valid task checks and reviews. A self-review does not replace an independent review. Add an integrated review for consequences they did not cover. Resolve blocking findings and rerun affected checks after corrections.
 
 ## Finish or hand off
 
