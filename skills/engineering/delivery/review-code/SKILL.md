@@ -5,6 +5,8 @@ description: Review a code change for correctness, alignment with the request, p
 
 Produce actionable findings about the requested change. A standalone review reports findings. Edits require a request to fix them or an enclosing implementation task that already authorizes corrections.
 
+Review from outside the author's context. When you wrote the change or have the author's conversation in context, run the review in a fresh agent if the tools allow, and give it the request, the change scope, and the verification results, not the conversation. That agent reviews directly. When no fresh agent is available, review the change yourself and identify the result as self-review.
+
 ## Establish the review scope
 
 Use the change scope supplied by the user or calling workflow. Otherwise, infer it from the active task and working tree. For uncommitted work, include staged changes, unstaged changes, and relevant untracked files. For a branch or pull request, identify the intended base and comparison point. Ask only if materially different scopes remain plausible.
@@ -33,6 +35,6 @@ Investigate suspected problems before reporting them. Trace a realistic failing 
 
 Present findings in priority order. For each, give the affected file and location, the triggering situation, the consequence, and the supporting evidence or requirement. Suggest a correction when useful. Keep optional improvements separate from issues that should block completion. A secret is always blocking. Say that it must also be revoked if it was pushed. Report a design finding as a recommended change, not as an optional improvement. Avoid duplicating the same underlying problem across findings.
 
-Finish with a concise assessment of requirements coverage, blocking findings, and verification limitations. If no actionable findings remain, say so without implying that unverified behavior is proven correct. Identify a review of your own implementation as self-review.
+Finish with a concise assessment of requirements coverage, blocking findings, and verification limitations. If no actionable findings remain, say so without implying that unverified behavior is proven correct.
 
 When corrections are already authorized, address findings within scope and recheck the affected behavior and diff. Otherwise, return findings to the user or calling workflow. A follow-up review verifies the actual corrections and their consequences before marking findings resolved.
