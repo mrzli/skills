@@ -23,11 +23,11 @@ yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current session is a main session or a fork,
          and gives its tree's ID: the first 8 characters of the main
-         session's session ID, which never repeat. It then prints the notes
-         of the sessions below it, at any depth, that are new or changed
-         since this session last collected, and records them as read.
-         Deletes notes that every session above their fork has read, and
-         lists trees with no activity for 14 days.
+         session's session ID, which differs between main sessions. It then
+         prints the notes of the sessions below it, at any depth, that are
+         new or changed since this session last collected, and records them
+         as read. Deletes notes that every session above their fork has
+         read, and lists trees with no activity for 14 days.
 prune    Deletes everything recorded for the named trees, each given by the
          name of its main session.
 
