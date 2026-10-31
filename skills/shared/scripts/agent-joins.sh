@@ -169,7 +169,7 @@ cmd_spawn() {
     ((number > highest)) && highest=$number
   done
   local child=$me-$((highest + 1))
-  local discuss_only="Only discuss here: do not create, edit, or delete files in the checkout, and do not commit. Reading is fine, and so are temporary files outside the checkout, such as throwaway scripts in your session scratch folder. Record each change the user explicitly approves, so yield can pass it up to be implemented in the top tab."
+  local discuss_only="Only discuss here: do not create, edit, or delete files in the checkout, and do not commit. Reading is fine, and so are temporary files outside the checkout, such as throwaway scripts in your session scratch folder. Record each change the user explicitly approves, so yield can pass it up to be implemented in the top tab. Write no handoffs to other repositories either: record each one the user asks for or the work calls for, with its target repository and contents, so the top tab writes it."
   # An Edit rule covers every file-editing tool; the leading // makes the path absolute.
   # The tool list comes before -n, which ends it, so the prompt is not read as a tool.
   local checkout no_edits

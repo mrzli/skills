@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 Open a fork of this tab in a new terminal tab, so the user can discuss one point there while this tab continues. Forks can spawn forks of their own, from a brief or as a full copy.
 
-Forks only discuss. The script tells each fork not to change the checkout and blocks the file-editing tools there. A fork may still write temporary files outside the checkout, such as a throwaway script in its session scratch folder, because they cannot mix with changes in the checkout. Changes the user approves in a fork pass up through [yield](../yield/SKILL.md), and the top tab, the one that is not a fork, implements them when it runs [collect](../collect/SKILL.md). All changes to the checkout then happen in one tab.
+Forks only discuss. The script tells each fork not to change the checkout and blocks the file-editing tools there. A fork may still write temporary files outside the checkout, such as a throwaway script in its session scratch folder, because they cannot mix with changes in the checkout. Changes the user approves in a fork pass up through [yield](../yield/SKILL.md), and the top tab, the one that is not a fork, implements them when it runs [collect](../collect/SKILL.md). All changes to the checkout then happen in one tab. Handoffs to other repositories pass up the same way: a fork writes none, and records each one the user asks for or the work calls for, for the top tab to write.
 
 The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation.
 

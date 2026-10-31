@@ -38,9 +38,9 @@ I talk to the agent in one main session, mostly by voice dictation. My [global a
 A fork is a new agent session in its own terminal tab, opened to discuss one point from the main session. Three skills work together:
 
 1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2, and `/spawn full F2` gives it a copy of the whole conversation instead.
-2. I discuss F2 in the fork. A fork only discusses and cannot change the repository's files.
-3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, and what is still open. Running it again replaces the note with the latest state.
-4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main tab reads the note and queues the agreed changes with queue-work, so every change to the repository is made from the main tab.
+2. I discuss F2 in the fork. A fork only discusses. It cannot change the repository's files and writes no handoffs to other repositories.
+3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, which handoffs to other repositories it needs, and what is still open. Running it again replaces the note with the latest state.
+4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main tab reads the note and queues the agreed changes with queue-work and writes the handoffs, so every change to the repository and every handoff is made from the main tab.
 
 A fork can open forks of its own. spawn records which tab opened each fork, so the tabs form a tree. `/collect` takes in the notes of every fork below the tab it runs in, at any depth, so the main tab can also collect a note from a fork of a fork.
 
@@ -74,7 +74,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts. Defaults to the last response. |
-| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of forks below this tab, at any depth, and queue the changes agreed in them to implement now. |
+| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of forks below this tab, at any depth, queue the changes agreed in them to implement now, and write the handoffs they record. |
 | [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
