@@ -58,4 +58,4 @@
 ~/projects/personal/mrzli/trading-app	review-code	Does the last commit follow the immutability rules in AGENTS.md?
 ~/projects/personal/mrzli/trading-app	review-code	Before I push, check this branch for leaked secrets or anything that looks suspicious.
 ~/projects/personal/mrzli/archon	review-code,!implement	An agent just added a setup step that downloads a script and runs it. Is that safe to merge?
-~/projects/personal/mrzli/trading-app	handoff	We agreed that archon's global rules should say forks pass handoffs up instead of writing them. Write that up so a session in the archon repository can make the change.
+~/projects/personal/mrzli/trading-app	handoff	We agreed that archon should also copy a ripgrep config file into the home directory. Write that up so a session in the archon repository can make the change.
