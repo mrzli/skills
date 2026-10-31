@@ -1,6 +1,6 @@
 ---
 name: collect
-description: Take in the notes yielded by the sessions below this one, at any depth, apply them to the current work, queue the changes agreed in them to implement now, and write the handoffs they record. Use in a session whose forks, opened by spawn, have run yield.
+description: Take in the notes yielded by the sessions below this one, at any depth, apply them to the current work, queue the changes agreed in them to implement now, and write the handoffs they call for. Use in a session whose forks, opened by spawn, have run yield.
 disable-model-invocation: true
 ---
 
@@ -8,7 +8,7 @@ Bring the results of the sessions below this one into the conversation. Each for
 
 Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It says whether this session is the main session or a fork, prints the notes that are new or changed since this session last collected, from the sessions below it at any depth, and records them as read. A note stays until every session above its fork has collected its latest version.
 
-Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md; queued Claude-2/FF1a; handoff Claude-2/FF1b at /tmp/handoff-archon-rules.md`, or `No new notes.` Do not summarize the decisions. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
+Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md; queued Claude-2/FF1a; handoff Claude-2/FF1b at /tmp/handoff-Claude-2-FF1b.md`, or `No new notes.` Do not summarize the decisions. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
 
 ## Agreed items
 
@@ -25,12 +25,18 @@ If an item conflicts with a decision made in this session since the fork was spa
 
 ## Handoffs
 
-A note's handoffs are to other repositories, each with a source ID. In the main session, write each one with [handoff](../handoff/SKILL.md) from the recorded target and contents, and give its path. Check each source ID against the handoffs already written from collected notes: write a new one, skip an unchanged one, and rewrite a changed one, saying in its line that it changed.
+A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with [handoff](../handoff/SKILL.md) from its item, name the file after the source ID with `/` replaced by `-`, such as `handoff-Claude-2-FF1b.md`, and give its path. Every yield repeats the fork's whole picture, so check for that file first:
+
+- No file: write it.
+- A file that asks for the same change: skip it.
+- A file that asks for a different change: write a new file with the note's version added, such as `handoff-Claude-2-FF1b-v3.md`, because a session in the other repository may already have used the old one. Say in its line that it changed.
 
 ## In a fork
 
-Implement nothing and write no handoffs, because forks do not change the checkout and pass handoffs up. Carry the agreed items and handoffs into this fork's next [yield](../yield/SKILL.md).
+Implement nothing and write no handoffs, because forks do not change the checkout and the main session writes every handoff. Carry the agreed items and needed handoffs into this fork's next [yield](../yield/SKILL.md).
 
-The one exception is a tree the script reports as inactive for 14 days. Ask in one line whether to delete it, and on a yes run the script's `prune` command with the tree's main session. Do not prune without the user's answer.
+## Inactive trees
+
+In any session, the script may report a tree as inactive for 14 days. Ask in one line whether to delete it, and on a yes run the script's `prune` command with the tree's main session. Do not prune without the user's answer.
 
 Durable decisions belong in the project's tickets or documentation, not only in the conversation.

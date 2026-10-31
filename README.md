@@ -40,7 +40,7 @@ A fork is a new agent session in its own terminal tab, opened to discuss one poi
 1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2, and `/spawn full F2` gives it a copy of the whole conversation instead.
 2. I discuss F2 in the fork. A fork only discusses. It cannot change the repository's files and writes no handoffs to other repositories.
 3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, which handoffs to other repositories it needs, and what is still open. Running it again replaces the note with the latest state.
-4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note and queues the agreed changes with queue-work and writes the handoffs, so every change to the repository and every handoff is made from the main session.
+4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note, queues the agreed changes with queue-work, and writes the handoffs, so every change to the repository and every handoff is made from the main session.
 
 A fork can open forks of its own. spawn records which session opened each fork, so the sessions form a tree. `/collect` takes in the notes of every session below the one it runs in, at any depth, so the main session can also collect a note from a fork of a fork.
 
@@ -74,7 +74,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts. Defaults to the last response. |
-| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, queue the changes agreed in them to implement now, and write the handoffs they record. |
+| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, queue the changes agreed in them to implement now, and write the handoffs they call for. |
 | [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |

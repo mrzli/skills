@@ -4,6 +4,8 @@ description: Compact the current session into a handoff document so another agen
 argument-hint: "[same or other machine] [scope or next focus]"
 ---
 
+In a fork opened by [spawn](../spawn/SKILL.md), do not write a handoff to another repository. Note only which repository it is for and what change it should ask for, so [yield](../yield/SKILL.md) passes that up and the main session writes the handoff on [collect](../collect/SKILL.md).
+
 ## Argument
 
 The argument can specify the target, the scope, or both, in any order:
