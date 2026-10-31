@@ -22,9 +22,11 @@ spawn    Opens a fork of the current session in a new herdr or tmux tab in
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current session is a main session or a fork,
-         prints the notes of the sessions below it, at any depth, that are
-         new or changed since this session last collected, and records them as
-         read. Deletes notes that every session above their fork has read, and
+         and gives its tree's ID: the first 8 characters of the main
+         session's session ID, which never repeat. It then prints the notes
+         of the sessions below it, at any depth, that are new or changed
+         since this session last collected, and records them as read.
+         Deletes notes that every session above their fork has read, and
          lists trees with no activity for 14 days.
 prune    Deletes everything recorded for the named trees, each given by the
          name of its main session.
@@ -234,10 +236,13 @@ cmd_yield() {
 
 cmd_collect() {
   (($# == 0)) || usage
+  local tree=$session_id
+  [[ -n $me ]] && tree=${session[$(root_of "$me")]}
+  [[ -n $tree && $tree != - ]] && tree=" (tree ${tree:0:8})" || tree=
   if [[ -n $me && ${parent[$me]} != - ]]; then
-    printf 'This session: %s, a fork of %s.\n\n' "$me" "${parent[$me]}"
+    printf 'This session: %s, a fork of %s%s.\n\n' "$me" "${parent[$me]}" "$tree"
   else
-    printf 'This session: %s, a main session.\n\n' "${me:-unnamed}"
+    printf 'This session: %s, a main session%s.\n\n' "${me:-unnamed}" "$tree"
   fi
   if [[ -z $me ]]; then
     echo 'No forks are recorded for this session.'
