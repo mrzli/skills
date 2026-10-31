@@ -6,9 +6,11 @@ disable-model-invocation: true
 
 Bring the results of the sessions below this one into the conversation. Each fork wrote its note with [yield](../yield/SKILL.md).
 
-Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It says whether this session is the main session or a fork, prints the notes that are new or changed since this session last collected, from the sessions below it at any depth, and records them as read. A note stays until every session above its fork has collected its latest version.
+Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It says whether this session is a main session or a fork, prints the notes that are new or changed since this session last collected, from the sessions below it at any depth, and records them as read. A note stays until every session above its fork has collected its latest version.
 
-Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md; queued Claude-2/FF1a; handoff Claude-2/FF1b at /tmp/handoff-Claude-2-FF1b.md`, or `No new notes.` Do not summarize the decisions. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
+Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md; queued Claude-2/FF1a; handoff Claude-2/FF1b at /tmp/handoff-trading-app-Claude-2-FF1b.md`, or `No new notes.` Do not summarize the decisions. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
+
+If an agreed item or a needed handoff conflicts with a decision made in this session since the fork was spawned, ask about it in one line instead of queuing or writing it.
 
 ## Agreed items
 
@@ -21,15 +23,13 @@ In the main session, implement the items marked `now` through [queue-work](../..
 - In the queue with a changed decision, not yet started: update the queued decision.
 - In the queue with a changed decision, already started or integrated: add it as a new item.
 
-If an item conflicts with a decision made in this session since the fork was spawned, ask about it in one line instead of queuing it.
-
 ## Handoffs
 
-A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with [handoff](../handoff/SKILL.md) from its item, name the file after the source ID with `/` replaced by `-`, such as `handoff-Claude-2-FF1b.md`, and give its path. Every yield repeats the fork's whole picture, so check for that file first:
+A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with [handoff](../handoff/SKILL.md) from its item, name the file after this repository's directory and the source ID, with `/` replaced by `-`, such as `handoff-trading-app-Claude-2-FF1b.md`, and give its path. Fork names repeat across repositories and after a prune, so the repository's name keeps the files apart. Every yield repeats the fork's whole picture, so check the latest file for that source ID first, the one with the highest number if there are several:
 
 - No file: write it.
 - A file that asks for the same change: skip it.
-- A file that asks for a different change: write a new file with the note's version added, such as `handoff-Claude-2-FF1b-v3.md`, because a session in the other repository may already have used the old one. Say in its line that it changed.
+- A file that asks for a different change: write a new file with the next free number added, such as `handoff-trading-app-Claude-2-FF1b-2.md`, because a session in the other repository may already have used the old one. Say in its line that it changed.
 
 ## In a fork
 
@@ -37,6 +37,6 @@ Implement nothing and write no handoffs, because forks do not change the checkou
 
 ## Inactive trees
 
-In any session, the script may report a tree as inactive for 14 days. Ask in one line whether to delete it, and on a yes run the script's `prune` command with the tree's main session. Do not prune without the user's answer.
+In any session, the script may report a tree as inactive for 14 days. Ask in one line whether to delete it, and on a yes run the script's `prune` command with the name of the tree's main session. Do not prune without the user's answer.
 
 Durable decisions belong in the project's tickets or documentation, not only in the conversation.

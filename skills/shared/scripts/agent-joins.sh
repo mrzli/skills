@@ -12,16 +12,16 @@ Usage: agent-joins.sh spawn TOPIC < BRIEF
 
 spawn    Opens a fork of the current session in a new herdr or tmux tab in
          the current directory. The tab and the fork are named after the
-         parent session:
-         Claude, Claude-1, Claude-1-1, and so on. By default the fork is a new
-         session that starts by reading the brief from standard input. With
-         --full it is a copy of the current session, told to focus on TOPIC
-         if one is given. Forks only discuss: they are told not to change
-         the checkout and cannot use the file-editing tools inside it, but
-         may write temporary files, such as scripts, outside it.
+         parent session: Claude, Claude-1, Claude-1-1, and so on. By default
+         the fork is a new session that starts by reading the brief from
+         standard input. With --full it is a copy of the current session,
+         told to focus on TOPIC if one is given. Forks only discuss: they
+         are told not to change the checkout and cannot use the file-editing
+         tools inside it, but may write temporary files, such as scripts,
+         outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
-collect  Says whether the current session is the main session or a fork,
+collect  Says whether the current session is a main session or a fork,
          prints the notes of the sessions below it, at any depth, that are
          new or changed since this session last collected, and records them as
          read. Deletes notes that every session above their fork has read, and
@@ -30,12 +30,13 @@ prune    Deletes everything recorded for the named trees, each given by the
          name of its main session.
 
 State lives in <git common dir>/agent-joins/:
-  forks.tsv       one line per session: name, parent, session ID, topic, created,
-                  note version, updated ("-" marks an empty field)
+  forks.tsv       one line per session: name, parent, session ID, topic,
+                  created, note version, updated ("-" marks an empty field)
   briefs/NAME.md  the brief fork NAME started from
   notes/NAME.md   the latest note yielded by fork NAME
   read/NAME.tsv   the notes session NAME has collected: fork name, version
-A fork knows its name from AGENT_FORK_NAME. A main session is found by its session ID.
+A fork knows its name from AGENT_FORK_NAME. A main session is found by its
+session ID.
 EOF
   exit 2
 }
@@ -236,7 +237,7 @@ cmd_collect() {
   if [[ -n $me && ${parent[$me]} != - ]]; then
     printf 'This session: %s, a fork of %s.\n\n' "$me" "${parent[$me]}"
   else
-    printf 'This session: %s, the main session.\n\n' "${me:-unnamed}"
+    printf 'This session: %s, a main session.\n\n' "${me:-unnamed}"
   fi
   if [[ -z $me ]]; then
     echo 'No forks are recorded for this session.'

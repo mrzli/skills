@@ -42,7 +42,7 @@ Neighboring skills are easy to confuse:
 
 - An interface, data shape, or module boundary belongs to `design`, even when it feels like a product question. `shape-feature` decides user-visible behavior and scope. `interrogate` stress-tests a decision the user has already proposed.
 - Explaining how existing code works belongs to `clarify` or `investigate`. Trying alternatives belongs to `prototype`.
-- Where the current work or discussion stands, including its decisions and status, belongs to `recap`. Restating the user's goal from their own words belongs to `restate`. Continuing in another session belongs to `handoff`. Getting back into a project after a break belongs to `warmup`. Discussing one topic in its own tab and bringing the result back belongs to `spawn`, `yield`, and `collect`.
+- Where the current work or discussion stands, including its decisions and status, belongs to `recap`. Restating the user's goal from their own words belongs to `restate`. Continuing in another session belongs to `handoff`. Getting back into a project after a break belongs to `warmup`. Discussing one topic in its own session and bringing the result back belongs to `spawn`, `yield`, and `collect`.
 - `deliver` carries agreed work to its endpoint on its own. `queue-work` keeps the user deciding each item while the agreed ones are implemented in the background.
 
 Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without separate design, specification, or planning documents.
