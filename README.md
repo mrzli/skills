@@ -29,7 +29,7 @@ Eight skills load only when you call them by name, such as `/spawn` in Claude Co
 I talk to the agent in one main session, mostly by voice dictation. My [global agent instructions](https://github.com/mrzli/archon/blob/master/data/home/.codex/AGENTS.md), kept in my workstation setup [Archon](https://github.com/mrzli/archon), give every question, option, and work item an ID, such as F2 or B7d2, so I can answer or approve each one briefly.
 
 - **Discussion and implementation run side by side.** Once I agree to an item, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands it to a background agent, and the discussion moves on to the next item.
-- **A point that needs a longer discussion gets its own tab,** so it doesn't crowd the main session. See [Forks](#forks).
+- **A point that needs a longer discussion gets its own session,** so it doesn't crowd the main session. See [Forks](#forks).
 - **After a break,** [warmup](skills/conversation/warmup/SKILL.md) says where the work stopped and suggests a few small steps to get back into it. It reads Claude Code and Codex session files from their default locations.
 - **Work that belongs in another repository goes there as a handoff.** When a discussion in one repository settles a change that belongs in another, [handoff](skills/conversation/handoff/SKILL.md) writes a document describing the change and gives me its path. I paste the path to an agent working in that repository. For example, a new rule for my global instructions agreed while working on another project goes to Archon this way.
 
@@ -40,11 +40,11 @@ A fork is a new agent session in its own terminal tab, opened to discuss one poi
 1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2, and `/spawn full F2` gives it a copy of the whole conversation instead.
 2. I discuss F2 in the fork. A fork only discusses. It cannot change the repository's files and writes no handoffs to other repositories.
 3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, which handoffs to other repositories it needs, and what is still open. Running it again replaces the note with the latest state.
-4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main tab reads the note and queues the agreed changes with queue-work and writes the handoffs, so every change to the repository and every handoff is made from the main tab.
+4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note and queues the agreed changes with queue-work and writes the handoffs, so every change to the repository and every handoff is made from the main session.
 
-A fork can open forks of its own. spawn records which tab opened each fork, so the tabs form a tree. `/collect` takes in the notes of every fork below the tab it runs in, at any depth, so the main tab can also collect a note from a fork of a fork.
+A fork can open forks of its own. spawn records which session opened each fork, so the sessions form a tree. `/collect` takes in the notes of every session below the one it runs in, at any depth, so the main session can also collect a note from a fork of a fork.
 
-spawn needs Claude Code running in herdr or tmux. yield and collect work only in the tabs spawn opened and in the tabs those came from.
+spawn needs Claude Code running in herdr or tmux. yield and collect work only in the sessions spawn opened and in the sessions above them.
 
 ## How the skills improve
 
@@ -74,7 +74,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts. Defaults to the last response. |
-| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of forks below this tab, at any depth, queue the changes agreed in them to implement now, and write the handoffs they record. |
+| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, queue the changes agreed in them to implement now, and write the handoffs they record. |
 | [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
@@ -82,7 +82,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
 | [spawn](skills/conversation/spawn/SKILL.md) | Open a fork in a new terminal tab to discuss one point, from a short brief or a full copy of the conversation. |
 | [warmup](skills/conversation/warmup/SKILL.md) | Get back into a project after a break, with a very short summary and a few small steps. |
-| [yield](skills/conversation/yield/SKILL.md) | Write a short note of what a fork has resolved, for the tabs above it to collect. |
+| [yield](skills/conversation/yield/SKILL.md) | Write a short note of what a fork has resolved, for the sessions above it to collect. |
 
 ### [Learning](skills/learning)
 

@@ -10,8 +10,9 @@ Usage: agent-joins.sh spawn TOPIC < BRIEF
        agent-joins.sh collect
        agent-joins.sh prune TREE...
 
-spawn    Opens a fork of the current tab in a new herdr or tmux tab in the
-         current directory. The tab and the fork are named after the parent:
+spawn    Opens a fork of the current session in a new herdr or tmux tab in
+         the current directory. The tab and the fork are named after the
+         parent session:
          Claude, Claude-1, Claude-1-1, and so on. By default the fork is a new
          session that starts by reading the brief from standard input. With
          --full it is a copy of the current session, told to focus on TOPIC
@@ -20,21 +21,21 @@ spawn    Opens a fork of the current tab in a new herdr or tmux tab in the
          may write temporary files, such as scripts, outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
-collect  Says whether the current tab is a top tab or a fork, and prints
-         the notes of forks below it, at any depth, that
-         are new or changed since this tab last collected, and records them as
-         read. Deletes notes that every tab above their fork has read, and lists
-         trees with no activity for 14 days.
+collect  Says whether the current session is the main session or a fork,
+         prints the notes of the sessions below it, at any depth, that are
+         new or changed since this session last collected, and records them as
+         read. Deletes notes that every session above their fork has read, and
+         lists trees with no activity for 14 days.
 prune    Deletes everything recorded for the named trees, each given by the
-         name of its top tab.
+         name of its main session.
 
 State lives in <git common dir>/agent-joins/:
-  forks.tsv       one line per tab: name, parent, session ID, topic, created,
+  forks.tsv       one line per session: name, parent, session ID, topic, created,
                   note version, updated ("-" marks an empty field)
   briefs/NAME.md  the brief fork NAME started from
   notes/NAME.md   the latest note yielded by fork NAME
-  read/NAME.tsv   the notes tab NAME has collected: fork name, version
-A fork knows its name from AGENT_FORK_NAME. A top tab is found by its session ID.
+  read/NAME.tsv   the notes session NAME has collected: fork name, version
+A fork knows its name from AGENT_FORK_NAME. A main session is found by its session ID.
 EOF
   exit 2
 }
@@ -80,16 +81,16 @@ save() {
   mv "$forks_file.tmp" "$forks_file"
 }
 
-add_tab() { # NAME PARENT SESSION TOPIC
+add_session() { # NAME PARENT SESSION TOPIC
   names+=("$1")
   parent[$1]=$2 session[$1]=$3 topic[$1]=$4 created[$1]=$now version[$1]=0 updated[$1]=-
 }
 
-# Sets `me` to the current tab's name, or to nothing if it is not recorded.
+# Sets `me` to the current session's name, or to nothing if it is not recorded.
 me=
 if [[ -n ${AGENT_FORK_NAME:-} ]]; then
   [[ -v parent[$AGENT_FORK_NAME] ]] ||
-    die "This tab's fork, $AGENT_FORK_NAME, is not recorded. Its tree may have been pruned."
+    die "This fork, $AGENT_FORK_NAME, is not recorded. Its tree may have been pruned."
   me=$AGENT_FORK_NAME
   [[ ${session[$me]} == - && -n $session_id ]] && session[$me]=$session_id
 elif [[ -n $session_id ]]; then
@@ -98,7 +99,7 @@ elif [[ -n $session_id ]]; then
   done
 fi
 
-ancestors() { # NAME: prints the tabs above NAME, nearest first
+ancestors() { # NAME: prints the sessions above NAME, nearest first
   local n=$1
   while [[ ${parent[$n]} != - ]]; do
     n=${parent[$n]}
@@ -112,7 +113,7 @@ root_of() {
   printf '%s\n' "$n"
 }
 
-is_below() { # NAME TAB: whether NAME is a fork below TAB at any depth
+is_below() { # NAME SESSION: whether NAME is below SESSION at any depth
   local n=$1
   while [[ ${parent[$n]} != - ]]; do
     n=${parent[$n]}
@@ -121,7 +122,7 @@ is_below() { # NAME TAB: whether NAME is a fork below TAB at any depth
   return 1
 }
 
-read_version() { # TAB FORK: the version of FORK's note that TAB has read
+read_version() { # SESSION FORK: the version of FORK's note that SESSION has read
   local file=$state/read/$1.tsv
   [[ -f $file ]] || { echo 0; return; }
   awk -F'\t' -v f="$2" '$1 == f { v = $2 } END { print v + 0 }' "$file"
@@ -159,7 +160,7 @@ cmd_spawn() {
       i=$((i + 1))
       me=Claude$i
     done
-    add_tab "$me" - "$session_id" -
+    add_session "$me" - "$session_id" -
   fi
 
   local n number highest=0
@@ -169,14 +170,14 @@ cmd_spawn() {
     ((number > highest)) && highest=$number
   done
   local child=$me-$((highest + 1))
-  local discuss_only="Only discuss here: do not create, edit, or delete files in the checkout, and do not commit. Reading is fine, and so are temporary files outside the checkout, such as throwaway scripts in your session scratch folder. Record each change the user explicitly approves, so yield can pass it up to be implemented in the top tab. Write no handoffs to other repositories either: record each one the user asks for or the work calls for, with its target repository and contents, so the top tab writes it."
+  local discuss_only="Only discuss here: do not create, edit, or delete files in the checkout, and do not commit. Reading is fine, and so are temporary files outside the checkout, such as throwaway scripts in your session scratch folder. Record each change the user explicitly approves, so yield can pass it up to be implemented in the main session. Write no handoffs to other repositories either: record each one the user asks for or the work calls for, with its target repository and contents, so the main session writes it."
   # An Edit rule covers every file-editing tool; the leading // makes the path absolute.
   # The tool list comes before -n, which ends it, so the prompt is not read as a tool.
   local checkout no_edits
   checkout=$(git rev-parse --show-toplevel)
   printf -v no_edits -- '--disallowedTools %q' "Edit(/$checkout/**)"
   if $full; then
-    prompt="This tab is $child, a fork of this conversation."
+    prompt="This session is $child, a fork of this conversation."
     [[ $new_topic != - ]] && prompt+=" Focus on: $new_topic."
     printf -v fork_command 'claude --resume %q --fork-session %s -n %q %q' \
       "$session_id" "$no_edits" "$child" "$prompt $discuss_only"
@@ -203,7 +204,7 @@ cmd_spawn() {
     tmux new-window -c "$PWD" -n "$child" -e "AGENT_FORK_NAME=$child" "$fork_command"
   fi
 
-  add_tab "$child" "$me" - "$new_topic"
+  add_session "$child" "$me" - "$new_topic"
   save
   printf 'Opened %s, a fork of %s%s.\n' "$child" "$me" "$(shown_topic "$child")"
 }
@@ -211,7 +212,7 @@ cmd_spawn() {
 cmd_yield() {
   (($# == 0)) || usage
   [[ -n $me && ${parent[$me]} != - ]] ||
-    die 'This tab is not a fork opened by spawn (AGENT_FORK_NAME is not set).'
+    die 'This session is not a fork opened by spawn (AGENT_FORK_NAME is not set).'
   local body
   body=$(cat)
   [[ -n ${body//[[:space:]]/} ]] || die 'The note is empty: pass it on standard input.'
@@ -227,18 +228,18 @@ cmd_yield() {
   version[$me]=$v updated[$me]=$now
   save
   printf 'Saved version %s of the note of %s at %s.\n' "$v" "$me" "$note"
-  printf 'Tabs above it: %s.\n' "$(ancestors "$me" | paste -sd, - | sed 's/,/, /g')"
+  printf 'Sessions above it: %s.\n' "$(ancestors "$me" | paste -sd, - | sed 's/,/, /g')"
 }
 
 cmd_collect() {
   (($# == 0)) || usage
   if [[ -n $me && ${parent[$me]} != - ]]; then
-    printf 'This tab: %s, a fork of %s.\n\n' "$me" "${parent[$me]}"
+    printf 'This session: %s, a fork of %s.\n\n' "$me" "${parent[$me]}"
   else
-    printf 'This tab: %s, a top tab.\n\n' "${me:-unnamed}"
+    printf 'This session: %s, the main session.\n\n' "${me:-unnamed}"
   fi
   if [[ -z $me ]]; then
-    echo 'No forks are recorded for this tab.'
+    echo 'No forks are recorded for this session.'
   else
     local -A seen=()
     local file=$state/read/$me.tsv fork v
@@ -267,7 +268,7 @@ cmd_collect() {
     save
   fi
 
-  # A note stays until every tab above its fork has read its latest version.
+  # A note stays until every session above its fork has read its latest version.
   local n a waiting
   for n in "${names[@]}"; do
     [[ -f $state/notes/$n.md ]] || continue
@@ -277,7 +278,7 @@ cmd_collect() {
     done < <(ancestors "$n")
     if ((${#waiting[@]} == 0)); then
       rm "$state/notes/$n.md"
-      printf 'Deleted the note of %s: every tab above it has collected it.\n' "$n"
+      printf 'Deleted the note of %s: every session above it has collected it.\n' "$n"
     elif [[ -n $me ]] && is_below "$n" "$me"; then
       printf 'Kept the note of %s: not yet collected by %s.\n' "$n" "$(printf '%s\n' "${waiting[@]}" | paste -sd, - | sed 's/,/, /g')"
     fi
@@ -299,17 +300,17 @@ cmd_collect() {
       ((t > ${last[$r]:-0})) && last[$r]=$t
     fi
   done
-  local tabs notes
+  local sessions notes
   for r in "${!last[@]}"; do
     ((last[$r] < limit)) || continue
-    tabs=0 notes=0
+    sessions=0 notes=0
     for n in "${names[@]}"; do
       [[ $(root_of "$n") == "$r" ]] || continue
-      tabs=$((tabs + 1))
+      sessions=$((sessions + 1))
       [[ -f $state/notes/$n.md ]] && notes=$((notes + 1))
     done
-    printf 'Inactive since %s: the tree of %s (tabs: %s, notes left: %s). Delete it with: prune %s\n' \
-      "$(date -d "@${last[$r]}" +%F)" "$r" "$tabs" "$notes" "$r"
+    printf 'Inactive since %s: the tree of %s (sessions: %s, notes left: %s). Delete it with: prune %s\n' \
+      "$(date -d "@${last[$r]}" +%F)" "$r" "$sessions" "$notes" "$r"
   done
   return 0
 }
@@ -318,7 +319,7 @@ cmd_prune() {
   (($#)) || usage
   local r n kept=()
   for r in "$@"; do
-    [[ -v parent[$r] && ${parent[$r]} == - ]] || die "Not the top tab of a recorded tree: $r"
+    [[ -v parent[$r] && ${parent[$r]} == - ]] || die "Not the main session of a recorded tree: $r"
   done
   for n in "${names[@]}"; do
     r=$(root_of "$n")
