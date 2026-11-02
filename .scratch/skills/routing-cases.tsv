@@ -53,3 +53,5 @@
 ~/projects/personal/mrzli/trading-app	clarify	ELI5 how the chart decides which bars to draw.
 ~/projects/personal/mrzli/trading-app	clarify,investigate	In plain words, what does the fetcher do?
 ~/projects/personal/mrzli/trading-app	recap	Again, list everything I need to answer and do.
+~/projects/personal/mrzli/archon	tidy-docs	Check the AGENTS.md and README here for outdated content and inconsistent wording, and fix what you find.
+~/projects/personal/mrzli/trading-app	investigate,!fix-bug	The chart jumps when I zoom past the last bar. Just find out why, don't change anything yet.

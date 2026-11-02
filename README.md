@@ -28,7 +28,7 @@ Seven skills load only when you call them by name, such as `/spawn` in Claude Co
 
 I talk to the agent in one main session, mostly by voice dictation. My [global agent instructions](https://github.com/mrzli/archon/blob/master/data/home/.codex/AGENTS.md), kept in my workstation setup [Archon](https://github.com/mrzli/archon), give every question, option, and work item an ID, such as F2 or B7d2, so I can answer or approve each one briefly.
 
-- **Discussion and implementation run side by side.** Once I agree to an item, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands it to a background agent, and the discussion moves on to the next item.
+- **Discussion and implementation run side by side.** Once I have agreed to items and ask for them to be implemented, [queue-work](skills/engineering/workflow/queue-work/SKILL.md) hands them to background agents, and the discussion moves on to the next items.
 - **A point that needs a longer discussion gets its own session,** so it doesn't crowd the main session. See [Forks](#forks).
 - **After a break,** [warmup](skills/conversation/warmup/SKILL.md) says where the work stopped and suggests a few small steps to get back into it. It reads Claude Code and Codex session files from their default locations.
 - **Work that belongs in another repository goes there as a handoff.** When a discussion in one repository settles a change that belongs in another, [handoff](skills/conversation/handoff/SKILL.md) writes a document describing the change and gives me its path. I paste the path to an agent working in that repository. For example, a new rule for my global instructions agreed while working on another project goes to Archon this way.
@@ -38,7 +38,7 @@ I talk to the agent in one main session, mostly by voice dictation. My [global a
 A fork is a new agent session in its own terminal tab, opened to discuss one point from the main session. Three skills work together:
 
 1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2, and `/spawn full F2` gives it a copy of the whole conversation instead.
-2. I discuss F2 in the fork. A fork only discusses. It cannot change the repository's files and writes no handoffs to other repositories.
+2. I discuss F2 in the fork. The changes and handoffs I agree to there wait for the main session.
 3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, which handoffs to other repositories it needs, and what is still open. Running it again replaces the note with the latest state.
 4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note, queues the agreed changes with queue-work, and writes the handoffs, so every change to the repository and every handoff is made from the main session.
 

@@ -1,6 +1,6 @@
 ## Matt Pocock's skills
 
-Some skills are based on [Matt Pocock's skills](https://github.com/mattpocock/skills).
+Some skills are based on [Matt Pocock's skills](https://github.com/mattpocock/skills): `glossary`, `handoff`, `interrogate`, `teach`, and the prototyping part of `design`.
 
 ```txt
 MIT License
