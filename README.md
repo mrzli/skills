@@ -1,6 +1,6 @@
 # Agent Skills
 
-These are the skills I use every day with Claude Code and Codex. Most of them cover software engineering, from shaping a feature through design, implementation, review, and release. The rest help with conversations, documentation, and learning.
+These are the skills I use every day with Claude Code and Codex. Most of them cover software engineering, from design through implementation and review. The rest help with conversations, documentation, and learning.
 
 The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it.
 
@@ -22,7 +22,7 @@ Without `--user`, the script links the skills only into this repository's own `.
 
 You don't need to name a skill. The agent loads one on its own when a request matches it, such as "find out why the chart stutters and fix it" for [fix-bug](skills/engineering/delivery/fix-bug/SKILL.md). When you're not sure what to do next, ask, and [guide](skills/engineering/workflow/guide/SKILL.md) suggests the next skill.
 
-Eight skills load only when you call them by name, such as `/spawn` in Claude Code: collect, create-verification, explore, restate, spawn, teach, warmup, and yield.
+Six skills load only when you call them by name, such as `/spawn` in Claude Code: collect, restate, spawn, teach, warmup, and yield.
 
 ## How I use them
 
@@ -75,7 +75,6 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts. Defaults to the last response. |
 | [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, queue the changes agreed in them to implement now, and write the handoffs they call for. |
-| [explore](skills/conversation/explore/SKILL.md) | Clarify a vague interest or problem through questions and small next steps. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status. |
@@ -96,11 +95,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 
 | Skill | Description |
 | --- | --- |
-| [write-spec](skills/engineering/planning/write-spec/SKILL.md) | Capture agreed requirements, scope, and verifiable acceptance criteria in a durable specification. |
-| [plan](skills/engineering/planning/plan/SKILL.md) | Break agreed work into verifiable tasks with explicit dependencies. |
-| [shape-feature](skills/engineering/planning/shape-feature/SKILL.md) | Clarify a feature's user problem, behavior, and useful scope. |
 | [design](skills/engineering/planning/design/SKILL.md) | Choose a technical approach and record the important tradeoffs. |
-| [start-project](skills/engineering/planning/start-project/SKILL.md) | Define project purpose, users, first useful scope, and success criteria. |
 
 #### [Delivery](skills/engineering/delivery)
 
@@ -111,23 +106,19 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | [fix-bug](skills/engineering/delivery/fix-bug/SKILL.md) | Diagnose a failure, repair its cause, and verify the fix. |
 | [optimize](skills/engineering/delivery/optimize/SKILL.md) | Improve a measured performance metric through keep-or-revert attempts. |
 | [refactor](skills/engineering/delivery/refactor/SKILL.md) | Improve code structure while preserving required behavior. |
-| [release](skills/engineering/delivery/release/SKILL.md) | Prepare, execute, and verify an authorized release. |
 
 #### [Investigation](skills/engineering/investigation)
 
 | Skill | Description |
 | --- | --- |
 | [investigate](skills/engineering/investigation/investigate/SKILL.md) | Resolve a concrete unknown through inspection, research, or experiments. |
-| [prototype](skills/engineering/investigation/prototype/SKILL.md) | Build an interactive demonstration to explore UI alternatives or logic before implementation. |
 | [review-architecture](skills/engineering/investigation/review-architecture/SKILL.md) | Check code structure against the project's rules, summarize its modules, and prioritize evidence-backed improvements. |
-| [review-product](skills/engineering/investigation/review-product/SKILL.md) | Evaluate product usefulness and recommend the next improvement or experiment. |
 
 #### [Workflow](skills/engineering/workflow)
 
 | Skill | Description |
 | --- | --- |
 | [queue-work](skills/engineering/workflow/queue-work/SKILL.md) | Keep discussing upcoming work items while background agents implement the agreed ones in parallel, in dependency order. |
-| [create-verification](skills/engineering/workflow/create-verification/SKILL.md) | Create a tested, project-local skill and tool for driving the real application and capturing evidence. |
 | [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next engineering activity or skill, with a concrete example invocation. |
 | [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) | Improve the development process using evidence from completed work. |
 | [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) | Review the skill collection and external sources for useful additions, improvements, consolidation, or retirement. |

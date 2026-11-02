@@ -23,7 +23,7 @@ Describe the important interfaces, state transitions, data changes, and failure 
 
 Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility or performance, gather evidence with a focused experiment before presenting it as settled. Separate evidence, assumptions, and expected benefits.
 
-Use [prototype](../../investigation/prototype/SKILL.md) when choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives. Supply the decision, constraints, and unresolved question, then use the demonstration and feedback as evidence for the design.
+When choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives, build a small disposable demonstration and use it and the user's feedback as evidence for the design.
 
 ## Record the decision
 
