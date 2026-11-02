@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Count shell steps that agents repeated by hand in one project.
 
-Reads the Claude Code and Codex transcripts of the project, reduces each
-command to its shape (names, paths and numbers replaced by placeholders), and
-prints the shapes seen most often that are more than one project command:
-chains of commands, loops, and output filters. Deciding which are worth a
+Reads the Claude Code and Codex transcripts of the project and reduces each
+command to its shape, with names, paths, and numbers replaced by
+placeholders. Prints the most frequent shapes that do more than run one
+project command, such as chains of commands, loops, and output filters, and
+the most frequent runs of two to four steps inside commands. Deciding which are worth a
 script is left to the reader.
 
 Usage: repeated-steps.py [PROJECT_DIR] [--since YYYY-MM-DD] [--top N]
