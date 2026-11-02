@@ -24,14 +24,14 @@ Choose the parts that fit the scope, omitting empty ones. A discussion of a desi
 
 Keep each item short, and keep the identifiers already in use. Give each item listed by number or ID a description of a few words, so the user can tell what it is about without asking. Mark decisions and items found only in the conversation, not in a written record. Flag anything whose status is uncertain.
 
+End with the recommended next step. Update an existing record only if the user asks.
+
 ## Waiting on the user only
 
 When the argument asks for it, such as `mine` or `pending`, or the user asks only for what waits on them, such as "list everything I need to answer", report only:
 
-- **Answers needed:** each open question or choice with its ID, a few words saying what it is, and the recommended option. Put first what blocks the most work.
+- **Answers needed:** each open question, choice, or approval waiting on the user, with its ID, a few words saying what it is, and the recommended option. Put first what blocks the most work.
 - **Things to do:** actions only the user can take, such as pushing, running a command, or discussing in a fork.
 - **Running:** at most one line naming what is in progress, so the user knows it needs nothing from them.
 
-Leave out decisions already made, finished work, and background. This is the "Waiting on the user" part of the report alone, with the same rules for IDs and accepted choices, plus the running line.
-
-End with the recommended next step. Update an existing record only if the user asks.
+Leave out decisions already made, finished work, and background. This is the "Waiting on the user" part of the report alone, with the same rules for IDs and accepted choices, plus the running line. End with the recommended next step.
