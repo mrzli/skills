@@ -31,7 +31,7 @@ _Avoid_: bill, payment request
 - Define what the concept is in one or two sentences, using other glossary terms where they apply.
 - Give the code name when one exists, so readers can find it. Leave out other implementation details.
 - Group terms under subheadings when clusters form. A flat list is fine otherwise.
-- Describe the current state. Add a pending rename to the glossary together with the rename itself, and move the old name under `_Avoid_`.
+- Describe the current state. Change an entry for a rename in the same change that renames the concept, and move the old name under `_Avoid_`.
 
 ## Keep it current
 

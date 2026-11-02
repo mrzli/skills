@@ -1,4 +1,4 @@
-# GLOSSARY.md Format
+# GLOSSARY.md format
 
 `GLOSSARY.md` defines the teaching workspace's canonical terminology. Use it in all explainers, exercises, and learning records. Writing a concise definition is part of learning and provides evidence of understanding.
 

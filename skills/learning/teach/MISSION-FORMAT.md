@@ -1,4 +1,4 @@
-# MISSION.md Format
+# MISSION.md format
 
 `MISSION.md` lives at the learning workspace root and records why the user is learning this topic. Use it to choose what to teach next, which resources to recommend, and which exercises to design.
 
@@ -31,5 +31,5 @@
 - **One mission per workspace.** If the user wants to learn two unrelated things, that is two workspaces.
 - **Concrete over abstract.** "Run a half marathon by October" beats "get fitter." "Ship a Rust CLI to my team" beats "learn Rust."
 - **Clarify the purpose.** If the user cannot articulate why, interview them before writing the mission.
-- **Revise when reality shifts.** Confirm mission changes with the user, then update this file and add a learning record. Don't leave a stale mission steering future sessions.
+- **Revise when reality shifts.** Change the mission as [SKILL.md](./SKILL.md#the-mission) says. Don't leave a stale mission steering future sessions.
 - **Keep it short.** Keep `MISSION.md` within one screen.

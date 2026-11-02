@@ -1,6 +1,6 @@
-# RESOURCES.md Format
+# RESOURCES.md format
 
-`RESOURCES.md` lists trusted sources and communities for this topic. Draw knowledge for explainers from these sources rather than parametric knowledge. Use the communities to help the user learn from practice and other people.
+`RESOURCES.md` lists trusted sources and communities for this topic. Draw knowledge for explainers from these sources rather than from what you remember from training. Use the communities to help the user learn from practice and other people.
 
 ## Structure
 

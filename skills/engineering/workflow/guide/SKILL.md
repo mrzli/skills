@@ -32,8 +32,8 @@ Use the map below as a starting point. Read the recommended skill before describ
 Neighboring skills are easy to confuse:
 
 - An interface, data shape, or module boundary belongs to `design`, even when it feels like a product question. `interrogate` stress-tests a decision the user has already proposed.
-- Explaining how existing code works belongs to `clarify` or `investigate`.
-- Where the current work or discussion stands, including its decisions and status, belongs to `recap`. Restating the user's goal from their own words belongs to `restate`. Continuing in another session belongs to `handoff`. Getting back into a project after a break belongs to `warmup`. Discussing one topic in its own session and bringing the result back belongs to `spawn`, `yield`, and `collect`.
+- Explaining how existing code works belongs to `clarify`. Finding out something nobody has established yet, such as why the code behaves a certain way, belongs to `investigate`.
+- Where the current work or discussion stands, including its decisions and status, belongs to `recap`. Only what waits on the user belongs to `recap`, or to `pending` when the user calls it by name. Restating the user's goal from their own words belongs to `restate`. Continuing in another session belongs to `handoff`. Getting back into a project after a break belongs to `warmup`. Discussing one topic in its own session and bringing the result back belongs to `spawn`, `yield`, and `collect`.
 - `implement` builds one change while the user waits. `queue-work` keeps the user deciding items while the agreed ones are implemented in the background.
 
 Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without a separate design.
@@ -42,7 +42,7 @@ Choose the activity that resolves the immediate obstacle. Evidence gathering pre
 
 ## Make the recommendation usable
 
-Lead with one recommended next step, why it fits, and what the user should get from it. Provide a copyable invocation tailored to their situation, such as `$design Choose how the chart caches bars between zoom levels`. Refer to existing artifacts when relevant rather than making the user restate their contents.
+Lead with one recommended next step, why it fits, and what the user should get from it. Provide a copyable invocation tailored to their situation, in the syntax of the agent in use, such as `/design Choose how the chart caches bars between zoom levels` in Claude Code or `$design Choose how the chart caches bars between zoom levels` in Codex. Refer to existing artifacts when relevant rather than making the user restate their contents.
 
 Keep the answer short. Show a longer route or alternatives only when the user asks or when a meaningful choice needs explanation. Treat any route as adaptable, not a mandatory sequence.
 

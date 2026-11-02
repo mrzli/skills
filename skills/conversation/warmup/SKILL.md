@@ -10,9 +10,9 @@ Get the user back into the current project quickly. Read only enough to know whe
 
 Read these, stopping once the picture is clear:
 
-- The project's plan, queue, or progress files, such as `.scratch/plans/` files or `.scratch/delivery/` records, and any handoff document for this project.
+- The project's plan, queue, or progress files, such as `.scratch/delivery/` queue files, the project's backlog, and any handoff document for this project.
 - The current branch, recent commits, unmerged branches, and uncommitted changes.
-- The end of the previous agent session in this project. Run [last-session.sh](scripts/last-session.sh) from the project root. It prints the last messages of the most recent earlier Claude Code or Codex session, without tool output. If the current session already holds earlier work, such as when it was resumed or continued, pass `--skip 0` to print the current session instead. Check that the printed session ends with this request, so it is not a fork of the current one.
+- The end of the previous agent session in this project. Run [last-session.sh](scripts/last-session.sh) from the project root. It prints the last messages of the most recent earlier Claude Code or Codex session, without tool output. If the current session already holds earlier work, such as when it was resumed or continued, pass `--skip 0` to print the current session instead. With `--skip 0`, check that the printed session ends with this request, so it is the current session and not a fork of it. If it does not, raise `--skip` by one and check again.
 
 Prefer written records and the repository over the session when they disagree, and mention the mismatch.
 

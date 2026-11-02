@@ -10,3 +10,5 @@ By default, restate the other text in the same user prompt as this skill invocat
 If the user prompt contains only the skill invocation, restate the user's current goal and the problem they are trying to solve in the active conversation. Use earlier context where relevant, giving priority to the user's latest corrections.
 
 Restate your understanding in your own words. Keep it concise, and distinguish assumptions or uncertainties from what the user has stated.
+
+Then stop. Act on the restatement only after the user confirms or corrects it.
