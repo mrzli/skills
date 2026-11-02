@@ -1,6 +1,6 @@
 ---
 name: clarify
-description: Explain a topic, how something works, or part of the conversation more clearly. Use when the user asks what something means or how it works, asks whether their understanding is right, or says they do not understand. Defaults to the last response.
+description: Explain a topic, how something works, or part of the conversation more clearly. Use when the user asks what something or an item ID means, such as "what is X", "clarify X", "explain X", "in plain words", or ELI5, asks how something works or whether their understanding is right, or says they do not understand. Defaults to the last response.
 argument-hint: "[topic or conversation scope]"
 ---
 
