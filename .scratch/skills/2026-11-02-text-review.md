@@ -4,7 +4,23 @@ Backlog 1. Three fresh reviewers read all skill text, the README, this repositor
 
 No retired skill is referenced anywhere, and all links resolve. Items marked [archon] change the global rules and go to archon as a handoff.
 
-## Decisions for the user
+## Decisions
+
+The user approved everything below on 2026-11-02, with these refinements from the discussion:
+
+- 1: approved as proposed.
+- 2: approved. Design findings do not block. They go to the user as recommended changes, and an accepted one becomes a new item.
+- 3: approved as proposed, with the [archon] part.
+- 4: approved. The README follows the skill.
+- 5: approved, reworded so the global rules name no skill: "When a skill for writing text is available, apply it to responses as well as documents."
+- 6: approved. The general rule goes to the global Code design section, after the paragraph on giving data with a different role its own type: "When you rename or change something that code inside the repository uses, update every caller. Do not leave aliases, fallbacks, or deprecated paths behind for them. Keep a compatible form only for consumers outside the repository, for persisted data, or when the user asks." Its fallback lives only in `implement` ("Keep compatibility as the user's rules for code design say. Without such rules, update callers inside the repository instead of adding aliases, fallbacks, or deprecated paths."). `refactor` keeps only its migration-across-commits part, and `design` keeps only its "no transitional layers" sentence, pointing to the rule.
+- 47, added: [archon] the global rules name no specific skill or script. They describe the kind of skill to use.
+- 48, added: when a skill runs another skill for part of its work, it does not repeat the other skill's fallbacks. Remove such redundant copies, such as `refactor`'s "build the better one" and the stop-and-ask fallback in `worktree-agent.md`, and add the rule to `writing-skills`.
+- 49, added: `spawn` owns the fork rules (forks only discuss and do not change the checkout, and handoffs to other repositories pass up to the main session, which writes them). The fork script's prompt stays as the enforced copy. `handoff`, `yield`, and `collect` keep one-line pointers, and the README describes the behavior without restating the rule. `handoff` is a general skill, not a companion of `spawn`. Its pointer covers only its use inside a fork.
+- 50, added: `writing-skills` describes shared references in `skills/shared/references/`, linked from each skill's own `references/` folder, analogous to shared scripts. A file moves there only once a second skill needs it.
+- 7 to 46: approved.
+
+### Proposed decisions
 
 1. **Commits in `implement`.** `implement:36` says invoking the skill "does not request a commit", while the global rules say to give each self-contained change its own commit, and `optimize` and `worktree-agent.md` always commit. Proposed: "Commit as the user's and project's rules for commits say. Without such rules, do not commit unless asked. Push, open a pull request, or release only when asked."
 2. **Are design findings in `review-code` blocking?** `review-code:37` calls them "a recommended change, not an optional improvement" without saying whether they block integration, and the global rules integrate only when no blocking findings remain. Proposed: not blocking. They go to the user as recommended changes, and an accepted one becomes a new item.
