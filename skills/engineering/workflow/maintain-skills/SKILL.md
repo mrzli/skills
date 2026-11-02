@@ -1,7 +1,7 @@
 ---
 name: maintain-skills
 description: Review a skill collection for useful additions, improvements, overlap, and retirement, including names, descriptions, invocation settings, usage, routing tests, and comparison with external skill repositories. Use for repertoire reviews, collection-level problems, or an in-depth review of all skill text against the user's own agent instructions. Use improve-workflow to diagnose friction in completed work.
-argument-hint: "[scope, or 'in-depth' for a full text review]"
+argument-hint: "[subset of skills, or 'in-depth' for a full text review]"
 ---
 
 Keep the collection useful for the user's actual activities. Review the requested collection or subset and recommend evidence-backed changes. A review produces recommendations. Apply changes when already authorized.
