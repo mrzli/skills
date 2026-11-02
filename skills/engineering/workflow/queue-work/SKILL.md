@@ -12,7 +12,7 @@ Run up to N ready items at once, or 4 when N is not given. The user can change N
 
 Keep the queue in a temporary plan file that follows the project's conventions for plans, or in `.scratch/delivery/<slug>.md` if the project has none. If that location is ignored by Git, choose a tracked one, since the final state is committed. For each item, record:
 
-- The agreed decision, with exact names, values, and choices, so an implementer can act without the conversation.
+- The agreed decision, with exact names, values, and choices, so an implementer can act without the conversation, including, for a performance item, the metric, workload, and stop condition.
 - Its footprint: the files and areas it is expected to touch, estimated from the decision and a search of the whole repository, including docs and comments, for the names and forms it changes.
 - The earlier items it depends on.
 - Its status: agreed, in progress, integrated, or blocked.
@@ -31,7 +31,7 @@ Give each item its own background agent with a fresh context, not a fork of this
 
 Checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, must not overlap. When several implementers run, they skip those checks and name them in their report, as `worktree-agent.md` says. The main agent runs them during integration. While any implementer runs, the main agent avoids those checks too.
 
-If background agents are unavailable, say so and implement the batch in the foreground. If they cannot run concurrently, run them one at a time.
+If background agents are unavailable, say so and implement the batch in the foreground, choosing the skill per item as `worktree-agent.md` says. If they cannot run concurrently, run them one at a time.
 
 While a batch runs, keep discussing the next items and adding agreed ones to the queue.
 
