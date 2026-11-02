@@ -9,7 +9,7 @@ Keep the collection useful for the user's actual activities. Review the requeste
 
 Read the relevant skill descriptions and bodies, collection conventions, prior reviews, and available examples of use. Identify the user's recurring activities, missing support, confusing choices, and maintenance burden. When called from another workflow, reuse its findings and limit the review to the affected responsibilities.
 
-Distinguish lack of use from lack of opportunity. If relevant work occurred, determine whether a skill was undiscoverable, deliberately avoided, or unhelpful. Do not infer usage from installation or invent usage counts when records are unavailable. Rare but valuable activities can justify retaining a skill.
+Distinguish lack of use from lack of opportunity. If relevant work occurred, determine whether a skill was undiscoverable, deliberately avoided, or unhelpful. Do not infer usage from installation or invent usage counts when records are unavailable. Rare but valuable activities can justify retaining a skill. When the maintenance record lists retired skills, check the reviewed work for the situations each one covered. Recommend restoring one when that work came up and went worse without it.
 
 Check each skill's name, description, and invocation settings. The name should match the skill's current responsibility. The description should state when to use the skill in words users actually say. Invocation settings should match for every agent the collection supports, such as `disable-model-invocation` for Claude Code and `allow_implicit_invocation` in `agents/openai.yaml` for Codex. Let the agent load a skill implicitly when it can recognize the situation from the request. Keep a skill user-invoked when starting it is the user's decision.
 
@@ -40,7 +40,7 @@ For each recommendation, give the evidence, benefit, overlap or replacement impl
 
 ## Apply and evaluate
 
-For authorized changes, use [writing-skills](../../../docs/writing-skills/SKILL.md). Preserve useful local adaptations. Update affected references, catalog entries, and discovery links using repository conventions. Check callers before merging or retiring skills. Keep retired content recoverable through version control or the existing archive convention.
+For authorized changes, use [writing-skills](../../../docs/writing-skills/SKILL.md). Preserve useful local adaptations. Update affected references, catalog entries, and discovery links using repository conventions. Check callers before merging or retiring skills. Keep retired content recoverable through version control or the existing archive convention. List each retired skill in the maintenance record with the commit that removed it, the situation it covered, and a representative request.
 
 Validate skill structure and links, check routing against representative requests, and exercise changed mechanics where applicable. Separate these checks from evidence of improved outcomes in later use.
 
