@@ -82,3 +82,7 @@ The user approved everything below on 2026-11-02, with these refinements from th
 44. `:45-55`: the Quality of choices paragraphs overlap. Fold `:53` into `:47`. Consider retitling the section "Quality of recommendations and designs".
 45. `:83`: split the review paragraph at "Treat each fix for a finding".
 46. `:9`, `:23`, `:31`, `:41`, `:63`, `:79`, `:99`: small wording fixes, such as an unclear "Then", "the recommendation" without an antecedent, and "the user's branch" undefined.
+
+## Routing after install
+
+With the fixes and the in-depth mode installed at `5e77bc9`, all nine cases for `fix-bug`, `investigate`, `tidy-docs`, and `maintain-skills` passed, including the new ones: diagnosis only loads `investigate` and not `fix-bug`, an in-depth review request loads `maintain-skills`, and tidying skill docs loads `tidy-docs` and not `maintain-skills`. `spawn` and `pending` are user-invoked, so no case can load them.
