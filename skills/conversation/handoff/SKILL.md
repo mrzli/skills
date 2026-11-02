@@ -4,8 +4,6 @@ description: Compact the current session into a handoff document so another agen
 argument-hint: "[same or other machine] [scope or next focus]"
 ---
 
-In a fork opened by [spawn](../spawn/SKILL.md), do not write a handoff to another repository. Note only which repository it is for and what change it should ask for, so [yield](../yield/SKILL.md) passes that up and the main session writes the handoff on [collect](../collect/SKILL.md).
-
 ## Argument
 
 The argument can specify the target, the scope, or both, in any order:
@@ -13,7 +11,7 @@ The argument can specify the target, the scope, or both, in any order:
 - **Target:** whether the next session runs on the same machine or another one. Default to the same machine.
 - **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation.
 
-If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the current workspace, and report its path. If the handoff is to another machine, print the handoff content to the console.
+If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the project, and report its path. If the handoff is to another machine, give the whole document in your reply, so the user can copy it.
 
 ## Content
 
@@ -21,10 +19,16 @@ Summarize the current conversation in a handoff document so a fresh agent can co
 
 Include a "suggested skills" section naming the skills the next agent should use.
 
-Reference existing artifacts (specs, plans, ADRs, issues, commits, and diffs) by path or URL instead of duplicating their content. Assume another machine has the same repository. For local resources outside the repository, summarize them or include their full contents if very short.
+Refer to items as the user's rules for IDs say for files that outlive the session. Without such rules, name each item by its record and number, such as "backlog 12", rather than by an ID from this conversation.
+
+Reference existing artifacts (specs, plans, decision records, issues, commits, and diffs) by path or URL instead of duplicating their content. Assume another machine has the same repository. For local resources outside the repository, summarize them or include their full contents if very short.
 
 For work passed to another repository, ask only for the change to that repository's files, not for applying or deploying it, because its instructions decide how and when a change is applied.
 
 Redact any sensitive information, such as API keys, passwords, or personally identifiable information.
 
 When a scope is given, cover that part of the work and the context it depends on, and leave out unrelated threads.
+
+## In a fork
+
+In a fork opened by [spawn](../spawn/SKILL.md), pass a handoff to another repository up as spawn says for forks, instead of writing it.

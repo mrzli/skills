@@ -12,7 +12,7 @@ Write the note in Markdown, kept short:
 - The topic.
 - The decisions, each with its reason. Refer to the parent's items by the parent's IDs, such as those in the fork's brief, so the note reads in the parent's terms.
 - Agreed to implement: each change the user explicitly approved in this fork, with the exact names, values, and choices an implementer needs without the conversation. Give each a source ID made of this fork's name and the item's ID, such as `Claude-1/F2a`, and keep it unchanged in later versions of the note. Give an item without an ID in the conversation the next free one. Mark each item `now`, or `backlog` when the user agreed to it only for the backlog or said not to implement it yet. Leave out changes that were discussed but not approved.
-- Handoffs needed: for each handoff to another repository that the user asked for or the work called for in this fork, the target repository's path and the change it should ask for, with the exact names, values, and choices the main session needs to write it without the conversation. Do not write the handoff itself. Give each a source ID and keep it unchanged, as for agreed items.
+- Handoffs needed: for each handoff to another repository that the user asked for or the work called for in this fork, the target repository's path and the change it should ask for, with the exact names, values, and choices the main session needs to write it without the conversation. Do not write the handoff itself, as [spawn](../spawn/SKILL.md) says for forks. Give each a source ID and keep it unchanged, as for agreed items.
 - What is still open.
 
 When this fork has collected notes from sessions below it, carry their agreed items and needed handoffs into this note with their source IDs unchanged, so they reach the main session.
@@ -21,4 +21,4 @@ Use the argument, if given, to narrow or focus the note.
 
 Pass the note on standard input to [agent-joins.sh](scripts/agent-joins.sh) `yield`. The script adds the fork's name, parent, session ID, and version. If it reports that this session is not a fork opened by [spawn](../spawn/SKILL.md), tell the user and stop.
 
-Treat yielding like a command: write nothing to the user before or after it, and report only a failure.
+Treat yielding like a command. Write nothing to the user before or after it, and report only a failure.
