@@ -9,15 +9,15 @@ Produce a scoped assessment, a summary of the modules in scope, and prioritized 
 
 Use the subsystem, concern, or pain point named by the user. If none is given, inspect project purpose, recent change history, and recurring maintenance problems to choose a useful starting area. State the scope and widen it only when necessary to understand dependencies.
 
-Read project instructions, terminology, relevant architectural decisions, and the code itself. Collect the project's architecture rules from its `AGENTS.md` files and its architecture or conventions documents, such as rules about mutability, global state, or which modules may depend on a framework. Trace representative flows across interfaces, state ownership, persistence, and external dependencies. Use diagrams only when they clarify relationships better than prose.
+Read project instructions, terminology, relevant architectural decisions, and the code itself. Collect the architecture rules from the project's `AGENTS.md` files, its architecture or conventions documents, and the user's rules for code design, such as rules about mutability, global state, or which modules may depend on a framework. Trace representative flows across interfaces, state ownership, persistence, and external dependencies. Use diagrams only when they clarify relationships better than prose.
 
 ## Summarize the modules
 
 Summarize the modules in every review. For a whole-system review, cover each top-level module. For a scoped review, cover the modules in scope and name the neighbors they depend on. For each module, give its purpose, public types or interfaces, which module owns its state, what is mutable, any global state, and its external dependencies, such as a framework or a service. Use a dependency graph the project generates when one exists. Keep the summaries separate from the findings, and write them so a reader can follow them without opening the code.
 
-## Check the project's rules
+## Check the rules
 
-Check the code in scope against each collected rule. Report each violation with the rule, its source, and the files or call paths that break it. When the project states no architecture rules, say so and judge the structure by general principles.
+Check the code in scope against each collected rule. Report each violation with the rule, its source, and the files or call paths that break it. When neither the project nor the user states architecture rules, say so and judge the structure by general principles.
 
 ## Assess the structure
 

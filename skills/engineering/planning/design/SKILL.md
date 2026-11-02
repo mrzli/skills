@@ -7,7 +7,7 @@ Produce a technical decision that fits the requirements and existing system. Kee
 
 ## Understand the constraints
 
-Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Treat backward compatibility as an obligation only for consumers outside the repository, persisted data, or an explicit user requirement. Otherwise, design the target directly without transitional layers. Preserve settled product choices. Expose contradictions rather than silently redesigning the feature.
+Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Design the target directly, without transitional layers, except where the user's rules for code design keep a compatible form. Preserve settled product choices. Expose contradictions rather than silently redesigning the feature.
 
 Inspect the current approach before introducing a new abstraction or dependency. Trace who calls the affected interfaces and what they rely on, including errors, ordering, data ownership, and side effects. Resolve factual uncertainty through inspection or focused investigation.
 
@@ -27,7 +27,7 @@ When choosing an approach requires trying an interaction or comparing concrete U
 
 ## Record the decision
 
-Recommend an approach with its reasons, rejected alternatives, and remaining risks. Make routine technical choices within the authorized scope. Ask for user judgment on choices the user's rules say to ask about, and when alternatives materially change product behavior, cost, compatibility, or an established commitment that the evidence cannot settle.
+Recommend an approach with its reasons, rejected alternatives, and remaining risks. Make routine technical choices within the authorized scope. Ask for user judgment as the user's rules for approval say. Without such rules, ask when alternatives materially change product behavior, cost, compatibility, or an established commitment that the evidence cannot settle.
 
 Record accepted decisions in the existing specification or project design records. When a design is worked out in conversation across several exchanges or sessions, write each decision to the record when it is agreed, not at the end, and note rejected options and open questions there too. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Leave task breakdown out of the design record.
 

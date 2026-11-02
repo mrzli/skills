@@ -30,10 +30,12 @@ Make one change per attempt, based on a hypothesis that names a specific mechani
 
 Measure each attempt with the frozen command and run the checks. Keep a change only when the metric moves past run-to-run variation and the checks pass. Otherwise revert it completely. Never stack untested changes. Correctness and simplicity outrank the metric, so revert a win that breaks behavior, and keep a simplification that holds the number.
 
-Commit each kept change separately, following the user's and project's conventions. Log every attempt, kept or reverted, in `.scratch/perf/<slug>.md` with the hypothesis, before and after values, and verdict.
+Commit each kept change separately, following the user's and the project's rules for commits. Log every attempt, kept or reverted, in `.scratch/perf/<slug>.md` with the hypothesis, before and after values, and verdict.
 
 On a stall, try a different category of idea or reread the hot path before concluding. Stop when the stop condition is met or the remaining ideas cost more than they would save. Do not relax the target to meet it.
 
-## Report
+## Review and report
+
+Have the kept changes reviewed with [review-code](../review-code/SKILL.md), giving it the metric and target, the attempt log, and the check results. Address its findings, and measure again with the frozen command when a correction touches the measured path.
 
 Give the metric and target, baseline and final values with the change, the number of attempts kept and reverted, each kept change in one line, the log path, and the most promising untried idea.
