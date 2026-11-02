@@ -5,8 +5,8 @@ Reads the Claude Code and Codex transcripts of the project and reduces each
 command to its shape, with names, paths, and numbers replaced by
 placeholders. Prints the most frequent shapes that do more than run one
 project command, such as chains of commands, loops, and output filters, and
-the most frequent runs of two to four steps inside commands. Deciding which are worth a
-script is left to the reader.
+the most frequent runs of two to four steps inside commands. Deciding which
+are worth a script is left to the reader.
 
 Usage: repeated-steps.py [PROJECT_DIR] [--since YYYY-MM-DD] [--top N]
 """

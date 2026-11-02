@@ -22,10 +22,13 @@ A note's "Agreed to implement" items were approved by the user in the fork, and 
 
 In the main session, implement the items marked `now` through [queue-work](../../engineering/workflow/queue-work/SKILL.md) without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the queue and the backlog:
 
-- In neither: add it to the queue or the backlog, as its mark says, and start a queued item once it is ready.
+- In neither: add it to the queue or the backlog, as its mark says.
 - In the queue or the backlog with the same decision and mark: skip it.
 - In the backlog, or in the queue and not yet started, with a changed decision or mark: update it there, and move it between the queue and the backlog when its mark changed.
 - In the queue with a changed decision, already started or integrated: add it as a new item.
+- In the queue, already started or integrated, with the same decision but now marked `backlog`: ask about it in one line.
+
+Start each queued item once it is ready.
 
 ## Handoffs
 

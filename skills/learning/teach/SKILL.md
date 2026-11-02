@@ -17,7 +17,7 @@ All learning document paths below are relative to that workspace. Format links r
 - `RESOURCES.md`: Trusted sources and communities for knowledge and wisdom. Use [RESOURCES-FORMAT.md](./RESOURCES-FORMAT.md).
 - `./learning-records/*.md`: Non-obvious lessons, key insights, and prior knowledge that guide future sessions. Use [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md) for their content and filenames.
 - `./lessons/*.html`: Lessons, the main unit of instruction. See [Lessons](#lessons).
-- `./reference/*.html`: Attractive, printable summaries for quick lookup. See [Reference Documents](#reference-documents).
+- `./reference/*.html`: Attractive, printable summaries for quick lookup. See [Reference documents](#reference-documents).
 - `./assets/*`: Reusable components shared across lessons. See [Assets](#assets).
 - `GLOSSARY.md`: The topic's canonical terms, created when the user understands the first one. Use [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
 - `NOTES.md`: User preferences and working notes to consult when designing lessons and teaching.

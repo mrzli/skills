@@ -23,7 +23,7 @@ For external comparison, inspect current upstream skill instructions and require
 
 Compare candidates by trigger, outcome, procedure, dependencies, and stopping point. Shared vocabulary or steps alone do not establish redundancy. Consider whether a coordinator can reuse existing skills, and whether a small local improvement would deliver the candidate's benefit. Account for required tools, maintenance cost, and licensing when adapting external material.
 
-Compare the skills with the user's own agent instructions when the project says where they live. Check that each skill refers to their rules and that each rule lives where [writing-skills](../../../docs/writing-skills/SKILL.md) says. A change to the instructions is for the repository that manages them.
+Compare the skills with the user's own agent instructions when the project says where they live. Check each skill's references to their rules, its fallbacks, and where each rule lives, as [writing-skills](../../../docs/writing-skills/SKILL.md) says. A change to the instructions is for the repository that manages them.
 
 ## Choose changes
 
