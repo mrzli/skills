@@ -1,6 +1,6 @@
 ---
 name: queue-work
-description: Keep discussing upcoming work items with the user while background agents implement the agreed ones in parallel, in dependency order. Use by default to implement agreed items during an ongoing discussion, and when the user asks to queue work or do it in the background.
+description: Keep discussing upcoming work items with the user while background agents implement the agreed ones in parallel, in dependency order. Use by default to implement agreed items during an ongoing discussion, and when the user asks to work through agreed items or a backlog, queue work, or do it in the background.
 argument-hint: "[N]"
 ---
 

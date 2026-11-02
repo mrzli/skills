@@ -92,3 +92,8 @@ Positives: reviews caught real errors, including 3 factual errors in a docs note
 
 - `deliver`: still never loaded. On 11-02 14:43 the user asked to "review the backlog, recommend things that can be done in parallel … consider automatically doing some things … whether this would be a skill", which is the opening for folding `deliver`'s unattended guidance into `queue-work`.
 - `create-verification`: not tried. UI checks in trading-app ran through QML tests, with no manual checks seen, so the need is weaker than assumed.
+
+## Routing after install
+
+With the skills installed after the retirement merge, 10 of 11 cases for `clarify`, `queue-work`, and `guide` passed, including both new `clarify` cases (ELI5 and "in plain words"). The case moved from `deliver`, "Go through the whole review backlog, implement each item, and get it all done", loaded `implement` instead of `queue-work`. The `queue-work` description now names working through agreed items or a backlog. Rerun that case after install, together with the new `recap` case for `pending`.
+
