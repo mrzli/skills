@@ -9,7 +9,7 @@ Recommend a useful next step without requiring the user to understand the skill 
 
 Identify the desired outcome, what is already settled or completed, and what currently prevents progress. Use relevant conversation and existing project artifacts before asking the user to repeat information. Inspect only enough context to choose the next activity. A routing question does not require a full codebase review.
 
-A new project may have no repository, specification, or technical choices yet. Start from the idea and explain the next activity in ordinary language. If a missing distinction would change the recommendation, ask one focused question, offering concrete possibilities when helpful.
+For a new project with no repository or technical choices yet, explain the next activity in ordinary language. A conversation may be enough before any skill applies. If a missing distinction would change the recommendation, ask one focused question, offering concrete possibilities when helpful.
 
 ## Choose the next activity
 
@@ -36,7 +36,7 @@ Neighboring skills are easy to confuse:
 - Where the current work or discussion stands, including its decisions and status, belongs to `recap`. Restating the user's goal from their own words belongs to `restate`. Continuing in another session belongs to `handoff`. Getting back into a project after a break belongs to `warmup`. Discussing one topic in its own session and bringing the result back belongs to `spawn`, `yield`, and `collect`.
 - `implement` builds one change while the user waits. `queue-work` keeps the user deciding items while the agreed ones are implemented in the background.
 
-Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without separate design, specification, or planning documents.
+Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without a separate design.
 
 `guide` recommends a route and does not carry out the work. A request to fix a bug belongs with `fix-bug`. A request to understand the cause without edits belongs with `investigate`. Recommend a conversation or explanation when no specialized workflow is needed. Sustained learning may fit `teach` if available.
 

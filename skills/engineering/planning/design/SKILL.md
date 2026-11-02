@@ -23,12 +23,12 @@ Describe the important interfaces, state transitions, data changes, and failure 
 
 Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility or performance, gather evidence with a focused experiment before presenting it as settled. Separate evidence, assumptions, and expected benefits.
 
-When choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives, build a small disposable demonstration and use it and the user's feedback as evidence for the design.
+When choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives, build a small disposable demonstration in the project's scratch area or a temporary directory, and use it and the user's feedback as evidence for the design.
 
 ## Record the decision
 
 Recommend an approach with its reasons, rejected alternatives, and remaining risks. Make routine technical choices within the authorized scope. Ask for user judgment on choices the user's rules say to ask about, and when alternatives materially change product behavior, cost, compatibility, or an established commitment that the evidence cannot settle.
 
-Record accepted decisions in the existing specification or project design records. When a design is worked out in conversation across several exchanges or sessions, write each decision to the record when it is agreed, not at the end, and note rejected options and open questions there too. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Keep task breakdown in the implementation plan rather than duplicating it here.
+Record accepted decisions in the existing specification or project design records. When a design is worked out in conversation across several exchanges or sessions, write each decision to the record when it is agreed, not at the end, and note rejected options and open questions there too. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Leave task breakdown out of the design record.
 
 Finish when the next implementer can understand the chosen approach, constraints, verification strategy, and remaining blockers. Design alone does not request production implementation.

@@ -36,7 +36,7 @@ Do not propose these again without new evidence:
 
 ## Retired
 
-The user retired these to keep the collection to what they use, and wants them back when they would help. Each review checks the reviewed work for these situations, and recommends restoring a skill when the situation came up and the work went worse without it. Restore one with `git checkout <commit>^ -- <path>`, then run `scripts/sync-skills.sh`.
+The user retired these to keep the collection to what they use, and wants them back when they would help. Each review checks the reviewed work for these situations, and recommends restoring a skill when the situation came up and the work went worse without it. Restore one with `git checkout <commit>^ -- <path>`, finding its path with `git show --stat <commit>`. Restore its README, `guide`, and caller references from the same commit's diff, then follow the repository's steps for a skill change.
 
 | Skill | Retired in | Situation it covered | Representative request |
 | --- | --- | --- | --- |
@@ -51,11 +51,7 @@ The user retired these to keep the collection to what they use, and wants them b
 | `create-verification` | `0503470`, 2026-11-02 | Agents need a scripted way to drive the real application, when the user checks behavior by hand | "I keep having to check the chart by hand after every change, can agents check it themselves?" |
 | `explore` | `0503470`, 2026-11-02 | A vague interest or difficulty with no goal yet | "I'm kind of interested in something around music, not sure what." |
 
-## Rarely used
-
-`maintain-skills` and `writing-skills` are used in this repository, which the usage counts exclude.
-
 ## Method notes
 
-- `skill-usage.sh` counts sessions, and nested forks share them, so it undercounts `spawn`, `yield`, and `collect`. Claude Code transcripts begin on 2026-10-06, when the user started using Claude, and are kept for 365 days. Codex transcripts go back to 2026-07.
+- `skill-usage.sh` counts sessions, and nested forks share them, so it undercounts `spawn`, `yield`, and `collect`. It excludes this repository, where `maintain-skills` and `writing-skills` are used. Claude Code transcripts begin on 2026-10-06, when the user started using Claude, and are kept for 365 days. Codex transcripts go back to 2026-07.
 - Routing cases run in fresh sessions, so they cannot reproduce misses in long sessions, such as `recap` not loading. Use transcript audits for those.
