@@ -95,3 +95,5 @@ Positives: reviews caught real errors, including 3 factual errors in a docs note
 ## Routing after install
 
 With the skills installed after the retirement merge, 10 of 11 cases for `clarify`, `queue-work`, and `guide` passed, including both new `clarify` cases (ELI5 and "in plain words"). The case moved from `deliver`, "Go through the whole review backlog, implement each item, and get it all done", loaded `implement` instead of `queue-work`. The `queue-work` description now names working through agreed items or a backlog. Rerun that case after install, together with the new `recap` case for `pending`.
+
+After the next install, both cases passed: the backlog case loaded `queue-work`, and "Again, list everything I need to answer and do." loaded `recap`.
