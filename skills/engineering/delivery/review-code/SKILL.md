@@ -38,4 +38,4 @@ Present findings in priority order. For each, give the affected file and locatio
 
 Finish with a concise assessment of requirements coverage, blocking findings, and verification limitations. If no actionable findings remain, say so without implying that unverified behavior is proven correct.
 
-When corrections are already authorized, address findings within scope, except design findings, which go to the user, and recheck the affected behavior and diff. Otherwise, return findings to the user or calling workflow. A follow-up review verifies the actual corrections and their consequences before marking findings resolved.
+When corrections are already authorized, address findings within scope and recheck the affected behavior and diff. Design findings still go to the user. Otherwise, return findings to the user or calling workflow. A follow-up review verifies the actual corrections and their consequences before marking findings resolved.

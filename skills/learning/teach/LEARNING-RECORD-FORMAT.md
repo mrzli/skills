@@ -18,7 +18,7 @@ A single paragraph is enough. Record what is now known and why it changes what t
 
 Include these only when useful. Most records won't need them.
 
-- **Status** frontmatter, `status: active` or `status: superseded by LR-NNNN`. Useful when an earlier understanding turns out to be wrong and is replaced.
+- **Status** frontmatter, `status: active` or `status: superseded by LR-NNNN`, for when an earlier understanding turns out to be wrong and is replaced.
 - **Evidence**: how the user demonstrated the understanding (a question answered, an exercise completed, prior experience cited). Useful when the claim might be revisited.
 - **Implications**: what this unlocks or rules out for future sessions. Worth recording when non-obvious.
 
