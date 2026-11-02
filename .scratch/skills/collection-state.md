@@ -2,6 +2,10 @@
 
 Where the collection stands, for the next `maintain-skills` review. Keep only what is still open or still guides decisions. Dated reviews in this folder are history, with the evidence behind each decision. The latest is the [2026-11-02 review](2026-11-02-collection-review.md).
 
+## Last in-depth text review
+
+2026-11-02, [text review](2026-11-02-text-review.md), against archon `965ca62` and the skills at master `446260d`. Recommend the next one when the global rules or many skills have changed substantially since then.
+
 ## Next review
 
 Start from Matt Pocock `4ae2317`, pstack `ae5650f`, and transcripts after 2026-11-02. Most 10-27 trials barely ran, because the longest session used older skill copies, so judge them again.
