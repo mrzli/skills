@@ -5,7 +5,7 @@ Follows the [2026-10-27 review](2026-10-27-collection-review.md). The user's dec
 - 1, 4, and 5: approved and applied in this repository.
 - 2: approved as a trial. 2, 3, and 6 are handed off to archon in `/tmp/handoff-archon-items-and-improvements.md`.
 - 6: the user types "elif" for ELI5, so it is a shorthand rather than a mishearing. It still goes beside the dictation list.
-- `deliver`: explained, decision pending.
+- `deliver`: retired. `queue-work` already keeps a queue file and checks each item as it integrates, so the only part it lacked was choosing the skill per item. Implementers now pick `fix-bug`, `refactor`, or `optimize` per item, and `implement` otherwise. A backlog mode that proposes items to run in parallel waits until the need recurs.
 
 ## Scope and sources
 
