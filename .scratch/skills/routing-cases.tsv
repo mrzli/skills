@@ -20,7 +20,7 @@
 ~/projects/personal/mrzli/trading-app	review-code	The last commit works, but is there a better way to design it? Look it over.
 ~/projects/personal/mrzli/trading-app	review-architecture	Take a look at the overall structure of this repo and tell me what is worth improving.
 ~/projects/personal/mrzli/trading-app	review-product	Is this chart app actually useful for how I trade? What should I improve or drop?
-~/projects/personal/mrzli/trading-app	deliver	Go through the whole review backlog, implement each item, and get it all done.
+~/projects/personal/mrzli/trading-app	queue-work	Go through the whole review backlog, implement each item, and get it all done.
 ~/projects/personal/mrzli/trading-app	guide	I have this chart app half built, what should I do next?
 ~/projects/personal/mrzli/trading-app	recap	Relist what is left from the backlog.
 ~/projects/personal/mrzli/trading-app	!handoff	Summarize what we did so far.

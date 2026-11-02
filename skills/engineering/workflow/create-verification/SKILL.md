@@ -38,4 +38,4 @@ Run the new skill end to end once: launch, doctor, drive one mapped feature, cap
 
 If the proof ran in a stand-in for the real target, such as a container instead of a fresh machine, list the steps the stand-in performed that the target will not. Those steps remain unverified.
 
-Report the skill and tool paths, the feature proved, the evidence location, and any unverified parts. Tell the user that [implement](../../delivery/implement/SKILL.md), [fix-bug](../../delivery/fix-bug/SKILL.md), and [deliver](../deliver/SKILL.md) use the skill when it exists, and that the feature map should be updated when user-facing features change.
+Report the skill and tool paths, the feature proved, the evidence location, and any unverified parts. Tell the user that [implement](../../delivery/implement/SKILL.md) and [fix-bug](../../delivery/fix-bug/SKILL.md) use the skill when it exists, and that the feature map should be updated when user-facing features change.
