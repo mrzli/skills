@@ -1,6 +1,7 @@
 ---
 name: maintain-skills
-description: Review a skill collection for useful additions, improvements, overlap, and retirement, including names, descriptions, invocation settings, usage, routing tests, and comparison with external skill repositories. Use for repertoire reviews or collection-level problems. Use improve-workflow to diagnose friction in completed work.
+description: Review a skill collection for useful additions, improvements, overlap, and retirement, including names, descriptions, invocation settings, usage, routing tests, and comparison with external skill repositories. Use for repertoire reviews, collection-level problems, or an in-depth review of all skill text against the user's own instructions. Use improve-workflow to diagnose friction in completed work.
+argument-hint: "[scope, or 'in-depth' for a full text review]"
 ---
 
 Keep the collection useful for the user's actual activities. Review the requested collection or subset and recommend evidence-backed changes. A review produces recommendations. Apply changes when already authorized.
@@ -24,6 +25,20 @@ For external comparison, inspect current upstream skill instructions and require
 Compare candidates by trigger, outcome, procedure, dependencies, and stopping point. Shared vocabulary or steps alone do not establish redundancy. Consider whether a coordinator can reuse existing skills, and whether a small local improvement would deliver the candidate's benefit. Account for required tools, maintenance cost, and licensing when adapting external material.
 
 Compare the skills with the user's own agent instructions when the project says where they live. Check each skill's references to their rules, its fallbacks, and where each rule lives, as [writing-skills](../../../docs/writing-skills/SKILL.md) says. A change to the instructions is for the repository that manages them.
+
+## In-depth text review
+
+When the user asks for an in-depth review, read the whole text instead of starting from evidence of use. That covers every skill and its companion files, the collection's own instructions and catalog, and the user's own agent instructions when the project says where they live. Check for:
+
+- Contradictions between skills, between a skill and the user's instructions, and within those instructions.
+- References to rules or sections that do not exist, and missing fallbacks.
+- Rules repeated across skills or placed in the wrong file.
+- Stale references, broken links, descriptions, and invocation settings.
+- Unclear wording, as [writing-text](../../../docs/writing-text/SKILL.md) describes.
+
+When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Save the numbered findings and the user's decisions in a maintenance record, and note the review's date where later reviews start. Changes to the user's instructions go to the repository that manages them.
+
+In a routine review, recommend an in-depth review when the user's instructions or many skills changed substantially since the last one.
 
 ## Choose changes
 

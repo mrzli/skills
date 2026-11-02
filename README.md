@@ -51,7 +51,7 @@ spawn needs Claude Code running in herdr or tmux. yield and collect work only in
 Most changes come from my own work with the agents. Two of the skills review that work:
 
 - [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) goes through my past sessions, such as the places where I corrected the agent or repeated a step by hand, and proposes the smallest change to a skill, the project's instructions, or its tooling that would have prevented the problem.
-- [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) reviews the collection as a whole. It counts how often I use each skill in my session history, checks that each name and description matches what I actually ask for, and keeps the skills consistent with those global instructions. It runs routing tests, realistic requests that check a fresh agent loads the right skill.
+- [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) reviews the collection as a whole. It counts how often I use each skill in my session history, checks that each name and description matches what I actually ask for, and keeps the skills consistent with those global instructions. It runs routing tests, realistic requests that check a fresh agent loads the right skill. When I ask for an in-depth review, it reads all the skill text against my global instructions, line by line.
 
 maintain-skills also looks through [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack) for new ideas. It adopts one only when it fits how I work and solves a problem I actually have.
 
@@ -122,7 +122,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | [queue-work](skills/engineering/workflow/queue-work/SKILL.md) | Keep discussing upcoming work items while background agents implement the agreed ones in parallel, in dependency order. |
 | [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next engineering activity or skill, with a concrete example invocation. |
 | [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) | Improve the development process using evidence from completed work. |
-| [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) | Review the skill collection and external sources for useful additions, improvements, consolidation, or retirement. |
+| [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) | Review the skill collection and external sources for useful additions, improvements, consolidation, or retirement, or read all its text in depth. |
 
 ## Credits and license
 
