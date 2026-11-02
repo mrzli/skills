@@ -10,6 +10,7 @@ Start from Matt Pocock `4ae2317`, pstack `ae5650f`, and transcripts after 2026-1
 
 | Change | Since | Keep if | Revise or revert if |
 | --- | --- | --- | --- |
+| `recap` has a view of only what waits on the user, and the user-invoked `pending` runs it (handoff from trading-app) | 11-02 | Requests like "list everything I need to answer" get the short view, and the user uses `/pending` | The view drops something the user needed, or `pending` goes unused |
 | `clarify` description names "what is X", "clarify X", "explain X", "in plain words", and ELI5 | 11-02 | Explanation requests load `clarify`. Before, it was 2 of about 70, including a literal "clarify B2" | Loads stay rare, or it loads for recaps |
 | Global rule: say what kind each introduced item is and why it matters (archon handoff) | 11-02 | No more "what is this, a bug or an improvement?" in forks | The frustration continues, or item introductions grow long |
 | Global rule: a small file or helper that improves the design is made and listed, not asked about (archon handoff) | 11-02 | No "if it's an improvement, just do it" replies | A lasting change the user wanted to see goes unasked |
