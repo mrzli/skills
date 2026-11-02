@@ -44,5 +44,5 @@ Do not propose these again without new evidence:
 
 ## Method notes
 
-- `skill-usage.sh` counts sessions, and nested forks share them, so it undercounts `spawn`, `yield`, and `collect`. Transcripts before 2026-10-06 have expired.
+- `skill-usage.sh` counts sessions, and nested forks share them, so it undercounts `spawn`, `yield`, and `collect`. Claude Code transcripts begin on 2026-10-06, when the user started using Claude, and are kept for 365 days. Codex transcripts go back to 2026-07.
 - Routing cases run in fresh sessions, so they cannot reproduce misses in long sessions, such as `recap` not loading. Use transcript audits for those.
