@@ -1,6 +1,6 @@
 ---
 name: maintain-skills
-description: Review a skill collection for useful additions, improvements, overlap, and retirement, including names, descriptions, invocation settings, usage, routing tests, and comparison with external skill repositories. Use for repertoire reviews, collection-level problems, or an in-depth review of all skill text against the user's own instructions. Use improve-workflow to diagnose friction in completed work.
+description: Review a skill collection for useful additions, improvements, overlap, and retirement, including names, descriptions, invocation settings, usage, routing tests, and comparison with external skill repositories. Use for repertoire reviews, collection-level problems, or an in-depth review of all skill text against the user's own agent instructions. Use improve-workflow to diagnose friction in completed work.
 argument-hint: "[scope, or 'in-depth' for a full text review]"
 ---
 
@@ -14,6 +14,8 @@ Distinguish lack of use from lack of opportunity. If relevant work occurred, det
 
 Check each skill's name, description, and invocation settings. The name should match the skill's current responsibility. The description should state when to use the skill in words users actually say. Invocation settings should match for every agent the collection supports, such as `disable-model-invocation` for Claude Code and `allow_implicit_invocation` in `agents/openai.yaml` for Codex. Let the agent load a skill implicitly when it can recognize the situation from the request. Keep a skill user-invoked when starting it is the user's decision.
 
+Compare the skills with the user's own agent instructions when the project says where they live. Check each skill's references to their rules, its fallbacks, and where each rule lives, as [writing-skills](../../../docs/writing-skills/SKILL.md) says. A change to the instructions is for the repository that manages them.
+
 When local transcripts are available, run [skill-usage.sh](scripts/skill-usage.sh) on the collection root, excluding the collection's own repository with `--exclude-cwd`. It counts sessions that invoked or read each skill in Claude Code and Codex transcripts. Save its output in the maintenance record, because transcripts can expire. Counts show recorded use, not opportunity.
 
 ## Explore sources
@@ -24,19 +26,17 @@ For external comparison, inspect current upstream skill instructions and require
 
 Compare candidates by trigger, outcome, procedure, dependencies, and stopping point. Shared vocabulary or steps alone do not establish redundancy. Consider whether a coordinator can reuse existing skills, and whether a small local improvement would deliver the candidate's benefit. Account for required tools, maintenance cost, and licensing when adapting external material.
 
-Compare the skills with the user's own agent instructions when the project says where they live. Check each skill's references to their rules, its fallbacks, and where each rule lives, as [writing-skills](../../../docs/writing-skills/SKILL.md) says. A change to the instructions is for the repository that manages them.
-
 ## In-depth text review
 
-When the user asks for an in-depth review, read the whole text instead of starting from evidence of use. That covers every skill and its companion files, the collection's own instructions and catalog, and the user's own agent instructions when the project says where they live. Check for:
+When the user asks for an in-depth review, read the whole text instead of starting from evidence of use. It replaces the usage and source steps unless the user asks for them too. Read every skill and its companion files, the collection's own instructions and catalog, and the user's own agent instructions. Beyond the comparison with the user's instructions above, check for:
 
 - Contradictions between skills, between a skill and the user's instructions, and within those instructions.
-- References to rules or sections that do not exist, and missing fallbacks.
-- Rules repeated across skills or placed in the wrong file.
-- Stale references, broken links, descriptions, and invocation settings.
+- References to rules or sections that do not exist.
+- Rules repeated across skills.
+- Stale references, descriptions, and invocation settings, and broken links.
 - Unclear wording, as [writing-text](../../../docs/writing-text/SKILL.md) describes.
 
-When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Save the numbered findings and the user's decisions in a maintenance record, and note the review's date where later reviews start. Changes to the user's instructions go to the repository that manages them.
+When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Save the numbered findings and the user's decisions in the maintenance record, and note the review's date in the part later reviews start from.
 
 In a routine review, recommend an in-depth review when the user's instructions or many skills changed substantially since the last one.
 
