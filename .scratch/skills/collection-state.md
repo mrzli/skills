@@ -25,10 +25,6 @@ Start from Matt Pocock `4ae2317`, pstack `ae5650f`, and transcripts after 2026-1
 
 Watch without a change: responses that are too long ("put this simply"), and implementers rerunning the full verify after one failed check.
 
-## Pending decisions
-
-- `create-verification`: worth one real trial in trading-app if UI behavior is still checked by hand. The user has not decided.
-
 ## Declined
 
 Do not propose these again without new evidence:
@@ -38,9 +34,26 @@ Do not propose these again without new evidence:
 - Principle skills, multi-model or cloud orchestration, PR stacks, `why`, and video or diagram catch-ups such as `ketchup-video`: they don't fit solo terminal work, or the global `AGENTS.md` and existing skills cover them.
 - Covered locally: `ketchup` and `recall` (`recap`), `bro` (`clarify`), `in-your-own-words` (`restate`), and `sharpen` (`restate`, `guide`, and `design`).
 
-## Keep, rarely used
+## Retired
 
-`explore`, `prototype`, `start-project`, `release`, and `review-product` have little or no recorded use, because their activities have not come up. `maintain-skills` and `writing-skills` are used in this repository, which the usage counts exclude. Retire none before several months without use.
+The user retired these to keep the collection to what they use, and wants them back when they would help. Each review checks the reviewed work for these situations, and recommends restoring a skill when the situation came up and the work went worse without it. Restore one with `git checkout <commit>^ -- <path>`, then run `scripts/sync-skills.sh`.
+
+| Skill | Retired in | Situation it covered | Representative request |
+| --- | --- | --- | --- |
+| `deliver` | `99703ea`, 2026-11-02 | Hand over a whole feature or backlog to run unattended through every stage | "Go through the whole review backlog, implement each item, and get it all done." |
+| `write-spec` | `0503470`, 2026-11-02 | Agreed behavior needs a durable specification with acceptance criteria to guide implementation | "Write down what we agreed about the indicator panel so it can guide implementation." |
+| `plan` | `0503470`, 2026-11-02 | Agreed work is too large for one change and needs tasks with dependencies | "Break the renderer unification into tasks we can do one by one." |
+| `shape-feature` | `0503470`, 2026-11-02 | A feature idea needs its user problem, scope, and exclusions pinned down before design | "I want to add drawing tools to the chart, but I'm not sure what exactly they should do yet." |
+| `start-project` | `0503470`, 2026-11-02 | A new project needs its purpose, users, and first useful scope | "I'm thinking of starting a new app for tracking my workouts. Help me figure out what it should be." |
+| `prototype` | `0503470`, 2026-11-02 | A UI or interaction choice needs alternatives the user can try. `design` now builds a small disposable demonstration itself | "Show me two or three ways the crosshair tooltip could look so I can pick one." |
+| `review-product` | `0503470`, 2026-11-02 | Judge whether a product helps its users, from feedback and usage | "Is this chart app actually useful for how I trade? What should I improve or drop?" |
+| `release` | `0503470`, 2026-11-02 | Publish a version or deploy by a procedure, then verify the result. mrzli.github.io deploys through a GitHub Action | "Publish the setup changes to the main machine and check they applied." |
+| `create-verification` | `0503470`, 2026-11-02 | Agents need a scripted way to drive the real application, when the user checks behavior by hand | "I keep having to check the chart by hand after every change, can agents check it themselves?" |
+| `explore` | `0503470`, 2026-11-02 | A vague interest or difficulty with no goal yet | "I'm kind of interested in something around music, not sure what." |
+
+## Rarely used
+
+`maintain-skills` and `writing-skills` are used in this repository, which the usage counts exclude.
 
 ## Method notes
 

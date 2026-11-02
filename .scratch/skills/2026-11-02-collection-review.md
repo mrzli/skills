@@ -7,6 +7,8 @@ Follows the [2026-10-27 review](2026-10-27-collection-review.md). The user's dec
 - 6: the user types "elif" for ELI5, so it is a shorthand rather than a mishearing. It still goes beside the dictation list.
 - `deliver`: retired. `queue-work` already keeps a queue file and checks each item as it integrates, so the only part it lacked was choosing the skill per item. Implementers now pick `fix-bug`, `refactor`, or `optimize` per item, and `implement` otherwise. A backlog mode that proposes items to run in parallel waits until the need recurs.
 
+- Collection usefulness, discussed after the review: the user retired the nine skills from the 10-02 engineering set that had little or no use: `write-spec`, `plan`, `shape-feature`, `start-project`, `prototype`, `review-product`, `release`, `create-verification`, and `explore`. The set was built by Codex from a map of the whole engineering process, not from observed needs, and a month of use showed which parts fit. They are listed in [collection-state.md](collection-state.md) with the situations to watch for, and `maintain-skills` now checks for those situations.
+
 ## Scope and sources
 
 - The resolved skill was `skills/engineering/workflow/maintain-skills/SKILL.md`. The installed copy is identical.
