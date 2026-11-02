@@ -7,7 +7,7 @@ Produce a technical decision that fits the requirements and existing system. Kee
 
 ## Understand the constraints
 
-Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Design the target directly, without transitional layers, except for a compatible form the user's rules for code design call for. Without such rules, keep one only for consumers outside the repository, persisted data, or an explicit user request. Preserve settled product choices. Expose contradictions rather than silently redesigning the feature.
+Read the request or specification, project instructions, relevant code, tests, and existing architectural decisions. Identify required behavior, compatibility obligations, operating constraints, and the decision that remains open. Design the target directly, without transitional layers, except where the user's rules for code design call for a compatible form. Without such rules, keep one only for consumers outside the repository, persisted data, or an explicit user request. Preserve settled product choices. Expose contradictions rather than silently redesigning the feature.
 
 Inspect the current approach before introducing a new abstraction or dependency. Trace who calls the affected interfaces and what they rely on, including errors, ordering, data ownership, and side effects. Resolve factual uncertainty through inspection or focused investigation.
 
