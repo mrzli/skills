@@ -14,6 +14,7 @@ Patterns that make text read as generated. Remove each one found, preserving mea
 
 - Trailing -ing phrases that add vague significance: "…, ensuring reliability", "…, highlighting the need".
 - Vague attributions: "experts believe", "it is widely considered". Name the source or cut the claim.
+- Forced contrasts, such as "not X, but Y" where nobody suggested X. State Y directly.
 - Forced groups of three. Use the natural number of items.
 - False ranges: "from X to Y" where X and Y are not on one scale.
 - Colons used as mid-sentence connectors. Colons belong before a list or an example.
