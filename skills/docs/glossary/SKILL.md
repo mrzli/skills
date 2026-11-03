@@ -36,7 +36,7 @@ _Avoid_: bill, payment request
 
 ## Keep it current
 
-Read the glossary before naming a concept, and check the name against the built-in names of the frameworks and languages it is used with. Use the glossary's terms in code, documentation, and conversation.
+Read the glossary before naming a concept, and check a new name against the built-in names of the frameworks and languages it is used with. Use the glossary's terms in code, documentation, and conversation.
 
 Update an entry as soon as its term is settled, renamed, or found unclear. Do not batch updates until the end of the work.
 
