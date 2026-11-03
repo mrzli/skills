@@ -28,6 +28,7 @@ _Avoid_: bill, payment request
 ```
 
 - Choose one term per concept, preferring the name the user finds clearest. List rejected synonyms under `_Avoid_`.
+- No two concepts share a name. A term differs from the project's other terms and from the built-in names of the frameworks and languages it is used with. When a new or existing term clashes, rename whichever of the two fits its concept worse.
 - Define what the concept is in one or two sentences, using other glossary terms where they apply.
 - Give the code name when one exists, so readers can find it. Leave out other implementation details.
 - Group terms under subheadings when clusters form. A flat list is fine otherwise.
