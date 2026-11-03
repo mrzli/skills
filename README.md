@@ -22,7 +22,7 @@ Without `--user`, the script links the skills only into this repository's own `.
 
 You don't need to name a skill. The agent loads one on its own when a request matches it, such as "find out why the chart stutters and fix it" for [fix-bug](skills/engineering/delivery/fix-bug/SKILL.md). When you're not sure what to do next, ask, and [guide](skills/engineering/workflow/guide/SKILL.md) suggests the next skill.
 
-Seven skills load only when you call them by name, such as `/spawn` in Claude Code: collect, pending, restate, spawn, teach, warmup, and yield.
+Eight skills load only when you call them by name, such as `/spawn` in Claude Code: collect, pending, progress, restate, spawn, teach, warmup, and yield.
 
 ## How I use them
 
@@ -78,7 +78,8 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [pending](skills/conversation/pending/SKILL.md) | List only what waits on the user: answers needed, actions to take, and one line on what is running. |
-| [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status, or only what waits on the user. |
+| [progress](skills/conversation/progress/SKILL.md) | Report only the progress of queued work: what is done, running, and remaining, with estimates. |
+| [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status, only what waits on the user, or only the progress of queued work. |
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
 | [spawn](skills/conversation/spawn/SKILL.md) | Open a fork in a new terminal tab to discuss one point, from a short brief or a full copy of the conversation. |
 | [warmup](skills/conversation/warmup/SKILL.md) | Get back into a project after a break, with a very short summary and a few small steps. |
