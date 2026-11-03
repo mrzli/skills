@@ -3,7 +3,7 @@ name: fix-bug
 description: Diagnose unexpected software behavior, repair its cause, and verify the fix. Use for a reported failure or regression when the user wants it fixed, rather than only investigated.
 ---
 
-Carry the reported problem through diagnosis, repair, verification, and review. A request for diagnosis only belongs to [investigate](../../investigation/investigate/SKILL.md).
+Carry the reported problem through diagnosis, repair, verification, and review. A request for diagnosis only belongs to `investigate`.
 
 ## Establish the failure
 
@@ -11,7 +11,7 @@ Read the report, relevant instructions, code, tests, and available logs. Establi
 
 Build the smallest useful reproduction or check that detects the reported symptom. Confirm that it fails for the relevant reason, rather than because of unrelated setup problems. Use an existing test, a CLI or API invocation, a browser interaction, or a focused harness as appropriate. Prefer a fast, repeatable signal, but do not demand perfect minimization before useful investigation can proceed.
 
-For intermittent failures, capture the conditions and failure rate over repeated trials. For performance regressions, establish a comparable baseline and workload, and vet measurements with [optimize's measurement checks](../optimize/references/measurement.md). Use [optimize](../optimize/SKILL.md) instead when the goal is improving performance rather than restoring it. Keep captured evidence relevant and exclude secrets from shared logs and artifacts.
+For intermittent failures, capture the conditions and failure rate over repeated trials. For performance regressions, establish a comparable baseline and workload, and vet measurements with [measurement.md](references/measurement.md). Use `optimize` instead when the goal is improving performance rather than restoring it. Keep captured evidence relevant and exclude secrets from shared logs and artifacts.
 
 ## Diagnose before repairing
 
@@ -21,7 +21,7 @@ If reproduction is unavailable, continue useful static analysis or log inspectio
 
 ## Repair and verify
 
-Use [implement](../implement/SKILL.md) for the bounded repair, carrying forward the cause, expected behavior, reproduction, and constraints. Correct the cause rather than merely suppressing the symptom. Handling a state is the fix when the system may legitimately be in that state. When the state should never occur, find what produced it instead of guarding where it surfaced. Include other affected paths when they share that cause and remain within scope.
+Use `implement` for the bounded repair, carrying forward the cause, expected behavior, reproduction, and constraints. Correct the cause rather than merely suppressing the symptom. Handling a state is the fix when the system may legitimately be in that state. When the state should never occur, find what produced it instead of guarding where it surfaced. Include other affected paths when they share that cause and remain within scope.
 
 Turn the reproduction into regression coverage where practical. Establish that the check detects the original failure and passes after the repair. Rerun the original scenario as well as relevant neighboring behavior and project checks, using the project's verification skill or documented verification procedure when one exists. For intermittent or performance problems, compare equivalent trials and report the limits of the evidence.
 
