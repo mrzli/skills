@@ -4,7 +4,7 @@ description: Take in the notes yielded by the sessions below this one, at any de
 disable-model-invocation: true
 ---
 
-Bring the results of the sessions below this one into the conversation. Each fork wrote its note with `yield`.
+Bring the results of the sessions below this one into the conversation. Each fork wrote its note with the `yield` skill.
 
 Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It says whether this session is a main session or a fork and gives its tree's ID, the start of the main session's session ID. It prints the notes from the sessions below this one, at any depth, that are new or changed since this session last collected, and records them as read. A note stays until every session above its fork has collected its latest version.
 
@@ -42,7 +42,7 @@ Every yield repeats the fork's whole picture, so check the latest file for that 
 
 ## In a fork
 
-Implement nothing and write no handoffs, as `spawn` says for forks. Carry the agreed items and needed handoffs into this fork's next `yield`.
+Implement nothing and write no handoffs, as `spawn` says for forks. Carry the agreed items and needed handoffs into the next note this fork writes with the `yield` skill.
 
 ## Inactive trees
 

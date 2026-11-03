@@ -5,7 +5,7 @@ argument-hint: "[focus]"
 disable-model-invocation: true
 ---
 
-Record what this fork has resolved so far, so the sessions above it can take it in with `collect` without the user copying summaries. Each fork has one note. Yielding again replaces it with the latest state, so write the whole picture each time, not only what changed.
+Record what this fork has resolved so far, so the sessions above it can take it in with the `collect` skill without the user copying summaries. Each fork has one note. Yielding again replaces it with the latest state, so write the whole picture each time, not only what changed.
 
 Write the note in Markdown, kept short:
 

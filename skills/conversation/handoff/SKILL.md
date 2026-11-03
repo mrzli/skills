@@ -31,4 +31,4 @@ When a scope is given, cover that part of the work and the context it depends on
 
 ## In a fork
 
-In a fork opened by `spawn`, pass a handoff to another repository up as spawn says for forks, instead of writing it.
+In a fork opened by the `spawn` skill, pass a handoff to another repository up as that skill says for forks, instead of writing it.
