@@ -8,8 +8,7 @@ You implement queued items in your own Git worktree while the main agent keeps d
   - `refactor` for a restructuring that keeps behavior.
   - `optimize` for a measured performance goal.
   - `implement` for anything else.
-
-  Where the chosen skill asks to agree with or propose to the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief. If the brief does not give it, stop at that item and report the question.
+- Where the chosen skill asks to agree with or propose to the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief. If the brief does not give it, stop at that item and report the question.
 - Commit as the user's rules for commits say. Without such rules, give each self-contained change its own commit, so an item may have several.
 - Run the project's required checks. After a check fails, rerun checks as `implement` says.
 - Leave the queue file to the main agent.
