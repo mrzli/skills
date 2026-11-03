@@ -29,7 +29,7 @@ Start from Matt Pocock `4ae2317`, pstack `ae5650f`, and transcripts after 2026-1
 | `recap` description covers status and single-topic recaps | 10-27 | Recap requests in long sessions load `recap`. Before, it was 4 of about 14 | It loads for requests to explain one item, which belong to `clarify` |
 | A working design with a clearly better alternative is a recommended change in `review-code`, and `queue-work` judges implementers' choices by the user's rules | 10-27 | Reviews and reports recommend design changes that the user takes up, without the user first asking for a better design | Reviews fill up with optional notes about style, or a clearly better design still goes unmentioned |
 
-Watch without a change: responses that are too long ("put this simply"), and implementers rerunning the full verify after one failed check.
+Watch without a change: responses that are too long ("put this simply").
 
 ## Declined
 
