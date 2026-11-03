@@ -78,7 +78,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [pending](skills/conversation/pending/SKILL.md) | List only what waits on the user: answers needed, actions to take, and one line on what is running. |
-| [progress](skills/conversation/progress/SKILL.md) | Report only the progress of queued work: what is done, running, and remaining, with estimates. |
+| [progress](skills/conversation/progress/SKILL.md) | Report only the progress of queued work: what is done, running, and remaining, with each item's time and totals of work time and wait time. |
 | [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status, or report only what waits on the user or only the progress of queued work. |
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
 | [spawn](skills/conversation/spawn/SKILL.md) | Open a fork in a new terminal tab to discuss one point, from a short brief or a full copy of the conversation. |
