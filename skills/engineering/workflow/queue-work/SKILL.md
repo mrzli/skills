@@ -26,7 +26,7 @@ Add an item only when the user has agreed to it, as the user's rules for approva
 
 ## Run a batch
 
-Start a batch only when the user asks to implement or queue agreed items, such as "queue this" or "do the next three agreed items", or when collect brings in agreed items marked `now`. Start ready items from the batch in queue order, up to N at once, and start more as items are integrated and their dependents become ready.
+Start a batch only when the user asks to implement or queue agreed items, such as "queue this" or "do the next three agreed items", or when collect brings in agreed items marked `now`. Start ready items from the batch in queue order, up to N at once, and start more as items are integrated and their dependents become ready. Record each item's start time in the queue when it starts.
 
 Give each item its own background agent with a fresh context, not one that copies this conversation. Start it from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order. Pass the agent the agreed decisions themselves, not only a pointer to the queue. Also pass the hash of the tip of the user's branch as the base commit, and whether other agents run at the same time. Tell each agent to read [worktree-agent.md](worktree-agent.md) first and follow it, giving that file's absolute path in this skill's installed directory. Do not copy its rules into the brief, so each agent reads the current version even when this session's copy of the skill is older.
 
