@@ -3,7 +3,7 @@ name: writing-skills
 description: Use when writing, editing, or reviewing agent skills.
 ---
 
-Read and apply [writing-text](../writing-text/SKILL.md) to the target document.
+Read and apply the `writing-text` skill to the target document.
 
 Make the description clear about when to use the skill. In the body, define the intended outcome and how the agent can tell it has done enough. For exploratory work, a useful next step or an explicitly deferred decision may be enough.
 
@@ -17,4 +17,4 @@ Put steps that need no judgment, such as parsing transcripts or a fixed sequence
 
 Keep a script or a reference file in its own skill until a second skill needs it. Then move a script to `skills/shared/scripts/` and a reference file to `skills/shared/references/`. Give each skill that uses it a relative symbolic link in its own `scripts/` or `references/` directory, such as `scripts/agent-joins.sh` pointing to `../../../shared/scripts/agent-joins.sh`, and refer to the file by that local path in the skill's text.
 
-Skills are installed as links to their folders, side by side, and agents tend to resolve `..` in a skill's paths as text, from the installed link's location. A path to another skill, such as `../yield/SKILL.md`, still works because that skill is installed beside it. A path to anything else outside the skill's folder, such as `../../shared/`, does not. A symbolic link inside the skill's folder resolves from the real folder. A script that calls another script must first find its own real location, such as with `realpath` or `os.path.realpath(__file__)`, because `cd` and some path functions resolve `..` from the link's location.
+Skills are installed as links to their folders, side by side, and agents resolve `..` in a skill's paths as text, from the installed link's location. So refer to another skill by its name, such as `yield` or the "Progress only" view of the `recap` skill, not by a path. Agents find installed skills by name, and the name stays valid when a skill moves to another category folder. Refer to files in the skill's own folder by a relative path, such as `scripts/last-session.sh`. A path outside the skill's folder, such as `../../shared/`, does not resolve. A symbolic link inside the skill's folder resolves from the real folder. A script that calls another script must first find its own real location, such as with `realpath` or `os.path.realpath(__file__)`, because `cd` and some path functions resolve `..` from the link's location.

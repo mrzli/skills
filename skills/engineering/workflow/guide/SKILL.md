@@ -17,17 +17,17 @@ Use the map below as a starting point. Read the recommended skill before describ
 
 | Situation | Skill |
 | --- | --- |
-| Answer a concrete unknown with evidence or an experiment | [investigate](../../investigation/investigate/SKILL.md) |
-| Choose a technical approach or resolve design tradeoffs | [design](../../planning/design/SKILL.md) |
-| Build a clear, scoped change the user waits for | [implement](../../delivery/implement/SKILL.md) |
-| Assess an existing change before proceeding | [review-code](../../delivery/review-code/SKILL.md) |
-| Diagnose and repair unexpected behavior | [fix-bug](../../delivery/fix-bug/SKILL.md) |
-| Reduce a measured performance cost, such as latency or frame time | [optimize](../../delivery/optimize/SKILL.md) |
-| Improve selected code structure while preserving behavior | [refactor](../../delivery/refactor/SKILL.md) |
-| Implement agreed items in the background while the discussion continues | [queue-work](../queue-work/SKILL.md) |
-| Find structural problems worth addressing in existing code | [review-architecture](../../investigation/review-architecture/SKILL.md) |
-| Improve the development process after observed friction | [improve-workflow](../improve-workflow/SKILL.md) |
-| Review the skill collection or compare it with external skill repositories | [maintain-skills](../maintain-skills/SKILL.md) |
+| Answer a concrete unknown with evidence or an experiment | `investigate` |
+| Choose a technical approach or resolve design tradeoffs | `design` |
+| Build a clear, scoped change the user waits for | `implement` |
+| Assess an existing change before proceeding | `review-code` |
+| Diagnose and repair unexpected behavior | `fix-bug` |
+| Reduce a measured performance cost, such as latency or frame time | `optimize` |
+| Improve selected code structure while preserving behavior | `refactor` |
+| Implement agreed items in the background while the discussion continues | `queue-work` |
+| Find structural problems worth addressing in existing code | `review-architecture` |
+| Improve the development process after observed friction | `improve-workflow` |
+| Review the skill collection or compare it with external skill repositories | `maintain-skills` |
 
 Neighboring skills are easy to confuse:
 

@@ -5,4 +5,4 @@ argument-hint: "[queue]"
 disable-model-invocation: true
 ---
 
-Report the [Progress only](../recap/SKILL.md#progress-only) view of recap, following its rules, narrowed to the argument when one is given.
+Report the "Progress only" view of the `recap` skill, following its rules, narrowed to the argument when one is given.

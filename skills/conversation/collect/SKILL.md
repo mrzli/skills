@@ -4,7 +4,7 @@ description: Take in the notes yielded by the sessions below this one, at any de
 disable-model-invocation: true
 ---
 
-Bring the results of the sessions below this one into the conversation. Each fork wrote its note with [yield](../yield/SKILL.md).
+Bring the results of the sessions below this one into the conversation. Each fork wrote its note with `yield`.
 
 Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It says whether this session is a main session or a fork and gives its tree's ID, the start of the main session's session ID. It prints the notes from the sessions below this one, at any depth, that are new or changed since this session last collected, and records them as read. A note stays until every session above its fork has collected its latest version.
 
@@ -20,7 +20,7 @@ If an agreed item or a needed handoff conflicts with a decision made in this ses
 
 A note's "Agreed to implement" items were approved by the user in the fork, and each has a source ID, such as `Claude-1/F2a`.
 
-In the main session, implement the items marked `now` through [queue-work](../../engineering/workflow/queue-work/SKILL.md) without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the queue and the backlog:
+In the main session, implement the items marked `now` through `queue-work` without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the queue and the backlog:
 
 - In neither: add it to the queue or the backlog, as its mark says.
 - In the queue or the backlog with the same decision and mark: skip it.
@@ -32,7 +32,7 @@ Start each queued item once it is ready.
 
 ## Handoffs
 
-A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with [handoff](../handoff/SKILL.md) from its item, and give its path. Name the file after this repository's directory, the tree's ID, and the source ID, with `/` replaced by `-`, such as `handoff-trading-app-1a2b3c4d-Claude-2-FF1b.md`. Fork names repeat across repositories and after a prune, so the repository and the tree's ID keep the files apart across repositories and main sessions.
+A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with the `handoff` skill from its item, and give its path. Name the file after this repository's directory, the tree's ID, and the source ID, with `/` replaced by `-`, such as `handoff-trading-app-1a2b3c4d-Claude-2-FF1b.md`. Fork names repeat across repositories and after a prune, so the repository and the tree's ID keep the files apart across repositories and main sessions.
 
 Every yield repeats the fork's whole picture, so check the latest file for that source ID first. The first file has no number and counts as 1, and the latest is the one with the highest number:
 
@@ -42,7 +42,7 @@ Every yield repeats the fork's whole picture, so check the latest file for that 
 
 ## In a fork
 
-Implement nothing and write no handoffs, as [spawn](../spawn/SKILL.md) says for forks. Carry the agreed items and needed handoffs into this fork's next [yield](../yield/SKILL.md).
+Implement nothing and write no handoffs, as `spawn` says for forks. Carry the agreed items and needed handoffs into this fork's next `yield`.
 
 ## Inactive trees
 

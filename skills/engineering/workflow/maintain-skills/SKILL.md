@@ -14,7 +14,7 @@ Distinguish lack of use from lack of opportunity. If relevant work occurred, det
 
 Check each skill's name, description, and invocation settings. The name should match the skill's current responsibility. The description should state when to use the skill in words users actually say. Invocation settings should match for every agent the collection supports, such as `disable-model-invocation` for Claude Code and `allow_implicit_invocation` in `agents/openai.yaml` for Codex. Let the agent load a skill implicitly when it can recognize the situation from the request. Keep a skill user-invoked when starting it is the user's decision.
 
-Compare the skills with the user's own agent instructions when the project says where they live. Check each skill's references to their rules, its fallbacks, and where each rule lives, as [writing-skills](../../../docs/writing-skills/SKILL.md) says. A change to the instructions is for the repository that manages them.
+Compare the skills with the user's own agent instructions when the project says where they live. Check each skill's references to their rules, its fallbacks, and where each rule lives, as `writing-skills` says. A change to the instructions is for the repository that manages them.
 
 When local transcripts are available, run [skill-usage.sh](scripts/skill-usage.sh) on the collection root, excluding the collection's own repository with `--exclude-cwd`. It counts sessions that invoked or read each skill in Claude Code and Codex transcripts. Save its output in the maintenance record, because transcripts can expire. Counts show recorded use, not opportunity.
 
@@ -34,7 +34,7 @@ When the user asks for an in-depth review, read the whole text instead of starti
 - References to rules or sections that do not exist.
 - Rules repeated across skills.
 - Stale references, descriptions, and invocation settings, and broken links.
-- Unclear wording, as [writing-text](../../../docs/writing-text/SKILL.md) describes.
+- Unclear wording, as `writing-text` describes.
 
 When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Save the numbered findings and the user's decisions in the maintenance record, and note the review's date in the part later reviews start from.
 
@@ -55,7 +55,7 @@ For each recommendation, give the evidence, benefit, overlap or replacement impl
 
 ## Apply and evaluate
 
-For authorized changes, use [writing-skills](../../../docs/writing-skills/SKILL.md). Preserve useful local adaptations. Update affected references, catalog entries, and discovery links using repository conventions. Check callers before merging or retiring skills. Keep retired content recoverable through version control or the existing archive convention. List each retired skill in the maintenance record with the commit that removed it, the situation it covered, and a representative request.
+For authorized changes, use `writing-skills`. Preserve useful local adaptations. Update affected references, catalog entries, and discovery links using repository conventions. Check callers before merging or retiring skills. Keep retired content recoverable through version control or the existing archive convention. List each retired skill in the maintenance record with the commit that removed it, the situation it covered, and a representative request.
 
 Validate skill structure and links, check routing against representative requests, and exercise changed mechanics where applicable. Separate these checks from evidence of improved outcomes in later use.
 

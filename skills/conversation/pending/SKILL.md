@@ -5,4 +5,4 @@ argument-hint: "[scope]"
 disable-model-invocation: true
 ---
 
-Report the [Waiting on the user only](../recap/SKILL.md#waiting-on-the-user-only) view of recap, following its rules, narrowed to the argument when one is given.
+Report the "Waiting on the user only" view of the `recap` skill, following its rules, narrowed to the argument when one is given.

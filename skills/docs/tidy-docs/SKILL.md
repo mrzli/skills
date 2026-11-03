@@ -14,7 +14,7 @@ Read outside the edit scope as needed to understand the repository, unless the u
 
 ## Process
 
-Apply [writing-text](../writing-text/SKILL.md) and other relevant writing skills to each document. Before finishing, check each edited document against them, including prose punctuation. Reading the guidance alone does not complete the review.
+Apply the `writing-text` skill and other relevant writing skills to each document. Before finishing, check each edited document against them, including prose punctuation. Reading the guidance alone does not complete the review.
 
 Resolve inconsistencies and outdated links. Preserve behavior, requirements, and invocation settings.
 

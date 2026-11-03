@@ -15,9 +15,9 @@ Inspect the working tree and establish a verification baseline. Add characteriza
 
 ## Restructure incrementally
 
-Choose a target structure that addresses the demonstrated problem with minimal unnecessary abstraction. Compare it with the realistic alternative structures and choose the better one, as the user's rules for design choices say. Use [design](../../planning/design/SKILL.md) when interface or ownership decisions are consequential. A small refactor may need only a short explanation.
+Choose a target structure that addresses the demonstrated problem with minimal unnecessary abstraction. Compare it with the realistic alternative structures and choose the better one, as the user's rules for design choices say. Use `design` when interface or ownership decisions are consequential. A small refactor may need only a short explanation.
 
-Use [implement](../implement/SKILL.md) for execution, supplying the preservation constraints and baseline checks. Prefer small transformations that keep checks passing. A large migration of consumers inside the repository may span several commits on the same branch, but the old form must be deleted before the work is complete, and an intermediate state is never merged. Search for references the compiler or type checker cannot see, such as strings, configuration, and documentation. When the refactor renames a concept, update its entry using [glossary](../../../docs/glossary/SKILL.md).
+Use `implement` for execution, supplying the preservation constraints and baseline checks. Prefer small transformations that keep checks passing. A large migration of consumers inside the repository may span several commits on the same branch, but the old form must be deleted before the work is complete, and an intermediate state is never merged. Search for references the compiler or type checker cannot see, such as strings, configuration, and documentation. When the refactor renames a concept, update its entry using `glossary`.
 
 Keep unrelated formatting, dependency updates, and feature additions out of the refactor. Update tests that depend on removed internals while retaining equivalent behavioral coverage. Deleting inconvenient assertions is not evidence of preservation.
 

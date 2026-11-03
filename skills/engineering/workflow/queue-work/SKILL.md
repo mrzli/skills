@@ -18,7 +18,7 @@ Keep the queue in a temporary plan file that follows the project's conventions f
 - Its status: agreed, in progress, integrated, or blocked.
 - Its commits, once integrated.
 - Its times, on one line: when it started, when it was integrated, and the time between them. Record the implementer's run time and the integration's time separately when the tools report them, such as an agent's reported run time. These measured times are what later estimates of the remaining items are based on.
-- Its source ID, when it came from a fork's note through [collect](../../../conversation/collect/SKILL.md), such as `Claude-1/F2a`.
+- Its source ID, when it came from a fork's note through `collect`, such as `Claude-1/F2a`.
 
 Make an item depend on an earlier item that is not yet integrated when it builds on that item's result, when their footprints overlap, or when either changes something many files rely on, such as a specification, a shared interface, or the build configuration. When unsure, add the dependency. An item is ready when the user has agreed to it and its dependencies are integrated. Update the dependencies whenever an item is added or changed.
 
@@ -38,11 +38,11 @@ While a batch runs, keep discussing the next items and adding agreed ones to the
 
 ## Integrate and report
 
-Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Use [review-code](../../delivery/review-code/SKILL.md) unless the implementer reports that a fresh agent reviewed its commits. Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve. You did not write an item a background agent implemented, so your review of it is independent. An item you implemented in the foreground was already reviewed through `implement`, so do not review it again unless that review was a self-review. Bring the commits onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, including the item's times, remove the worktree, delete the implementer's branch, and start items that became ready.
+Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Use `review-code` unless the implementer reports that a fresh agent reviewed its commits. Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve. You did not write an item a background agent implemented, so your review of it is independent. An item you implemented in the foreground was already reviewed through `implement`, so do not review it again unless that review was a self-review. Bring the commits onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, including the item's times, remove the worktree, delete the implementer's branch, and start items that became ready.
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later footprint estimates improve.
 
-Report for each item what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that [review-code](../../delivery/review-code/SKILL.md) would report as a design finding. State when there were none. Raise any blocking question in the discussion.
+Report for each item what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that `review-code` would report as a design finding. State when there were none. Raise any blocking question in the discussion.
 
 Follow the user's and the project's rules for branches and commits. Without such rules, start from a branch other than the main branch, and bring the user's branch into the main branch only when the user asks.
 

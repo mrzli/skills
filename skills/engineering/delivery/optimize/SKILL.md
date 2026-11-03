@@ -3,7 +3,7 @@ name: optimize
 description: Improve a measured performance metric, such as latency, frame time, throughput, or memory, through measured keep-or-revert attempts. Use for slowness or resource use the user wants reduced, or a performance target to reach.
 ---
 
-Move one metric toward a target with evidence for every kept change. A correctness bug that happens to be slow belongs to [fix-bug](../fix-bug/SKILL.md).
+Move one metric toward a target with evidence for every kept change. A correctness bug that happens to be slow belongs to `fix-bug`.
 
 ## Define the target
 
@@ -36,6 +36,6 @@ On a stall, try a different category of idea or reread the hot path before concl
 
 ## Review and report
 
-Have the kept changes reviewed with [review-code](../review-code/SKILL.md), giving it the metric and target, the attempt log, and the check results. Address its findings, and measure again with the frozen command when a correction touches the measured path.
+Have the kept changes reviewed with `review-code`, giving it the metric and target, the attempt log, and the check results. Address its findings, and measure again with the frozen command when a correction touches the measured path.
 
 Give the metric and target, baseline and final values with the change, the number of attempts kept and reverted, each kept change in one line, the log path, and the most promising untried idea.

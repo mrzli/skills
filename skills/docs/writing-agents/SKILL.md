@@ -3,7 +3,7 @@ name: writing-agents
 description: Use when writing, editing, or reviewing AGENTS.md files.
 ---
 
-Read and apply [writing-text](../writing-text/SKILL.md) to the target document.
+Read and apply the `writing-text` skill to the target document.
 
 Capture project conventions, constraints, and non-obvious context that affect the agent's work. Prefer information the agent cannot easily discover from the repository over descriptions of files, commands, or configuration it can inspect.
 
