@@ -1,7 +1,7 @@
 ---
 name: recap
-description: Summarize where the current work or discussion stands, including decisions, open questions, and what is done or remaining. Use when the user asks to recap, relist, reiterate, or catch up on what was discussed or what is left, asks for the status or where things stand, wants a recap of one topic, or asks only for what is waiting on them, such as what they need to answer or do.
-argument-hint: "[scope, such as a topic, plan, group, 'status', or 'mine' for only what waits on the user]"
+description: Summarize where the current work or discussion stands, including decisions, open questions, and what is done or remaining. Use when the user asks to recap, relist, reiterate, or catch up on what was discussed or what is left, asks for the status or where things stand, wants a recap of one topic, asks only for what is waiting on them, such as what they need to answer or do, or asks only for the progress of queued work, such as what is done and what remains or how long the rest will take.
+argument-hint: "[scope, such as a topic, plan, group, 'status', 'mine' for only what waits on the user, or 'progress' for only the progress of queued work]"
 ---
 
 Bring the user up to date so they can continue without rereading the conversation. Assume they have not read anything since their last message.
@@ -39,3 +39,14 @@ When the argument asks for it, such as `mine` or `pending`, or the user asks onl
 - **Running:** at most one line naming what is in progress, so the user knows it needs nothing from them.
 
 Leave out decisions already made, finished work, and background. This is the "Waiting on the user" part of the report alone, with the same rules for IDs and accepted choices, plus the running line. End with the recommended next step.
+
+## Progress only
+
+When the argument asks for it, such as `progress`, or the user asks only for the progress of queued work, such as "what's done and what remains" or "how long will it take", report only:
+
+- **Done:** each finished item of the queue or queues, one line each with its ID and a few words.
+- **Running:** the items in progress.
+- **Remaining:** the items not yet started, in the order they will start, one line each with an estimate, followed by a total for the remaining work.
+- **May be added:** work that waits to be slotted in, such as a design still being discussed in a fork, with its estimate when known.
+
+Base each estimate on the measured times of earlier items of similar size, such as those recorded in a queue file. Say when there are too few measurements and an estimate is a guess. When the argument names one queue, report only that queue. Follow the same rules for IDs as the full report. End with the next step that needs the user, if there is one.
