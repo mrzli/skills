@@ -17,7 +17,7 @@ Keep the queue in a temporary plan file that follows the project's conventions f
 - The earlier items it depends on.
 - Its status: agreed, in progress, integrated, or blocked.
 - Its commits, once integrated.
-- Its times, on one line: when it started and when it was integrated, and its duration. Record the implementer's run time and the integration's time separately when the tools report them, such as an agent's reported run time. These measured times are what later estimates of the remaining items are based on.
+- Its times, on one line: when it started, when it was integrated, and the time between them. Record the implementer's run time and the integration's time separately when the tools report them, such as an agent's reported run time. These measured times are what later estimates of the remaining items are based on.
 - Its source ID, when it came from a fork's note through [collect](../../../conversation/collect/SKILL.md), such as `Claude-1/F2a`.
 
 Make an item depend on an earlier item that is not yet integrated when it builds on that item's result, when their footprints overlap, or when either changes something many files rely on, such as a specification, a shared interface, or the build configuration. When unsure, add the dependency. An item is ready when the user has agreed to it and its dependencies are integrated. Update the dependencies whenever an item is added or changed.
