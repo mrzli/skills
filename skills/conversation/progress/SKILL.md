@@ -1,6 +1,6 @@
 ---
 name: progress
-description: Report only the progress of queued work, meaning what is done, running, and remaining, with an estimate per remaining item and a total. Use when the user calls it by name.
+description: Report only the progress of queued work, meaning what is done, running, and remaining, with each item's time and totals of work time and wait time. Use when the user calls it by name.
 argument-hint: "[queue]"
 disable-model-invocation: true
 ---
