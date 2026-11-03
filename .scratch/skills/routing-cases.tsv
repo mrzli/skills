@@ -58,3 +58,5 @@
 ~/projects/personal/mrzli/trading-app	investigate,!fix-bug	The chart jumps when I zoom past the last bar. Just find out why, don't change anything yet.
 ~/projects/personal/mrzli/skills	maintain-skills	Go through all the skills in depth and check they are consistent with my global rules and with each other.
 ~/projects/personal/mrzli/skills	tidy-docs,!maintain-skills	Tidy the wording in the skills docs.
+~/projects/personal/mrzli/trading-app	recap	What's the status of the batch? What's done, what remains, and how long will the rest take?
+~/projects/personal/mrzli/trading-app	recap,!queue-work	Give me the estimate by item for what is left in the queue.
