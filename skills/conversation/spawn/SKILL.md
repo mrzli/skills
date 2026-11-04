@@ -1,11 +1,11 @@
 ---
 name: spawn
-description: Open a fork, a new session in its own terminal tab, to discuss one point of this conversation, started from a short brief or a full copy of the conversation. The fork's result comes back through yield and collect.
-argument-hint: "[full] [point, such as an ID like F2]"
+description: Open a fork, a new session in its own terminal tab, to discuss one point of this conversation, started from a short brief. The fork's result comes back through yield and collect.
+argument-hint: "[point, such as an ID like F2]"
 disable-model-invocation: true
 ---
 
-Open a fork of this session in a new terminal tab, so the user can discuss one point there while this session continues. Forks can spawn forks of their own, from a brief or as a full copy.
+Open a fork of this session in a new terminal tab, so the user can discuss one point there while this session continues. Forks can spawn forks of their own.
 
 Forks only discuss:
 
@@ -16,7 +16,7 @@ Forks only discuss:
 
 The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation.
 
-## Brief (default)
+## Brief
 
 The fork is a new session that starts from a brief instead of the whole conversation. If no point is given, ask the user which one.
 
@@ -27,10 +27,6 @@ Write the brief in Markdown, kept short. It holds what the fork needs to discuss
 - Pointers to the relevant files, commits, records, or handoffs, rather than their contents.
 
 Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
-
-## Full copy
-
-With `full`, the fork is a copy of this whole conversation. Run [agent-joins.sh](scripts/agent-joins.sh) `spawn --full`, adding the topic if a point is given, so the fork is told to focus on it.
 
 ## After spawning
 

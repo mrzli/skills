@@ -5,20 +5,17 @@ set -euo pipefail
 usage() {
   cat >&2 <<'EOF'
 Usage: agent-joins.sh spawn TOPIC < BRIEF
-       agent-joins.sh spawn --full [TOPIC]
        agent-joins.sh yield < NOTE
        agent-joins.sh collect
        agent-joins.sh prune TREE...
 
 spawn    Opens a fork of the current session in a new herdr or tmux tab in
          the current directory. The tab and the fork are named after the
-         parent session: Claude, Claude-1, Claude-1-1, and so on. By default
-         the fork is a new session that starts by reading the brief from
-         standard input. With --full it is a copy of the current session,
-         told to focus on TOPIC if one is given. Forks only discuss: they
-         are told not to change the checkout and cannot use the file-editing
-         tools inside it, but may write temporary files, such as scripts,
-         outside it.
+         parent session: Claude, Claude-1, Claude-1-1, and so on. The fork is
+         a new session that starts by reading the brief from standard
+         input. Forks only discuss: they are told not to change the
+         checkout and cannot use the file-editing tools inside it, but may
+         write temporary files, such as scripts, outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current session is a main session or a fork,
@@ -137,18 +134,12 @@ shown_topic() {
 }
 
 cmd_spawn() {
-  local full=false
-  [[ ${1:-} == --full ]] && full=true && shift
-  (($# <= 1)) || usage
-  local new_topic=${1:--}
-  new_topic=${new_topic//[$'\t\n']/ }
-  [[ -n $new_topic ]] || new_topic=-
-  local brief=
-  if ! $full; then
-    [[ $new_topic != - ]] || die 'A brief-based fork needs a topic.'
-    brief=$(cat)
-    [[ -n ${brief//[[:space:]]/} ]] || die 'The brief is empty: pass it on standard input.'
-  fi
+  (($# == 1)) || usage
+  local new_topic=${1//[$'\t\n']/ }
+  [[ -n ${new_topic//[[:space:]]/} ]] || die 'A fork needs a topic.'
+  local brief
+  brief=$(cat)
+  [[ -n ${brief//[[:space:]]/} ]] || die 'The brief is empty: pass it on standard input.'
 
   local fork_command prompt
   [[ -n $session_id ]] ||
@@ -179,21 +170,14 @@ cmd_spawn() {
   local checkout no_edits
   checkout=$(git rev-parse --show-toplevel)
   printf -v no_edits -- '--disallowedTools %q' "Edit(/$checkout/**)"
-  if $full; then
-    prompt="This session is $child, a fork of this conversation."
-    [[ $new_topic != - ]] && prompt+=" Focus on: $new_topic."
-    printf -v fork_command 'claude --resume %q --fork-session %s -n %q %q' \
-      "$session_id" "$no_edits" "$child" "$prompt $discuss_only"
-  else
-    local brief_file=$state/briefs/$child.md
-    {
-      printf '# Brief for %s: %s\n\n' "$child" "$new_topic"
-      printf 'Spawned from %s on %s.\n\n' "$me" "$now"
-      printf '%s\n' "$brief"
-    } >"$brief_file"
-    prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Refer to the items of $me by the IDs the brief uses. $discuss_only"
-    printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
-  fi
+  local brief_file=$state/briefs/$child.md
+  {
+    printf '# Brief for %s: %s\n\n' "$child" "$new_topic"
+    printf 'Spawned from %s on %s.\n\n' "$me" "$now"
+    printf '%s\n' "$brief"
+  } >"$brief_file"
+  prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Refer to the items of $me by the IDs the brief uses. $discuss_only"
+  printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
 
   if [[ -n ${HERDR_SESSION:-} ]]; then
     local create=(herdr tab create --cwd "$PWD" --label "$child" --env "AGENT_FORK_NAME=$child" --focus)

@@ -37,7 +37,7 @@ I talk to the agent in one main session, mostly by voice dictation. My [global a
 
 A fork is a new agent session in its own terminal tab, opened to discuss one point from the main session. Three skills work together:
 
-1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2, and `/spawn full F2` gives it a copy of the whole conversation instead.
+1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2.
 2. I discuss F2 in the fork. The changes and handoffs I agree to there wait for the main session.
 3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, which handoffs to other repositories it needs, and what is still open. Running it again replaces the note with the latest state.
 4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note, queues the agreed changes with queue-work, and writes the handoffs, so every change to the repository and every handoff is made from the main session.
@@ -81,7 +81,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | [progress](skills/conversation/progress/SKILL.md) | Report only the progress of queued work: what is done, running, and remaining, with each item's time or estimate and totals of work time and wait time. |
 | [recap](skills/conversation/recap/SKILL.md) | Summarize where the work or discussion stands, including decisions, open questions, and status, or report only what waits on the user or only the progress of queued work. |
 | [restate](skills/conversation/restate/SKILL.md) | Restate the user's goals and problem in clear words, including long or dictated requests. |
-| [spawn](skills/conversation/spawn/SKILL.md) | Open a fork in a new terminal tab to discuss one point, from a short brief or a full copy of the conversation. |
+| [spawn](skills/conversation/spawn/SKILL.md) | Open a fork in a new terminal tab to discuss one point, from a short brief. |
 | [warmup](skills/conversation/warmup/SKILL.md) | Get back into a project after a break, with a very short summary and a few small steps. |
 | [yield](skills/conversation/yield/SKILL.md) | Write a short note of what a fork has resolved, for the sessions above it to collect. |
 
