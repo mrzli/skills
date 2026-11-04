@@ -14,7 +14,7 @@ Forks only discuss:
 - Changes the user approves in a fork pass up through `yield`, and the main session, the one that is not a fork, implements them when it runs `collect`. All changes to the checkout then happen in one session.
 - Handoffs to other repositories also pass up through `yield`. A fork writes none. When the user asks for one or the work calls for one, the fork notes only which repository it is for and what change it should ask for, and the main session writes the handoff.
 
-The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation. When a few words would not say what the fork is about, use one sentence. The fork's first message starts with the topic, so the user can see what the fork is about when they come back to it.
+The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation. When a few words would not say what the fork is about, use the ID plus one sentence. The fork's first message starts with the topic, so the user can see what the fork is about when they come back to it.
 
 ## Brief
 
