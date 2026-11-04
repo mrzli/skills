@@ -60,3 +60,4 @@
 ~/projects/personal/mrzli/skills	tidy-docs,!maintain-skills	Tidy the wording in the skills docs.
 ~/projects/personal/mrzli/trading-app	recap	What's the status of the batch? What's done, what remains, and how long will the rest take?
 ~/projects/personal/mrzli/trading-app	recap,!queue-work	Give me the estimate by item for what is left in the queue.
+~/projects/personal/mrzli/trading-app	glossary	I want to name the log entry field that says which part of the app wrote it "source", but we already use source for a provider's data source. Can we reuse the word, and if so, record that properly?

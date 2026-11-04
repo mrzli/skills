@@ -28,7 +28,8 @@ _Avoid_: bill, payment request
 ```
 
 - Choose one term per concept, preferring the name the user finds clearest. List rejected synonyms under `_Avoid_`.
-- No two concepts share a name. A term differs from the project's other terms and from the built-in names of the frameworks and languages it is used with. When a new or existing term clashes, rename whichever of the two fits its concept worse.
+- No two concepts share a name, except for the reuse of a general word that the next point allows. A term differs from the project's other terms and from the built-in names of the frameworks and languages it is used with. When a new or existing term clashes, rename whichever of the two fits its concept worse.
+- A general word used as a term, such as "source" for a data source, always means the term's concept when it stands alone. Another concept may still use the word where its context always marks it, such as a field inside one file format or a qualified name like "log source". Note that other use in the term's entry, so readers are not misled. Avoid the reuse where both meanings meet, such as a log entry about loading data whose fields name both the part of the app that wrote it and a data source.
 - Define what the concept is in one or two sentences, using other glossary terms where they apply.
 - Give the code name when one exists, so readers can find it. Leave out other implementation details.
 - Group terms under subheadings when clusters form. A flat list is fine otherwise.
