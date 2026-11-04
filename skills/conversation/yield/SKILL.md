@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 Record what this fork has resolved so far, so the sessions above it can take it in with the `collect` skill without the user copying summaries. Each fork has one note. Yielding again replaces it with the latest state, so write the whole picture each time, not only what changed.
 
-Write the note in Markdown, kept short. Refer to items by the parent's IDs throughout the note, translating the fork's IDs through the map at the start of its brief, so the note reads in the parent's terms. Source IDs keep the fork's own IDs. The note holds:
+Write the note in Markdown, kept short. Refer to items by the parent's IDs throughout the note, translating the fork's IDs through the map at the start of its brief, so the note reads in the parent's terms. Refer to an item the map does not cover, such as one created in this fork, by this fork's name and its ID, such as `Claude-1/D`. Source IDs keep the fork's own IDs. The note holds:
 
 - The topic.
 - The decisions, each with its reason.

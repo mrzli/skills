@@ -136,7 +136,8 @@ shown_topic() {
 cmd_spawn() {
   (($# == 1)) || usage
   local new_topic=${1//[$'\t\n']/ }
-  [[ -n ${new_topic//[[:space:]]/} && $new_topic != - ]] || die 'A fork needs a topic.'
+  [[ -n ${new_topic//[[:space:]]/} ]] || die 'A fork needs a topic.'
+  [[ $new_topic != - ]] || die 'A topic of "-" is reserved.'
   local brief
   brief=$(cat)
   [[ -n ${brief//[[:space:]]/} ]] || die 'The brief is empty: pass it on standard input.'

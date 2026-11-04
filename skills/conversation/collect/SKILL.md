@@ -8,7 +8,7 @@ Bring the results of the sessions below this one into the conversation. Each for
 
 Run [agent-joins.sh](scripts/agent-joins.sh) `collect`. It says whether this session is a main session or a fork and gives its tree's ID, the start of the main session's session ID. It prints the notes from the sessions below this one, at any depth, that are new or changed since this session last collected, and records them as read. A note stays until every session above its fork has collected its latest version.
 
-A note from a fork of a fork, marked "via" the forks between, uses the IDs of the fork just above it. Translate them through the map at the start of the brief of each fork between, from the nearest to this session's own fork. The briefs are in the state folder that the script's help names.
+A note from a fork of a fork, marked "via" the forks between, uses the IDs of the fork just above it. Translate them through the map at the start of each of those forks' briefs, starting with the fork just above the note's fork and ending with this session's direct fork. That is the reverse of the order the "via" list shows. The briefs are at `<git common dir>/agent-joins/briefs/NAME.md`. An ID missing from a fork's map names an item new in that fork. Read it as that fork's name plus the ID.
 
 Give each collected item an ID in this session's scheme, as the user's rules for IDs say, and keep its source ID beside it as a tracking key, such as `G3 (Claude-2/A1a)`. Without such rules, refer to each item by its source ID alone.
 

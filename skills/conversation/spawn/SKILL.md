@@ -26,7 +26,7 @@ Write the brief in Markdown, kept short. It holds what the fork needs to discuss
 - The decisions, constraints, and rejected options that bear on it.
 - Pointers to the relevant files, commits, records, or handoffs, rather than their contents.
 
-Number the brief's items afresh, so the fork starts with short IDs, in the scheme the user's rules for IDs give, or as letters A, B, and so on without such rules. The point becomes topic A, its parts become parts of A, such as F2a as A1, and the other items take the next letters. Begin the brief with a map from each new ID to its ID in this conversation, such as `A: zoom cap (F2)`, and use only the new IDs after it. The fork uses the map to report its results in this conversation's IDs.
+Number the brief's items afresh, so the fork starts with short IDs, in the scheme the user's rules for IDs give, or as letters A, B, and so on without such rules. The point becomes topic A, its parts become parts of A, such as F2a as A1, and the other items take the next letters. Begin the brief with a map from each new ID to the item's ID here, or to a few words naming it when it has none, such as `A: zoom cap (F2)`, and use only the new IDs after it. The fork uses the map to report its results in this conversation's IDs.
 
 Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 
