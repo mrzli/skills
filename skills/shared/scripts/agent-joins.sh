@@ -13,9 +13,10 @@ spawn    Opens a fork of the current session in a new herdr or tmux tab in
          the current directory. The tab and the fork are named after the
          parent session: Claude, Claude-1, Claude-1-1, and so on. The fork is
          a new session that starts by reading the brief from standard
-         input. Forks only discuss: they are told not to change the
-         checkout and cannot use the file-editing tools inside it, but may
-         write temporary files, such as scripts, outside it.
+         input. Its first message starts with TOPIC. Forks only discuss:
+         they are told not to change the checkout and cannot use the
+         file-editing tools inside it, but may write temporary files, such
+         as scripts, outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current session is a main session or a fork,
@@ -177,7 +178,7 @@ cmd_spawn() {
     printf 'Spawned from %s on %s.\n\n' "$me" "$now"
     printf '%s\n' "$brief"
   } >"$brief_file"
-  prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Use the IDs the brief uses, and continue its numbering for new items. Its map gives each of the brief's IDs the ID it has in $me. $discuss_only"
+  prompt="Topic: $new_topic (from $me). You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Use the IDs the brief uses, and continue its numbering for new items. Its map gives each of the brief's IDs the ID it has in $me. $discuss_only"
   printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
 
   if [[ -n ${HERDR_SESSION:-} ]]; then
