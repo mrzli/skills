@@ -176,7 +176,7 @@ cmd_spawn() {
     printf 'Spawned from %s on %s.\n\n' "$me" "$now"
     printf '%s\n' "$brief"
   } >"$brief_file"
-  prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Refer to the items of $me by the IDs the brief uses. $discuss_only"
+  prompt="You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Use the IDs the brief uses, and continue its numbering for new items. Its map gives each of the brief's IDs the ID it has in $me. $discuss_only"
   printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
 
   if [[ -n ${HERDR_SESSION:-} ]]; then

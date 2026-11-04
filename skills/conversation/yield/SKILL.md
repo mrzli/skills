@@ -10,7 +10,7 @@ Record what this fork has resolved so far, so the sessions above it can take it 
 Write the note in Markdown, kept short:
 
 - The topic.
-- The decisions, each with its reason. Refer to the parent's items by the parent's IDs, such as those in the fork's brief, so the note reads in the parent's terms.
+- The decisions, each with its reason. Refer to the parent's items by the parent's IDs, translating the fork's IDs through the map at the start of its brief, so the note reads in the parent's terms.
 - Agreed to implement: each change the user explicitly approved in this fork, with the exact names, values, and choices an implementer needs without the conversation. Leave out changes that were discussed but not approved.
   - Give each a source ID made of this fork's name and the item's ID, such as `Claude-1/F2a`, and keep it unchanged in later versions of the note. Give an item without an ID in the conversation the next free one.
   - Mark each item `now`, or `backlog` when the user agreed to it only for the backlog or said not to implement it yet.

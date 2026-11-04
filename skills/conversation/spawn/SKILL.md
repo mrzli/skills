@@ -22,9 +22,11 @@ The fork is a new session that starts from a brief instead of the whole conversa
 
 Write the brief in Markdown, kept short. It holds what the fork needs to discuss the point well and nothing else:
 
-- The point, with its ID in this conversation, and what the user wants from the discussion.
-- The decisions, constraints, and rejected options that bear on it, with the IDs this conversation uses for them.
+- The point and what the user wants from the discussion.
+- The decisions, constraints, and rejected options that bear on it.
 - Pointers to the relevant files, commits, records, or handoffs, rather than their contents.
+
+Number the brief's items afresh, so the fork starts with short IDs: the point becomes topic A, and the other items take the next letters. Begin the brief with a map from each new ID to its ID in this conversation, such as `A: zoom cap (F2)`, and use only the new IDs after it. The fork uses the map to report its results in this conversation's IDs.
 
 Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 
