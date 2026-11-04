@@ -43,7 +43,7 @@ Do not propose these again without new evidence:
 
 ## Retired
 
-The user retired these to keep the collection to what they use, and wants them back when they would help. Each review checks the reviewed work for these situations, and recommends restoring a skill when the situation came up and the work went worse without it. Restore one with `git checkout <commit>^ -- <path>`, finding its path with `git show --stat <commit>`. Restore a retired mode from the same commit's diff of its skill and scripts. Restore its README, `guide`, and caller references from the same commit's diff, then follow the repository's steps for a skill change.
+The user retired these to keep the collection to what they use, and wants them back when they would help. Each review checks the reviewed work for these situations, and recommends restoring a skill when the situation came up and the work went worse without it. Restore one with `git checkout <commit>^ -- <path>`, finding its path with `git show --stat <commit>`. Restore a skill's README, `guide`, and caller references from the same commit's diff. Restore a retired mode by reverse-applying its commit's diff, such as with `git show <commit> | git apply -R --3way`, and resolve conflicts with later changes. Then follow the repository's steps for a skill change.
 
 | Skill | Retired in | Situation it covered | Representative request |
 | --- | --- | --- | --- |
@@ -57,7 +57,7 @@ The user retired these to keep the collection to what they use, and wants them b
 | `release` | `0503470`, 2026-11-02 | Publish a version or deploy by a procedure, then verify the result. mrzli.github.io deploys through a GitHub Action | "Publish the setup changes to the main machine and check they applied." |
 | `create-verification` | `0503470`, 2026-11-02 | Agents need a scripted way to drive the real application, when the user checks behavior by hand | "I keep having to check the chart by hand after every change, can agents check it themselves?" |
 | `explore` | `0503470`, 2026-11-02 | A vague interest or difficulty with no goal yet | "I'm kind of interested in something around music, not sure what." |
-| `spawn full`, a mode of `spawn` | `dda0bac`, 2026-11-04 | A fork needs the whole conversation rather than a brief. None of the 47 recorded forks used it. A built-in clone, `claude --resume <id> --fork-session`, with a same-machine handoff back covers the need | "Fork this whole conversation so I can dig into F2 with everything we said." |
+| `spawn full`, a mode of `spawn` | `dda0bac`, 2026-11-04 | A fork needs the whole conversation rather than a brief. None of the 47 forks recorded in trading-app, archon, and this repository by 2026-11-04 used it. A built-in clone, `claude --resume <id> --fork-session`, with a same-machine handoff back covers the need | "Fork this whole conversation so I can dig into F2 with everything we said." |
 
 ## Method notes
 

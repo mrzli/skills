@@ -7,10 +7,10 @@ disable-model-invocation: true
 
 Record what this fork has resolved so far, so the sessions above it can take it in with the `collect` skill without the user copying summaries. Each fork has one note. Yielding again replaces it with the latest state, so write the whole picture each time, not only what changed.
 
-Write the note in Markdown, kept short:
+Write the note in Markdown, kept short. Refer to items by the parent's IDs throughout the note, translating the fork's IDs through the map at the start of its brief, so the note reads in the parent's terms. Source IDs keep the fork's own IDs. The note holds:
 
 - The topic.
-- The decisions, each with its reason. Refer to the parent's items by the parent's IDs, translating the fork's IDs through the map at the start of its brief, so the note reads in the parent's terms.
+- The decisions, each with its reason.
 - Agreed to implement: each change the user explicitly approved in this fork, with the exact names, values, and choices an implementer needs without the conversation. Leave out changes that were discussed but not approved.
   - Give each a source ID made of this fork's name and the item's ID, such as `Claude-1/A1a`, and keep it unchanged in later versions of the note. Give an item without an ID in the conversation the next free one.
   - Mark each item `now`, or `backlog` when the user agreed to it only for the backlog or said not to implement it yet.
