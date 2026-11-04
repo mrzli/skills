@@ -33,6 +33,7 @@ Neighboring skills are easy to confuse:
 
 - An interface, data shape, or module boundary belongs to `design`, even when it feels like a product question. `interrogate` stress-tests a decision the user has already proposed.
 - Explaining how existing code works belongs to `clarify`. Finding out something nobody has established yet, such as why the code behaves a certain way, belongs to `investigate`.
+- A request to fix a bug belongs to `fix-bug`. A request to understand its cause without edits belongs to `investigate`.
 - Where the current work or discussion stands, including its decisions and status, belongs to `recap`.
   - Only what waits on the user belongs to `recap`, or to `pending` when the user calls it by name.
   - Only the progress of queued work, with item times and estimates, belongs to `recap`, or to `progress` when the user calls it by name.
@@ -43,7 +44,7 @@ Neighboring skills are easy to confuse:
 
 Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without a separate design.
 
-`guide` recommends a route and does not carry out the work. A request to fix a bug belongs with `fix-bug`. A request to understand the cause without edits belongs with `investigate`. Recommend a conversation or explanation when no specialized workflow is needed. Sustained learning may fit `teach` if available.
+`guide` recommends a route and does not carry out the work. Recommend a conversation or explanation when no specialized workflow is needed. Sustained learning may fit `teach` if available.
 
 ## Make the recommendation usable
 
