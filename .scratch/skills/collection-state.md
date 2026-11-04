@@ -57,7 +57,7 @@ The user retired these to keep the collection to what they use, and wants them b
 | `release` | `0503470`, 2026-11-02 | Publish a version or deploy by a procedure, then verify the result. mrzli.github.io deploys through a GitHub Action | "Publish the setup changes to the main machine and check they applied." |
 | `create-verification` | `0503470`, 2026-11-02 | Agents need a scripted way to drive the real application, when the user checks behavior by hand | "I keep having to check the chart by hand after every change, can agents check it themselves?" |
 | `explore` | `0503470`, 2026-11-02 | A vague interest or difficulty with no goal yet | "I'm kind of interested in something around music, not sure what." |
-| `spawn full`, a mode of `spawn` | `dda0bac`, 2026-11-04 | A fork needs the whole conversation rather than a brief. None of the 47 forks recorded in trading-app, archon, and this repository by 2026-11-04 used it. A built-in clone, `claude --resume <id> --fork-session`, with a same-machine handoff back covers the need | "Fork this whole conversation so I can dig into F2 with everything we said." |
+| `spawn full`, a mode of `spawn` | `d1b8ab5`, 2026-11-04 | A fork needs the whole conversation rather than a brief. None of the 47 forks recorded in trading-app, archon, and this repository by 2026-11-04 used it. A built-in clone, `claude --resume <id> --fork-session`, with a same-machine handoff back covers the need | "Fork this whole conversation so I can dig into F2 with everything we said." |
 
 ## Method notes
 
