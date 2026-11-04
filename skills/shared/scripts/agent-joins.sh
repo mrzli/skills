@@ -179,7 +179,7 @@ cmd_spawn() {
     printf 'Spawned from %s on %s.\n\n' "$me" "$now"
     printf '%s\n' "$brief"
   } >"$brief_file"
-  prompt="Topic: $new_topic. You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Use the IDs the brief uses, and continue its numbering for new items. Its map gives each of the brief's IDs the ID it has in $me. $discuss_only"
+  prompt="Topic: $new_topic. You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Use the IDs the brief uses, and continue its numbering for new items. Its map gives each of the brief's IDs the ID it has in $me. The user has not seen the brief. In your first reply, after the topic, list the brief's items with their IDs, each with a few words on what it is, before you discuss anything. After that, introduce each of the brief's items the first time you use it, as you would a new item. $discuss_only"
   printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
 
   if [[ -n ${HERDR_SESSION:-} ]]; then

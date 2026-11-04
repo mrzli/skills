@@ -30,6 +30,8 @@ Number the brief's items afresh, so the fork starts with short IDs, in the schem
 
 Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 
+The user never sees the brief, so the script tells the fork to introduce its items. The fork's first reply, after the topic, lists the brief's items with their IDs, each with a few words on what it is, before it discusses anything. After that, the fork introduces each of the brief's items the first time it uses it, as it would a new item.
+
 ## After spawning
 
 The script names the fork after this session, such as `Claude-1` for the first fork of `Claude` and `Claude-1-1` for a fork of that, records it, and opens it in a new herdr or tmux tab. If it reports that the agent or terminal is unsupported, tell the user and stop.
