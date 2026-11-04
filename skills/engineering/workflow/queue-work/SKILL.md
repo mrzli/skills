@@ -35,7 +35,9 @@ Pass each agent a brief with:
 - The agreed decisions themselves, not only a pointer to the queue.
 - The hash of the tip of the user's branch as the base commit.
 - Whether other agents run at the same time.
-- An instruction to read [worktree-agent.md](worktree-agent.md) first and follow it, with that file's absolute path in this skill's installed directory. Do not copy its rules into the brief, so each agent reads the current version even when this session's copy of the skill is older.
+- An instruction to read [worktree-agent.md](worktree-agent.md) first and follow it, with that file's absolute path in this skill's installed directory.
+
+Do not copy the rules of `worktree-agent.md` into the brief, so each agent reads the current version even when this session's copy of the skill is older.
 
 Checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, must not overlap. When several implementers run, they skip those checks and name them in their report, as `worktree-agent.md` says. The main agent runs them during integration. While any implementer runs, the main agent avoids those checks too.
 

@@ -12,7 +12,7 @@ Forks only discuss:
 - The script tells each fork not to change the checkout and blocks the file-editing tools there.
 - A fork writes its temporary files outside the checkout, such as a throwaway script in its session scratch folder, even where the project keeps temporary files inside the checkout, so they cannot mix with changes there.
 - Changes the user approves in a fork pass up through `yield`, and the main session, the one that is not a fork, implements them when it runs `collect`. All changes to the checkout then happen in one session.
-- Handoffs to other repositories pass up the same way. A fork writes none. When the user asks for one or the work calls for one, the fork notes only which repository it is for and what change it should ask for, and the main session writes the handoff.
+- Handoffs to other repositories also pass up through `yield`. A fork writes none. When the user asks for one or the work calls for one, the fork notes only which repository it is for and what change it should ask for, and the main session writes the handoff.
 
 The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation.
 
