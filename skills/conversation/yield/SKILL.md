@@ -12,7 +12,7 @@ Write the note in Markdown, kept short:
 - The topic.
 - The decisions, each with its reason. Refer to the parent's items by the parent's IDs, translating the fork's IDs through the map at the start of its brief, so the note reads in the parent's terms.
 - Agreed to implement: each change the user explicitly approved in this fork, with the exact names, values, and choices an implementer needs without the conversation. Leave out changes that were discussed but not approved.
-  - Give each a source ID made of this fork's name and the item's ID, such as `Claude-1/F2a`, and keep it unchanged in later versions of the note. Give an item without an ID in the conversation the next free one.
+  - Give each a source ID made of this fork's name and the item's ID, such as `Claude-1/A1a`, and keep it unchanged in later versions of the note. Give an item without an ID in the conversation the next free one.
   - Mark each item `now`, or `backlog` when the user agreed to it only for the backlog or said not to implement it yet.
 - Handoffs needed: for each handoff to another repository that the user asked for or the work called for in this fork, the target repository's path and the change it should ask for, with the exact names, values, and choices the main session needs to write it without the conversation. Do not write the handoff itself, as `spawn` says for forks. Give each a source ID and keep it unchanged, as for agreed items.
 - What is still open.
