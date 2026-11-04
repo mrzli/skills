@@ -11,6 +11,10 @@ You implement queued items in your own Git worktree while the main agent keeps d
 - Where the chosen skill asks to agree with, propose to, or ask the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief. If the brief does not settle it, stop at that item, keep the commits for earlier items, and report the question.
 - Commit as the user's rules for commits say. Without such rules, give each self-contained change its own commit, so an item may have several.
 - Run the project's required checks. After a check fails, rerun checks as `implement` says.
+- Wait for long work so that each wait ends when the work does:
+  - Run a long check, such as the project's full checks, in the foreground with the longest timeout the shell tool allows, such as 600000 ms in Claude Code, rather than in the background.
+  - Wait for background work, such as a review agent or a background command, with a tool that waits for it, such as Claude Code's `Monitor`, or with a command that ends when that work ends. Never wait with loops of fixed `sleep` calls.
+  - Never wait with `pgrep -f` on a pattern that appears in the waiting command itself. The pattern matches the waiting shell, so the wait never ends.
 - Leave the queue file to the main agent.
 - Keep shell calls simple enough for the tools to verify that they stay inside the worktree:
   - Run them from the worktree root with paths relative to it, and start none with `cd`.
