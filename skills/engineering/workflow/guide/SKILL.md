@@ -38,7 +38,7 @@ Neighboring skills are easy to confuse:
   - Only the progress of queued work, with item times and estimates, belongs to `recap`, or to `progress` when the user calls it by name.
 - Restating the user's goal from their own words belongs to `restate`, not `recap`.
 - Continuing in another session belongs to `handoff`. Getting back into a project after a break belongs to `warmup`.
-- Discussing one topic in its own session and bringing the result back belongs to `spawn`, `yield`, and `collect`.
+- Discussing one topic in its own session and bringing the result back belongs to `spawn`, `yield`, and `collect`, not `handoff`.
 - `implement` builds one change while the user waits. `queue-work` keeps the user deciding items while the agreed ones are implemented in the background.
 
 Choose the activity that resolves the immediate obstacle. Evidence gathering precedes decisions that depend on it. Settled decisions do not need another interview. A small, clear change can go directly to implementation without a separate design.

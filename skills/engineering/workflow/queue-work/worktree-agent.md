@@ -8,7 +8,7 @@ You implement queued items in your own Git worktree while the main agent keeps d
   - `refactor` for a restructuring that keeps behavior.
   - `optimize` for a measured performance goal.
   - `implement` for anything else.
-- Where the chosen skill asks to agree with or propose to the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief.
+- Where the chosen skill asks to agree with, propose to, or ask the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief. If the brief does not settle it, stop at that item, keep the commits for earlier items, and report the question.
 - Commit as the user's rules for commits say. Without such rules, give each self-contained change its own commit, so an item may have several.
 - Run the project's required checks. After a check fails, rerun checks as `implement` says.
 - Leave the queue file to the main agent.
@@ -18,7 +18,6 @@ You implement queued items in your own Git worktree while the main agent keeps d
   - Avoid shell variables, command substitution, and loops in any call.
   - Run other commands that change files, such as `mkdir` or `cp`, one per call, without brace expansion.
   - Create and edit files with the file-editing tools, not through shell heredocs such as `cat > file <<'EOF'` or `python3 - <<'EOF'`, `sed -i`, or redirection.
-  - For a mechanical edit across many files, write a script with those tools and run it as one plain command.
+  - For a mechanical edit across many files, write a script with the file-editing tools and run it as one plain command.
 - When other agents run at the same time, skip checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, and name them in your report. The main agent runs them during integration.
 - Make routine choices that follow from the decisions and project conventions, and leave them out of your report. Report every other choice the decisions did not settle.
-- Stop at an item that needs a choice the chosen skill says to ask the user about, when your brief does not settle it. Keep the commits for earlier items, and report the question.

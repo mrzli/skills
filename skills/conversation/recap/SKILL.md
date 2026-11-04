@@ -48,7 +48,7 @@ When the argument asks for it, such as `progress`, or the user asks only for the
 - **Running:** each item in progress, with how long it has run and its estimated time left.
 - **Remaining:** the items not yet started, in the order they will start, one line each with an estimate.
 - **May be added:** work that waits to be slotted in, such as a design still being discussed in a fork, with its estimate when known.
-- **Totals:** the work time, which adds up the items' times, and the wait time, which is the clock time with items running at once. Leave work that may be added out of the totals, and give its estimates beside them. Give both totals:
+- **Totals:** the work time, which adds up the items' times, and the wait time, which is the clock time with items running at once. Leave work that may be added out of the totals, and give its estimates beside them. Give both the work time and the wait time for each of these:
   - For the finished work, whose wait time runs from the first start to the last integration.
   - For the running and remaining work, whose wait time runs until the queue is done, given how many items run at once. Count only the time left for running items.
 
