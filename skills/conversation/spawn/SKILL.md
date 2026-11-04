@@ -30,7 +30,7 @@ Number the brief's items afresh, so the fork starts with short IDs, in the schem
 
 Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 
-The user never sees the brief, so the script tells the fork to introduce its items. The fork's first reply, after the topic, lists the brief's items with their IDs, each with a few words on what it is, before it discusses anything. After that, the fork introduces each of the brief's items the first time it uses it, as it would a new item.
+The user never sees the brief, so the script tells the fork to introduce its items. The fork's first message, after the topic, lists the brief's items with their IDs, each with a few words on what it is, before it discusses anything. After that, the first time the fork discusses one of the brief's items, it introduces it as the user's rules for IDs say for new items, or in a few words on what it is without such rules.
 
 ## After spawning
 
