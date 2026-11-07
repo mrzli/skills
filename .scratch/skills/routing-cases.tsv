@@ -64,3 +64,5 @@
 ~/projects/personal/mrzli/trading-app	clarify	I'm lost. Go back, what does the chart's feature contract actually do?
 ~/projects/personal/mrzli/trading-app	clarify,investigate	I thought a pane feature's requirements were the data it depends on. What are they actually?
 ~/projects/personal/mrzli/trading-app	review-architecture	Go through the chart library's main types and interface functions and tell me which names are misleading.
+~/projects/personal/mrzli/trading-app	clarify,investigate,!review-architecture	What does the name of the pane feature's main function mean?
+~/projects/personal/mrzli/trading-app	review-code,!review-architecture	Review the diff on this branch. I think the new function's name is misleading.
