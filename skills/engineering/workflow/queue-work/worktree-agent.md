@@ -12,7 +12,7 @@ You implement queued items in your own Git worktree while the main agent keeps d
 - Commit as the user's rules for commits say. Without such rules, give each self-contained change its own commit, so an item may have several.
 - Run the project's required checks. After a check fails, rerun checks as `implement` says.
 - Wait for long work so that each wait ends when the work does:
-  - Run a long check, such as the project's full checks, in the foreground with the longest timeout the shell tool allows, (600000 ms in Claude Code), rather than in the background. If it times out, rerun it in the background and wait for it as the next rule says.
+  - Run a long check, such as the project's full checks, in the foreground with the longest timeout the shell tool allows (600000 ms in Claude Code), rather than in the background. If it times out, rerun it in the background and wait for it as the next rule says.
   - Wait for background work, such as a review agent or a background command, with a tool that waits for it, such as Claude Code's `Monitor`, or with a single command that ends when that work ends, such as `tail --pid=<pid> -f /dev/null`. A condition loop inside `Monitor` is an exception to the shell-call rules below. Never poll with repeated shell calls that sleep for a fixed time and then check.
   - Never wait with `pgrep -f` on a pattern that appears in the waiting command itself. The pattern matches the waiting shell, so the wait never ends.
 - Leave the queue file to the main agent.

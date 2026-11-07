@@ -68,7 +68,7 @@ On the next review, start from upstream `24fe0ef7737efae15c87225755e9f6f5965e488
 
 ## Authorized prototype addition
 
-After reviewing the overlap, the user explicitly requested a dedicated [prototype](../../skills/engineering/investigation/prototype/SKILL.md) skill. The collection now has 28 skills. This supersedes the recommendation to defer that addition, without establishing its effectiveness on real tasks.
+After reviewing the overlap, the user explicitly requested a dedicated `prototype` skill. The collection now has 28 skills. This supersedes the recommendation to defer that addition, without establishing its effectiveness on real tasks.
 
 The skill uses Matt Pocock's `prototype`, `UI.md`, and `LOGIC.md` at the revision above as idea sources. It retains interactive comparisons, visible state, and disposable artifacts in one self-contained procedure. It follows project conventions, permits proportional verification, and leaves production implementation to `implement`. It does not impose tracker setup, a fixed UI switcher, or throwaway branches. `guide`, `design`, and `investigate` now route to it where appropriate. Existing MIT attribution remains in `LICENSES.md`.
 
