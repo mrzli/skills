@@ -114,7 +114,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [investigate](skills/engineering/investigation/investigate/SKILL.md) | Resolve a concrete unknown through inspection, research, or experiments. |
-| [review-architecture](skills/engineering/investigation/review-architecture/SKILL.md) | Check code structure against the project's rules, summarize its modules, and prioritize evidence-backed improvements. |
+| [review-architecture](skills/engineering/investigation/review-architecture/SKILL.md) | Check code structure against the project's rules, check its central names, summarize its modules, and prioritize evidence-backed improvements. |
 
 #### [Workflow](skills/engineering/workflow)
 

@@ -19,6 +19,10 @@ Summarize the modules in every review. For a whole-system review, cover each top
 
 Check the code in scope against each collected rule. Report each violation with the rule, its source, and the files or call paths that break it. When neither the project nor the user states architecture rules, say so and judge the structure by general principles.
 
+## Check the names
+
+Ask of each central name, such as a main type or a function in a module's interface: does it say what this does, and to what? Report each name that fails, with what a reader would wrongly assume or could not tell from it, and a better name.
+
 ## Assess the structure
 
 Look for concrete friction: one policy duplicated across callers, a routine change scattered across unrelated areas, hidden coupling, unclear ownership, or interfaces that force callers to understand internal details. Examine how tests exercise behavior and whether the structure makes realistic verification difficult.
