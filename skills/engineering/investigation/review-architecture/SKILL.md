@@ -21,7 +21,7 @@ Check the code in scope against each collected rule. Report each violation with 
 
 ## Check the names
 
-Ask of each central name, such as a main type or a function in a module's interface: does it say what this does, and to what? Report each name that fails, with what a reader would wrongly assume or could not tell from it, and a better name.
+For each central name, such as a main type or a function in a module's interface, ask whether it says what the code does and to what. Report each name that fails, with what a reader would wrongly assume or could not tell from it, and a better name.
 
 ## Assess the structure
 
@@ -35,7 +35,7 @@ Respect existing decisions and explain why new evidence warrants revisiting one.
 
 ## Recommend next steps
 
-Report rule violations as findings, ranked with the other candidates. For a violation that the project should accept instead of fixing, recommend changing the rule. For each worthwhile candidate, report the affected area, evidence, concrete consequence, proposed direction, expected benefit, migration cost, compatibility risk, and verification needs. Rank by expected value and strength of evidence. A short list or no recommended changes is a valid result.
+Report rule violations and names that fail the check as findings, ranked with the other candidates. For a violation that the project should accept instead of fixing, recommend changing the rule. For each worthwhile candidate, report the affected area, evidence, concrete consequence, proposed direction, expected benefit, migration cost, compatibility risk, and verification needs. Rank by expected value and strength of evidence. A short list or no recommended changes is a valid result.
 
 Recommend a bounded next action: further investigation, technical design, or a selected refactor. Keep a broad assessment distinct from committing to a replacement architecture. Preserve relevant behavior constraints for the next skill.
 
