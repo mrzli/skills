@@ -14,6 +14,7 @@ Start from Matt Pocock `4ae2317`, pstack `ae5650f`, and transcripts after 2026-1
 
 | Change | Since | Keep if | Revise or revert if |
 | --- | --- | --- | --- |
+| `clarify` proposes a rename when an explanation shows that a name misled the user (handoff from trading-app) | 11-07 | Misleading names get better names during explanations, and the user accepts most proposals | The proposals interrupt explanations, or the user mostly rejects them |
 | `review-architecture` checks whether each central name says what the code does and to what (handoff from trading-app) | 11-07 | Reviews flag misleading names before an explanation exposes them, as with `needs()` and `contribute()` | The check produces taste-based renames that the user rejects, or crowds out structural findings |
 | `clarify`: once the user is lost, reply in roughly 100 words, on one point, with no decision, correcting one thing in the user's model (handoff from trading-app) | 11-07 | Explanations in long design discussions reach understanding in fewer replies, and the user stops asking for shorter ones | The replies are too thin to correct the misunderstanding, or the agent keeps this mode after the user follows |
 | `recap` has a view of only what waits on the user, and the user-invoked `pending` runs it (handoff from trading-app) | 11-02 | Requests like "list everything I need to answer" get the short view, and the user uses `/pending` | The view drops something the user needed, or `pending` goes unused |
