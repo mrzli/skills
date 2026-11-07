@@ -1,6 +1,6 @@
 ---
 name: review-architecture
-description: Assess an existing codebase's structure against the project's architecture rules and identify evidence-backed improvement opportunities. Use for a periodic structural review, architectural friction, coupling, unclear responsibilities, code that breaks the project's rules, or difficulty changing and testing a subsystem, rather than review of one diff.
+description: Assess an existing codebase's structure against the project's architecture rules and identify evidence-backed improvement opportunities. Use for a periodic structural review, architectural friction, coupling, unclear responsibilities, code that breaks the project's rules, misleading central names, or difficulty changing and testing a subsystem, rather than review of one diff.
 ---
 
 Produce a scoped assessment, a summary of the modules in scope, and prioritized recommendations. The summary and the rule check let a reader who has not read the code judge its structure. Architecture review identifies worthwhile work. It does not automatically redesign or refactor the codebase.
