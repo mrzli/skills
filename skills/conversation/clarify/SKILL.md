@@ -20,8 +20,10 @@ When the user says they are lost or still do not understand, apply these rules u
 
 - Keep each response within roughly 100 words.
 - Answer one point, and put it first. Leave the rest for later responses.
-- Do not ask the user to decide or approve anything.
-- Make that point a correction to the user's model of the topic, such as a missing distinction or mistaken assumption, and restate the model after it. If you cannot tell what the model is, ask for it instead. Do not explain the structure of your own explanation or proposal, and do not rephrase the earlier explanation.
+- Do not ask the user to decide or approve anything. Make any offer, such as a glossary entry, once they follow.
+- Make that point a correction to the user's model of the topic, such as a missing distinction or mistaken assumption, then say what you took that model to be.
+- If you cannot tell what the model is, ask for it in place of the correction. Still answer a direct question first.
+- Do not explain the structure of your own explanation or proposal, and do not rephrase the earlier explanation.
 
 Split longer explanations along their natural structure, starting with an overview and moving into smaller topics as needed. For a codebase, these might be architecture, subsystems, directories, files, or sections within a file. Split large topics further when needed. Even the overview can span multiple responses. Requests for more detail should add parts rather than substantially lengthen individual responses.
 

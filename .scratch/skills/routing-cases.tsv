@@ -62,4 +62,4 @@
 ~/projects/personal/mrzli/trading-app	recap,!queue-work	Give me the estimate by item for what is left in the queue.
 ~/projects/personal/mrzli/trading-app	glossary	I want to name the log entry field that says which part of the app wrote it "source", but we already use source for a provider's data source. Can we reuse the word, and if so, record that properly?
 ~/projects/personal/mrzli/trading-app	clarify	I'm lost. Go back, what does the chart's feature contract actually do?
-~/projects/personal/mrzli/trading-app	clarify	I thought needs() listed the data a feature depends on. What does it actually do?
+~/projects/personal/mrzli/trading-app	clarify,investigate	I thought a pane feature's requirements were the data it depends on. What are they actually?
