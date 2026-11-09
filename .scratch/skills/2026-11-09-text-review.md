@@ -6,7 +6,13 @@ All four areas: no retired skill is referenced, all links and symlinks resolve, 
 
 Dropped: the docs reviewer reported the deployed `~/.codex/AGENTS.md` as behind archon. It is identical to archon's copy.
 
-Each item gives the main session's recommendation. Status: all open, awaiting the user.
+Each item gives the main session's recommendation.
+
+## Decisions
+
+The user approved every item as recommended on 2026-11-09, with item 4 narrowed: `review-code`, `review-architecture`, and the `queue-work` report lead with what the user needs, but `recap` keeps its state-first order, because a recap's answer is the current state and `pending` already gives the view of what waits on the user. Added to the [archon] items:
+
+62. Global `:11` names both the answer and the waiting questions as what comes first. Proposed: "Start with what the user asked for, then the questions waiting on them, unless a question blocks the answer."
 
 ## Decisions that change approved behavior
 
