@@ -13,7 +13,7 @@ Inspect the current approach before introducing a new abstraction or dependency.
 
 ## Compare approaches
 
-Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification. Rank them as the user's rules for recommendations say. Without such rules, weigh the quality of the result far above implementation effort.
+Consider the simplest viable change and materially different alternatives where there is a real tradeoff. An obvious, reversible choice may need only a short rationale. For consequential choices, compare options against the actual constraints, including implementation cost, compatibility, operational burden, maintainability, and verification. Rank them as the user's rules for recommendations and designs say. Without such rules, weigh the quality of the result far above implementation effort.
 
 Favor interfaces that hide complexity from callers and keep related behavior understandable in one place. Add abstractions for demonstrated variation or complexity, rather than hypothetical future flexibility. Use the project's terminology, and record each new or renamed concept using the `glossary` skill. A particular design vocabulary or pattern is not a requirement.
 
@@ -21,14 +21,16 @@ For a new interface, write two or three realistic call sites before the types an
 
 Describe the important interfaces, state transitions, data changes, and failure behavior. Include migration, rollout, and recovery where the design affects existing users or stored data. Use a small diagram, contract, or code sketch when it makes the decision clearer than prose.
 
-Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility or performance, gather evidence with a focused experiment before presenting it as settled. Separate evidence, assumptions, and expected benefits.
+Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility, performance, or undocumented library behavior, gather evidence with a focused experiment before presenting it as settled. Rely on behavior a library or tool does not document only as the user's rules for dependencies say. Without such rules, ask the user first. Separate evidence, assumptions, and expected benefits.
 
 When choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives, build a small disposable demonstration in the project's scratch area or a temporary directory, and use it and the user's feedback as evidence for the design.
+
+When the design grows to fix neighboring problems, propose a first slice as the user's rules for designs say. Without such rules, tell the user, propose a first slice that later slices extend, and record each complicated neighboring change as a backlog item.
 
 ## Record the decision
 
 Recommend an approach with its reasons, rejected alternatives, and remaining risks. Make routine technical choices within the authorized scope. Ask for user judgment as the user's rules for approval say. Without such rules, ask when alternatives materially change product behavior, cost, compatibility, or an established commitment that the evidence cannot settle.
 
-Record accepted decisions in the existing specification or project design records. When a design is worked out in conversation across several exchanges or sessions, write each decision to the record when it is agreed, not at the end, and note rejected options and open questions there too. For a substantial standalone decision with no established location, save `docs/design/<descriptive-slug>.md`. Label unresolved proposals as such. Leave task breakdown out of the design record.
+Keep a design still under discussion in `.scratch/design/<slug>.md`, or the project's convention. Move accepted decisions to the existing specification or the project's design records, or, for a substantial standalone decision with no established location, to `docs/design/<descriptive-slug>.md`. When a design is worked out in conversation across several exchanges or sessions, write each decision to its working record when it is agreed, not at the end, and note rejected options and open questions there too. Label unresolved proposals as such. Leave task breakdown out of the design record.
 
 Finish when the next implementer can understand the chosen approach, constraints, verification strategy, and remaining blockers. Design alone does not request production implementation.
