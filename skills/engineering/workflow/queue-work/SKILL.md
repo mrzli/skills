@@ -12,6 +12,7 @@ Run up to N ready items at once, or 4 when N is not given. The user can change N
 
 Keep the queue in a temporary plan file that follows the project's conventions for plans, or in `.scratch/delivery/<slug>.md` if the project has none. If that location is ignored by Git, choose a tracked one, since the final state is committed. For each item, record:
 
+- Its number in the queue, as the user's rules for IDs say for plans. Without such rules, number items in the order they are added.
 - The agreed decision, with exact names, values, and choices, so an implementer can act without the conversation, including, for a performance item, the metric, workload, and stop condition.
 - Its footprint: the files and areas it is expected to touch, estimated from the decision and a search of the whole repository, including docs and comments, for the names and forms it changes.
 - The earlier items it depends on.
@@ -31,7 +32,7 @@ Start a batch only when the user asks to implement or queue agreed items, such a
 
 Give each item its own background agent with a fresh context, not one that copies this conversation. Start it from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order.
 
-When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Run bugs, performance work, and items whose decision leaves design questions open on the most capable model, and note the model and the reason in the item's decision. An item may name another model the same way. A chain of items runs on the most capable model any of its items needs. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. The review model is this session's model or the most capable one available. Run each review of an implementer's commits on it, never on a cheaper implementer's model.
+When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Use the most capable model for bugs, performance work, and items whose decision leaves design questions open, and note the model and the reason in the item's decision. An item may name another model the same way. A chain of items runs on the most capable model any of its items needs. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. The review model is the most capable model available, or this session's model when the tool offers no choice. Run each review of an implementer's commits on it, never on a cheaper implementer's model.
 
 Pass each agent a brief with:
 
@@ -43,7 +44,7 @@ Pass each agent a brief with:
 
 Do not copy the rules of `worktree-agent.md` into the brief, so each agent reads the current version even when this session's copy of the skill is older. In the brief, do not ask for a longer report than `worktree-agent.md` sets. When you need more detail on an item, read its diff or ask its implementer.
 
-Checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, must not overlap. When several implementers run, they skip those checks and name them in their report, as `worktree-agent.md` says. The main agent runs them during integration. While any implementer runs, the main agent avoids those checks too.
+Checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, must not overlap. When several implementers run, they skip those checks and name them in their report, as `worktree-agent.md` says. The main agent runs them once no implementer runs, and records in the queue which integrated items still await them. Run them at the latest before the user's branch goes into the main branch.
 
 If background agents are unavailable, say so and implement the batch in the foreground, choosing the skill per item as `worktree-agent.md` says. If they cannot run concurrently, run them one at a time.
 
@@ -54,24 +55,24 @@ While a batch runs, keep discussing the next items and adding agreed ones to the
 Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Decide whether to review it with `review-code`:
 
 - Use `review-code` unless the implementer reports that a fresh agent on the review model reviewed its commits. You did not write an item a background agent implemented, so your review of it is independent.
-- Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve.
+- Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve, other than a blocking or major finding it left for the more capable model as its brief says.
 - An item you implemented in the foreground was already reviewed through `implement`, so do not review it again unless that review was a self-review.
 
-Grade each review's findings as blocking, major, minor, or nit, or have its reviewer grade them. Design findings go to the user, as the report below says. Without a model choice, every fix runs on the session's model. Otherwise, fix the findings of your review, and those the implementer left unresolved, by their severity:
+Grade each review's findings on `review-code`'s severity scale, or have its reviewer grade them. Design findings go to the user as recommended changes, as `review-code` says. Without a model choice, every fix runs on the session's model. Otherwise, fix the findings of your review, and those the implementer left unresolved, by their severity:
 
 - Give minor findings and nits to an agent on the implementer's model, such as the implementer resumed with them.
 - Run the fix of a blocking or major finding on the most capable model. If a blocking or major finding remains after that fix and the implementer ran on a cheaper model, have the most capable model redo the item from its base commit. Otherwise, report the remaining finding to the user.
 
-Review each fix on the review model as the user's rules for reviewing fixes say. Without such rules, review every fix. Always review the fix of a blocking or major finding, to decide whether the item must be redone.
+Review each fix on the review model as the user's rules for Git and checks say. Without such rules, review every fix. Always review the fix of a blocking or major finding, to decide whether the item must be redone.
 
-Take an implementer's commits from its branch in Git, never from a hash in its report, since a reported hash may be wrong. Bring them onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, including the item's times and measurements, remove the worktree, delete the implementer's branch, and start items that became ready.
+Take an implementer's commits from its branch in Git, never from a hash in its report, since a reported hash may be wrong. Bring them onto the user's branch as the user's rules for Git and checks say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Record any checks the implementer skipped in the queue, to run as the batch rule says. Update the queue, including the item's times and measurements, remove the worktree, delete the implementer's branch with `git branch -d`, and start items that became ready.
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later footprint estimates improve.
 
-Report for each item what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that `review-code` would report as a design finding. State when there were none. Raise any blocking question in the discussion.
+Start each item's report with its questions and the choices to ask about, then what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that `review-code` would report as a design finding. State when there were none. Raise any blocking question in the discussion.
 
 Follow the user's and the project's rules for branches and commits. Without such rules, start from a branch other than the main branch, and bring the user's branch into the main branch only when the user asks.
 
 ## Finish the queue
 
-When the queue is done, finish the plan file as the project's conventions say. Without such conventions, record each item's final status and move lasting decisions into the permanent docs. Stage only the changes that belong with removing the queue, such as those docs or a closed backlog item, and run the checks the project requires for them. Then run [finish-queue.sh](scripts/finish-queue.sh) with the plan file's path. It commits the plan file alone, so the queue stays in history, and skips that commit when the file has no changes. It then deletes the file in a second commit together with everything else staged. Pass `--record-message` and `--remove-message` when the project's commit conventions call for messages other than the ones it derives from the file name, and `--trailer` for each trailer the commits need. Check the files it lists for each commit. If a commit fails, fix the cause and rerun the same command.
+When the queue is done, finish the plan file as the project's conventions say. Without such conventions, record each item's final status and move lasting decisions into the permanent docs. Commit the move of lasting decisions into the permanent docs on its own first, after the checks the project requires for it. Stage only changes that belong with removing the queue, such as a closed backlog item. Then run [finish-queue.sh](scripts/finish-queue.sh) with the plan file's path. It commits the plan file alone, so the queue stays in history, and skips that commit when the file has no changes. It then deletes the file in a second commit together with everything else staged. Pass `--record-message` and `--remove-message` when the project's commit conventions call for messages other than the ones it derives from the file name, and `--trailer` for each trailer the commits need. Check the files it lists for each commit. If a commit fails, fix the cause and rerun the same command.
