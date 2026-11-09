@@ -44,6 +44,8 @@ Do not propose these again without new evidence:
 - `tdd`: `implement` already asks for a failing test first when it helps, and for tests through stable interfaces. The user rejected a mandatory test-boundary gate on 10-05.
 - Formal verification (`create-formal-verification-skill`, `statechart`): no need yet. Revisit if trading-app's storage or fetcher gains concurrency or invariants that tests reach poorly.
 - Principle skills, multi-model or cloud orchestration, PR stacks, `why`, and video or diagram catch-ups such as `ketchup-video`: they don't fit solo terminal work, or the global `AGENTS.md` and existing skills cover them.
+- `triage`: deferred on 10-05 until incoming external issues or pull requests create a real classification and follow-up burden.
+- A persistent decision map for efforts that span sessions (10-05 trial idea): `recap`, `spawn`, `yield`, and `collect` now carry decisions across sessions. Revisit if decisions still get lost between sessions.
 - Covered locally: `ketchup` and `recall` (`recap`), `bro` (`clarify`), `in-your-own-words` (`restate`), and `sharpen` (`restate`, `guide`, and `design`).
 
 ## Retired
