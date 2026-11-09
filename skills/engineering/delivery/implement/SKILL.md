@@ -11,16 +11,20 @@ Read applicable project instructions, the request and referenced artifacts, and 
 
 Identify the intended behavior, completion criteria, and how to verify them. Resolve routine implementation choices from the repository.
 
-- When the evidence cannot settle a decision, ask about it, and act only on what the user approved, as the user's rules for approval say. Without such rules, ask only about decisions that affect names, user-visible behavior, interfaces, scope, compatibility, or persisted data, answer a question and wait, and treat approval as covering only what was approved. Continue independent work while a decision is pending.
+- When the evidence cannot settle a decision, take, list, or ask about it as the user's rules for approval say. Without such rules:
+  - Ask only about decisions that affect names, user-visible behavior, interfaces, scope, compatibility, or persisted data.
+  - Answer a question and wait.
+  - Treat approval as covering only what was approved.
+  - Continue independent work while a decision is pending.
 - Fix mechanical consequences of the agreed change within scope, such as stale references, uses of a name the change renamed, and documentation, instead of asking about them or reporting them as open questions. Ask or propose only when a consequence involves a choice.
-- Propose changes outside the request instead of making them, including convenience changes, except the fixes the user's rules for code design ask for in the code you change.
+- Propose changes outside the request instead of making them, except the changes the user's rules say to make on your own judgment, such as fixes in the code you change, renames, and docs, comments, or tests brought in line with the code.
 - Keep compatibility as the user's rules for code design say. Without such rules, update callers inside the repository instead of adding aliases, fallbacks, or deprecated paths. Keep a compatible form only for consumers outside the repository, persisted data, or an explicit user request.
 
 For work with several steps, keep a short plan or update the supplied task artifact. If implementing one task from a larger plan, use the surrounding plan as context and keep execution within the assigned scope.
 
 ## Build and verify
 
-Before settling on an approach, compare it with the realistic alternatives and build the better one, as the user's rules for design choices say. Without such rules, build the better one even when it takes more effort, unless the extra effort is large compared with the gain. Work in small, verifiable increments using the project's conventions and existing abstractions. Report deviations from an agreed design instead of absorbing them silently. Include documentation, configuration, and migration changes needed to make the requested behavior usable. Keep unrelated cleanup separate, in its own commit when committing.
+Before settling on an approach, compare it with the realistic alternatives and build the better one, as the user's rules for recommendations and designs say. Without such rules, build the better one even when it takes more effort, unless the extra effort is large compared with the gain. Work in small, verifiable increments using the project's conventions and existing abstractions. Report deviations from an agreed design instead of absorbing them silently. Include documentation, configuration, and migration changes needed to make the requested behavior usable. Keep unrelated cleanup separate, in its own commit when committing.
 
 Choose checks that demonstrate observable behavior and protect affected existing behavior. For a reproducible bug, establish the failure before changing the code. Add regression coverage where practical. Use a failing test first when it provides a useful check of the change. Follow any project requirement for test-driven development.
 
@@ -32,10 +36,10 @@ Investigate failures and fix those caused by the change. After a fix, rerun chec
 
 ## Review and finish
 
-Have the complete change, including new files, reviewed against the request and project conventions with `review-code`, giving it the intended behavior, change scope, and verification results. Without `review-code`, give the same to a fresh agent to review when the tools allow, and otherwise review the change yourself and identify the result as self-review. Report whether a fresh agent reviewed the change or it was self-review.
+Have the complete change, including new files, reviewed against the request and project conventions with `review-code`, giving it the intended behavior, change scope, and verification results. Size the review brief as the user's rules for reviews say. Without such rules, follow what `review-code` describes for a change of this size and risk. Without `review-code`, give the same to a fresh agent to review when the tools allow, and otherwise review the change yourself and identify the result as self-review. Report whether a fresh agent reviewed the change or it was self-review.
 
-Resolve actionable findings within scope, then rerun affected checks after corrections. Record consequential findings outside scope instead of silently expanding the task.
+Resolve actionable findings within scope, then rerun affected checks after corrections. Record only out-of-scope findings that the user's rules do not cover, instead of silently expanding the task.
 
 Finish when the requested behavior is implemented, relevant verification has passed, and no known blocking review findings remain. If a blocker prevents completion, state the remaining work and the specific evidence or decision needed to proceed. For work continuing across sessions, update the existing task artifact or a concise progress note with completed work, verification, and next steps.
 
-Report what changed, the checks performed and their results, and any remaining limitations. Commit as the user's and the project's rules for commits say. Without such rules, do not commit unless asked. Push, open a pull request, or release only when asked.
+Put open questions first. Report what changed, your choices beyond the request as the user's rules for approval say, the checks performed and their results, and any remaining limitations. Without such rules, list every choice beyond the request. Commit as the user's and the project's rules for commits say. Without such rules, do not commit unless asked. Push, open a pull request, or release only when asked.
