@@ -14,13 +14,15 @@ Relies on transcript layouts that neither Claude Code nor Codex documents;
 the user accepted relying on them. Tested by scripts/tests/test_repeated_steps.py.
 - Claude Code keeps a project's sessions under ~/.claude/projects/<slug>/,
   where <slug> is the project's absolute path with every character other
-  than a letter or digit replaced by -. Folders whose names start with the
-  slug, such as those of worktrees inside the project, count too, and so do
+  than a letter or digit replaced by -. Every folder whose name starts with
+  the slug counts too, such as those of worktrees inside the project, but
+  also those of sibling projects whose paths extend the project's, and so do
   *.jsonl files nested below them. It reads each record's timestamp and
   message.content blocks: Bash tool_use blocks (id, input.command) and
   tool_result blocks (tool_use_id).
 - Codex keeps sessions as ~/.codex/sessions/**/*.jsonl whose first record is
-  a "session_meta" record with payload.cwd. It reads "response_item" records
+  a "session_meta" record with payload.cwd, and counts sessions whose cwd is
+  the project or a folder inside it. It reads "response_item" records
   whose payload.input or payload.arguments holds code calling
   exec_command({cmd: "..."}).
 """
