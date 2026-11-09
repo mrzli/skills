@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 # Summarize skill use recorded in local Claude Code and Codex transcripts.
+#
+# Relies on transcript layouts that neither Claude Code nor Codex documents;
+# the user accepted relying on them. Tested by scripts/tests/test_skill_usage.py.
+# - Both keep sessions as *.jsonl files under ~/.claude/projects and
+#   ~/.codex/sessions, one session per file, with a timestamp on each record.
+# - Claude Code records carry cwd. It reads "user" records' message.content
+#   for <command-name> tags, and "assistant" records' tool_use blocks (name,
+#   input; the Skill tool's input.skill).
+# - Codex records the working directory once, in a "session_meta" record's
+#   payload.cwd. It reads "response_item" records: user messages'
+#   payload.content[].text for injected <skill><name> blocks, and tool calls
+#   (payload.type ending in "call") through payload.input or payload.arguments.
 set -euo pipefail
 
 usage() {

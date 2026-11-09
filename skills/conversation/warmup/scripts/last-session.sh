@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 # Print the last messages of the most recent earlier agent session in a project.
+#
+# Relies on transcript layouts that neither Claude Code nor Codex documents;
+# the user accepted relying on them. Tested by scripts/tests/test_last_session.py.
+# - Claude Code keeps a project's sessions as ~/.claude/projects/<slug>/*.jsonl,
+#   where <slug> is the project's absolute path with / and . replaced by -.
+#   It reads records with type "user" or "assistant", isMeta, and
+#   message.content (a string, or a list of blocks with type and text).
+# - Codex keeps sessions as ~/.codex/sessions/**/*.jsonl whose first line is a
+#   "session_meta" record with payload.cwd. It reads "response_item" records
+#   with payload.type "message", payload.role, and payload.content[].text.
 set -euo pipefail
 
 usage() {
