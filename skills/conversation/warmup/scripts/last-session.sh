@@ -39,7 +39,7 @@ codex_dir=${CODEX_TRANSCRIPTS:-$HOME/.codex/sessions}
 sessions() {
   local slug=${project//[\/.]/-}
   find "$claude_dir/$slug" -maxdepth 1 -name '*.jsonl' -printf '%T@\tclaude\t%p\n' 2>/dev/null || true
-  find "$codex_dir" -name '*.jsonl' -mtime -30 -printf '%T@\t%p\n' 2>/dev/null |
+  { find "$codex_dir" -name '*.jsonl' -mtime -30 -printf '%T@\t%p\n' 2>/dev/null || true; } |
     while IFS=$'\t' read -r mtime file; do
       cwd=$(head -n1 "$file" | jq -r 'select(.type == "session_meta") | .payload.cwd // empty' 2>/dev/null)
       if [[ $cwd == "$project" ]]; then printf '%s\tcodex\t%s\n' "$mtime" "$file"; fi

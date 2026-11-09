@@ -61,7 +61,7 @@ extract='
   | @tsv'
 
 {
-  find "$claude_dir" "$codex_dir" -name '*.jsonl' -print0 2>/dev/null |
+  { find "$claude_dir" "$codex_dir" -name '*.jsonl' -print0 2>/dev/null || true; } |
     while IFS= read -r -d '' file; do
       session=${file##*/}
       # Codex records cwd once in session_meta; Claude records it on each line.
