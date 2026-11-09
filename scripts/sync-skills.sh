@@ -35,6 +35,7 @@ discover_skills() {
   fi
   for child in "$directory"/*; do
     [[ -d $child && ! -L $child ]] || continue
+    # A skill's supporting directories are not separate skills.
     if [[ ! -f $child/SKILL.md ]]; then
       discover_skills "$child"
       continue
@@ -44,7 +45,6 @@ discover_skills() {
       printf 'Duplicate skill name: %s\n' "$name" >&2
       exit 1
     fi
-    # A skill's supporting directories are not separate skills.
     if [[ $user == true ]]; then
       desired[$name]=$child
     else
