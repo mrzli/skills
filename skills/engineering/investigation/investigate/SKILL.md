@@ -25,7 +25,7 @@ Test competing explanations when the first plausible answer lacks support. Track
 
 ## Report the answer
 
-Lead with the conclusion or the unresolved question. Support it with file locations, source links, commands, or experimental results. Separate observations, inferences, and assumptions. Explain confidence, relevant limitations, and what the answer means for the decision that prompted the work.
+Lead with the conclusion or the unresolved question. Support it with file locations, source links, commands, or experimental results. Separate observations, inferences, and assumptions. Explain confidence, relevant limitations, and what the answer means for the decision that prompted the work. For a library, framework, or tool, say whether its documentation states the behavior or only an experiment or its source shows it.
 
 For substantial investigations or later handoff, save findings using the existing project convention or `.scratch/investigations/<descriptive-slug>.md`. Include enough setup and artifact references to reproduce important results. A short answer with evidence is sufficient for a small question.
 
