@@ -10,7 +10,9 @@ Usage: finish-queue.sh [--record-message MSG] [--remove-message MSG]
 Commits QUEUE_FILE as it is in the working tree, and only that file, so the
 finished queue stays in history. It skips this commit when the file has no
 changes since its last commit. Then deletes the file and commits the deletion
-together with everything else already staged, such as a closed backlog item.
+together with everything else already staged. Commit the move of lasting
+decisions into the permanent docs on its own first. Stage only changes that
+belong with removing the queue, such as a closed backlog item.
 
 Messages derived from the file name, here for .scratch/delivery/2026-11-02-app-architecture.md:
   Record the app architecture queue as finished
