@@ -41,7 +41,7 @@ Pass each agent a brief with:
 - The review model, when the implementer runs on a cheaper one.
 - An instruction to read [worktree-agent.md](worktree-agent.md) first and follow it, with that file's absolute path in this skill's installed directory.
 
-Do not copy the rules of `worktree-agent.md` into the brief, so each agent reads the current version even when this session's copy of the skill is older.
+Do not copy the rules of `worktree-agent.md` into the brief, so each agent reads the current version even when this session's copy of the skill is older. In the brief, do not ask for a longer report than `worktree-agent.md` sets. When you need more detail on an item, read its diff or ask its implementer.
 
 Checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, must not overlap. When several implementers run, they skip those checks and name them in their report, as `worktree-agent.md` says. The main agent runs them during integration. While any implementer runs, the main agent avoids those checks too.
 
