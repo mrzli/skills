@@ -66,3 +66,5 @@
 ~/projects/personal/mrzli/trading-app	review-architecture	Go through the chart library's main types and interface functions and tell me which names are misleading.
 ~/projects/personal/mrzli/trading-app	clarify,investigate,!review-architecture	What does the name of the pane feature's main function mean?
 ~/projects/personal/mrzli/trading-app	review-code,!review-architecture	Review the diff on this branch. I think the new function's name is misleading.
+~/projects/personal/mrzli/trading-app	review-architecture	Check whether the structure of this code still follows my own code design rules from my global instructions, not just the ones in AGENTS.md.
+~/projects/personal/mrzli/trading-app	guide,tidy-docs,glossary	I am not sure where to start. The docs and the names of things in this project have drifted, and I want them consistent again.
