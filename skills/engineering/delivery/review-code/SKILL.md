@@ -34,10 +34,14 @@ Investigate suspected problems before reporting them. Trace a realistic failing 
 
 ## Report and follow through
 
-Present findings in priority order. For each, give the affected file and location, the triggering situation, the consequence, and the supporting evidence or requirement. Suggest a correction when useful. Avoid duplicating the same underlying problem across findings. Grade each finding blocking, major, minor, or nit: blocking stops completion, major is a contradiction or meaning change, minor is unclear wording, nit is style only. Design findings are graded but go to the user and never block. Keep optional improvements separate from issues that should block completion:
+Present findings in priority order. For each, give the affected file and location, the triggering situation, the consequence, and the supporting evidence or requirement. Suggest a correction when useful. Avoid duplicating the same underlying problem across findings. Grade each finding on this scale:
 
-- A secret is always blocking. Say that it must also be revoked if it was pushed.
-- Report a design finding as a recommended change for the user to decide, not as an optional improvement. It does not block completion. When the user accepts it, it becomes a new item of work.
+- **Blocking:** the change must not be completed as it stands, such as a defect in the requested behavior, an unmet requirement, or a safety problem. A secret is always blocking. Say that it must also be revoked if it was pushed.
+- **Major:** a real problem worth fixing with the change, although the change works, such as a risky path without a test.
+- **Minor:** a local problem with a small cost.
+- **Nit:** polish that costs nothing to leave.
+
+Report a design finding as a recommended change for the user to decide, not as an optional improvement. It does not block completion. When the user accepts it, it becomes a new item of work.
 
 Open the report with whether blocking findings exist. End it with a concise assessment of requirements coverage and verification limitations. If no actionable findings remain, say so without implying that unverified behavior is proven correct.
 

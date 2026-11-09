@@ -25,7 +25,7 @@ Identify how the design can be tested through observable behavior. If a choice d
 
 When choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives, build a small disposable demonstration in the project's scratch area or a temporary directory, and use it and the user's feedback as evidence for the design.
 
-When the design grows to fix neighboring problems, propose a first slice as the user's rules for designs say. Without such rules, tell the user, propose a first slice that later slices extend, and record each complicated neighboring change as a backlog item.
+When the design grows to fix neighboring problems, propose a first slice as the user's rules for recommendations and designs say. Without such rules, tell the user, propose a first slice that later slices extend, and record each complicated neighboring change as a backlog item.
 
 ## Record the decision
 
