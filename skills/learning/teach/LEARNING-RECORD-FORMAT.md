@@ -32,10 +32,10 @@ In the status, `LR-NNNN` refers to the record whose filename starts with `NNNN-`
 
 Write one when any of these is true:
 
-1. **The user demonstrated understanding of something non-trivial**: evidence they can use the concept correctly establishes a new starting point for future teaching.
-2. **The user disclosed prior knowledge**: "I already know X." Record it so future sessions don't re-teach it. Also record the _depth_ claimed.
-3. **A misconception was corrected**: the user previously believed something wrong and now sees why. Record it to anticipate difficulties with related topics.
-4. **The mission shifted in response to learning**: the user discovered they cared about something different than they thought. Change the mission as [SKILL.md](./SKILL.md#the-mission) says, and link the record to `../MISSION.md`.
+1. **The user demonstrated understanding of something non-trivial.** Evidence they can use the concept correctly establishes a new starting point for future teaching.
+2. **The user disclosed prior knowledge.** "I already know X." Record it so future sessions don't re-teach it. Also record the _depth_ claimed.
+3. **A misconception was corrected.** The user previously believed something wrong and now sees why. Record it to anticipate difficulties with related topics.
+4. **The mission shifted in response to learning.** The user discovered they cared about something different than they thought. Change the mission as [SKILL.md](./SKILL.md#the-mission) says, and link the record to `../MISSION.md`.
 
 ### What does _not_ qualify
 

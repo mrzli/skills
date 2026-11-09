@@ -9,7 +9,7 @@ Teach the topic over multiple sessions, preserving the user's learning state in 
 
 ## Teaching workspace
 
-Create a learning workspace in `.scratch/learn/<topic-slug>`, or resume the existing workspace for that topic.
+Create a learning workspace in `.scratch/learn/<topic-slug>`, or resume the existing workspace for that topic. It stays in use while the course continues, so do not remove it as finished work.
 
 All learning document paths below are relative to that workspace. Format links refer to files beside this skill.
 
@@ -81,7 +81,7 @@ Link to external sources to support every claim in a lesson.
 
 Use quizzes, light in-browser tasks, or guided real-world steps such as yoga poses. Each activity should give feedback on the user's performance as immediately as possible, ideally automatically.
 
-For quizzes, each answer should have exactly the same number of words and, if possible, characters. Vary which position holds the correct answer across questions. Do not reveal the answer through formatting or order.
+For quizzes, give all answer options of a question the same number of words and, if possible, characters. Vary which position holds the correct answer across questions. Do not reveal the answer through formatting or order.
 
 ## Assets
 
