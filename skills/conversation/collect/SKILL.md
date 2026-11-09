@@ -12,7 +12,7 @@ A note from a fork of a fork, marked "via" the forks between, uses the IDs of th
 
 Give each collected item an ID in this session's scheme, as the user's rules for IDs say, and keep its source ID beside it as a tracking key, such as `G3 (Claude-2/A1a)`. Without such rules, refer to each item by its source ID alone.
 
-Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md; queued G3 (Claude-2/A1a); handoff G4 (Claude-2/A1b) at /tmp/handoff-trading-app-1a2b3c4d-Claude-2-A1b.md`, or `No new notes.` Do not summarize the decisions. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
+Keep the reply very short: one line per collected note, saying only what happened, such as `Claude-2 (FF1): resolved, design in docs/design/stock-exclusions.md; queued G3 (Claude-2/A1a), cap zoom at 400%; handoff G4 (Claude-2/A1b), archon: allow source IDs beside new IDs, at /tmp/…`, or `No new notes.` Give each new ID a few words on what it is, as the user's rules for IDs say. Do not summarize the decisions beyond those few words. The notes are now in the conversation. Apply their decisions to the current work from here on, and refer to them when they become relevant.
 
 Record durable decisions from the notes as the user's rules for project knowledge say. Without such rules, put them in the project's tickets or documentation, not only in the conversation.
 
@@ -22,7 +22,7 @@ If an agreed item or a needed handoff conflicts with a decision made in this ses
 
 A note's "Agreed to implement" items were approved by the user in the fork, and each has a source ID, such as `Claude-1/A1a`.
 
-In the main session, implement the items marked `now` through `queue-work` without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the queue and the backlog:
+In the main session, implement the items marked `now` through `queue-work` without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the latest item with that source ID in the queue and the backlog:
 
 - In neither: add it to the queue or the backlog, as its mark says.
 - In the queue or the backlog with the same decision and mark: skip it.
