@@ -10,7 +10,7 @@ Each item gives the main session's recommendation.
 
 ## Decisions
 
-The user approved every item as recommended on 2026-11-09, with item 4 narrowed: `review-code`, `review-architecture`, and the `queue-work` report lead with what the user needs, but `recap` keeps its state-first order, because a recap's answer is the current state and `pending` already gives the view of what waits on the user. Added to the [archon] items:
+Status: all items applied on branch `text-review-2026-11-09`, and the [archon] items handed off at `/tmp/handoff-archon-text-review-2026-11-09.md`. The user approved every item as recommended on 2026-11-09, with item 4 narrowed: `review-code`, `review-architecture`, and the `queue-work` report lead with what the user needs, but `recap` keeps its state-first order, because a recap's answer is the current state and `pending` already gives the view of what waits on the user. Added to the [archon] items:
 
 62. Global `:11` names both the answer and the waiting questions as what comes first. Proposed: "Start with what the user asked for, then the questions waiting on them, unless a question blocks the answer."
 
