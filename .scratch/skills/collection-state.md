@@ -1,6 +1,6 @@
 # Skill collection state
 
-Where the collection stands, for the next `maintain-skills` review. Keep only what is still open or still guides decisions. Dated reviews in this folder are history, with the evidence behind each decision. The latest is the [2026-11-02 review](2026-11-02-collection-review.md).
+Where the collection stands, for the next `maintain-skills` review. Keep only what is still open or still guides decisions. Dated reviews in this folder hold the evidence behind each decision. Remove one once nothing in it is open and this record no longer points to it, as the user's rules for project knowledge say. Git history keeps it. The latest is the [2026-11-02 review](2026-11-02-collection-review.md).
 
 ## Last in-depth text review
 
