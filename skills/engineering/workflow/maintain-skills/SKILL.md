@@ -28,15 +28,16 @@ Compare candidates by trigger, outcome, procedure, dependencies, and stopping po
 
 ## In-depth text review
 
-When the user asks for an in-depth review, read the whole text instead of starting from evidence of use. It replaces the usage and source steps unless the user asks for them too. Read every skill and its companion files, the collection's own instructions and catalog, and the user's own agent instructions. Beyond the comparison with the user's instructions above, check for:
+When the user asks for an in-depth review, read the whole text instead of starting from evidence of use. It replaces the `skill-usage.sh` count and "Explore sources" unless the user asks for them too. Read every skill and its companion files, the collection's own instructions and catalog, and the user's own agent instructions. Beyond the comparison with the user's instructions above, check for:
 
 - Contradictions between skills, between a skill and the user's instructions, and within those instructions.
 - References to rules or sections that do not exist.
 - Rules repeated across skills.
 - Stale references, descriptions, and invocation settings, and broken links.
+- Steps that cannot be followed as written, missing stopping points, and script usage that does not match the script's arguments.
 - Unclear wording, as `writing-text` describes.
 
-When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Save the numbered findings and the user's decisions in the maintenance record, and note the review's date in the part later reviews start from.
+When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Give each agent the previous text review, the record's declined items and open trials, and the changes to the user's instructions since that review. Save the numbered findings and the user's decisions in the maintenance record, and note the review's date in the part later reviews start from.
 
 In a routine review, recommend an in-depth review when the user's instructions or many skills changed substantially since the last one.
 
@@ -63,7 +64,7 @@ To check routing:
 
 - Keep realistic requests that do not name a skill, with the skills that should load, in the collection's routing cases file, or `.scratch/skills/routing-cases.tsv` if none exists. Include near-misses that should route elsewhere.
 - Each case runs in a fresh session, so write each request so that session can act on it, with any agreed decision stated in the request. Requests about the conversation itself, such as a recap, are the exception, because a fresh session has no conversation to act on. Such a case checks only which skill loads.
-- [routing-test.sh](scripts/routing-test.sh) runs each request in a fresh session that cannot edit files, in a temporary worktree, and reports which skills actually loaded. It uses the skill copies installed for the agent. Treat a skill as unavailable rather than missed when the installed copy lacks it.
+- [routing-test.sh](scripts/routing-test.sh) runs each request in a fresh session that cannot edit files, in a temporary worktree when the project is a Git repository, and reports which skills actually loaded. It uses the skill copies installed for the agent. Treat a skill as unavailable rather than missed when the installed copy lacks it.
 - Add or update the cases for changed and new skills together with the change, and run them once the changes are installed. Each case costs a full agent run, so run the whole routing cases file only when the user asks.
 
-Save substantial reviews in the existing maintenance record or `.scratch/skills/<descriptive-slug>.md`, including source revisions, decisions, evidence gaps, and follow-up criteria. Reuse that record on later reviews. Finish with recommendations or applied changes, validation, and the next evaluation point. Do not schedule recurring reviews unless requested.
+Save substantial reviews in the existing maintenance record or `.scratch/skills/<descriptive-slug>.md`, including source revisions, decisions, evidence gaps, and follow-up criteria. Reuse that record on later reviews. Remove an earlier review once nothing in it is open and the maintenance record no longer points to it, as the user's rules for project knowledge say. Finish with recommendations or applied changes, validation, and the next evaluation point. Do not schedule recurring reviews unless requested.

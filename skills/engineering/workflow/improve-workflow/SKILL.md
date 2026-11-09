@@ -3,7 +3,7 @@ name: improve-workflow
 description: Examine completed engineering work and improve the process based on observed friction. Use for a retrospective, recurring agent mistakes, weak verification, unnecessary handoffs, or problems with skills and tooling.
 ---
 
-Find the smallest useful correction to how work is performed. Base recommendations on actual work and the instructions in effect, rather than designing an ideal process from scratch.
+Find the correction that best prevents the observed friction, without adding rules or tooling the evidence does not need. Base recommendations on actual work and the instructions in effect, rather than designing an ideal process from scratch.
 
 ## Examine the evidence
 
@@ -23,7 +23,7 @@ Consider clarifying or removing an instruction, improving access to evidence, ch
 
 When the evidence calls for reviewing skill boundaries, missing capabilities, or overlapping responsibilities across the collection, use `maintain-skills`. Pass the observed friction, affected skills, and existing authorization. Use its findings in the correction. Handle a small correction within one skill directly, without expanding it into a collection review.
 
-Prefer a deterministic check for a recurring mechanical error when its maintenance cost is justified. Fix it at the highest level that works, in this order: structure that makes the mistake impossible, types, a lint whose message names the fix, a test, then documentation. Show that a new check catches a real past instance. Use guidance for decisions that require judgment.
+Prefer a deterministic check for a recurring mechanical error when its maintenance cost is justified. Fix it with the strongest mechanism that works, in this order: structure that makes the mistake impossible, types, a lint whose message names the fix, a test, then documentation. Show that a new check catches a real past instance. Use guidance for decisions that require judgment.
 
 Put a correction at the narrowest level that fits:
 
@@ -39,4 +39,4 @@ A retrospective request produces recommendations. If corrections are already aut
 
 Test the correction against a representative scenario where practical. Record what was tested and what still needs observation in later work. Distinguish a successfully applied edit from evidence that it improves outcomes. Define the signal that would justify retaining, revising, or reverting it.
 
-Save substantial findings and follow-up criteria in the project's improvement record or `.scratch/workflow/<descriptive-slug>.md`. Finish with the chosen correction or recommendation, validation results, and the next evaluation point. Do not leave an active task running merely to wait for future sessions to supply evidence.
+Save substantial findings and follow-up criteria in the project's improvement record or `.scratch/workflow/<descriptive-slug>.md`. Remove an earlier review once nothing in it is open and the improvement record no longer points to it, as the user's rules for project knowledge say. Finish with the chosen correction or recommendation, validation results, and the next evaluation point. Do not leave an active task running merely to wait for future sessions to supply evidence.
