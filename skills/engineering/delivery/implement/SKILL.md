@@ -15,7 +15,7 @@ Identify the intended behavior, completion criteria, and how to verify them. Res
   - Ask only about decisions that affect names, user-visible behavior, interfaces, scope, compatibility, or persisted data.
   - Answer a question and wait.
   - Treat approval as covering only what was approved.
-  - Continue independent work while a decision is pending.
+- Continue independent work while a decision is pending.
 - Fix mechanical consequences of the agreed change within scope, such as stale references, uses of a name the change renamed, and documentation, instead of asking about them or reporting them as open questions. Ask or propose only when a consequence involves a choice.
 - Propose changes outside the request instead of making them, except the changes the user's rules say to make on your own judgment, such as fixes in the code you change, renames, and docs, comments, or tests brought in line with the code.
 - Keep compatibility as the user's rules for code design say. Without such rules, update callers inside the repository instead of adding aliases, fallbacks, or deprecated paths. Keep a compatible form only for consumers outside the repository, persisted data, or an explicit user request.
