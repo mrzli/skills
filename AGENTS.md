@@ -10,7 +10,7 @@ After every skill change, including additions, edits, renames, and removals:
 
 # User's rules
 
-The user's global agent instructions live in `/home/mrzli/projects/personal/mrzli/archon/data/home/.codex/AGENTS.md`, deployed to `~/.codex/AGENTS.md`. Keep the skills consistent with them without depending on them, as [writing-skills](skills/docs/writing-skills/SKILL.md) and [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) describe. Changes to that file go to archon as a handoff.
+The user's global agent instructions live in `/home/mrzli/projects/personal/mrzli/archon/data/home/.codex/AGENTS.md`, deployed to `~/.codex/AGENTS.md`. Keep the skills consistent with them without depending on them, as [writing-skills](skills/docs/writing-skills/SKILL.md) and [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) describe. Hand changes to that file to archon, as the user's rules for other repositories say.
 
 # Script changes
 
