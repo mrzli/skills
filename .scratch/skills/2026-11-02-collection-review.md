@@ -1,6 +1,6 @@
 # Skill collection review, 2026-11-02
 
-Follows the [2026-10-27 review](2026-10-27-collection-review.md). The user's decisions, applied on branch `skills-review-2026-11-02`:
+Follows the 2026-10-27 review, removed and kept in Git history. The user's decisions, applied on branch `skills-review-2026-11-02`:
 
 - 1, 4, and 5: approved and applied in this repository.
 - 2: approved as a trial. 2, 3, and 6 are handed off to archon in `/tmp/handoff-archon-items-and-improvements.md`.
