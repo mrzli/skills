@@ -1,7 +1,7 @@
 ---
 name: tidy-docs
 description: Review and tidy documentation, including skills and AGENTS.md files, across a repository or selected scope. Use when asked to tidy, clean up, or check documentation for consistency, outdated content, or wording.
-argument-hint: "Scope to tidy. Defaults to the entire repository."
+argument-hint: "[scope, default: the entire repository]"
 ---
 
 ## Scope
@@ -19,3 +19,7 @@ Apply the `writing-text` skill and other relevant writing skills to each documen
 Resolve inconsistencies and outdated links. Preserve behavior, requirements, and invocation settings.
 
 Update evolving documents, such as specs, tasks, and improvement notes, to reflect the repository's current state. Distinguish intended behavior from implemented behavior. Preserve unresolved requirements and decisions.
+
+Leave dated records, such as reviews and handoffs, as written, except their status.
+
+Finish when every document in scope passes the writing checks and no inconsistency or outdated link remains. Report the edits and anything left unresolved.
