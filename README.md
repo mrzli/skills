@@ -1,6 +1,6 @@
 # Agent Skills
 
-These are the skills I use every day with Claude Code and Codex. Most of them cover software engineering, from design through implementation and review. The rest help with conversations, documentation, and learning.
+These are the skills I use every day with Claude Code and Codex. The largest group covers software engineering, from design through implementation and review. The rest help with conversations, documentation, and learning.
 
 The skills are written to work together. Each one does one job and names the skill to use next when the work calls for it.
 
@@ -40,17 +40,17 @@ A fork is a new agent session in its own terminal tab, opened to discuss one poi
 1. [spawn](skills/conversation/spawn/SKILL.md) opens the fork. `/spawn F2` starts it from a short brief about item F2. The brief numbers its items afresh, so F2 becomes topic A in the fork.
 2. I discuss F2 in the fork. The changes and handoffs I agree to there wait for the main session.
 3. [yield](skills/conversation/yield/SKILL.md) records the result. `/yield` in the fork writes a short note of what was decided, which changes I agreed to, which handoffs to other repositories it needs, and what is still open. Running it again replaces the note with the latest state.
-4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note, queues the agreed changes with queue-work, and writes the handoffs, so every change to the repository and every handoff is made from the main session.
+4. [collect](skills/conversation/collect/SKILL.md) brings the result back. `/collect` in the main session reads the note, queues the changes agreed for now with queue-work, adds the rest to the backlog, and writes the handoffs, so every change to the repository and every handoff is made from the main session.
 
 A fork can open forks of its own. spawn records which session opened each fork, so the sessions form a tree. `/collect` takes in the notes of every session below the one it runs in, at any depth, so the main session can also collect a note from a fork of a fork.
 
-spawn needs Claude Code running in herdr or tmux. yield and collect work only in the sessions spawn opened and in the sessions above them.
+spawn needs Claude Code running in herdr or tmux. yield works only in a fork that spawn opened. collect works in such a fork and in the main session above it.
 
 ## How the skills improve
 
 Most changes come from my own work with the agents. Two of the skills review that work:
 
-- [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) goes through my past sessions, such as the places where I corrected the agent or repeated a step by hand, and proposes the smallest change to a skill, the project's instructions, or its tooling that would have prevented the problem.
+- [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) goes through my past sessions, such as the places where I corrected the agent or repeated a step by hand, and proposes the change that would have prevented the problem, in a skill, the project's instructions or tooling, or my global instructions.
 - [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) reviews the collection as a whole. It counts how often I use each skill in my session history, checks that each name and description matches what I actually ask for, and keeps the skills consistent with those global instructions. It runs routing tests, realistic requests that check a fresh agent loads the right skill. When I ask for an in-depth review, it reads all the skill text against my global instructions, line by line.
 
 maintain-skills also looks through [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack) for new ideas. It adopts one only when it fits how I work and solves a problem I actually have.
@@ -74,7 +74,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts and answering one point at a time once the user is lost. Defaults to the last response. |
-| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, queue the changes agreed in them to implement now, and write the handoffs they call for. |
+| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, apply their decisions, queue the changes agreed in them, and write the handoffs they call for. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [pending](skills/conversation/pending/SKILL.md) | List only what waits on the user: answers needed, actions to take, and one line on what is running. |
@@ -114,7 +114,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [investigate](skills/engineering/investigation/investigate/SKILL.md) | Resolve a concrete unknown through inspection, research, or experiments. |
-| [review-architecture](skills/engineering/investigation/review-architecture/SKILL.md) | Check code structure against the project's rules, check its central names, summarize its modules, and prioritize evidence-backed improvements. |
+| [review-architecture](skills/engineering/investigation/review-architecture/SKILL.md) | Check code structure against the project's and my architecture rules, check its central names, summarize its modules, and prioritize evidence-backed improvements. |
 
 #### [Workflow](skills/engineering/workflow)
 
