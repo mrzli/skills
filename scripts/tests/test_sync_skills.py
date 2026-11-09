@@ -109,13 +109,11 @@ class SyncSkillsTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertTrue((dotfiles / 'skills/example').is_symlink())
 
-    def test_sync_adds_removes_and_excludes_experimental(self):
-        self.add_skill('experimental', 'unfinished')
+    def test_sync_adds_and_removes_skills(self):
         self.assertEqual(self.sync().returncode, 0)
         for directory in self.destinations:
             self.assertEqual((directory / 'example').resolve(),
                              self.repo / 'skills/productivity/example')
-            self.assertFalse((directory / 'unfinished').is_symlink())
             (directory / 'unrelated').symlink_to(self.base / 'external')
         repeat = self.sync()
         self.assertEqual(repeat.returncode, 0)
@@ -162,8 +160,7 @@ class SyncSkillsTests(unittest.TestCase):
             self.assertEqual((directory / 'example').resolve(),
                              self.repo / 'skills/productivity/example')
 
-    def test_recursive_discovery_skips_experimental_symlinks_and_skill_contents(self):
-        self.add_skill('experimental/nested', 'unfinished')
+    def test_recursive_discovery_skips_symlinks_and_skill_contents(self):
         self.add_skill('productivity/example/assets', 'embedded')
         external = self.base / 'external'
         external.mkdir()

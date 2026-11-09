@@ -35,7 +35,6 @@ discover_skills() {
   fi
   for child in "$directory"/*; do
     [[ -d $child && ! -L $child ]] || continue
-    [[ $child == "$skills_root/experimental" ]] && continue
     if [[ ! -f $child/SKILL.md ]]; then
       discover_skills "$child"
       continue
