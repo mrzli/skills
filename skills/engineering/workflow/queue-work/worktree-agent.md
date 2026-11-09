@@ -34,8 +34,8 @@ Every report stays in the main agent's context for the rest of its session, so k
 
 1. Your commits, from `git log --oneline`, one line each.
 2. Each check you ran and its result, with test totals, and whether your first run of the required checks passed. Name each check you skipped and why.
-3. Your review's findings by severity (blocking, major, minor, nit), the number of fix rounds they took, and the model the reviewer ran on. Give each finding you left open in one line.
-4. Each choice your brief did not settle, in one line. When a choice changes something agreed, or the user's rules for approval put it at the ask level, add one sentence of reasons.
+3. Your review's findings by severity (blocking, major, minor, nit), the number of fix rounds they took, and who reviewed: a fresh agent and its model, or self-review. Give each finding you left open in one line.
+4. Each other choice your brief did not settle, in one line. When a choice changes something agreed, or the user's rules for approval say to ask about it first, add one sentence of reasons.
 5. Your questions for the main agent or the user, one line each.
 
-Leave out how you did the work, file paths, and notes the main agent did not ask for. It can read the diff, or ask you while you stay reachable.
+Leave out how you did the work, file paths, and notes the main agent did not ask for. It can read the diff or ask you.
