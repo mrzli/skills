@@ -1,9 +1,9 @@
 ---
 name: optimize
-description: Improve a measured performance metric, such as latency, frame time, throughput, or memory, through measured keep-or-revert attempts. Use for slowness or resource use the user wants reduced, or a performance target to reach.
+description: Improve a measured performance metric, such as latency, frame time, throughput, or memory, through measured keep-or-revert attempts rather than restoring a regression. Use for slowness or resource use the user wants reduced, or a performance target to reach.
 ---
 
-Move one metric toward a target with evidence for every kept change. A correctness bug that happens to be slow belongs to `fix-bug`.
+Move one metric toward a target with evidence for every kept change. A regression the user wants restored, or a correctness bug that happens to be slow, belongs to `fix-bug`.
 
 ## Define the target
 
