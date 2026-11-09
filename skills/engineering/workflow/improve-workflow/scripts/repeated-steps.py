@@ -14,7 +14,7 @@ Relies on transcript layouts that neither Claude Code nor Codex documents.
 The user accepted relying on them. Tested by scripts/tests/test_repeated_steps.py.
 - Claude Code keeps a project's sessions under ~/.claude/projects/<slug>/,
   where <slug> is the project's absolute path with every character other
-  than a letter or digit replaced by -. Every folder whose name starts with
+  than an ASCII letter or digit replaced by -. Every folder whose name starts with
   the slug counts too, such as those of worktrees inside the project, but
   also those of sibling projects whose paths extend the project's, and so do
   *.jsonl files nested below them. It reads each record's timestamp and
