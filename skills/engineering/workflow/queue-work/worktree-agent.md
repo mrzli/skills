@@ -25,7 +25,7 @@ You implement queued items in your own Git worktree while the main agent keeps d
   - Run other commands that change files, such as `mkdir` or `cp`, one per call, without brace expansion.
   - Create and edit files with the file-editing tools, not through shell heredocs, such as `cat > file <<'EOF'` or `python3 - <<'EOF'`, nor through `sed -i` or redirection.
   - For a mechanical edit across many files, write a script with the file-editing tools and run it as one plain command.
-- When other agents run at the same time, skip checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, and name them in your report. The main agent runs them during integration.
+- When other agents run at the same time, skip checks that need a resource only one run can use, such as a GPU, a display, a fixed port, or a shared build directory, and name them in your report. The main agent runs them later, as its queue rules say.
 - Make routine choices that follow from the decisions and project conventions, and leave them out of your report.
 
 ## Report
