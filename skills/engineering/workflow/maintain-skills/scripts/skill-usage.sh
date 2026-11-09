@@ -31,7 +31,7 @@ done
 skills_root=$1
 command -v jq >/dev/null || { printf 'jq is required\n' >&2; exit 1; }
 
-mapfile -t skills < <(find "$skills_root" -name SKILL.md -not -path '*/experimental/*' -printf '%h\n' | xargs -rn1 basename | sort -u)
+mapfile -t skills < <(find "$skills_root" -name SKILL.md -printf '%h\n' | xargs -rn1 basename | sort -u)
 ((${#skills[@]})) || { printf 'No skills found under %s\n' "$skills_root" >&2; exit 1; }
 
 claude_dir=${CLAUDE_TRANSCRIPTS:-$HOME/.claude/projects}
