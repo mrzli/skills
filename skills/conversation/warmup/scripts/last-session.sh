@@ -4,7 +4,8 @@
 # Relies on transcript layouts that neither Claude Code nor Codex documents;
 # the user accepted relying on them. Tested by scripts/tests/test_last_session.py.
 # - Claude Code keeps a project's sessions as ~/.claude/projects/<slug>/*.jsonl,
-#   where <slug> is the project's absolute path with / and . replaced by -.
+#   where <slug> is the project's absolute path with every character other
+#   than an ASCII letter or digit replaced by -.
 #   It reads records with type "user" or "assistant", isMeta, and
 #   message.content (a string, or a list of blocks with type and text).
 # - Codex keeps sessions as ~/.codex/sessions/**/*.jsonl whose first line is a
@@ -47,7 +48,7 @@ codex_dir=${CODEX_TRANSCRIPTS:-$HOME/.codex/sessions}
 
 # Emits "mtime<TAB>agent<TAB>file" for each session in the project.
 sessions() {
-  local slug=${project//[\/.]/-}
+  local slug=${project//[^a-zA-Z0-9]/-}
   find "$claude_dir/$slug" -maxdepth 1 -name '*.jsonl' -printf '%T@\tclaude\t%p\n' 2>/dev/null || true
   { find "$codex_dir" -name '*.jsonl' -mtime -30 -printf '%T@\t%p\n' 2>/dev/null || true; } |
     while IFS=$'\t' read -r mtime file; do

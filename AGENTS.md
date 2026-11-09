@@ -14,4 +14,4 @@ The user's global agent instructions live in `/home/mrzli/projects/personal/mrzl
 
 # Script changes
 
-After changing `scripts/sync-skills.sh`, run `python3 -m unittest discover scripts/tests` from the repository root.
+After changing a script that `scripts/tests` covers, such as `scripts/sync-skills.sh` or a skill's transcript-reading script, run `python3 -m unittest discover scripts/tests` from the repository root.

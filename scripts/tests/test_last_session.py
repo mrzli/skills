@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import subprocess
 import tempfile
 import time
@@ -25,9 +26,9 @@ class LastSessionTests(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         self.base = Path(temp.name).resolve()
         self.home = self.base / 'home'
-        self.project = self.base / 'work' / 'my.project'
+        self.project = self.base / 'work' / 'my_project x.y'
         self.project.mkdir(parents=True)
-        self.claude = self.home / '.claude/projects' / str(self.project).replace('/', '-').replace('.', '-')
+        self.claude = self.home / '.claude/projects' / re.sub(r'[^a-zA-Z0-9]', '-', str(self.project))
         self.now = int(time.time())
         self.codex = self.home / '.codex/sessions/2026/11/09'
 
