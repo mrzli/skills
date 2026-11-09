@@ -74,7 +74,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [clarify](skills/conversation/clarify/SKILL.md) | Explain a topic, how something works, or part of the conversation more clearly, or check the user's understanding, splitting longer explanations into manageable parts and answering one point at a time once the user is lost. Defaults to the last response. |
-| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, apply their decisions, queue the changes agreed in them, and write the handoffs they call for. |
+| [collect](skills/conversation/collect/SKILL.md) | Take in the notes of the sessions below this one, at any depth, apply their decisions, queue the changes agreed for now, add the rest to the backlog, and write the handoffs they call for. |
 | [handoff](skills/conversation/handoff/SKILL.md) | Summarize a session so another agent can continue the work. |
 | [interrogate](skills/conversation/interrogate/SKILL.md) | Stress-test a plan or idea through structured rounds of questions. |
 | [pending](skills/conversation/pending/SKILL.md) | List only what waits on the user: answers needed, actions to take, and one line on what is running. |

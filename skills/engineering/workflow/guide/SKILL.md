@@ -1,6 +1,6 @@
 ---
 name: guide
-description: Help choose the next engineering activity or skill from the user's situation. Use when the user asks where to start, what to do next, or how to use the skills, rather than asking to execute an already chosen task.
+description: Help choose the next activity or skill from the user's situation. Use when the user asks where to start, what to do next, or how to use the skills, rather than asking to execute an already chosen task.
 ---
 
 Recommend a useful next step without requiring the user to understand the skill catalog first. Use the supplied situation, or the current conversation if none is supplied. Guidance alone does not start implementation or a delivery workflow.
