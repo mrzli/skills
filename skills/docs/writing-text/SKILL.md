@@ -7,6 +7,8 @@ Keep text concise and direct. Remove unnecessary prose and redundancy while pres
 
 Prefer familiar words and concrete statements. Remove filler introductions, inflated wording, vague praise, and repeated conclusions. Express uncertainty precisely.
 
+Keep sentences short. Split a sentence that carries several separate points.
+
 Prefer periods and commas over em dashes and semicolons when they express the meaning clearly. Use straight quotation marks (`"`) and apostrophes (`'`) in prose. Preserve punctuation in code, exact quotations, and required syntax.
 
 Use headings, lists, and tables only when they make the content easier to follow. Use a list when a sentence or paragraph pairs several cases with what to do in each, or when one bullet or paragraph holds several separate rules.
