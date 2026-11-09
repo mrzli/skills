@@ -1,6 +1,6 @@
 ---
 name: collect
-description: Take in the notes yielded by the sessions below this one, at any depth, apply them to the current work, queue the changes agreed in them to implement now, and write the handoffs they call for. Use in a session whose forks, opened by spawn, have run yield.
+description: Take in the notes yielded by the sessions below this one, at any depth, apply them to the current work, queue the changes agreed in them to implement now, add the rest to the backlog, and write the handoffs they call for. Use in a session whose forks, opened by spawn, have run yield.
 disable-model-invocation: true
 ---
 

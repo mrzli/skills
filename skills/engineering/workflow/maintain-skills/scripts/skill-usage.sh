@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Summarize skill use recorded in local Claude Code and Codex transcripts.
 #
-# Relies on transcript layouts that neither Claude Code nor Codex documents;
-# the user accepted relying on them. Tested by scripts/tests/test_skill_usage.py.
+# Relies on transcript layouts that neither Claude Code nor Codex documents.
+# The user accepted relying on them. Tested by scripts/tests/test_skill_usage.py.
 # - Both keep sessions as *.jsonl files under ~/.claude/projects and
 #   ~/.codex/sessions, one session per file, with a timestamp on each record.
 # - Claude Code records carry cwd. It reads "user" records' message.content

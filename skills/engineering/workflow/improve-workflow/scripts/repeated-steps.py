@@ -10,8 +10,8 @@ are worth a script is left to the reader.
 
 Usage: repeated-steps.py [PROJECT_DIR] [--since YYYY-MM-DD] [--top N]
 
-Relies on transcript layouts that neither Claude Code nor Codex documents;
-the user accepted relying on them. Tested by scripts/tests/test_repeated_steps.py.
+Relies on transcript layouts that neither Claude Code nor Codex documents.
+The user accepted relying on them. Tested by scripts/tests/test_repeated_steps.py.
 - Claude Code keeps a project's sessions under ~/.claude/projects/<slug>/,
   where <slug> is the project's absolute path with every character other
   than a letter or digit replaced by -. Every folder whose name starts with

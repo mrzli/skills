@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Print the last messages of the most recent earlier agent session in a project.
 #
-# Relies on transcript layouts that neither Claude Code nor Codex documents;
-# the user accepted relying on them. Tested by scripts/tests/test_last_session.py.
+# Relies on transcript layouts that neither Claude Code nor Codex documents.
+# The user accepted relying on them. Tested by scripts/tests/test_last_session.py.
 # - Claude Code keeps a project's sessions as ~/.claude/projects/<slug>/*.jsonl,
 #   where <slug> is the project's absolute path with every character other
 #   than an ASCII letter or digit replaced by -.
