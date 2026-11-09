@@ -38,7 +38,7 @@ Investigate failures and fix those caused by the change. After a fix, rerun chec
 
 Have the complete change, including new files, reviewed against the request and project conventions with `review-code`, giving it the intended behavior, change scope, and verification results. Size the review brief as the user's rules for reviews say. Without such rules, follow what `review-code` describes for a change of this size and risk. Without `review-code`, give the same to a fresh agent to review when the tools allow, and otherwise review the change yourself and identify the result as self-review. Report whether a fresh agent reviewed the change or it was self-review.
 
-Resolve actionable findings within scope, then rerun affected checks after corrections. Record only out-of-scope findings that the user's rules do not cover, instead of silently expanding the task.
+Resolve actionable findings within scope, then rerun affected checks after corrections. Record consequential findings outside scope that the user's rules do not let you fix on your own judgment, instead of silently expanding the task.
 
 Finish when the requested behavior is implemented, relevant verification has passed, and no known blocking review findings remain. If a blocker prevents completion, state the remaining work and the specific evidence or decision needed to proceed. For work continuing across sessions, update the existing task artifact or a concise progress note with completed work, verification, and next steps.
 
