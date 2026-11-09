@@ -11,12 +11,13 @@ Usage: agent-joins.sh spawn TOPIC < BRIEF
 
 spawn    Opens a fork of the current session in a new herdr or tmux tab in
          the current directory. The tab and the fork are named after the
-         parent session: Claude, Claude-1, Claude-1-1, and so on. The fork is
-         a new session that starts by reading the brief from standard
-         input. Its first message starts with TOPIC. Forks only discuss:
-         they are told not to change the checkout and cannot use the
-         file-editing tools inside it, but may write temporary files, such
-         as scripts, outside it.
+         parent session, such as Claude-1 and Claude-1-1 under Claude, or
+         Claude2-1 under a second main session, Claude2. The script saves
+         the brief from standard input, and the fork starts by reading it.
+         Its first message starts with TOPIC. Forks only discuss. They are
+         told not to change the checkout and cannot use the file-editing
+         tools inside it, but may write temporary files, such as scripts,
+         outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current session is a main session or a fork,
@@ -53,7 +54,7 @@ command=$1
 shift
 
 git_dir=$(git rev-parse --path-format=absolute --git-common-dir 2>/dev/null) ||
-  die 'Not in a Git repository: notes are kept in the Git directory.'
+  die 'Not in a Git repository. Notes are kept in the Git directory.'
 state=$git_dir/agent-joins
 forks_file=$state/forks.tsv
 mkdir -p "$state/briefs" "$state/notes" "$state/read"
