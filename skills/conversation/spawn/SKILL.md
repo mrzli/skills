@@ -38,4 +38,4 @@ The script names the fork after this session, such as `Claude-1` for the first f
 
 Treat spawning like a command. Write nothing to the user before or after it, and report only a failure. The user runs `yield` in the fork to pass its results up, and `collect` here or in any session above to take them in.
 
-Codex is not supported yet. The script needs Codex's own session ID to fork it exactly with `codex fork <id>`, and it is not known whether Codex exposes that ID to commands.
+Codex is not supported yet. The script finds a main session by its session ID and blocks file editing in forks with Claude Code's tool settings, and it is not known whether Codex offers either.
