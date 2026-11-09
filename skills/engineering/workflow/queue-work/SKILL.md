@@ -31,7 +31,7 @@ Start a batch only when the user asks to implement or queue agreed items, such a
 
 Give each item its own background agent with a fresh context, not one that copies this conversation. Start it from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order.
 
-When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Run bugs, performance work, and items whose decision leaves design questions open on the most capable model, and note the model and the reason in the item's decision. An item may name another model the same way. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. Run each review of an implementer's commits on the review model, this session's model or the most capable one available, never on the implementer's model.
+When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Run bugs, performance work, and items whose decision leaves design questions open on the most capable model, and note the model and the reason in the item's decision. An item may name another model the same way. A chain that includes such an item runs on the model that item needs. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. The review model is this session's model or the most capable one available. Run each review of an implementer's commits on it, never on a cheaper implementer's model.
 
 Pass each agent a brief with:
 
@@ -57,12 +57,12 @@ Integrate finished items one at a time, in dependency order. Read each item's di
 - Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve.
 - An item you implemented in the foreground was already reviewed through `implement`, so do not review it again unless that review was a self-review.
 
-Fix the findings of your review, and those the implementer left unresolved, by their severity:
+Ask each reviewer to grade its findings as blocking, major, minor, or nit. Fix the findings of your review, and those the implementer left unresolved, by their severity. Design findings go to the user, as the report below says. Without a model choice, every fix runs on the session's model.
 
 - Give minor findings and nits to an agent on the implementer's model, such as the implementer resumed with them.
-- Run the fix of a blocking or major finding on the most capable model. If a blocking or major finding remains after that fix, have the most capable model redo the item from its base commit.
+- Run the fix of a blocking or major finding on the most capable model. If a blocking or major finding remains after that fix and the implementer ran on a cheaper model, have the most capable model redo the item from its base commit.
 
-Review each fix on the review model.
+Review each fix on the review model as the user's rules for reviewing fixes say. Without such rules, review every fix. Always review the fix of a blocking or major finding, to decide whether the item must be redone.
 
 Take an implementer's commits from its branch in Git, never from a hash in its report, since a reported hash may be wrong. Bring them onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, including the item's times and measurements, remove the worktree, delete the implementer's branch, and start items that became ready.
 

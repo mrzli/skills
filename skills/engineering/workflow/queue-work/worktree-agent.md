@@ -11,7 +11,8 @@ You implement queued items in your own Git worktree while the main agent keeps d
 - Where the chosen skill asks to agree with, propose to, or ask the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief. If the brief does not settle it, stop at that item, keep the commits for earlier items, and report the question.
 - Commit as the user's rules for commits say. Without such rules, give each self-contained change its own commit, so an item may have several.
 - Run the project's required checks. After a check fails, rerun checks as `implement` says.
-- When your brief names a review model, start every reviewing agent on it, not on your own model. Leave a blocking or major finding unfixed and report it, so the main agent can have a more capable model fix it.
+- Ask each reviewer to grade its findings as blocking, major, minor, or nit.
+- When your brief names a review model, start every reviewing agent on it, not on your own model, and leave a blocking or major finding from that review unfixed and report it, so the main agent can have a more capable model fix it.
 - Report whether your first run of the required checks passed, and your review's findings by severity (blocking, major, minor, nit) with the number of fix rounds they took.
 - Wait for long work so that each wait ends when the work does:
   - Run a long check, such as the project's full checks, in the foreground with the longest timeout the shell tool allows (600000 ms in Claude Code), rather than in the background. If it times out, rerun it in the background and wait for it as the next rule says.
