@@ -21,7 +21,7 @@ For a new interface, write two or three realistic call sites before the types an
 
 Describe the important interfaces, state transitions, data changes, and failure behavior. Include migration, rollout, and recovery where the design affects existing users or stored data. Use a small diagram, contract, or code sketch when it makes the decision clearer than prose.
 
-Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility, performance, or undocumented library behavior, gather evidence with a focused experiment before presenting it as settled. Rely on behavior a library or tool does not document only as the user's rules for dependencies say. Without such rules, ask the user first. Separate evidence, assumptions, and expected benefits.
+Identify how the design can be tested through observable behavior. If a choice depends on uncertain feasibility, performance, or undocumented library behavior, gather evidence with a focused experiment before presenting it as settled. Rely on behavior a library or tool does not document only as the user's rules for code design say. Without such rules, ask the user first. Separate evidence, assumptions, and expected benefits.
 
 When choosing an approach requires trying an interaction or comparing concrete UI or logic alternatives, build a small disposable demonstration in the project's scratch area or a temporary directory, and use it and the user's feedback as evidence for the design.
 
