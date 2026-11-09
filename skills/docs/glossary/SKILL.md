@@ -28,7 +28,7 @@ _Avoid_: bill, payment request
 ```
 
 - Choose one term per concept, preferring the name the user finds clearest. List rejected synonyms under `_Avoid_`.
-- No two concepts share a name. A term differs from the project's other terms, unless it reuses a general word as the next item allows. It differs from the built-in names of the frameworks and languages it is used with, without exception. When a new or existing term clashes, rename whichever of the two fits its concept worse.
+- No two concepts share a name. A term differs from the project's other terms, unless it reuses a general word as the next item allows. It differs from the built-in names of the frameworks and languages it is used with, without exception. When a new or existing term clashes, propose renaming whichever of the two fits its concept worse. Rename an existing term only once the user agrees, as the user's rules for approval say. Without such rules, ask before renaming an existing term.
 - A general word used as a term, such as "source" for a data source, always means the term's concept when it stands alone. Another concept may still use the word where its context always marks it:
   - Such contexts include a field inside one file format and a qualified name like "log source". If that concept has its own entry, its term is the qualified name.
   - Record the other use in a sentence after the term's definition, so readers are not misled.
