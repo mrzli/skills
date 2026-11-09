@@ -104,7 +104,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [implement](skills/engineering/delivery/implement/SKILL.md) | Build a scoped code change, verify it, and resolve review findings. |
-| [review-code](skills/engineering/delivery/review-code/SKILL.md) | Review a change against intended behavior, project conventions, and safety, with actionable findings. |
+| [review-code](skills/engineering/delivery/review-code/SKILL.md) | Review a change against intended behavior, project conventions, and safety, with actionable findings graded by severity. |
 | [fix-bug](skills/engineering/delivery/fix-bug/SKILL.md) | Diagnose a failure, repair its cause, and verify the fix. |
 | [optimize](skills/engineering/delivery/optimize/SKILL.md) | Improve a measured performance metric through keep-or-revert attempts. |
 | [refactor](skills/engineering/delivery/refactor/SKILL.md) | Improve code structure while preserving required behavior. |
@@ -121,7 +121,7 @@ The reviews and their results are kept in [.scratch/skills](.scratch/skills) and
 | Skill | Description |
 | --- | --- |
 | [queue-work](skills/engineering/workflow/queue-work/SKILL.md) | Keep discussing upcoming work items while background agents implement the agreed ones in parallel, in dependency order. |
-| [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next engineering activity or skill, with a concrete example invocation. |
+| [guide](skills/engineering/workflow/guide/SKILL.md) | Choose the next activity or skill from the user's situation, with a concrete example invocation. |
 | [improve-workflow](skills/engineering/workflow/improve-workflow/SKILL.md) | Improve the development process using evidence from completed work. |
 | [maintain-skills](skills/engineering/workflow/maintain-skills/SKILL.md) | Review the skill collection and external sources for useful additions, improvements, consolidation, or retirement, or read all its text in depth. |
 
