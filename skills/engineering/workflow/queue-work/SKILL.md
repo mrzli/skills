@@ -18,6 +18,7 @@ Keep the queue in a temporary plan file that follows the project's conventions f
 - Its status: agreed, in progress, integrated, or blocked.
 - Its commits, once integrated.
 - Its times, on one line: when it started, when it was integrated, and the time between them. Record the implementer's run time and the integration's time separately when the tools report them, such as an agent's reported run time. These measured times are what later estimates of the remaining items are based on.
+- Its measurements, on one line: the implementer's model, the findings of its review by severity (blocking, major, minor, nit), how many fix rounds they took and whether a fix escalated to the most capable model, whether the implementer's first run of the required checks passed, and the implementer's cost or tokens when the tools report them. Across many items, these show whether a cheaper implementer model holds up against items run on the most capable one.
 - Its source ID, when it came from a fork's note through `collect`, such as `Claude-1/A1a`.
 
 Make an item depend on an earlier item that is not yet integrated when it builds on that item's result, when their footprints overlap, or when either changes something many files rely on, such as a specification, a shared interface, or the build configuration. When unsure, add the dependency. An item is ready when the user has agreed to it and its dependencies are integrated. Update the dependencies whenever an item is added or changed.
@@ -30,11 +31,14 @@ Start a batch only when the user asks to implement or queue agreed items, such a
 
 Give each item its own background agent with a fresh context, not one that copies this conversation. Start it from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order.
 
+When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Run bugs, performance work, and items whose decision leaves design questions open on the most capable model, and note the model and the reason in the item's decision. An item may name another model the same way. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. Run each review of an implementer's commits on the review model, this session's model or the most capable one available, never on the implementer's model.
+
 Pass each agent a brief with:
 
 - The agreed decisions themselves, not only a pointer to the queue.
 - The hash of the tip of the user's branch as the base commit.
 - Whether other agents run at the same time.
+- The review model, when the implementer runs on a cheaper one.
 - An instruction to read [worktree-agent.md](worktree-agent.md) first and follow it, with that file's absolute path in this skill's installed directory.
 
 Do not copy the rules of `worktree-agent.md` into the brief, so each agent reads the current version even when this session's copy of the skill is older.
@@ -49,11 +53,18 @@ While a batch runs, keep discussing the next items and adding agreed ones to the
 
 Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Decide whether to review it with `review-code`:
 
-- Use `review-code` unless the implementer reports that a fresh agent reviewed its commits. You did not write an item a background agent implemented, so your review of it is independent.
+- Use `review-code` unless the implementer reports that a fresh agent on the review model reviewed its commits. You did not write an item a background agent implemented, so your review of it is independent.
 - Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve.
 - An item you implemented in the foreground was already reviewed through `implement`, so do not review it again unless that review was a self-review.
 
-Bring the commits onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, including the item's times, remove the worktree, delete the implementer's branch, and start items that became ready.
+Fix the findings of your review, and those the implementer left unresolved, by their severity:
+
+- Give minor findings and nits to an agent on the implementer's model, such as the implementer resumed with them.
+- Run the fix of a blocking or major finding on the most capable model. If a blocking or major finding remains after that fix, have the most capable model redo the item from its base commit.
+
+Review each fix on the review model.
+
+Take an implementer's commits from its branch in Git, never from a hash in its report, since a reported hash may be wrong. Bring them onto the user's branch as the user's rules for integrating commits say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Run any checks the implementer skipped. Update the queue, including the item's times and measurements, remove the worktree, delete the implementer's branch, and start items that became ready.
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later footprint estimates improve.
 
