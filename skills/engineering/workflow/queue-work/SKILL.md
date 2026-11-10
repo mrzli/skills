@@ -30,15 +30,18 @@ Add an item only when the user has agreed to it, as the user's rules for approva
 
 Start a batch only when the user asks to implement or queue agreed items, such as "queue this" or "do the next three agreed items", or when `collect` brings in agreed items marked `now`. Start ready items from the batch in queue order, up to N at once, and start more as items are integrated and their dependents become ready. Record each item's start time in the queue when it starts.
 
-Give each item its own background agent with a fresh context, not one that copies this conversation. Start it from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order.
+Give each item its own background agent with a fresh context, not one that copies this conversation, unless it is a small change. Start it from the tip of the user's branch, with its own worktree and build directory when the tools allow. When the project documents how to seed a new worktree's build directory, such as by copying the main checkout's, seed it that way, or tell the agent to, before its first build. Otherwise the build starts empty. A chain of dependent items may go to one agent in order.
 
-When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Use the most capable model for bugs, performance work, and items whose decision leaves design questions open, and note the model and the reason in the item's decision. An item may name another model the same way. A chain of items runs on the most capable model any of its items needs. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. The review model is the most capable model available, or this session's model when the tool offers no choice. Run each review of an implementer's commits on it, never on a cheaper implementer's model.
+A small change, a few lines in one unit with no open design question, goes to a background fork of this session instead when the tools can fork, such as Claude Code's `fork` agent type. The fork already has the context, so it skips a fresh agent's start-up, which can take longer than the edit itself. Start it in its own worktree as above. It runs on this session's model and does not review its own commits, as `worktree-agent.md` says. Larger items keep fresh agents, whose independent context and cheaper model are worth the start-up.
+
+When the agent tool lets the caller choose a model, start each implementer on the cheapest capable model, such as Haiku in Claude Code. Use the most capable model for bugs, performance work, and items whose decision leaves design questions open, and note the model and the reason in the item's decision. An item may name another model the same way. A chain of items runs on the most capable model any of its items needs. A fork runs on this session's model. Do not choose the model by an item's size or apparent complexity, since neither predicts where a cheaper model misses. The review model is the most capable model available, or this session's model when the tool offers no choice. Run each review of an implementer's commits on it, never on a cheaper implementer's model.
 
 Pass each agent a brief with:
 
 - The agreed decisions themselves, not only a pointer to the queue.
 - The hash of the tip of the user's branch as the base commit.
 - Whether other agents run at the same time.
+- Whether the agent is a fork of this session.
 - The review model, when the implementer runs on a cheaper one.
 - An instruction to read [worktree-agent.md](worktree-agent.md) first and follow it, with that file's absolute path in this skill's installed directory.
 
@@ -48,13 +51,14 @@ Checks that need a resource only one run can use, such as a GPU, a display, a fi
 
 If background agents are unavailable, say so and implement the batch in the foreground, choosing the skill per item as `worktree-agent.md` says. If they cannot run concurrently, run them one at a time.
 
-While a batch runs, keep discussing the next items and adding agreed ones to the queue.
+While a batch runs, keep discussing the next items and adding agreed ones to the queue. When an item runs past about twice its estimate, or the user asks how long is left, check its agent's actual state, such as its commits, its worktree's status, and its checks' log, and report that rather than a new estimate.
 
 ## Integrate and report
 
 Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Decide whether to review it with `review-code`:
 
-- Use `review-code` unless the implementer reports that a fresh agent on the review model reviewed its commits. You did not write an item a background agent implemented, so your review of it is independent.
+- Use `review-code` unless the implementer reports that a fresh agent on the review model reviewed its commits. You did not write an item a fresh background agent implemented, so your review of it is independent.
+- Always review a fork's commits with `review-code` on the review model. A fork shares this session's context, so `review-code` runs the review in a fresh agent.
 - Also use it when an item's commits go beyond its decision or the implementer reports a finding it did not resolve, other than a blocking or major finding it left for the more capable model as `worktree-agent.md` says when its brief names a review model.
 - An item you implemented in the foreground was already reviewed through `implement`, so do not review it again unless that review was a self-review.
 
@@ -65,13 +69,13 @@ Grade each review's findings on `review-code`'s severity scale, or have its revi
 
 Review each fix on the review model as the user's rules for Git and checks say. Without such rules, review every fix. Always review the fix of a blocking or major finding, to decide whether the item must be redone.
 
-Take an implementer's commits from its branch in Git, never from a hash in its report, since a reported hash may be wrong. Bring them onto the user's branch as the user's rules for Git and checks say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Record the checks it skipped for a shared resource in the queue, to run as the rule on shared-resource checks under "Run a batch" says, and run any others it skipped. Update the queue, including the item's times and measurements, remove the worktree, delete the implementer's branch with `git branch -d`, and start items that became ready.
+Take an implementer's commits from its branch in Git, never from a hash in its report, since a reported hash may be wrong. Bring them onto the user's branch as the user's rules for Git and checks say. Without such rules, fast-forward, rebasing onto the branch tip first if it moved, and rerun the required checks if rebasing changed the commits. Record the checks it skipped for a shared resource in the queue, to run as the rule on shared-resource checks under "Run a batch" says, and run any others it skipped. Run the rebase, the checks it reruns, and the fast-forward as one background command, so the user can keep writing while they run, and report when it ends. Update the queue, including the item's times and measurements, remove the worktree, delete the implementer's branch with `git branch -d`, and start items that became ready.
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later footprint estimates improve.
 
 Start each item's report with its questions and the choices to ask about, then what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that `review-code` would report as a design finding. State when there were none. Raise any blocking question in the discussion.
 
-Follow the user's and the project's rules for branches and commits. Without such rules, start from a branch other than the main branch, and bring the user's branch into the main branch only when the user asks.
+Follow the user's and the project's rules for branches and commits. Without such rules, start from a branch other than the main branch, and bring the user's branch into the main branch only when the user asks. Run that merge and the checks it reruns as a background command too.
 
 ## Finish the queue
 
