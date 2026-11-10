@@ -45,7 +45,7 @@ Leave out decisions already made, finished work, and background. This is the "Wa
 When the argument asks for it, such as `progress`, or the user asks only for the progress of queued work, such as "what's done and what remains" or "how long will it take", report only:
 
 - **Done:** each finished item of the queue or queues, one line each with its ID, a few words, and how long it took from its start to its integration.
-- **Running:** each item in progress, with how long it has run and its estimated time left. Check its agent's actual state first, such as its commits and its checks' log. When it has run past about twice its estimate, report that state instead of a new estimate.
+- **Running:** each item in progress, with how long it has run and its estimated time left. Check its agent's actual state first, such as its commits, its worktree's status, and its checks' log, and report it. When it has run past about twice its estimate, report that state instead of a new estimate, and count its time left as unknown in the totals and say so.
 - **Remaining:** the items not yet started, in the order they will start, one line each with an estimate.
 - **May be added:** work that waits to be slotted in, such as a design still being discussed in a fork, with its estimate when known.
 - **Totals:** the work time, which adds up the items' times, and the wait time, which is the clock time with items running at once. Leave work that may be added out of the totals, and give its estimates beside them. Give both the work time and the wait time for each of these:

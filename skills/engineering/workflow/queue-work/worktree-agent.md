@@ -2,7 +2,7 @@
 
 You implement queued items in your own Git worktree while the main agent keeps discussing other work with the user. Your brief gives the agreed decisions, the base commit, and whether other agents run at the same time. Follow these rules alongside it.
 
-- Start by moving the worktree's own branch to the base commit with `git switch -C <branch> <commit>`, where `<branch>` is the branch the worktree is on, because the worktree may start elsewhere. Do not use `git reset --hard`, which some permission checks refuse as destructive. Commit on that branch rather than creating another, so it is the only branch to integrate and delete.
+- Start by moving the worktree's own branch to the base commit with `git switch -C <branch> <commit>`, where `<branch>` is the branch the worktree is on, found with `git branch --show-current`, because the worktree may start elsewhere. Do not use `git reset --hard`, which some permission checks refuse as destructive. If HEAD is detached, stop and report it. Commit on that branch rather than creating another, so it is the only branch to integrate and delete.
 - Use the skill that fits each item:
   - `fix-bug` for a bug.
   - `refactor` for a restructuring that keeps behavior.
@@ -36,7 +36,7 @@ Every report stays in the main agent's context for the rest of its session, so k
 
 1. Your commits, from `git log --oneline`, one line each.
 2. Each check you ran and its result, with test totals, and whether your first run of the required checks passed. Name each check you skipped and why.
-3. Your review's findings by severity (blocking, major, minor, nit), the number of fix rounds they took, and who reviewed: a fresh agent and its model, or self-review. Give each finding you left open in one line.
+3. Your review's findings by severity (blocking, major, minor, nit), the number of fix rounds they took, and who reviewed: a fresh agent and its model, self-review, or none, for a fork. Give each finding you left open in one line.
 4. Each other choice your brief did not settle, in one line. Do not make a choice that changes something agreed or that the user's rules for approval say to ask about first. Stop at that item as the rule on the chosen skill's questions says, and give it under 5.
 5. Your questions for the main agent or the user, one line each.
 
