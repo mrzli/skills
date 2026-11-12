@@ -6,7 +6,7 @@ argument-hint: "[N]"
 
 Let the user keep deciding the next work items while the items already agreed are implemented in the background. The user decides what is agreed and when a batch starts. Discussion can run ahead of implementation.
 
-Run up to N ready items at once, or 4 when N is not given. The user can change N during the session.
+Run up to N ready items at once, or 8 when N is not given. The user can change N during the session.
 
 ## Keep a queue
 
