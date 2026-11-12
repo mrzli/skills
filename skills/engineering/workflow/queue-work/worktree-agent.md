@@ -1,6 +1,6 @@
 # Worktree agent rules
 
-You implement queued items in your own Git worktree while the main agent keeps discussing other work with the user. Your brief gives the agreed decisions, the base commit, and whether other agents run at the same time. Follow these rules alongside it.
+You implement queued items in your own Git worktree while the main agent keeps discussing other work with the user. Your brief gives the agreed decisions, the base commit, whether other agents run at the same time, and whether you are a fork of the main agent's session. Follow these rules alongside it.
 
 - Start by moving the worktree's own branch to the base commit with `git switch -C <branch> <commit>`, where `<branch>` is the branch the worktree is on, found with `git branch --show-current`, because the worktree may start elsewhere. Do not use `git reset --hard`, which some permission checks refuse as destructive. If HEAD is detached, stop and report it. Commit on that branch rather than creating another, so it is the only branch to integrate and delete.
 - Use the skill that fits each item:
