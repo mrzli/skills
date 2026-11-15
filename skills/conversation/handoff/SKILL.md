@@ -9,13 +9,13 @@ argument-hint: "[same or other machine] [scope or next focus]"
 The argument can specify the target, the scope, or both, in any order:
 
 - **Target:** whether the next session runs on the same machine or another one. Default to the same machine.
-- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation.
+- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation, or to work passed to another repository and the context it depends on.
 
 If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the project, and report its path. If the handoff is to another machine, give the whole document in your reply, so the user can copy it.
 
 ## Content
 
-Summarize the current conversation in a handoff document so a fresh agent can continue the work.
+Write a handoff document that summarizes the work in scope, so a fresh agent can continue it.
 
 Include a "suggested skills" section naming the skills the next agent should use.
 
