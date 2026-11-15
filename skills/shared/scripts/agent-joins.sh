@@ -38,7 +38,8 @@ State lives in <git common dir>/agent-joins/:
   read/NAME.tsv   the notes session NAME has collected: fork name, version
 A fork knows its name from AGENT_FORK_NAME, set on the tab spawn opens. Any
 other session, such as a main session or a fork restarted outside its tab, is
-found by its recorded session ID.
+found by its recorded session ID. A fork's ID is recorded the first time it
+runs this script in its tab.
 EOF
   exit 2
 }
