@@ -38,8 +38,8 @@ State lives in <git common dir>/agent-joins/:
   read/NAME.tsv   the notes session NAME has collected: fork name, version
 A fork knows its name from AGENT_FORK_NAME, set on the tab spawn opens. Any
 other session, such as a main session or a fork restarted outside its tab, is
-found by its recorded session ID. A fork's ID is recorded the first time it
-runs this script in its tab.
+found by its recorded session ID. Spawn chooses each fork's session ID and
+records it when it opens the fork.
 EOF
   exit 2
 }
@@ -96,6 +96,7 @@ if [[ -n ${AGENT_FORK_NAME:-} ]]; then
   [[ -v parent[$AGENT_FORK_NAME] ]] ||
     die "This fork, $AGENT_FORK_NAME, is not recorded. Its tree may have been pruned."
   me=$AGENT_FORK_NAME
+  # Rows written before spawn chose session IDs have none until the fork runs.
   [[ ${session[$me]} == - && -n $session_id ]] && session[$me]=$session_id
 elif [[ -n $session_id ]]; then
   for n in "${names[@]}"; do
@@ -176,6 +177,8 @@ cmd_spawn() {
   local checkout no_edits
   checkout=$(git rev-parse --show-toplevel)
   printf -v no_edits -- '--disallowedTools %q' "Edit(/$checkout/**)"
+  local child_session
+  child_session=$(</proc/sys/kernel/random/uuid)
   local brief_file=$state/briefs/$child.md
   {
     printf '# Brief for %s: %s\n\n' "$child" "$new_topic"
@@ -183,7 +186,7 @@ cmd_spawn() {
     printf '%s\n' "$brief"
   } >"$brief_file"
   prompt="Topic: $new_topic. You are $child, a fork of $me. Read the brief at $brief_file and work on its point with the user. Use the IDs the brief uses, and continue its numbering for new items. Its map gives each of the brief's IDs the ID it has in $me. The user has not seen the brief. In your first reply, after the topic, list the brief's items with their IDs, each with a few words on what it is, before you discuss anything. After that, the first time you discuss one of the brief's items, introduce it as you would a new item, saying in a few words what it is. $discuss_only"
-  printf -v fork_command 'claude %s -n %q %q' "$no_edits" "$child" "$prompt"
+  printf -v fork_command 'claude %s --session-id %q -n %q %q' "$no_edits" "$child_session" "$child" "$prompt"
 
   if [[ -n ${HERDR_SESSION:-} ]]; then
     local create=(herdr tab create --cwd "$PWD" --label "$child" --env "AGENT_FORK_NAME=$child" --focus)
@@ -197,7 +200,7 @@ cmd_spawn() {
     tmux new-window -c "$PWD" -n "$child" -e "AGENT_FORK_NAME=$child" "$fork_command"
   fi
 
-  add_session "$child" "$me" - "$new_topic"
+  add_session "$child" "$me" "$child_session" "$new_topic"
   save
   printf 'Opened %s, a fork of %s%s.\n' "$child" "$me" "$(shown_topic "$child")"
 }
