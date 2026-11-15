@@ -1,6 +1,6 @@
 ---
 name: handoff
-description: Write a handoff document so another agent can continue the work, either the current session on this or another machine, or agreed work for a session in another repository, even a single setting or rule change. Use for every handoff, including one the user's rules call for without being asked. A handoff can be limited to a given scope or focus.
+description: Write a handoff document so another agent can continue the work, either the current session's work on this or another machine, or agreed work for a session in another repository, even a single setting or rule change. Use for every handoff, including one the user's rules call for without being asked. A handoff can be limited to a given scope or focus.
 argument-hint: "[same or other machine] [scope or next focus]"
 ---
 
@@ -9,7 +9,7 @@ argument-hint: "[same or other machine] [scope or next focus]"
 The argument can specify the target, the scope, or both, in any order:
 
 - **Target:** whether the next session runs on the same machine or another one. Default to the same machine.
-- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation, or to work passed to another repository and the context it depends on.
+- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation. For work passed to another repository, default to that work and the context it depends on.
 
 If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the project, and report its path. If the handoff is to another machine, give the whole document in your reply, so the user can copy it.
 
