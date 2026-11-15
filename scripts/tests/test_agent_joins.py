@@ -67,6 +67,17 @@ class AgentJoinsTests(unittest.TestCase):
         self.assertEqual(fork_command[session_flag + 1], child[2])
         self.assertRegex(child[2], r'^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$')
 
+    def test_fork_without_a_recorded_id_records_it_on_its_first_run(self):
+        rows = (self.state / 'forks.tsv').read_text().replace('fork-id', '-')
+        (self.state / 'forks.tsv').write_text(rows)
+        result = self.run_script('yield', session_id='fork-id', fork_name='Claude-1',
+                                 stdin='A note.\n')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('\tfork-id\t', (self.state / 'forks.tsv').read_text())
+        result = self.run_script('yield', session_id='fork-id', stdin='Another note.\n')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('note of Claude-1', result.stdout)
+
     def test_main_session_cannot_yield(self):
         result = self.run_script('yield', session_id='main-id', stdin='A note.\n')
         self.assertEqual(result.returncode, 1)
