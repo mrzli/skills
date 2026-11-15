@@ -36,8 +36,9 @@ State lives in <git common dir>/agent-joins/:
   briefs/NAME.md  the brief fork NAME started from
   notes/NAME.md   the latest note yielded by fork NAME
   read/NAME.tsv   the notes session NAME has collected: fork name, version
-A fork knows its name from AGENT_FORK_NAME. A main session is found by its
-session ID.
+A fork knows its name from AGENT_FORK_NAME, set on the tab spawn opens. Any
+other session, such as a main session or a fork restarted outside its tab, is
+found by its recorded session ID.
 EOF
   exit 2
 }
@@ -97,7 +98,7 @@ if [[ -n ${AGENT_FORK_NAME:-} ]]; then
   [[ ${session[$me]} == - && -n $session_id ]] && session[$me]=$session_id
 elif [[ -n $session_id ]]; then
   for n in "${names[@]}"; do
-    [[ ${session[$n]} == "$session_id" && ${parent[$n]} == - ]] && me=$n && break
+    [[ ${session[$n]} == "$session_id" ]] && me=$n && break
   done
 fi
 
@@ -203,7 +204,7 @@ cmd_spawn() {
 cmd_yield() {
   (($# == 0)) || usage
   [[ -n $me && ${parent[$me]} != - ]] ||
-    die 'This session is not a fork opened by spawn (AGENT_FORK_NAME is not set).'
+    die 'This session is not a fork opened by spawn (AGENT_FORK_NAME is not set, and its session ID is not recorded for a fork).'
   local body
   body=$(cat)
   [[ -n ${body//[[:space:]]/} ]] || die 'The note is empty: pass it on standard input.'
