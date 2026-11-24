@@ -15,7 +15,13 @@ Each item gives the main session's recommendation.
 
 ## Decisions
 
-Status: open. Nothing applied yet.
+Status: all items decided on 2026-11-24 and applied on branch `text-review-2026-11-24`, except item 6, which the user dropped because `tidy-docs` already preserves unresolved decisions. Items 39 to 43 went to archon as a handoff, and the user installed them. Changes to the proposals:
+
+- Item 1: the user found the questions-first order confusing because a question came before the context it needed. The global Writing rule now says to put the most important parts first and to give each part enough context to be understood on first read (second archon handoff). `implement` and `queue-work` refer to it instead of copying the old order. `recap` keeps its own order.
+- Item 14: after one restart on its tier, a stuck item is judged again and moved to a stronger tier, the most capable one when unsure.
+- Items 17 and 18: the docs document everything `agent-joins.sh` relies on. `routing-test.sh` relies on undocumented output, which the user accepted. It names that output in a header note and has a test.
+- Item 27: the user removed the read-only limit on `scripts/sync-skills.sh` for Codex.
+- Item 12: `warmup` matches `handoff-<repository>-from-*` and confirms the target from the handoff's title line.
 
 ## Changes to behavior
 
