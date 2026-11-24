@@ -22,9 +22,9 @@ If an agreed item or a needed handoff conflicts with a decision made in this ses
 
 A note's "Agreed to implement" items were approved by the user in the fork, and each has a source ID, such as `Claude-1/A1a`.
 
-In the main session, implement the items marked `now` through `queue-work` without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the latest item with that source ID in the queue and the backlog:
+In the main session, implement the items marked `now` through `queue-work` without asking for approval again. Add the items marked `backlog` to the project's backlog with their source IDs, and start none of them. Every yield repeats the fork's whole picture, so check each item's source ID against the latest item with that source ID in the queue and the backlog. Finishing a queue deletes its file, so also search earlier queue files in Git history, such as with `git log -S '<source ID>' -- <queue folder>`, and treat an item found only there as integrated in the queue:
 
-- In neither: add it to the queue or the backlog, as its mark says.
+- In none of them: add it to the queue or the backlog, as its mark says.
 - In the queue or the backlog with the same decision and mark: skip it.
 - In the backlog, or in the queue and not yet started, with a changed decision or mark: update it there, and move it between the queue and the backlog when its mark changed.
 - In the queue with a changed decision, already started or integrated: add it as a new item.
