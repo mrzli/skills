@@ -6,7 +6,8 @@
 # - Claude Code stream-json: the "skills" field of the system/init event (the
 #   event is documented, the field is not); the "skill" field of the Skill
 #   tool's tool_use input (the tool is documented, its input is not); and
-#   skill content injected inside <skill><name>NAME</name> tags.
+#   skill content injected inside <skill><name>NAME</name> tags; and SKILL.md
+#   paths in the tool_use input of other tools, such as Read.
 # - Codex "exec --json": SKILL.md paths appearing in item records. The JSONL
 #   stream, its item.* events, and command_execution items with command text
 #   are documented, but how file reads appear in them is not.

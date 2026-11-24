@@ -37,7 +37,7 @@ class RoutingTestTests(unittest.TestCase):
         fixture = self.base / f'{name}.jsonl'
         fixture.write_text(''.join(json.dumps(r) + '\n' for r in records))
         exe = self.bin / name
-        exe.write_text(f'#!/usr/bin/env bash\nprintf "%s\\n" "$@" >{self.args_file}\ncat {fixture}\n')
+        exe.write_text(f'#!/usr/bin/env bash\nprintf "%s\\n" "$@" >"{self.args_file}"\ncat "{fixture}"\n')
         exe.chmod(0o755)
 
     def run_script(self, agent, *expected):
@@ -64,6 +64,19 @@ class RoutingTestTests(unittest.TestCase):
             ('delta', 'alpha,gamma', 'absent'),
             ('beta,alpha', 'alpha,gamma', 'pass'),
         ])
+
+    def test_claude_skill_file_read(self):
+        self.fake('claude', [CLAUDE_INIT, {'type': 'assistant', 'message': {'content': [
+            {'type': 'tool_use', 'name': 'Read', 'input': {'file_path': '/x/alpha/SKILL.md'}},
+        ]}}])
+        rows = self.run_script('claude', 'alpha')
+        self.assertEqual([(r[2], r[3]) for r in rows], [('alpha', 'pass')])
+
+    def test_codex_skill_path_in_other_item(self):
+        self.fake('codex', [{'type': 'item.completed', 'item': {
+            'type': 'file_read', 'path': '/x/some-skill/SKILL.md'}}])
+        rows = self.run_script('codex', 'some-skill')
+        self.assertEqual([(r[2], r[3]) for r in rows], [('some-skill', 'pass')])
 
     def test_claude_loading_nothing(self):
         self.fake('claude', [CLAUDE_INIT])
