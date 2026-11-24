@@ -10,7 +10,7 @@ Get the user back into the current project quickly. Read only enough to know whe
 
 Read these, stopping once the picture is clear:
 
-- The project's plan, queue, or progress files, such as `.scratch/delivery/` queue files, the project's backlog, and any handoff document for this project.
+- The project's plan, queue, or progress files, such as `.scratch/delivery/` queue files, the project's backlog, and any handoff document for this project, such as `handoff-<this repository's directory>-*` in the temporary directory.
 - The current branch, recent commits, unmerged branches, and uncommitted changes.
 - The end of the previous agent session in this project. Run [last-session.sh](scripts/last-session.sh) from the project root. It prints the last messages of the most recent earlier Claude Code or Codex session, without tool output.
   - If the current session already holds earlier work, such as when it was resumed or continued, pass `--skip 0` to print the current session instead.

@@ -44,13 +44,13 @@ Start each queued item once it is ready.
 
 ## Handoffs
 
-A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with the `handoff` skill from its item, and give its path. Name the file after this repository's directory, the tree's ID, and the source ID, with `/` replaced by `-`, such as `handoff-trading-app-1a2b3c4d-Claude-2-A1b.md`. Fork names repeat across repositories and after a prune, so the repository and the tree's ID keep the files apart across repositories and main sessions.
+A note's "Handoffs needed" items each name a target repository and the change a handoff should ask for, and each has a source ID. In the main session, write each handoff with the `handoff` skill from its item, and give its path. Name the file as the `handoff` skill says, with the tree's ID and the source ID as its topic, and `/` replaced by `-`, such as `handoff-archon-from-trading-app-1a2b3c4d-Claude-2-A1b.md`. Fork names repeat across repositories and after a prune, so the source repository and the tree's ID keep the files apart across repositories and main sessions.
 
 Every yield repeats the fork's whole picture, so check the latest file for that source ID first. The first file has no number and counts as 1, and the latest is the one with the highest number:
 
 - No file: write it.
 - A file that asks for the same change: skip it.
-- A file that asks for a different change: write a new file with the next free number added, such as `handoff-trading-app-1a2b3c4d-Claude-2-A1b-2.md`, because a session in the other repository may already have used the old one. Say in its line that it changed.
+- A file that asks for a different change: write a new file with the next free number added, such as `handoff-archon-from-trading-app-1a2b3c4d-Claude-2-A1b-2.md`, because a session in the other repository may already have used the old one. Say in its line that it changed.
 
 ## In a fork
 

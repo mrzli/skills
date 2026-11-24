@@ -11,7 +11,7 @@ The argument can specify the target, the scope, or both, in any order:
 - **Target:** whether the next session runs on the same machine or another one. Default to the same machine.
 - **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation. For work passed to another repository, default to that work.
 
-If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the project, and report its path. If the handoff is to another machine, give the whole document in your reply, so the user can copy it.
+If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the project, and report its path. Name it `handoff-<target>-from-<source>-<topic>.md`, with the target and source repositories' directory names and a short topic, such as `handoff-archon-from-skills-response-order.md`, so a session in the target repository can find it. A handoff within one repository has the same target and source. If the handoff is to another machine, give the whole document in your reply, so the user can copy it.
 
 ## Content
 
