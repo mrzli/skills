@@ -27,4 +27,4 @@ Establish that the check detects the original failure and passes after the repai
 
 When finding the cause required a deep investigation, propose a cheap, always-present signal that would have shown it at first look, such as a log line, an assertion, or a diagnostic.
 
-Report the cause and evidence, the repair, verification results, and any remaining uncertainty. Completion requires evidence that the reported behavior is corrected. Otherwise state the unresolved verification or blocker.
+Report as `implement` does, with the cause and its evidence, and any remaining uncertainty. Completion requires evidence that the reported behavior is corrected. Otherwise state the unresolved verification or blocker.

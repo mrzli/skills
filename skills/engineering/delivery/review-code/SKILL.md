@@ -21,7 +21,7 @@ Read the full diff, new files, and enough surrounding code, callers, and tests t
 
 Check:
 
-- **Intended behavior:** requirements and acceptance criteria are met, relevant failure cases are handled, existing behavior remains compatible where required, and changes stay within scope.
+- **Intended behavior:** requirements and acceptance criteria are met, relevant failure cases are handled, existing behavior remains compatible where required, changes stay within scope, and no lasting structure, such as a new package, service, or module, or a shared unit that did not exist before, was added without the request's approval.
 - **Engineering quality:** correctness, project conventions, the user's rules for code design, maintainability, meaningful verification, and reliance on undocumented library behavior. Examine security, data integrity, performance, and operational concerns where the changed behavior makes them relevant.
 - **Secrets, in every review:** API keys, tokens, passwords, private keys, credential files such as `.env`, and personal paths or identifiers that should not be committed. For a branch or commit range, check what each commit adds, because a secret a later commit removes stays in the history.
 - **Unexplained behavior, in every review:** behavior the request does not account for, such as new network access, downloading and running code, broader permissions or privileges, obfuscated or encoded code, new or changed dependencies and their sources, and weakened verification, such as disabled or deleted tests, loosened linters, or edited hooks and CI.

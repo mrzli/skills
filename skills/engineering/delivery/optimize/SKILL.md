@@ -1,6 +1,6 @@
 ---
 name: optimize
-description: Improve a measured performance metric, such as latency, frame time, throughput, or memory, through measured keep-or-revert attempts rather than restoring a regression. Use for slowness or resource use the user wants reduced, or a performance target to reach.
+description: Improve a measured performance metric, such as latency, frame time, throughput, or memory, through measured keep-or-revert attempts. Use for slowness or resource use the user wants reduced, or a performance target to reach. Not for restoring a regression, which belongs to `fix-bug`.
 ---
 
 Move one metric toward a target with evidence for every kept change. A regression the user wants restored, or a correctness bug that happens to be slow, belongs to `fix-bug`.
@@ -19,7 +19,7 @@ Record the baseline and a passing run of the checks that must keep passing. Loca
 
 ## Attempt, measure, keep or revert
 
-Make one change per attempt, based on a hypothesis that names a specific mechanism. Try ideas in this order, cheapest first:
+Make one change per attempt, based on a hypothesis that names a specific mechanism. Ask before an attempt that adds lasting structure, such as a new package, service, or module, or a shared unit that does not exist yet, or that changes user-visible behavior, as the user's rules for approval say. Without such rules, ask about both. Try ideas in this order, starting with those that remove the most work:
 
 1. Avoid work whose result nothing uses.
 2. Avoid repeating work, for example by caching.
@@ -30,7 +30,7 @@ Make one change per attempt, based on a hypothesis that names a specific mechani
 
 Measure each attempt with the frozen command and run the checks. Keep a change only when the metric moves past run-to-run variation and the checks pass. Otherwise revert it completely. Never stack untested changes. Correctness and simplicity outrank the metric, so revert a win that breaks behavior, and keep a simplification that holds the number.
 
-Commit each kept change separately, following the user's and the project's rules for commits. Log every attempt, kept or reverted, in `.scratch/perf/<slug>.md` with the hypothesis, before and after values, and verdict.
+Commit each kept change separately, following the user's and the project's rules for commits. Without such rules, commit only when asked, and keep each kept change separately revertible. Log every attempt, kept or reverted, in `.scratch/perf/<slug>.md` with the hypothesis, before and after values, and verdict.
 
 On a stall, try a different category of idea or reread the hot path before concluding. Stop when the stop condition is met or the remaining ideas cost more than they would save. Do not relax the target to meet it.
 
@@ -38,4 +38,4 @@ On a stall, try a different category of idea or reread the hot path before concl
 
 Have the kept changes reviewed with `review-code`, giving it the metric and target, the attempt log, and the check results. Address its findings, and measure again with the frozen command when a correction touches the measured path.
 
-Give the metric and target, baseline and final values with the change, the number of attempts kept and reverted, each kept change in one line, the log path, and the most promising untried idea.
+Give the metric and target, baseline and final values with the change, the number of attempts kept and reverted, each kept change in one line, the log path, and the most promising untried idea. Also report as `implement` does: open questions, and choices beyond the request as the user's rules for approval say. Without such rules, list every choice beyond the request.
