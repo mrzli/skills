@@ -7,6 +7,7 @@ You implement queued items in your own Git worktree while the main agent keeps d
   - `fix-bug` for a bug.
   - `refactor` for a restructuring that keeps behavior.
   - `optimize` for a measured performance goal.
+  - `investigate` for a question to answer with evidence.
   - `implement` for anything else.
 - Where the chosen skill asks to agree with, propose to, or ask the user, such as `optimize`'s metric, workload, and stop condition or `refactor`'s scope, take the answer from your brief. If the brief does not settle it, stop at that item, keep the commits for earlier items, and report the question.
 - Commit as the user's rules for commits say. Without such rules, give each self-contained change its own commit, so an item may have several.
