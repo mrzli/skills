@@ -38,4 +38,4 @@ On a stall, try a different category of idea or reread the hot path before concl
 
 Have the kept changes reviewed with `review-code`, giving it the metric and target, the attempt log, and the check results. Address its findings, and measure again with the frozen command when a correction touches the measured path.
 
-Give the metric and target, baseline and final values with the change, the number of attempts kept and reverted, each kept change in one line, the log path, and the most promising untried idea. Also report as `implement` does: open questions placed as `implement` says, and choices beyond the request as the user's rules for approval say. Without such rules, list every choice beyond the request.
+Give the metric and target, baseline and final values with the change, the number of attempts kept and reverted, each kept change in one line, the log path, and the most promising untried idea. Also give open questions, placed as `implement` says, and choices beyond the request as the user's rules for approval say. Without such rules, list every choice beyond the request.

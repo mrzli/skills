@@ -14,7 +14,7 @@ Read the existing specification, design record, plan, progress record, or task l
 
 ## Report
 
-Choose the parts that fit the scope, omitting empty ones. A discussion of a design usually needs its decisions and open questions. A backlog usually needs item status.
+Choose the parts that fit the scope, omitting empty ones. A discussion of a design usually needs its decisions and what waits on the user. A backlog usually needs item status.
 
 - **Current state of the topic:** what was decided and how the pieces fit, in plain words. Restate content the user may have skimmed rather than only pointing to it.
 - **Item status,** grouped as:
