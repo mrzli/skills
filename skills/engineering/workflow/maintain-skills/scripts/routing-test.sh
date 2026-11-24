@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 # Check which skills a fresh agent loads for requests that do not name a skill.
+#
+# Relies on output that neither Claude Code nor Codex documents. The user
+# accepted relying on it. Tested by scripts/tests/test_routing_test.py.
+# - Claude Code stream-json: the "skills" field of the system/init event (the
+#   event is documented, the field is not); the "skill" field of the Skill
+#   tool's tool_use input (the tool is documented, its input is not); and
+#   skill content injected inside <skill><name>NAME</name> tags.
+# - Codex "exec --json": SKILL.md paths appearing in item records. The JSONL
+#   stream, its item.* events, and command_execution items with command text
+#   are documented, but how file reads appear in them is not.
 set -euo pipefail
 
 usage() {
@@ -63,8 +73,8 @@ run_case() {
   fi
   if [[ $agent == claude ]]; then
     (cd "$work" && claude -p "$request" --permission-mode dontAsk \
-      --disallowedTools "Edit Write NotebookEdit" --no-session-persistence \
-      --output-format stream-json --verbose --max-budget-usd "$budget" </dev/null) >"$log" 2>&1 || true
+      --no-session-persistence --output-format stream-json --verbose \
+      --max-budget-usd "$budget" --disallowedTools Edit Write NotebookEdit </dev/null) >"$log" 2>&1 || true
   else
     codex exec -C "$work" -s read-only --ephemeral --skip-git-repo-check --json "$request" \
       </dev/null >"$log" 2>&1 || true
