@@ -37,7 +37,7 @@ When the user asks for an in-depth review, read the whole text instead of starti
 - Steps that cannot be followed as written, missing stopping points, and script usage that does not match the script's arguments.
 - Unclear wording, as `writing-text` describes.
 
-When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Give each agent the previous text review, the record's declined items and open trials, and the changes to the user's instructions since that review. Save the numbered findings and the user's decisions in the maintenance record, and note the review's date in the part later reviews start from.
+When the text is too much for one careful reading, split it by area among fresh agents, give each the user's instructions in full, and verify their high-severity findings before reporting. Give each agent the previous text review, the record's declined items and open trials, and the changes to the user's instructions since that review. Save the numbered findings and the user's decisions in the maintenance record, and note the review's date in the part later reviews start from. Put the decisions to the user as the user's rules for writing say. Without such rules, give a few at a time, starting with the one that blocks the most.
 
 In a routine review, recommend an in-depth review when the user's instructions or many skills changed substantially since the last one.
 
