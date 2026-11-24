@@ -38,6 +38,8 @@ In the main session, implement the items marked `now` through `queue-work` witho
 - In the queue with a changed decision, already started or integrated: add it as a new item.
 - In the queue, already started or integrated, with the same decision but now marked `backlog`: ask about it in one line.
 
+Also check the other way. When an item in the backlog, or in the queue and not yet started, has a source ID from this note's fork but is missing from the note, ask about it in one line, since the user may have dropped it. Judge only by the note of the fork named in the source ID, because a parent's note may not yet carry its child's items.
+
 Start each queued item once it is ready.
 
 ## Handoffs
