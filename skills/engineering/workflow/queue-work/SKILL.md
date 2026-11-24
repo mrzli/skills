@@ -59,6 +59,8 @@ If background agents are unavailable, say so and implement the batch in the fore
 
 While a batch runs, keep discussing the next items and adding agreed ones to the queue. When an item runs past about twice its estimate, or the user asks how long is left, check its agent's actual state, such as its commits, its worktree's status, and its checks' log, and report it. Past about twice its estimate, report that state rather than a new estimate.
 
+When an implementer stalls or fails the same way twice, restart it once on its tier. If it is stuck again, judge the item again with what the stall showed, and give it to a stronger tier from its base commit, the most capable one when unsure. When the most capable tier is stuck, report it to the user. Record each restart and takeover in the item's measurements.
+
 ## Integrate and report
 
 Integrate finished items one at a time, in dependency order. Read each item's diff against its agreed decision. Decide whether to review it with `review-code`:
