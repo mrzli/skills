@@ -14,8 +14,10 @@
 #   (payload.type ending in "call") through payload.input or payload.arguments.
 set -euo pipefail
 
-usage() {
-  cat >&2 <<'EOF'
+usage() { # [STATUS]: prints the usage to standard output for status 0, else to standard error
+  local status=${1:-2}
+  ((status == 0)) || exec 1>&2
+  cat <<'EOF'
 Usage: skill-usage.sh [--since YYYY-MM-DD] [--exclude-cwd PATH]... SKILLS_ROOT
 
 Lists every skill under SKILLS_ROOT (directories containing SKILL.md) with:
@@ -25,7 +27,7 @@ Lists every skill under SKILLS_ROOT (directories containing SKILL.md) with:
 Transcripts: ~/.claude/projects and ~/.codex/sessions (override with
 CLAUDE_TRANSCRIPTS and CODEX_TRANSCRIPTS). Matching is by skill name only.
 EOF
-  exit 2
+  exit "$status"
 }
 
 since=
@@ -34,7 +36,7 @@ while (($#)); do
   case $1 in
     --since) since=${2:?}; shift 2 ;;
     --exclude-cwd) excludes+=("$(realpath -m -- "${2:?}")"); shift 2 ;;
-    -h|--help) usage ;;
+    -h|--help) usage 0 ;;
     -*) usage ;;
     *) break ;;
   esac
@@ -92,7 +94,7 @@ extract='
       kind = $1; skill = $2; date = $3; cwd = $4; session = $5
       sub(/^.*:/, "", skill)
       if (!(skill in known) || (since != "" && date < since)) next
-      for (i = 1; i <= m; i++) if (ex[i] != "" && index(cwd, ex[i]) == 1) next
+      for (i = 1; i <= m; i++) if (ex[i] != "" && (cwd == ex[i] || index(cwd, ex[i] "/") == 1)) next
       key = skill SUBSEP session
       if (kind == "invoked") { if (!(key in inv)) { inv[key] = 1; invoked[skill]++ } }
       else if (!(key in rd)) { rd[key] = 1; reads[skill]++ }

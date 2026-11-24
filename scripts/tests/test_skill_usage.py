@@ -87,6 +87,20 @@ class SkillUsageTests(unittest.TestCase):
         self.assertEqual(usage['beta'], ['1', '0', '2026-11-04'])
         self.assertEqual(usage['gamma'], ['0', '0', 'never'])
 
+    def test_exclude_cwd_drops_the_folder_and_its_subfolders_only(self):
+        self.add_claude_session('excluded', self.excluded, '2026-11-01')
+        self.add_claude_session('subfolder', self.excluded + '/sub', '2026-11-02')
+        self.add_claude_session('sibling', self.excluded + '-notes', '2026-11-03')
+        usage = self.run_script('--exclude-cwd', self.excluded)
+        self.assertEqual(usage['alpha'], ['1', '0', '2026-11-03'])
+        self.assertEqual(usage['beta'], ['1', '0', '2026-11-03'])
+        self.assertEqual(usage['gamma'], ['0', '1', '2026-11-03'])
+
+    def test_help_prints_usage_and_exits_successfully(self):
+        result = subprocess.run(['bash', str(SCRIPT), '-h'], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('Usage: skill-usage.sh', result.stdout)
+
     def test_runs_without_codex_transcripts(self):
         self.add_claude_session('claude-1', self.work, '2026-11-01')
         self.assertEqual(self.run_script()['alpha'], ['1', '0', '2026-11-01'])
