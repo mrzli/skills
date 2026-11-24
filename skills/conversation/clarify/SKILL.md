@@ -21,7 +21,7 @@ When the user says they are lost or still do not understand, apply these rules u
 - Keep each response within roughly 100 words.
 - Answer one point, and put it first. Leave the rest for later responses.
 - Do not ask the user to decide or approve anything. Make any offer, such as a glossary entry, once they follow.
-- Make that point a correction to the user's model of the topic, such as a missing distinction or mistaken assumption, then say what you took that model to be.
+- Make that point a correction to the user's model of the topic, such as a missing distinction or mistaken assumption, then name the part of their model it corrects.
 - If you cannot tell what the model is, ask for it in place of the correction. Still answer a direct question first.
 - Do not explain the structure of your own explanation or proposal, and do not rephrase the earlier explanation.
 
