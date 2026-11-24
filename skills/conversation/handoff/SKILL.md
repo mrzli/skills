@@ -15,7 +15,7 @@ If the handoff is to the same machine, save the document in the operating system
 
 ## Content
 
-Write a handoff document that summarizes the work in scope, so a fresh agent can continue it.
+Write a handoff document that summarizes the work in scope, so a fresh agent can continue it. Start it with a title line that names the target repository, such as `# Handoff: one ordering rule for responses (for archon)`.
 
 Include a "suggested skills" section naming the skills the next agent should use.
 
