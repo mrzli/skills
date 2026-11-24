@@ -2,7 +2,7 @@
 
 Items from the [2026-11-24 text review](../skills/2026-11-24-text-review.md) that the user approved on 2026-11-24. Review numbers refer to that record. Branch `text-review-2026-11-24`. The main agent runs `tidy-docs`, `scripts/sync-skills.sh`, and the routing-case update once after all items are integrated.
 
-Not queued yet: review items 1, 7, 14, 17, 18, and 27 are under discussion, and items 6, 9-13, 15, and 16 await the user's answer. The main agent writes the archon handoff for items 39-43.
+Not queued yet: review item 27 is under discussion, and items 6, 9-13, 15, and 16 await the user's answer. The main agent applied items 7 and 14 directly after the user agreed to them. The main agent writes the archon handoff for items 39-43.
 
 ## 1. Approval and reports in the delivery skills
 
@@ -72,4 +72,11 @@ Not queued yet: review items 1, 7, 14, 17, 18, and 27 are under discussion, and 
 - Decision: review item 1, approved on 2026-11-24 with examples. A report leads with the result, then the questions. A question comes first only when it blocks the result, such as when the work stopped on it. Each question carries the context needed to answer it, as the user's rules say. Apply this to `implement`'s report (which `fix-bug` and `refactor` follow), `optimize`'s report (open questions placed as `implement` says), and the `queue-work` item report, citing the user's rules for writing, with the fallback "Without such rules, put the questions first." `recap`'s full report: current state, then item status, then "Waiting on the user" with "Open questions" folded in (except questions not yet ready for the user, such as ones under investigation), then rejected options. Keep the "Waiting on the user only" view consistent with it.
 - Footprint: `implement`, `optimize`, `queue-work` SKILL.md files, and `recap` SKILL.md.
 - Depends on: none. Model: Haiku (contained docs, design settled).
+- Status: in progress.
+
+## 9. routing-test.sh relies on undocumented output
+
+- Decision: review items 17 and 18, settled on 2026-11-24 after a check of the Claude Code and Codex docs. `agent-joins.sh` relies only on documented behavior (`CLAUDECODE`, `CLAUDE_CODE_SESSION_ID`, `Edit` rules covering all built-in editing tools, `//` for absolute paths), so it needs no change. `routing-test.sh` relies on undocumented output, which the user accepted: the `skills` field of Claude's `system/init` event, the Skill tool's `input.skill`, injected `<skill><name>` tags, and `SKILL.md` paths in Codex `--json` item records other than `command_execution` commands. Add a header note naming these, as `warmup/scripts/last-session.sh` does, and a test in `scripts/tests` that runs the script against fake `claude` and `codex` commands that print fixture output. Also pass `--disallowedTools` the documented way, as separate arguments.
+- Footprint: `maintain-skills/scripts/routing-test.sh`, a new `scripts/tests/test_routing_test.py`.
+- Depends on: none. Model: Sonnet (a script and a test with fakes, several judgment points).
 - Status: in progress.
