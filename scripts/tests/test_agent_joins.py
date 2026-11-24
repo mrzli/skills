@@ -3,6 +3,7 @@ import shlex
 import subprocess
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -82,6 +83,80 @@ class AgentJoinsTests(unittest.TestCase):
         result = self.run_script('yield', session_id='main-id', stdin='A note.\n')
         self.assertEqual(result.returncode, 1)
         self.assertIn('not a fork opened by spawn', result.stderr)
+
+    def add_forks(self, *rows):
+        with (self.state / 'forks.tsv').open('a') as file:
+            file.write(''.join('\t'.join(row) + '\n' for row in rows))
+
+    def test_collect_reports_new_then_changed_notes(self):
+        self.add_forks(['Claude-1-1', 'Claude-1', 'grand-id', 'Deep', CREATED, '0', '-'])
+        self.run_script('yield', session_id='fork-id', stdin='First.\n')
+        self.run_script('yield', session_id='grand-id', stdin='Deep first.\n')
+        result = self.run_script('collect', session_id='main-id')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('=== Claude-1: new note, version 1 ===', result.stdout)
+        self.assertIn('=== Claude-1-1: new note, version 1, via Claude-1 ===', result.stdout)
+        self.run_script('yield', session_id='fork-id', stdin='Second.\n')
+        result = self.run_script('collect', session_id='main-id')
+        self.assertIn('=== Claude-1: changed note, version 2 ===', result.stdout)
+        self.assertNotIn('=== Claude-1-1:', result.stdout)
+
+    def test_collect_names_the_forks_between_a_note_and_the_collector(self):
+        self.add_forks(['Claude-1-1', 'Claude-1', 'grand-id', 'Deep', CREATED, '0', '-'],
+                       ['Claude-1-1-1', 'Claude-1-1', 'great-id', '-', CREATED, '0', '-'])
+        self.run_script('yield', session_id='great-id', stdin='Deepest.\n')
+        result = self.run_script('collect', session_id='main-id')
+        self.assertIn('=== Claude-1-1-1: new note, version 1, via Claude-1, Claude-1-1 ===',
+                      result.stdout)
+        result = self.run_script('collect', session_id='fork-id')
+        self.assertIn('=== Claude-1-1-1: new note, version 1, via Claude-1-1 ===',
+                      result.stdout)
+
+    def test_note_is_deleted_once_every_session_above_has_collected_it(self):
+        self.add_forks(['Claude-1-1', 'Claude-1', 'grand-id', 'Deep', CREATED, '0', '-'])
+        self.run_script('yield', session_id='fork-id', stdin='First.\n')
+        self.run_script('yield', session_id='grand-id', stdin='Deep.\n')
+        result = self.run_script('collect', session_id='main-id')
+        self.assertIn('Deleted the note of Claude-1: every session above it has collected it.',
+                      result.stdout)
+        self.assertFalse((self.state / 'notes/Claude-1.md').exists())
+        self.assertIn('Kept the note of Claude-1-1: not yet collected by Claude-1.',
+                      result.stdout)
+        self.assertTrue((self.state / 'notes/Claude-1-1.md').exists())
+        result = self.run_script('collect', session_id='fork-id')
+        self.assertIn('=== Claude-1-1: new note, version 1 ===', result.stdout)
+        self.assertIn('Deleted the note of Claude-1-1', result.stdout)
+        self.assertFalse((self.state / 'notes/Claude-1-1.md').exists())
+
+    def test_inactive_tree_is_listed_and_prune_deletes_it(self):
+        old = '2020-06-15T12:00:00Z'
+        (self.state / 'forks.tsv').write_text(
+            '\t'.join(['Claude', '-', 'main-id', '-', old, '0', '-']) + '\n'
+            + '\t'.join(['Claude-1', 'Claude', 'fork-id', 'Topic', old, '1', '-']) + '\n')
+        (self.state / 'notes').mkdir()
+        (self.state / 'briefs').mkdir()
+        (self.state / 'notes/Claude-1.md').write_text('An old note.\n')
+        (self.state / 'briefs/Claude-1.md').write_text('An old brief.\n')
+        result = self.run_script('collect', session_id='')
+        self.assertIn('Inactive since 2020-06-15: the tree of Claude (sessions: 2, '
+                      'notes left: 1). Delete it with: prune Claude', result.stdout)
+        result = self.run_script('prune', 'Claude-1', session_id='')
+        self.assertEqual(result.returncode, 1)
+        self.assertIn('Not the main session of a recorded tree: Claude-1', result.stderr)
+        result = self.run_script('prune', 'Claude', session_id='')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('Deleted the tree of Claude.', result.stdout)
+        self.assertEqual((self.state / 'forks.tsv').read_text(), '')
+        self.assertFalse((self.state / 'notes/Claude-1.md').exists())
+        self.assertFalse((self.state / 'briefs/Claude-1.md').exists())
+
+    def test_recently_active_tree_is_not_listed_as_inactive(self):
+        now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+        (self.state / 'forks.tsv').write_text(
+            '\t'.join(['Claude', '-', 'main-id', '-', now, '0', '-']) + '\n')
+        result = self.run_script('collect', session_id='')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertNotIn('Inactive', result.stdout)
 
 
 if __name__ == '__main__':
