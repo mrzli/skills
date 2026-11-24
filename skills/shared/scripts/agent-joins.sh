@@ -11,18 +11,18 @@ Usage: agent-joins.sh spawn TOPIC < BRIEF
 
 spawn    Opens a fork of the current session in a new herdr or tmux tab in
          the current directory. The tab and the fork are named after the
-         parent session, such as Claude-1 under Claude and Claude-1-1 under Claude-1, or
-         Claude2-1 under a second main session, Claude2. The script saves
-         the brief from standard input, and the fork starts by reading it.
-         Its first message starts with TOPIC. Forks only discuss. They are
-         told not to change the checkout and cannot use the file-editing
-         tools inside it, but may write temporary files, such as scripts,
-         outside it.
+         parent session, such as Claude-1 under Claude and Claude-1-1 under
+         Claude-1, or Claude2-1 under a second main session, Claude2. The
+         script saves the brief from standard input, and the fork starts by
+         reading it. Its first message starts with TOPIC. Forks only
+         discuss. They are told not to change the checkout and cannot use
+         the file-editing tools inside it, but may write temporary files,
+         such as scripts, outside it.
 yield    Stores standard input as the current fork's note, replacing any
          earlier version.
 collect  Says whether the current session is a main session or a fork,
          and gives its tree's ID, which is the first 8 characters of the main
-         session's session ID, which differs between main sessions. It then
+         session's session ID. That ID differs between main sessions. It then
          prints the notes of the sessions below it, at any depth, that are
          new or changed since this session last collected, and records them
          as read. Deletes notes that every session above their fork has
