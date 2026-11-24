@@ -1,6 +1,6 @@
 # Worktree agent rules
 
-You implement queued items in your own Git worktree while the main agent keeps discussing other work with the user. Your brief gives the agreed decisions, the base commit, whether other agents run at the same time, and whether you are a fork of the main agent's session. Follow these rules alongside it.
+You implement queued items in your own Git worktree while the main agent keeps discussing other work with the user. Your brief gives the agreed decisions, the base commit, whether other agents run at the same time, and whether you are a fork of the main agent's session, and the review model when you run on a cheaper one. Follow these rules alongside it.
 
 - Start by moving the worktree's own branch to the base commit with `git switch -C <branch> <commit>`, where `<branch>` is the branch the worktree is on, found with `git branch --show-current`, because the worktree may start elsewhere. Do not use `git reset --hard`, which some permission checks refuse as destructive. If HEAD is detached, stop and report it. Commit on that branch rather than creating another, so it is the only branch to integrate and delete.
 - Use the skill that fits each item:
@@ -13,7 +13,7 @@ You implement queued items in your own Git worktree while the main agent keeps d
 - Run the project's required checks. After a check fails, rerun checks as `implement` says. Run a costly check that repeats the tests, such as a run at several display scales, once, after the last change that affects it, rather than after each fix.
 - When your brief says you are a fork of the main agent's session, do not review your own commits, even where the chosen skill asks for a review. The main agent has a fresh agent review them, so the review stays independent.
 - Ask each reviewer to grade its findings on `review-code`'s severity scale.
-- When your brief names a review model, start every reviewing agent on it, not on your own model, and leave a blocking or major finding from that review unfixed and report it, so the main agent can have a more capable model fix it.
+- When your brief names a review model, start every reviewing agent on it, not on your own model, and leave a blocking or major finding from that review unfixed and report it, so the main agent can have the most capable model fix it.
 - Wait for long work so that each wait ends when the work does:
   - Run a long check, such as the project's full checks, in the foreground with the longest timeout the shell tool allows (600000 ms in Claude Code), rather than in the background. If it times out, rerun it in the background and wait for it as the next rule says.
   - Wait for background work, such as a review agent or a background command, with a tool that waits for it, such as Claude Code's `Monitor`, or with a single command that ends when that work ends, such as `tail --pid=<pid> -f /dev/null`. A condition loop inside `Monitor` is an exception to the shell-call rules below. Never poll with repeated shell calls that sleep for a fixed time and then check.
