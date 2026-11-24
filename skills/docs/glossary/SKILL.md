@@ -28,7 +28,12 @@ _Avoid_: bill, payment request
 ```
 
 - Choose one term per concept, preferring the name the user finds clearest. List rejected synonyms under `_Avoid_`.
-- No two concepts share a name. A term differs from the project's other terms, unless it reuses a general word as the next item allows. It differs from the built-in names of the frameworks and languages it is used with, without exception. When a new or existing term clashes, propose renaming whichever of the two fits its concept worse. Rename an existing term only once the user agrees, as the user's rules for approval say. Without such rules, ask before renaming an existing term.
+- Keep names distinct:
+  - No two concepts share a name.
+  - A term differs from the project's other terms, unless it reuses a general word as the next item allows.
+  - It differs from the built-in names of the frameworks and languages it is used with, without exception.
+  - When a new or existing term clashes, propose renaming whichever of the two fits its concept worse.
+  - Rename an existing term as the user's rules for approval say. Without such rules, only once the user agrees.
 - A general word used as a term, such as "source" for a data source, always means the term's concept when it stands alone. Another concept may still use the word where its context always marks it:
   - Such contexts include a field inside one file format and a qualified name like "log source". If that concept has its own entry, its term is the qualified name.
   - Record the other use in a sentence after the term's definition, so readers are not misled.
@@ -42,8 +47,8 @@ _Avoid_: bill, payment request
 
 Read the glossary before naming a concept, and check a new name against the built-in names of the frameworks and languages it is used with. Use the glossary's terms in code, documentation, and conversation.
 
-Update an entry as soon as its term is settled, renamed, or found unclear. Do not batch updates until the end of the work.
+Update an entry as soon as its term is settled or renamed. Change an entry for a term found unclear only after the user agrees to the change, never on a question alone. Do not batch updates until the end of the work.
 
 When a term in the discussion conflicts with the glossary, point out the conflict and settle which meaning is intended. When the user states how a concept works, check that the code agrees and raise any contradiction.
 
-A name that is clear to the agent can still be opaque to the user. When the user asks what a term means or says they keep forgetting it, sharpen the definition or agree on a clearer name with the user.
+A name that is clear to the agent can still be opaque to the user. When the user asks what a term means or says they keep forgetting it, propose a sharper definition or a clearer name, and change the entry once they agree.
