@@ -52,7 +52,7 @@ Every yield repeats the fork's whole picture, so check the latest file for that 
 
 ## In a fork
 
-Implement nothing and write no handoffs, as `spawn` says for forks. Carry the agreed items and needed handoffs into the next note this fork writes with the `yield` skill.
+Implement nothing, write no handoffs, and record nothing in the checkout, as `spawn` says for forks. Carry the agreed items, needed handoffs, and durable decisions into the next note this fork writes with the `yield` skill.
 
 ## Inactive trees
 
