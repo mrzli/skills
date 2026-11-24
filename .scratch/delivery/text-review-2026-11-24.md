@@ -66,3 +66,10 @@ Not queued yet: review items 1, 7, 14, 17, 18, and 27 are under discussion, and 
 - Status: integrated.
 - Commits: eaf471f.
 - Measurements: Opus, no restarts; review 3 minor, 2 nits on the commit message; 1 fix round.
+
+## 8. Report order under the revised Writing rule
+
+- Decision: review item 1, approved on 2026-11-24 with examples. A report leads with the result, then the questions. A question comes first only when it blocks the result, such as when the work stopped on it. Each question carries the context needed to answer it, as the user's rules say. Apply this to `implement`'s report (which `fix-bug` and `refactor` follow), `optimize`'s report (open questions placed as `implement` says), and the `queue-work` item report, citing the user's rules for writing, with the fallback "Without such rules, put the questions first." `recap`'s full report: current state, then item status, then "Waiting on the user" with "Open questions" folded in (except questions not yet ready for the user, such as ones under investigation), then rejected options. Keep the "Waiting on the user only" view consistent with it.
+- Footprint: `implement`, `optimize`, `queue-work` SKILL.md files, and `recap` SKILL.md.
+- Depends on: none. Model: Haiku (contained docs, design settled).
+- Status: in progress.
