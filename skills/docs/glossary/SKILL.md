@@ -3,7 +3,7 @@ name: glossary
 description: Create and maintain a project's glossary, the agreed names and short definitions of the concepts used to discuss the product. Use when a project concept is introduced, named, or renamed, when the user finds a project term unclear, or when terms in discussion conflict with the glossary or the code.
 ---
 
-Keep the project's glossary accurate, so that the user and agents call each concept by one name and can look up what it means. Finish when every term settled, renamed, or found unclear in the current work has an up-to-date entry.
+Keep the project's glossary accurate, so that the user and agents call each concept by one name and can look up what it means. Finish when every term settled or renamed in the current work has an up-to-date entry, and every term found unclear has a change proposed or applied.
 
 ## What belongs
 
@@ -31,7 +31,7 @@ _Avoid_: bill, payment request
 - Keep names distinct:
   - No two concepts share a name.
   - A term differs from the project's other terms, unless it reuses a general word as the next item allows.
-  - It differs from the built-in names of the frameworks and languages it is used with, without exception.
+  - A term also differs from the built-in names of the frameworks and languages it is used with, without exception.
   - When a new or existing term clashes, propose renaming whichever of the two fits its concept worse.
   - Rename an existing term as the user's rules for approval say. Without such rules, only once the user agrees.
 - A general word used as a term, such as "source" for a data source, always means the term's concept when it stands alone. Another concept may still use the word where its context always marks it:

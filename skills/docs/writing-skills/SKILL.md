@@ -24,7 +24,7 @@ Keep a script or a reference file in its own skill until a second skill needs it
 
 Skills are installed as links to their folders, side by side, and agents resolve `..` in a skill's paths as text, from the installed link's location. So that paths and names keep working, follow these rules:
 
-- Keep paths inside the skill's category folder. A path that leaves it, such as `../../shared/`, does not resolve, and a path to a skill in the same category breaks once either skill moves.
+- Do not use a path that leaves the skill's category folder, such as `../../shared/`. It does not resolve, and a path to a skill in the same category breaks once either skill moves.
 - Refer to another skill by its name, such as `yield` or the "Progress only" view of the `recap` skill. Agents find installed skills by name, and the name stays valid when a skill moves to another category folder.
 - Write "the `glossary` skill" rather than the bare name where the name could be read as a command, a file, or an ordinary word.
 - Refer to files in the skill's own folder by a relative path, such as `scripts/last-session.sh`.
