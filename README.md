@@ -55,7 +55,7 @@ Most changes come from my own work with the agents. Two of the skills review tha
 
 maintain-skills also looks through [Matt Pocock's skills](https://github.com/mattpocock/skills) and [pstack](https://github.com/cursor/plugins/tree/main/pstack) for new ideas. It adopts one only when it fits how I work and solves a problem I actually have.
 
-The reviews and their results are kept in [.scratch/skills](.scratch/skills) and [.scratch/workflow](.scratch/workflow).
+The reviews and their results are kept in [.scratch/skills](.scratch/skills).
 
 ## Skills
 
