@@ -4,7 +4,7 @@ Where the collection stands, for the next `maintain-skills` review. Keep only wh
 
 ## Last in-depth text review
 
-2026-11-09, [text review](2026-11-09-text-review.md), against archon `7865b69` and the skills at master `288ee4a`. Recommend the next one when the global rules or many skills have changed substantially since then.
+2026-11-24, [text review](2026-11-24-text-review.md), against archon `7e18c57` and the skills at master `eec50c6`. Its decisions are open. The previous one was the [2026-11-09 text review](2026-11-09-text-review.md). Recommend the next one when the global rules or many skills have changed substantially since then.
 
 ## Next review
 
