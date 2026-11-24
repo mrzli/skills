@@ -27,6 +27,6 @@ Test competing explanations when the first plausible answer lacks support. Track
 
 Lead with the conclusion or the unresolved question. Support it with file locations, source links, commands, or experimental results. Separate observations, inferences, and assumptions. Explain confidence, relevant limitations, and what the answer means for the decision that prompted the work. For a library, framework, or tool, say whether its documentation states the behavior or only an experiment or its source shows it.
 
-For substantial investigations or later handoff, save findings using the existing project convention or `.scratch/investigations/<descriptive-slug>.md`. Include enough setup and artifact references to reproduce important results. A short answer with evidence is sufficient for a small question.
+For substantial investigations or later handoff, save findings using the existing project convention or `.scratch/investigations/<descriptive-slug>.md`. Include enough setup and artifact references to reproduce important results. Give the saved record's path in the report. A short answer with evidence is sufficient for a small question.
 
 Stop when the question is answered well enough for its decision, or when a specific evidence gap prevents further useful progress. Return the result to the caller. Production fixes, design commitments, and discarded experimental artifacts should remain distinguishable from findings.
