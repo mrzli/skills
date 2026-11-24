@@ -19,7 +19,7 @@ Write the note in Markdown, kept short. Refer to items by the parent's IDs throu
 
 When this fork has collected notes from sessions below it, carry their agreed items and needed handoffs into this note with their source IDs unchanged, so they reach the main session.
 
-Use the argument, if given, to narrow or focus the note.
+Use the argument, if given, to focus the decisions and open points. Always keep every agreed item and needed handoff.
 
 Pass the note on standard input to [agent-joins.sh](scripts/agent-joins.sh) `yield`. The script adds the fork's name, parent, session ID, and version. If it reports that this session is not a fork opened by `spawn`, tell the user and stop.
 
