@@ -101,6 +101,13 @@ class AgentJoinsTests(unittest.TestCase):
         self.assertIn('=== Claude-1: changed note, version 2 ===', result.stdout)
         self.assertNotIn('=== Claude-1-1:', result.stdout)
 
+    def test_collect_reports_a_note_yielded_twice_before_collecting_as_new(self):
+        self.run_script('yield', session_id='fork-id', stdin='First.\n')
+        self.run_script('yield', session_id='fork-id', stdin='Second.\n')
+        result = self.run_script('collect', session_id='main-id')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('=== Claude-1: new note, version 2 ===', result.stdout)
+
     def test_collect_names_the_forks_between_a_note_and_the_collector(self):
         self.add_forks(['Claude-1-1', 'Claude-1', 'grand-id', 'Deep', CREATED, '0', '-'],
                        ['Claude-1-1-1', 'Claude-1-1', 'great-id', '-', CREATED, '0', '-'])
@@ -137,6 +144,15 @@ class AgentJoinsTests(unittest.TestCase):
         (self.state / 'briefs').mkdir()
         (self.state / 'notes/Claude-1.md').write_text('An old note.\n')
         (self.state / 'briefs/Claude-1.md').write_text('An old brief.\n')
+        (self.state / 'read').mkdir()
+        read_file = self.state / 'read/Claude-1.tsv'
+        read_file.write_text('')
+        stamp = datetime(2020, 6, 15, 12, tzinfo=timezone.utc).timestamp()
+        os.utime(read_file, (stamp, stamp))
+        (self.state / 'forks.tsv').write_text(
+            (self.state / 'forks.tsv').read_text()
+            + '\t'.join(['Other', '-', 'other-id', '-', old, '0', '-']) + '\n'
+            + '\t'.join(['Other-1', 'Other', 'other-fork', 'Topic', old, '0', '-']) + '\n')
         result = self.run_script('collect', session_id='')
         self.assertIn('Inactive since 2020-06-15: the tree of Claude (sessions: 2, '
                       'notes left: 1). Delete it with: prune Claude', result.stdout)
@@ -146,9 +162,12 @@ class AgentJoinsTests(unittest.TestCase):
         result = self.run_script('prune', 'Claude', session_id='')
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('Deleted the tree of Claude.', result.stdout)
-        self.assertEqual((self.state / 'forks.tsv').read_text(), '')
+        self.assertEqual([line.split('\t')[0] for line in
+                          (self.state / 'forks.tsv').read_text().splitlines()],
+                         ['Other', 'Other-1'])
         self.assertFalse((self.state / 'notes/Claude-1.md').exists())
         self.assertFalse((self.state / 'briefs/Claude-1.md').exists())
+        self.assertFalse((self.state / 'read/Claude-1.tsv').exists())
 
     def test_recently_active_tree_is_not_listed_as_inactive(self):
         now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
