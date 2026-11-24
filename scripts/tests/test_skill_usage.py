@@ -96,10 +96,22 @@ class SkillUsageTests(unittest.TestCase):
         self.assertEqual(usage['beta'], ['1', '0', '2026-11-03'])
         self.assertEqual(usage['gamma'], ['0', '1', '2026-11-03'])
 
+    def test_exclude_cwd_root_excludes_every_session(self):
+        self.add_claude_session('claude-1', self.work, '2026-11-01')
+        usage = self.run_script('--exclude-cwd', '/')
+        self.assertEqual(usage['alpha'], ['0', '0', 'never'])
+
     def test_help_prints_usage_and_exits_successfully(self):
         result = subprocess.run(['bash', str(SCRIPT), '-h'], capture_output=True, text=True)
-        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(result.returncode, 0)
         self.assertIn('Usage: skill-usage.sh', result.stdout)
+        self.assertEqual(result.stderr, '')
+
+    def test_unknown_option_prints_usage_to_stderr_and_exits_2(self):
+        result = subprocess.run(['bash', str(SCRIPT), '-x'], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('Usage: skill-usage.sh', result.stderr)
+        self.assertEqual(result.stdout, '')
 
     def test_runs_without_codex_transcripts(self):
         self.add_claude_session('claude-1', self.work, '2026-11-01')

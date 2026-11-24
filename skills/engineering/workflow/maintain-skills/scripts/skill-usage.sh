@@ -94,7 +94,11 @@ extract='
       kind = $1; skill = $2; date = $3; cwd = $4; session = $5
       sub(/^.*:/, "", skill)
       if (!(skill in known) || (since != "" && date < since)) next
-      for (i = 1; i <= m; i++) if (ex[i] != "" && (cwd == ex[i] || index(cwd, ex[i] "/") == 1)) next
+      for (i = 1; i <= m; i++) {
+        if (ex[i] == "") continue
+        sub_prefix = (ex[i] == "/") ? "/" : ex[i] "/"
+        if (cwd == ex[i] || index(cwd, sub_prefix) == 1) next
+      }
       key = skill SUBSEP session
       if (kind == "invoked") { if (!(key in inv)) { inv[key] = 1; invoked[skill]++ } }
       else if (!(key in rd)) { rd[key] = 1; reads[skill]++ }
