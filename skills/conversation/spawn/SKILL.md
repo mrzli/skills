@@ -14,11 +14,11 @@ Forks only discuss:
 - Changes the user approves in a fork pass up through `yield`, and the main session, the one that is not a fork, implements them when it runs `collect`. All changes to the checkout then happen in one session.
 - Handoffs to other repositories also pass up through `yield`. A fork writes none. When the user asks for one or the work calls for one, the fork notes only which repository it is for and what change it should ask for, and the main session writes the handoff.
 
-The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation. When a few words would not say what the fork is about, use the ID plus one sentence. The fork's first message starts with the topic, so the user can see what the fork is about when they come back to it.
+The argument names the point, usually an ID from this conversation, such as F2 or B7d2, and sometimes free text. Record the fork's topic as the ID plus a few words, such as `F2: zoom cap`, because the ID alone means nothing outside this conversation. When a few words would not say what the fork is about, use the ID plus one sentence. The fork's first message starts with the topic, so the user can see what the fork is about when they come back to it. If no point is given, ask the user which one.
 
 ## Brief
 
-The fork is a new session that starts from a brief instead of the whole conversation. If no point is given, ask the user which one.
+The fork is a new session that starts from a brief instead of the whole conversation.
 
 Write the brief in Markdown, kept short. It holds what the fork needs to discuss the point well and nothing else:
 
@@ -26,7 +26,7 @@ Write the brief in Markdown, kept short. It holds what the fork needs to discuss
 - The decisions, constraints, and rejected options that bear on it.
 - Pointers to the relevant files, commits, records, or handoffs, rather than their contents.
 
-Number the brief's items afresh, so the fork starts with short IDs, in the scheme the user's rules for IDs give, or as letters A, B, and so on without such rules. The point becomes topic A, its parts become parts of A, such as F2a as A1, and the other items take the next letters. Begin the brief with a map from each new ID to the item's ID here, or to a few words naming it when it has none, such as `A: zoom cap (F2)`, and use only the new IDs after it. The fork uses the map to report its results in this conversation's IDs.
+Number the brief's items afresh, so the fork starts with short IDs, in the scheme the user's rules for IDs give, or, without such rules, as letters A, B, and so on, with parts numbered 1, 2, and so on and their parts lettered a, b, and so on. The point becomes topic A, its parts become parts of A, such as F2a as A1, and the other items take the next letters. Begin the brief with a map from each new ID to the item's ID here, or to a few words naming it when it has none, such as `A: zoom cap (F2)`, and use only the new IDs after it. The fork uses the map to report its results in this conversation's IDs.
 
 Pass it on standard input to [agent-joins.sh](scripts/agent-joins.sh) `spawn TOPIC` without showing it to the user or asking for approval.
 

@@ -9,7 +9,7 @@ argument-hint: "[same or other machine] [scope or next focus]"
 The argument can specify the target, the scope, or both, in any order:
 
 - **Target:** whether the next session runs on the same machine or another one. Default to the same machine.
-- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation. For work passed to another repository, default to that work and the context it depends on.
+- **Scope:** which part of the conversation or work to hand off, or what the next session will focus on. Default to the whole current conversation. For work passed to another repository, default to that work.
 
 If the handoff is to the same machine, save the document in the operating system's temporary directory (`$TMPDIR`, else `/tmp`), outside the project, and report its path. If the handoff is to another machine, give the whole document in your reply, so the user can copy it.
 
@@ -19,7 +19,7 @@ Write a handoff document that summarizes the work in scope, so a fresh agent can
 
 Include a "suggested skills" section naming the skills the next agent should use.
 
-Refer to items as the user's rules for IDs say for files that outlive the session. Without such rules, name each item by its record and number, such as "backlog 12", rather than by an ID from this conversation.
+Refer to items as the user's rules for IDs say for files that outlive the session. Without such rules, name each item by its record and number, such as "backlog 12", and describe any other item in words, rather than by an ID from this conversation.
 
 Reference existing artifacts (specs, plans, decision records, issues, commits, and diffs) by path or URL instead of duplicating their content. Assume another machine has the same repository. For local resources outside the repository, summarize them or include their full contents if very short.
 
@@ -27,7 +27,7 @@ For work passed to another repository, ask only for the change to that repositor
 
 Redact any sensitive information, such as API keys, passwords, or personally identifiable information.
 
-When a scope is given, cover that part of the work and the context it depends on, and leave out unrelated threads.
+Cover the scope's part of the work and the context it depends on, and leave out unrelated threads.
 
 ## In a fork
 
