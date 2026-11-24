@@ -19,7 +19,7 @@ Record the baseline and a passing run of the checks that must keep passing. Loca
 
 ## Attempt, measure, keep or revert
 
-Make one change per attempt, based on a hypothesis that names a specific mechanism. Ask before an attempt that adds lasting structure, such as a new package, service, or module, or a shared unit that does not exist yet, or that changes user-visible behavior, as the user's rules for approval say. Without such rules, ask about both. Try ideas in this order, starting with those that remove the most work:
+Make one change per attempt, based on a hypothesis that names a specific mechanism. Ask before an attempt that changes user-visible behavior or adds lasting structure, such as a new package, service, or module, or a shared unit that does not exist yet, as the user's rules for approval say. Without such rules, ask about each such attempt. Try ideas in this order, starting with those that remove the most work:
 
 1. Avoid work whose result nothing uses.
 2. Avoid repeating work, for example by caching.
