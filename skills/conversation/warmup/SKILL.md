@@ -10,7 +10,7 @@ Get the user back into the current project quickly. Read only enough to know whe
 
 Read these, stopping once the picture is clear:
 
-- The project's plan, queue, or progress files, such as `.scratch/delivery/` queue files, the project's backlog, and any handoff document for this project, such as `handoff-<this repository's directory>-*` in the temporary directory.
+- The project's plan, queue, or progress files, such as `.scratch/delivery/` queue files, the project's backlog, and any handoff document for this project, such as `handoff-<this repository's directory>-from-*` in the temporary directory. Check that its first line names this repository as the target.
 - The current branch, recent commits, unmerged branches, and uncommitted changes.
 - The end of the previous agent session in this project. Run [last-session.sh](scripts/last-session.sh) from the project root. It prints the last messages of the most recent earlier Claude Code or Codex session, without tool output.
   - If the current session already holds earlier work, such as when it was resumed or continued, pass `--skip 0` to print the current session instead.
@@ -24,6 +24,6 @@ Write at most five short lines: what the user was doing, where it stopped, and w
 
 Then give three to five small steps in order, from easy to slightly harder. Each step names one concrete thing to look at or do, such as a commit, a file, a check to run, or a pending decision, and says what the user will know afterward. A step that is a pending decision gets an ID, as the user's rules for IDs say. Use the project's real names and commands. Prefer steps that are part of the real work, such as reviewing the last commit or settling the next decision, over exercises. End with the step that starts the next piece of work.
 
-If the project has had activity in the last four weeks but its latest retrospective record from `improve-workflow` is older than that, or there is none, add one line suggesting a retrospective with `improve-workflow`.
+If the project has had activity in the last four weeks but its latest retrospective from `improve-workflow` is older than that, or there is none, add one line suggesting a retrospective with `improve-workflow`. Records are removed once nothing in them is open, so date the latest retrospective by its record or by the latest commit that added or removed one, such as `git log -1 --format=%cs -- .scratch/workflow`.
 
 Stop after the steps. Wait for the user to start.
