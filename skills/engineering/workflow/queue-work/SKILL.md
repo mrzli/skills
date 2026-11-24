@@ -79,7 +79,7 @@ Take an implementer's commits from its branch in Git, never from a hash in its r
 
 A conflict or failing check between items run in parallel means their footprints were misjudged. Record the dependency, and report the miss so later footprint estimates improve.
 
-Start each item's report with its questions and the choices to ask about, then what changed, its commits, and the checks and their results. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that `review-code` would report as a design finding. State when there were none. Raise any blocking question in the discussion.
+Start each item's report with what changed, its commits, and the checks and their results. Then give its questions and the choices to ask about, with a question first only when it blocks the result, as the user's rules for writing say. Without such rules, start with the questions. Report and judge the choices the implementer made beyond the agreed decision as the user's rules for approval say. Without such rules, list every one, and recommend changing any that `review-code` would report as a design finding. State when there were none. Raise any blocking question in the discussion.
 
 Follow the user's and the project's rules for branches and commits. Without such rules, start from a branch other than the main branch, and bring the user's branch into the main branch only when the user asks. Run that merge and the checks it reruns as a background command too.
 
