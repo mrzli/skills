@@ -35,6 +35,7 @@
 ~/projects/personal/mrzli/trading-app	handoff	I have to stop for today. Write up what the next session needs to pick this up tomorrow.
 ~/projects/personal/mrzli/skills	handoff	We agreed on a global AGENTS.md rule that tests run before every commit, and it has to be done in the archon repo. Prepare it for a session there.
 ~/projects/personal/mrzli/trading-app	writing-agents	Add a section to AGENTS.md saying which checks to run when only Markdown changes.
+~/projects/personal/mrzli/trading-app	writing-text	The intro paragraph in the README is clumsy. Reword it so it reads more plainly.
 ~/projects/personal/mrzli/trading-app	recap	Weren't there like 18 or 20 items total? List them again.
 ~/projects/personal/mrzli/trading-app	handoff	We agreed that archon's secrets sync should also write `ALPACA_BASE_URL` from `.env.template`. Nothing else is needed in this repo, and I'll make the change in archon myself. I need a handoff file for it.
 ~/projects/personal/mrzli/trading-app	improve-workflow	Which commands do agents keep running by hand in this project that should be scripts instead?
